@@ -4,10 +4,6 @@
  * Template Name: contact-confirm
  * 
  */
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
-
-get_header();
 
 if (isset($_POST['submit']) && isset($_SESSION['contact'])) {
 
@@ -142,14 +138,14 @@ if (isset($_POST['submit']) && isset($_SESSION['contact'])) {
 
     unset($_SESSION['contact'], $loader, $twig, $subject_admin, $body_admin, $template_client, $body_client, $mail, $mail2);
 
-//    wp_redirect(home_url() . '/thankyou.php');
+    wp_redirect(home_url() . '/thankyou');
     exit();
 } else {
-//    wp_redirect(home_url() . '/contact.php');
-    wp_safe_redirect(home_url() . '/contact.php');
-//    header(home_url() . '/contact.php');
+    wp_redirect(home_url() . '/contact');
     exit();
 }
+
+get_header();
 ?>
 
 <section>

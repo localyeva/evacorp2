@@ -1,7 +1,7 @@
 <?php
 /*
  * Author: KhangLe
- * Template Name: contact
+ * Template Name: Contact
  * 
  */
 get_header();

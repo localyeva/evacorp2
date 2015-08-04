@@ -10,7 +10,6 @@ include_once (dirname(__FILE__) . '/MyFunctions.php');
 include_once (dirname(__FILE__) . '/MyTheme_Customize.php');
 include_once(dirname(__FILE__) . '/cpt_acf_definitions.php');
 
-
 @ini_set('upload_max_size', '64M');
 @ini_set('post_max_size', '64M');
 @ini_set('max_execution_time', '300');
@@ -46,7 +45,7 @@ add_image_size('staff02', 124, 124, true);
 add_image_size('staff03', 224, 328, true);
 add_image_size('staff04', 101, 101, true);
 
-/* ---------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
 function scripts() {
     if (is_page('contact')) {
@@ -220,6 +219,7 @@ function my_custom_recommend() {
     register_post_type('recommend', $args);
 }
 
+/*
 // Custom post Company/Staff
 add_action('init', 'my_custom_staff');
 
@@ -278,6 +278,7 @@ function create_staff_taxonomy() {
     );
     register_taxonomy('staffcat', 'staff', $args);
 }
+*/
 
 // Custom post Company/Gallery
 add_action('init', 'my_custom_gallery');
@@ -543,6 +544,7 @@ function my_custom_recruit() {
 }
 
 // Custom post company/company_profile
+/*
 add_action('init', 'my_custom_company_profile');
 
 function my_custom_company_profile() {
@@ -574,6 +576,7 @@ function my_custom_company_profile() {
     );
     register_post_type('company_profile', $args);
 }
+*/
 
 add_action('init', 'my_custom_requirements');
 

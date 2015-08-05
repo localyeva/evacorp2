@@ -1,7 +1,7 @@
 <?php
 /*
  * Author: KhangLe
- * Template Name: Contact-Confirm
+ * Template Name: Service-About-Labo-Confirm
  * 
  */
 
@@ -13,27 +13,9 @@ if (isset($_POST['submit'])) {
     $reg_name = @htmlspecialchars(stripslashes($_POST['ur_name']));
     $reg_email = @htmlspecialchars($_POST['email']);
     $reg_tel = @htmlspecialchars($_POST['tel']);
-    $reg_inq = @$_POST['inq'];
-    $reg_inq_other = @htmlspecialchars(stripslashes($_POST['inq_other']));
     $reg_itemSelect = @$_POST['itemSelect'];
 
     $reg_content = @htmlspecialchars(stripslashes($_POST['content']));
-
-    $reg_inq_all = NULL;
-    $arr_inq = array('知人の紹介', '雑誌', '新聞', 'テレビ', 'インターネット記事', 'インターネット検索', 'Facebook', 'EVOLABLE ASIAブログ', 'その他');
-    $arr_inq_checked = array('', '', '', '', '', '', '', '', '');
-    if (is_array($reg_inq)) {
-        foreach ($reg_inq as $value) {
-            $key = array_search($value, $arr_inq);
-            $arr_inq_checked[$key] = 'checked';
-            //
-            if ($value != 'その他') {
-                $reg_inq_all[] = htmlspecialchars($value);
-            } else {
-                $reg_inq_all[] = htmlspecialchars($reg_inq_other);
-            }
-        }
-    }
 
     $_SESSION['contact'] = array(
         'company' => $reg_company,
@@ -41,12 +23,10 @@ if (isset($_POST['submit'])) {
         'name' => $reg_name,
         'email' => $reg_email,
         'tel' => $reg_tel,
-        'inq' => $reg_inq,
-        'inq_other' => $reg_inq_other,
-        'inq_all' => $reg_inq_all,
         'itemSelect' => $reg_itemSelect,
         'content' => $reg_content,
     );
+    
 } elseif (isset($_POST['send'])) {
     //
     require_once 'lib/Twig/Autoloader.php';
@@ -70,9 +50,6 @@ if (isset($_POST['submit'])) {
         'name' => $_SESSION['contact']['name'],
         'email' => $_SESSION['contact']['email'],
         'tel' => $_SESSION['contact']['tel'],
-        'inq' => $_SESSION['contact']['inq'],
-        'inq_other' => $_SESSION['contact']['inq_other'],
-        'inq_all' => $_SESSION['contact']['inq_all'],
         'itemSelect' => $_SESSION['contact']['itemSelect'],
         'content' => $_SESSION['contact']['content'],
     ));
@@ -87,9 +64,6 @@ if (isset($_POST['submit'])) {
         'name' => $_SESSION['contact']['name'],
         'email' => $_SESSION['contact']['email'],
         'tel' => $_SESSION['contact']['tel'],
-        'inq' => $_SESSION['contact']['inq'],
-        'inq_other' => $_SESSION['contact']['inq_other'],
-        'inq_all' => $_SESSION['contact']['inq_all'],
         'itemSelect' => $_SESSION['contact']['itemSelect'],
         'content' => $_SESSION['contact']['content'],
     ));
@@ -138,10 +112,10 @@ if (isset($_POST['submit'])) {
 
     unset($_SESSION['contact'], $loader, $twig, $subject_admin, $body_admin, $template_client, $body_client, $mail, $mail2);
 
-    wp_redirect(home_url() . '/thankyou');
+    wp_redirect(home_url() . '/contact/thankyou');
     exit();
 } else {
-    wp_redirect(home_url() . '/contact');
+    wp_redirect(home_url() . '/service/about-labo');
     exit();
 }
 
@@ -186,17 +160,6 @@ get_header();
                 <td><?php echo $_SESSION['contact']['tel'] ?></td>
             </tr>
             <tr>
-                <td>どこでエボラブルアジアを知りましたか?</td>
-                <td>
-                    <?php if (!is_null($_SESSION['contact']['inq_all'])): ?>
-                        <ul>
-                            <?php foreach ($_SESSION['contact']['inq_all'] as $value): ?>
-                                <li><?php echo $value ?></li>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
-                </td>
-            </tr>
-            <tr>
                 <td>お問い合わせ項目</td>
                 <td><?php echo $_SESSION['contact']['itemSelect'] ?></td>
             </tr>
@@ -210,7 +173,7 @@ get_header();
                 <td>
                     <form method="POST">
                         <div class="center">
-                            <a class="btn inline-block" href="<?php echo bloginfo('url') ?>/contact">
+                            <a class="btn inline-block" href="<?php echo bloginfo('url') ?>/service/about-labo">
                                 <button class="btn btn-warning center-block inline-block btn-confirm" type="button">
                                     戻る
                                 </button>

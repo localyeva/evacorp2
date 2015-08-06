@@ -188,38 +188,7 @@ function my_custom_news() {
     register_post_type('news', $args);
 }
 
-// Custom post Recommend
-add_action('init', 'my_custom_recommend');
 
-function my_custom_recommend() {
-    $labels = array(
-        'name' => _x('参加企業の声', 'post type general name'),
-        'singular_name' => _x('参加企業の声', 'post type singular name'),
-        'add_new' => _x('参加企業の声を追加', 'recommend'),
-        'add_new_item' => __('参加企業の声を書く'),
-        'edit_item' => __('参加企業の声の記事を編集'),
-        'new_item' => __('新しい参加企業の声記事'),
-        'view_item' => __('参加企業の声の記事を見る'),
-        'search_items' => __('参加企業の声の記事を探す'),
-        'not_found' => __('参加企業の声記事はありません'),
-        'not_found_in_trash' => __('ゴミ箱に参加企業の声の記事はありません'),
-        'parent_item_colon' => ''
-    );
-    $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'publicly_queryable' => true,
-        'show_ui' => true,
-        'query_var' => true,
-        'rewrite' => true,
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'menu_position' => 7,
-        'supports' => array('title'),
-        'has_archive' => true
-    );
-    register_post_type('recommend', $args);
-}
 
 /*
 // Custom post Company/Staff
@@ -283,6 +252,7 @@ function create_staff_taxonomy() {
 */
 
 // Custom post Company/Gallery
+/*
 add_action('init', 'my_custom_gallery');
 
 function my_custom_gallery() {
@@ -315,8 +285,10 @@ function my_custom_gallery() {
     );
     register_post_type('gallery', $args);
 }
+*/
 
 // Custom post Company/Movie
+/*
 add_action('init', 'my_custom_movie');
 
 function my_custom_movie() {
@@ -349,6 +321,7 @@ function my_custom_movie() {
     );
     register_post_type('movie', $args);
 }
+*/
 
 // Custom post Company/Circle
 

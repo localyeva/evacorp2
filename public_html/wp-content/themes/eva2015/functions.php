@@ -528,6 +528,7 @@ function my_custom_recruit() {
     register_post_type('recruit', $args);
 }
 
+/*
 add_action('init', 'my_custom_requirements');
 
 function my_custom_requirements() {
@@ -559,6 +560,7 @@ function my_custom_requirements() {
     );
     register_post_type('requirements', $args);
 }
+*/
 
 /* ------------  Blog Staff page ------------ */
 

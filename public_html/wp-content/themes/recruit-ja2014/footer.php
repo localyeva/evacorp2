@@ -7,8 +7,8 @@
                 <li><span>＋</span><a href="<?php echo bloginfo('url') ?>/message">代表の想い</a></li>
                 <li><span>＋</span><b>先輩の声</b>
                     <ul class="child">
-                        <li>└ <a href="<?php echo bloginfo('url') ?>/voice/index_senpai.php">社員</a></li>
-                        <li>└ <a href="<?php echo bloginfo('url') ?>/voice/index_inter.php">インターン</a></li>
+                        <li>└ <a href="<?php echo bloginfo('url') ?>/voice/senpai">社員</a></li>
+                        <li>└ <a href="<?php echo bloginfo('url') ?>/voice/intern">インターン</a></li>
                     </ul>
                 </li>
             </ul>

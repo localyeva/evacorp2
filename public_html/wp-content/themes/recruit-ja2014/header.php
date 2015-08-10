@@ -39,13 +39,14 @@
         </script>
         <?php wp_head(); ?> 
     </head>
-    <body id="index">
+    <?php global $body_id; ?>
+    <body id="<?php echo $body_id ?>">
         <div id="headerWrap"> 
             <!-- /header start -->
             <div id="headerInner" class="clearfix">
                 <p class="floatL"> 
                     <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/logo.png" alt="EVOLABLE ASIA" width="156" height="51" class="opa" /></a>
-                    <a href="<?php echo bloginfo('url') ?>/recruit-ja"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t03.jpg" alt="日本人スタッフ募集 Recruit" width="115" height="56" class="opa ml30"/></a> 
+                    <a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t03.jpg" alt="日本人スタッフ募集 Recruit" width="115" height="56" class="opa ml30"/></a> 
                 </p>
                 <p class="floatR"> <a target="_blank" href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t02.jpg" alt="EVOLABLE ASIA CORPORATE SITE" width="202" height="50" class="opa"/></a> <a href="<?php echo bloginfo('url') ?>/contact"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t01.jpg" alt="応募フォーム" width="199" height="50"  class="opa" /></a> </p>
 

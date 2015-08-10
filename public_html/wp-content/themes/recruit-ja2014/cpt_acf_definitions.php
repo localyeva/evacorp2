@@ -37,12 +37,61 @@ function cptui_register_my_cpts() {
     );
     register_post_type("requirements", $args);
 
+    $labels = array(
+        "name" => "FAQ Recruit",
+        "singular_name" => "FAQ Recruit",
+        "menu_name" => "FAQ JA Recruit",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => true,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "faqrecruit", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 27,
+        "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h2.png',
+        "supports" => array("title", "editor", "excerpt"),
+    );
+    register_post_type("faqrecruit", $args);
+
 // End of cptui_register_my_cpts()
 }
 
 /* ---------------------------------------------------------------------------- */
 /* taxonomy definitions */
 /* ---------------------------------------------------------------------------- */
+
+add_action('init', 'cptui_register_my_taxes');
+
+function cptui_register_my_taxes() {
+
+    $labels = array(
+        "name" => "faqcat2",
+        "label" => "FAQ Cat 2",
+        "menu_name" => "FAQ Category",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "hierarchical" => true,
+        "label" => "FAQ Cat 2",
+        "show_ui" => true,
+        "query_var" => true,
+        "rewrite" => array('slug' => 'faqcat2', 'with_front' => true),
+        "show_admin_column" => false,
+    );
+    register_taxonomy("faqcat2", array("faqrecruit"), $args);
+
+// End cptui_register_my_taxes
+}
 
 /* ---------------------------------------------------------------------------- */
 /* custom fields definitions */
@@ -56,20 +105,12 @@ if (function_exists("register_field_group")) {
                 'key' => 'field_55c466937d746',
                 'label' => '雇用形態',
                 'name' => 'employment_status',
-                'type' => 'select',
-                'required' => 1,
-                'choices' => array(
-                    '派遣労働者' => '派遣労働者',
-                    '契約社員（有期労働契約）' => '契約社員（有期労働契約）',
-                    'パートタイム労働者' => 'パートタイム労働者',
-                    '短時間正社員' => '短時間正社員',
-                    '業務委託（請負）契約を結んで働く人' => '業務委託（請負）契約を結んで働く人',
-                    '家内労働者' => '家内労働者',
-                    '在宅ワーカー' => '在宅ワーカー',
-                ),
+                'type' => 'textarea',
                 'default_value' => '',
-                'allow_null' => 0,
-                'multiple' => 0,
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
             ),
             array(
                 'key' => 'field_55c465de7d740',

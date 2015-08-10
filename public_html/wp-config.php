@@ -72,6 +72,12 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', TRUE);
 
+// Disable Plugin and Theme Update and Installation
+define( 'DISALLOW_FILE_MODS', true );
+
+// Disable all automatic updates:
+ define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
 /* Multisite */
 //define( 'WP_ALLOW_MULTISITE', true );
 define('MULTISITE', true);

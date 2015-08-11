@@ -30,6 +30,8 @@ function scripts() {
     //
     global $body_id;
     $body_id = (get_page_uri('') == 'hello-world') ? 'index' : get_page_uri('');
+    $ar_body_id = explode('/', $body_id);
+    $body_id = $ar_body_id[0];
 }
 
 add_action('wp_print_scripts', 'scripts');
@@ -56,7 +58,7 @@ function remove_menus() {
     remove_menu_page('plugins.php');                //Plugins
     remove_menu_page('users.php');                  //Users
     remove_menu_page('tools.php');                  //Tools
-    remove_menu_page('options-general.php');        //Settings
+//    remove_menu_page('options-general.php');        //Settings
 }
 
 add_action('admin_menu', 'remove_menus');

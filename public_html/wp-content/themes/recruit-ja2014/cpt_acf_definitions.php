@@ -13,9 +13,11 @@
 add_action('init', 'cptui_register_my_cpts');
 
 function cptui_register_my_cpts() {
+    
     $labels = array(
-        "name" => "Requirements",
-        "singular_name" => "Requirements",
+        "name" => "Requirement",
+        "singular_name" => "Requirement",
+        "menu_name" => "Requirements",
     );
 
     $args = array(
@@ -23,7 +25,7 @@ function cptui_register_my_cpts() {
         "description" => "",
         "public" => true,
         "show_ui" => true,
-        "has_archive" => true,
+        "has_archive" => false,
         "show_in_menu" => true,
         "exclude_from_search" => false,
         "capability_type" => "post",
@@ -33,9 +35,9 @@ function cptui_register_my_cpts() {
         "query_var" => true,
         "menu_position" => 26,
         "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h1.png',
-        "supports" => array("title"),
+        "supports" => array("title", "editor", "excerpt"),
     );
-    register_post_type("requirements", $args);
+    register_post_type("requirement", $args);
 
     $labels = array(
         "name" => "FAQ Recruit",
@@ -185,7 +187,7 @@ if (function_exists("register_field_group")) {
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'requirements',
+                    'value' => 'requirement',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),

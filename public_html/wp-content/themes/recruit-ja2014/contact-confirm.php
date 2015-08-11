@@ -20,9 +20,6 @@ $reg_orther = @htmlspecialchars($_POST['orther']);
 //// 処理分岐
 if (isset($_POST['action']) && $_POST['action'] == 'confirm') {
     // confirm
-    
-    echo bloginfo('name');
-    
 } elseif (isset($_POST['action']) && $_POST['action'] == 'send') {
     // send
     require_once 'lib/Twig/Autoloader.php';

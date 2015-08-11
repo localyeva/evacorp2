@@ -43,7 +43,7 @@
         $("#contact-form").exValidation({
             rules: {
                 item: "chkrequired",
-                name: "chkrequired",
+                cname: "chkrequired",
                 email: "chkrequired chkemail",
                 tel: "chkrequired chktel",
                 add: "chkrequired",
@@ -51,6 +51,10 @@
                 rate: "chkrequired",
                 career: "chkrequired",
                 intro: "chkrequired"
+            },
+            submitHandler: function (form) {
+                this.submit();
+                return false;
             },
             stepValidation: true,
             scrollToErr: true,

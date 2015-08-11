@@ -56,9 +56,9 @@ if (isset($_POST['submit'])) {
 
     $twig = new Twig_Environment($loader);
 
+    //Admin用メッセージ
     $template_admin = $twig->loadTemplate('contact-admin.html');
 
-    //Admin用メッセージ
     $subject_admin = 'ホームページからお問い合わせがありました';
     $body_admin = $template_admin->render(array(
         'entry_time' => gmdate("Y/m/d H:i:s", time() + 9 * 3600),
@@ -138,7 +138,7 @@ if (isset($_POST['submit'])) {
 
     unset($_SESSION['contact'], $loader, $twig, $subject_admin, $body_admin, $template_client, $body_client, $mail, $mail2);
 
-    wp_redirect(home_url() . '/thankyou');
+    wp_redirect(home_url() . '/contact/thankyou');
     exit();
 } else {
     wp_redirect(home_url() . '/contact');

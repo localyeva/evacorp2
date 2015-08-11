@@ -79,7 +79,7 @@ define( 'DISALLOW_FILE_MODS', true );
  define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
 /* Multisite */
-//define( 'WP_ALLOW_MULTISITE', true );
+define( 'WP_ALLOW_MULTISITE', true );
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', false);
 define('DOMAIN_CURRENT_SITE', 'evacorp2.localhost');

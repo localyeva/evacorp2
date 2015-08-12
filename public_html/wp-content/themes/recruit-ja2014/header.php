@@ -1,14 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title><?php echo bloginfo('name') ?></title>
+        <title><?php echo wp_title('|', true, 'right') ?></title>
 
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
         <meta content="text/javascript" http-equiv="Content-Script-Type"/>
         <meta content="text/css" http-equiv="Content-Style-Type"/>
         <meta name="description" content="ベトナムでオフショア開発、ラボ型オフショア開発、BPOを行なうEVOLABLE ASIA(エボラブルアジア)の求人特設サイトです。「海外で働きたい！」と思っているあなた、EVAではグローバルな視点をもつ仲間を求めています。" />
         <meta name="keywords" content="ベトナム,オフショア開発,ラボ型オフショア開発,BPO,アウトソーシング,ホーチミン,エボラブルアジア,EVOLABLE ASIA,海外,求人,海外で働く,転職,インターン " />
-        
+
         <link href="<?php echo get_template_directory_uri() ?>/img/ico/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
         <link href="<?php echo get_template_directory_uri() ?>/img/ico/favicon.ico" type="image/x-icon" rel="icon"/>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/import.css" type="text/css" media="all" />
@@ -100,7 +100,7 @@
             <!-- /globalNavi start -->
             <ul id="gNavi" class="clearfix">
                 <li id="gNavi01"><a href="<?php echo bloginfo('url') ?>/message"></a></li>
-                <li id="gNavi02"><a href="#">123</a>
+                <li id="gNavi02"><a href="javascript:void();"></a>
                     <ul class="ul_mchil">
                         <li><a href="<?php echo bloginfo('url') ?>/voice/senpai"><span>▶  </span>先輩社員の声</a></li>
                         <li><a href="<?php echo bloginfo('url') ?>/voice/intern"><span>▶  </span>先輩インターンの声</a></li>

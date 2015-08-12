@@ -25,11 +25,11 @@ get_header();
         <li> <a href="job"><img src="<?php echo get_template_directory_uri() ?>/img/top/img_t05.png" alt="EVAでどんな仕事をするの？" width="287" height="289" class="opa" /></a>
             <p> <a href="job"><img src="<?php echo get_template_directory_uri() ?>/img/top/txt_05.png" alt="EVAでどんな仕事をするの？" width="224" height="35" class="opa" /></a> </p>
         </li>
-        <li class="last"> <a href="voice/index_inter.php#anchor04"><img src="<?php echo get_template_directory_uri() ?>/img/top/img_t06.png" alt="機会に貪欲になり、またフットワークが軽くなりました！武田 鮎美" width="287" height="289" class="opa" /></a>
-            <p> <a href="voice/index_inter.php#anchor04"><img src="<?php echo get_template_directory_uri() ?>/img/top/txt_06.png" alt="インターンの声" width="124" height="33" class="opa" /></a> </p>
+        <li class="last"> <a href="voice/intern#anchor04"><img src="<?php echo get_template_directory_uri() ?>/img/top/img_t06.png" alt="機会に貪欲になり、またフットワークが軽くなりました！武田 鮎美" width="287" height="289" class="opa" /></a>
+            <p> <a href="voice/intern#anchor04"><img src="<?php echo get_template_directory_uri() ?>/img/top/txt_06.png" alt="インターンの声" width="124" height="33" class="opa" /></a> </p>
         </li>
-        <li> <a href="voice/index_inter.php#anchor01"><img src="<?php echo get_template_directory_uri() ?>/img/top/img_t07.png" alt="日本じゃ中々できない貴重な体験や学びがたくさんあります！藤原 文佳" width="287" height="289" class="opa" /></a>
-            <p> <a href="voice/index_inter.php#anchor01"> <img src="<?php echo get_template_directory_uri() ?>/img/top/txt_07.png" alt="インターンの声" width="124" height="33" class="opa" /> </a></p>
+        <li> <a href="voice/intern#anchor01"><img src="<?php echo get_template_directory_uri() ?>/img/top/img_t07.png" alt="日本じゃ中々できない貴重な体験や学びがたくさんあります！藤原 文佳" width="287" height="289" class="opa" /></a>
+            <p> <a href="voice/intern#anchor01"> <img src="<?php echo get_template_directory_uri() ?>/img/top/txt_07.png" alt="インターンの声" width="124" height="33" class="opa" /> </a></p>
         </li>
         <li> <a href="<?php echo bloginfo('url') ?>/voice/senpai#anchor02"><img src="<?php echo get_template_directory_uri() ?>/img/top/img_t08.png" alt="ベトナムは努力の結果が成功につながる国！柏木 武志" width="287" height="289" class="opa" /></a>
             <p> <a href="<?php echo bloginfo('url') ?>/voice/senpai#anchor02"><img src="<?php echo get_template_directory_uri() ?>/img/top/txt_08.png" alt="先輩社員の声" width="112" height="33" class="opa" /> </a></p>

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
     <head>
-        <title>応募フォーム｜EVA求人特設サイト｜ベトナムで働くならEVOLABLE ASIA(エボラブルアジア)</title>
+        <title><?php echo wp_title('|', true, 'right') ?></title>
         
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="description" content="ベトナムでオフショア開発、ラボ型オフショア開発、BPOを行なうEVOLABLE ASIA(エボラブルアジア)の求人特設サイト。エボラブルアジアの求人応募フォームです。海外で働きたい方やインターンの希望者はこちらからどうぞ。" />

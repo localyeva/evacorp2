@@ -8,7 +8,7 @@
         <meta name="description" content="ベトナムでのオフショア開発、ラボ型オフショア開発、BPOのエボラブルアジアのお問い合わせページです。" />
         <meta name="keywords" content="ベトナム, オフショア開発, ラボ型オフショア開発, BPO, アウトソーシング, ホーチミン, エボラブルアジア, Evolable Asia" />
 
-        <title><?php echo bloginfo('name') ?></title>
+        <title><?php echo wp_title('|', true, 'right') ?></title>
 
         <!-- Bootstrap -->
         <link href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">

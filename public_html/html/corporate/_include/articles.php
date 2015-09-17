@@ -1,10 +1,10 @@
 <div class="container-fluid header-articles">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-4">
+			<div class="col-xs-12 col-md-4">
 				<img src="img/26.png" alt="" class="img-responsive full-width">
 			</div>
-			<div class="col-xs-8">
+			<div class="col-xs-12 col-md-8">
 				<h3>高度成長を遂げるベトナムでのラボ型開発・BPOの魅力</h3>
 				<div class="row">
 					<div class="col-xs-6">
@@ -18,7 +18,7 @@
 		</div>
 		<div class="row-gap-medium"></div>
 		<div class="row">
-			<div class="col-xs-8">
+			<div class="col-xs-12 col-md-8">
 				<h3>高度成長を遂げるベトナムでのラボ型開発・BPOの魅力</h3>
 				<div class="row">
 					<div class="col-xs-6">
@@ -29,7 +29,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-4">
+			<div class="col-xs-12 col-md-4">
 				<img src="img/26.png" alt="" class="img-responsive full-width">
 			</div>
 		</div>

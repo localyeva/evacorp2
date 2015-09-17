@@ -1,7 +1,7 @@
 <div class="container-fluid header-why">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-5">
+			<div class="col-xs-12 col-md-5">
 				<div class="row-gap-big"></div>
 				<h2>Why is Evolable Asia chosen in Vietnam</h2>
 				<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -9,7 +9,7 @@
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</div>
 			</div>
-			<div class="col-xs-7">
+			<div class="col-xs-12 col-md-7">
 				<div class="row-gap-big"></div>
 				<h3></h3>
 				<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

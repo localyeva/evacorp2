@@ -4,7 +4,7 @@
 			<div class="col-xs-12">
 				<div class="partners">
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-12 col-md-6 first-group">
 							<div class="row">
 								<div class="col-xs-3">
 									<img src="img/partners/1.png" alt="" class="img-responsive full-width">
@@ -20,7 +20,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-12 col-md-6 first-group">
 							<div class="row">
 								<div class="col-xs-3">
 									<img src="img/partners/5.png" alt="" class="img-responsive full-width">
@@ -39,7 +39,7 @@
 					</div>
 					<div class="row-gap-small"></div>
 					<div class="row">
-						<div class="col-xs-6">
+						<div class="col-xs-12 col-md-6 second-group">
 							<div class="row">
 								<div class="col-xs-3">
 									<img src="img/partners/9.png" alt="" class="img-responsive full-width">
@@ -55,7 +55,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-6">
+						<div class="col-xs-12 col-md-6 second-group">
 							<div class="row">
 								<div class="col-xs-3">
 									<img src="img/partners/13.png" alt="" class="img-responsive full-width">

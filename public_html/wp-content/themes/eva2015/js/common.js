@@ -1,4 +1,3 @@
-$(function () {
-    //
-    $(".ul_staff01 li a").colorbox();
+$('#navigation li button.navbar-btn').click(function () {
+    location.href = $(this).data('url');
 });

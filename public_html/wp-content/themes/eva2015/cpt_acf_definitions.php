@@ -316,6 +316,30 @@ function cptui_register_my_cpts() {
     );
     register_post_type("news", $args);
 
+    $labels = array(
+        "name" => "Blogs",
+        "singular_name" => "Blog",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "blog", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 34,
+        "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h10.png',
+        "supports" => array("title"),
+    );
+    register_post_type("blog", $args);
+
 // End of cptui_register_my_cpts()
 }
 
@@ -955,6 +979,83 @@ if (function_exists("register_field_group")) {
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'recommend',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+    register_field_group(array(
+        'id' => 'acf_news',
+        'title' => 'News',
+        'fields' => array(
+            array(
+                'key' => 'field_56020e0b261d5',
+                'label' => 'Image',
+                'name' => 'image',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'news',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+    register_field_group(array(
+        'id' => 'acf_blogs',
+        'title' => 'Blogs',
+        'fields' => array(
+            array(
+                'key' => 'field_56020f7a2198f',
+                'label' => 'Image',
+                'name' => 'image',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+            array(
+                'key' => 'field_56020f8721990',
+                'label' => 'Content',
+                'name' => 'content',
+                'type' => 'wysiwyg',
+                'default_value' => '',
+                'toolbar' => 'full',
+                'media_upload' => 'yes',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'blog',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),

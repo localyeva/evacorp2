@@ -67,10 +67,10 @@ get_header();
             <?php while ($loop->have_posts()): $loop->the_post(); ?>
                 <div class="col-xs-6 no-padding-lr">
                     <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
-                    <a href="<?php echo get_field('redirect_url') ?>">
-                        <div class="h4"><?php the_title() ?></div>
-                        <p><?php echo get_field('short_description') ?></p>
-                    </a>
+                    <div class="caption full-width left">
+                        <h3><a href="<?php echo get_field('redirect_url') ?>"><?php the_title() ?></a></h3>
+                        <div class="intro"><?php echo get_field('short_description') ?></div>
+                    </div>
                 </div>
             <?php endwhile; ?>
         <?php endif; ?>
@@ -255,49 +255,95 @@ get_header();
 ?>
 <!--//About End-->
 <!--//News-->
+<?php 
+    $available_new = get_new_div();
+    if($available_new == 1){
+?>
 <div class="container-fluid text-center block-center">
-    <h1>News</h1>
+    <h1><?php echo get_new_text();?></h1>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <img src="img/20.png" alt="" class="img-responsive full-width">
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <img src="img/21.png" alt="" class="img-responsive full-width">
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <img src="img/22.png" alt="" class="img-responsive full-width">
-            </div>
+            <?php
+            $args = array(
+                'post_type' => 'news',
+                'posts_per_page' => 3,
+                'orderby' => array('date' => 'DESC'),
+            );
+            $loop = new WP_Query($args);
+            ?>
+            <?php
+            if ($loop->have_posts()):
+                $num_posts = count($loop->posts);
+                ?>
+                <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                    <div class="col-xs-12 col-md-4">
+                        <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
+    <!--                    <a href="<?php echo get_field('link') ?>">
+                            <div class="h4"><?php the_title() ?></div>
+                            <p><?php echo get_field('description') ?></p>
+                        </a>-->
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata() ?>
         </div>
     </div>
     <button class="btn btn-slim"><span class="glyphicon glyphicon-plus"></span>View All</button>
 </div>
+<?php  
+    } 
+?>
 <!--//News End-->
 <!--//Blog-->
+<?php 
+    $available_blog = get_blog_div();
+    if($available_blog == 1){
+?>
 <div class="container-fluid text-center block-center">
-	<h1>Blog</h1>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-md-4">
-				<img src="img/20.png" alt="" class="img-responsive full-width">
-			</div>
-			<div class="col-xs-12 col-md-4">
-				<img src="img/21.png" alt="" class="img-responsive full-width">
-			</div>
-			<div class="col-xs-12 col-md-4">
-				<img src="img/22.png" alt="" class="img-responsive full-width">
-			</div>
-		</div>
-	</div>
-	<button class="btn btn-slim"><span class="glyphicon glyphicon-plus"></span>View All</button>
+    <h1><?php echo get_blog_text(); ?></h1>
+    <div class="container">
+        <div class="row">
+            <?php
+            $args = array(
+                'post_type' => 'blog',
+                'posts_per_page' => 3,
+                'orderby' => array('date' => 'DESC'),
+            );
+            $loop = new WP_Query($args);
+            ?>
+            <?php
+            if ($loop->have_posts()):
+                $num_posts = count($loop->posts);
+                ?>
+                <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                    <div class="col-xs-12 col-md-4">
+                        <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
+    <!--                    <a href="<?php echo get_field('link') ?>">
+                            <div class="h4"><?php the_title() ?></div>
+                            <p><?php echo get_field('description') ?></p>
+                        </a>-->
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata() ?>
+        </div>
+    </div>
+    <button class="btn btn-slim"><span class="glyphicon glyphicon-plus"></span>View All</button>
 </div>
+<?php  
+    } 
+?>
 <!--//Blog End-->
 <!--//Articles-->
+<?php 
+    $available_article = get_article_div();
+    if($available_article == 1){
+?>
 <div class="container-fluid header-articles">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-md-4">
-				<img src="img/26.png" alt="" class="img-responsive full-width">
+				<img src="<?php echo get_template_directory_uri() ?>/img/26.png" alt="" class="img-responsive full-width">
 			</div>
 			<div class="col-xs-12 col-md-8">
 				<h3>高度成長を遂げるベトナムでのラボ型開発・BPOの魅力</h3>
@@ -325,10 +371,13 @@ get_header();
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4">
-				<img src="img/26.png" alt="" class="img-responsive full-width">
+				<img src="<?php echo get_template_directory_uri() ?>/img/26.png" alt="" class="img-responsive full-width">
 			</div>
 		</div>
 	</div>
 </div>
+<?php  
+    } 
+?>
 <!--//Articles End-->
 <?php get_footer(); ?>

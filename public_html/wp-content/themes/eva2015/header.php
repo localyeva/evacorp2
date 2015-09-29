@@ -57,13 +57,8 @@
                 </div>
             </nav>
         </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#navigation li button.navbar-btn').click(function () {
-                    location.href = $(this).data('url');
-                });
-            })
-        </script>
         <div class="header-banner">
-            <p><?php echo get_slide_text() ?></p>
+            <div class="container text-center">
+                <h2 class="text-bold"><?php echo get_slide_text() ?></h2>
+            </div>
         </div>

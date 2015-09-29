@@ -48,7 +48,7 @@ function theme_customize_register($wp_customize) {
         'default' => '',
     ));
     $wp_customize->add_control('why_div_c', array(
-        'label' => __('Why div'),
+        'label' => __('Why Show/Hide'),
         'section' => 'home',
         'settings' => 'why_div',
         'priority' => 1,
@@ -70,7 +70,7 @@ function theme_customize_register($wp_customize) {
         'default' => '',
     ));
     $wp_customize->add_control('services_div_c', array(
-        'label' => __('Servives div'),
+        'label' => __('Servives Show/Hide'),
         'section' => 'home',
         'settings' => 'services_div',
         'priority' => 1,
@@ -92,7 +92,7 @@ function theme_customize_register($wp_customize) {
         'default' => '',
     ));
     $wp_customize->add_control('partner_div_c', array(
-        'label' => __('Partner div'),
+        'label' => __('Partner Show/Hide'),
         'section' => 'home',
         'settings' => 'partner_div',
         'priority' => 1,
@@ -103,7 +103,7 @@ function theme_customize_register($wp_customize) {
         'default' => '',
     ));
     $wp_customize->add_control('about_div_c', array(
-        'label' => __('About div'),
+        'label' => __('About Show/Hide'),
         'section' => 'home',
         'settings' => 'about_div',
         'priority' => 1,
@@ -119,6 +119,61 @@ function theme_customize_register($wp_customize) {
         'settings' => 'about_text',
         'priority' => 1,
         'type' => 'text',
+    ));
+    
+    $wp_customize->add_setting('new_div', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('new_div_c', array(
+        'label' => __('New Show/Hide'),
+        'section' => 'home',
+        'settings' => 'new_div',
+        'priority' => 1,
+        'type' => 'checkbox',
+    ));
+    
+    $wp_customize->add_setting('new_text', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('new_text_c', array(
+        'label' => __('New Text'),
+        'section' => 'home',
+        'settings' => 'new_text',
+        'priority' => 1,
+        'type' => 'text',
+    ));
+    
+    $wp_customize->add_setting('blog_div', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('blog_div_c', array(
+        'label' => __('Blog Show/Hide'),
+        'section' => 'home',
+        'settings' => 'blog_div',
+        'priority' => 1,
+        'type' => 'checkbox',
+    ));
+    
+    $wp_customize->add_setting('blog_text', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('blog_text_c', array(
+        'label' => __('Blog Text'),
+        'section' => 'home',
+        'settings' => 'blog_text',
+        'priority' => 1,
+        'type' => 'text',
+    ));
+    
+    $wp_customize->add_setting('article_div', array(
+        'default' => '',
+    ));
+    $wp_customize->add_control('article_div_c', array(
+        'label' => __('Article Show/Hide'),
+        'section' => 'home',
+        'settings' => 'article_div',
+        'priority' => 1,
+        'type' => 'checkbox',
     ));
     
     /* ADD SECTION */
@@ -300,4 +355,24 @@ function get_partner_text() {
 
 function get_about_text() {
     return get_theme_mod('about_text');
+}
+
+function get_new_div() {
+    return get_theme_mod('new_div');
+}
+
+function get_new_text() {
+    return get_theme_mod('new_text');
+}
+
+function get_blog_div() {
+    return get_theme_mod('blog_div');
+}
+
+function get_blog_text() {
+    return get_theme_mod('blog_text');
+}
+
+function get_article_div() {
+    return get_theme_mod('article_div');
 }

@@ -1,4 +1,4 @@
-<div class="container-fluid text-center">
+<div class="container-fluid text-center" id="detail-contact">
     <div class="container detail">
         <h1>Demo Demo</h1>
         <div class="row">

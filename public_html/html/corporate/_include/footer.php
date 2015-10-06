@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 center-block page-top">
-                <img src="img/28.png" alt="" class="img-responsive img-top">
+                <img src="img/28.png" alt="" class="img-responsive img-top" id="img-back-top">
             </div>
         </div>
         <div class="row">

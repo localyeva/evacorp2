@@ -532,7 +532,6 @@ h1:after {
   background-color: #E9E9E9;
 }
 #company-profile .header-contact .contact-info {
-  padding-bottom: 35px;
   padding-top: 70px;
   font-size: 35px;
   font-weight: bold;
@@ -546,6 +545,74 @@ h1:after {
   background-color: #ADEC00;
   text-align: left;
 }
-#company-profile .header-contact .contact-img {
-  padding-bottom: 70px;
+#company-profile .header-contact {
+  padding-bottom: 35px;
+}
+#company-profile .header-contact .phone {
+  background-color: white;
+  height: 180px;
+  position: relative;
+}
+#company-profile .header-contact .phone .phone-text {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  top: 44%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  color: #E11B73;
+}
+#company-profile .header-contact .phone .phone-img {
+  position: absolute;
+  top: 29%;
+  left: 11%;
+  width: 56px;
+  height: 56px;
+}
+#company-profile .header-contact .phone .detail-text {
+  position: absolute;
+  top: 64%;
+  left: 21%;
+  font-size: 20px;
+}
+#company-profile .header-contact .phone .detail-line {
+  height: 132px;
+  border-right: 3px;
+  border-right-style: solid;
+  border-color: #E6E6E6;
+  position: absolute;
+  top: 12%;
+  right: 0%;
+  z-index: 999;
+}
+#company-profile .header-contact .mess {
+  background-color: white;
+  height: 180px;
+  position: relative;
+}
+#company-profile .header-contact .mess .mess-img {
+  position: absolute;
+  top: 42%;
+  left: 15%;
+  width: 47px;
+  height: 39px;
+}
+#company-profile .header-contact .mess .mess-text {
+  position: absolute;
+  top: 45%;
+  left: 26%;
+  font-size: 24px;
+  color: #E5177D;
+}
+#company-profile .header-contact .mess .mess-border {
+  height: 82px;
+  width: 460px;
+  position: absolute;
+  top: 31%;
+  left: 10%;
+  z-index: 999;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E7167B;
 }

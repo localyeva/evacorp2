@@ -34,7 +34,7 @@ function assetSrc($file) {
                     var myCenter = new google.maps.LatLng(10.78783, 106.70083);
                     var myCenter2 = new google.maps.LatLng(10.78783, 106.70083);
                     var myCenter3 = new google.maps.LatLng(10.78783, 106.70083);
-                    
+
                     var mapProp = {
                         center: myCenter,
                         zoom: 14,
@@ -72,21 +72,48 @@ function assetSrc($file) {
                     marker3.setMap(map3);
 
                     var infowindow = new google.maps.InfoWindow({
-                        content: "4F Saigon Finance Center 9 Dinh Tien Hoang Street, District 1, HCMC" 
+                        content: "4F Saigon Finance Center 9 Dinh Tien Hoang Street, District 1, HCMC"
                     });
                     var infowindow2 = new google.maps.InfoWindow({
-                        content: "4F Saigon Finance Center 9 Dinh Tien Hoang Street, District 1, HCMC" 
+                        content: "4F Saigon Finance Center 9 Dinh Tien Hoang Street, District 1, HCMC"
                     });
                     var infowindow3 = new google.maps.InfoWindow({
-                        content: "4F Saigon Finance Center 9 Dinh Tien Hoang Street, District 1, HCMC" 
+                        content: "4F Saigon Finance Center 9 Dinh Tien Hoang Street, District 1, HCMC"
                     });
-                    
+
                     infowindow.open(map, marker);
                     infowindow2.open(map2, marker2);
                     infowindow3.open(map3, marker3);
                 }
 
                 google.maps.event.addDomListener(window, 'load', initialize);
+
+                $('#img-back-top').on('click', function (e) {
+                    e.preventDefault();
+                    $('html,body').animate({
+                        scrollTop: 0
+                    }, 700);
+                });
+
+                jQuery.fn.extend(
+                        {
+                            scrollTo: function (speed, easing)
+                            {
+                                return this.each(function ()
+                                {
+                                    var targetOffset = $(this).offset().top;
+                                    $('html,body').animate({scrollTop: targetOffset}, speed, easing);
+                                });
+                            }
+                        });
+                $(function () {
+                    $('a').on('click', function () {
+                        if ($(this).data('goto') != '') {
+                            var goto = $(this).data('goto');
+                            $('#' + goto).scrollTo(500);
+                        }
+                    });
+                });
             });
         </script>
     </body>

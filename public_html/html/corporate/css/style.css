@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,500,500italic,700,700italic&subset=latin,vietnamese);
-@import "hover-min.css";
 a.alnk {
   color: #fff;
   text-decoration: none;
@@ -28,8 +27,45 @@ h2.about-main-title {
 }
 h2.about-main-title .intro {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   /*padding-top: 10px;*/
+}
+h2.news-main-title {
+  font-size: 14px;
+}
+h2.news-main-title .intro {
+  color: white;
+  font-size: 15px;
+  /*padding-top: 10px;*/
+}
+a.about-hover {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.45s ease-in-out;
+  -moz-transition: opacity 0.45s ease-in-out;
+  -webkit-transition: opacity 0.45s ease-in-out;
+}
+a.about-hover:hover {
+  opacity: 0.5;
+}
+a.news-hover {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.45s ease-in-out;
+  -moz-transition: opacity 0.45s ease-in-out;
+  -webkit-transition: opacity 0.45s ease-in-out;
+}
+a.news-hover:hover {
+  opacity: 0.5;
+}
+a .date-text {
+  padding-right: 12px;
+  color: white;
+}
+a .categories-text {
+  background-color: #D82670;
+  color: white;
+  padding: 3px 5px 2px 5px;
 }
 .text-center {
   text-align: center;
@@ -227,11 +263,6 @@ h1:after {
   line-height: 30px;
   text-align: center;
 }
-.header-about {
-  /*    .about-hover{
-        display: block;
-    }*/
-}
 .header-about .about-main-block {
   position: relative;
 }
@@ -245,11 +276,37 @@ h1:after {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+.header-news .news-main-block {
+  position: relative;
+}
+.header-news .news-main-block .caption {
+  padding-left: 1.4em;
+  position: absolute;
+  top: 76%;
+}
+.header-news .news-main-block .caption h2 {
+  color: white;
+  margin: 0;
+  padding-top: 4px;
+  font-size: 20px;
+  text-decoration: none;
+}
 .header-footer {
   background: #1E1E1E;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
+}
+.header-footer .page-top {
+  padding-bottom: 40px;
+}
+.header-footer .page-top .img-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  margin-top: -45px;
+  transform: translate(-50%, -50%);
 }
 .btn-slim {
   border: 1px solid #333;
@@ -299,4 +356,263 @@ h1:after {
 }
 .header-articles img {
   margin-bottom: 15px;
+}
+#company-profile {
+  letter-spacing: 2px;
+}
+#company-profile .header-banner {
+  background: url('../img/banner.png') no-repeat;
+  background-size: cover;
+  height: 163px;
+}
+#company-profile .header-banner h2:first-child {
+  margin-top: 300px;
+  font-size: 41.6px;
+}
+#company-profile .header-banner .container {
+  position: relative;
+  height: 147px;
+}
+#company-profile .header-banner .container h2 {
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+#company-profile .header-banner .container.intro {
+  color: white;
+  font-size: 36;
+}
+#company-profile .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#company-profile .breadcrumb-cp > li {
+  display: inline-block;
+}
+#company-profile .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#company-profile .menu-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border: 1px solid #CCCCCC;
+  height: 80px;
+  width: 700px;
+}
+#company-profile .menu-cp > li {
+  text-align: center;
+  display: inline-block;
+  padding-left: 40px;
+  padding-top: 22px;
+}
+#company-profile .menu-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#company-profile .menu-cp span.gly-menu {
+  color: #A0D8FB;
+}
+#company-profile .bs-callout {
+  padding: 1px;
+  margin-top: 85px;
+  border-width: 1px 1px 1px 5px;
+  border-style: none;
+  border-color: #EEE;
+  background-color: transparent;
+  border-left: 10px solid #68C7F5;
+}
+#company-profile .bs-callout h2 {
+  padding-left: 15px;
+}
+#company-profile .bs-callout-danger {
+  border-left-color: #68C7F5;
+}
+#company-profile .drop-line {
+  margin: 20px 0px;
+  border-style: none;
+  border-color: #EEE;
+  background-color: transparent;
+  border-bottom: 2px solid #C9C9C9;
+}
+#company-profile .office-con {
+  margin-bottom: 100px;
+}
+#company-profile .office-main-block {
+  margin-top: 18px;
+}
+#company-profile .office-main-block a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+#company-profile div.info {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#company-profile .main-img {
+  padding-right: 15px;
+}
+#company-profile .detail-info {
+  width: 100%;
+}
+#company-profile .detail-info th {
+  width: 30%;
+  background-color: #C5E9F9;
+  border-bottom: 1px solid #BEBFC1;
+  padding: 15px 0px 15px 20px;
+}
+#company-profile .detail-info th span {
+  /*padding: 10px 0px 10px 10px;*/
+  font-size: 18px;
+  font-weight: normal;
+}
+#company-profile .detail-info td {
+  width: 70%;
+  border-bottom: 1px solid #BEBFC1;
+}
+#company-profile .detail-info td span {
+  font-size: 18px;
+  font-weight: initial;
+  text-align: left;
+}
+#company-profile .infos {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  margin-bottom: 100px;
+}
+#company-profile .evol .round1 {
+  width: 95%;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C5C5C5;
+  margin-bottom: 100px;
+}
+#company-profile .soltec .round2 {
+  width: 95%;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C5C5C5;
+  margin-left: 30px;
+}
+#company-profile .img-his {
+  background-color: white;
+}
+#company-profile .header-his {
+  padding: 20px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color: #C5C5C5;
+  background-color: #F2F2F2;
+}
+#company-profile .footer-his {
+  padding: 20px;
+  border-top: 1px;
+  border-top-style: solid;
+  border-color: #C5C5C5;
+  background-color: #F2F2F2;
+  margin: 0px;
+}
+#company-profile .header-contact {
+  background-color: #E9E9E9;
+}
+#company-profile .header-contact .contact-info {
+  padding-top: 70px;
+  font-size: 35px;
+  font-weight: bold;
+}
+#company-profile .header-contact .contact-info .yellow {
+  background-color: #FDCD0B;
+  background-size: 100px 60px;
+  background-repeat: no-repeat;
+}
+#company-profile .header-contact .contact-info .green {
+  background-color: #ADEC00;
+  text-align: left;
+}
+#company-profile .header-contact {
+  padding-bottom: 35px;
+}
+#company-profile .header-contact .phone {
+  background-color: white;
+  height: 180px;
+  position: relative;
+}
+#company-profile .header-contact .phone .phone-text {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  top: 44%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  color: #E11B73;
+}
+#company-profile .header-contact .phone .phone-img {
+  position: absolute;
+  top: 29%;
+  left: 11%;
+  width: 56px;
+  height: 56px;
+}
+#company-profile .header-contact .phone .detail-text {
+  position: absolute;
+  top: 64%;
+  left: 21%;
+  font-size: 20px;
+}
+#company-profile .header-contact .phone .detail-line {
+  height: 132px;
+  border-right: 3px;
+  border-right-style: solid;
+  border-color: #E6E6E6;
+  position: absolute;
+  top: 12%;
+  right: 0%;
+  z-index: 999;
+}
+#company-profile .header-contact .mess {
+  background-color: white;
+  height: 180px;
+  position: relative;
+}
+#company-profile .header-contact .mess .mess-img {
+  position: absolute;
+  top: 42%;
+  left: 15%;
+  width: 47px;
+  height: 39px;
+}
+#company-profile .header-contact .mess .mess-text {
+  position: absolute;
+  top: 45%;
+  left: 26%;
+  font-size: 24px;
+  color: #E5177D;
+}
+#company-profile .header-contact .mess .mess-border {
+  height: 82px;
+  width: 460px;
+  position: absolute;
+  top: 31%;
+  left: 10%;
+  z-index: 999;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E7167B;
 }

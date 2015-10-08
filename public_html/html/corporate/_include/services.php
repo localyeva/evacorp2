@@ -16,7 +16,7 @@
         </div>
         <div class="col-xs-12 col-md-6 list">
             <div class="row">
-                <div class="col-xs-12 col-md-6 no-padding-lr">
+                <div class="col-xs-6 col-md-6 no-padding-lr">
                     <img src="img/7.png" alt="" class="img-responsive full-width">
                     <div class="caption full-width center">
                         <h2 class="sv-title">
@@ -25,7 +25,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 no-padding-lr">
+                <div class="col-xs-6 col-md-6 no-padding-lr">
                     <img src="img/8.png" alt="" class="img-responsive full-width">
                     <div class="caption full-width center">
                         <h2 class="sv-title">
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-6 no-padding-lr">
+                <div class="col-xs-6 col-md-6 no-padding-lr">
                     <img src="img/9.png" alt="" class="img-responsive full-width">
                     <div class="caption full-width center">
                         <h2 class="sv-title">
@@ -45,7 +45,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 no-padding-lr">
+                <div class="col-xs-6 col-md-6 no-padding-lr">
                     <img src="img/10.png" alt="" class="img-responsive full-width">
                     <div class="caption full-width center">
                         <h2 class="sv-title">

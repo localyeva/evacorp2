@@ -8,27 +8,38 @@
         <div class="row">
             <div class="col-xs-12 col-md-6">
                 <div class="row">
-                    <div class="col-xs-4 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <div class="row">
                             <div class="col-xs-12">
-                                <img src="img/29.png" alt="" class="img-responsive">
+                                <img src="img/30.png" alt="" class="img-responsive center-block">
                             </div>
                         </div>
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <div class="btn btn-slim">お問い合わせ</div>
+                                <div class="btn btn-slim ev-mobie-footer center-block">お問い合わせ</div>
                             </div>
                         </div>
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <div class="btn btn-slim">Facebook</div>
+                                <div class="btn btn-slim fb-mobie-footer center-block">Facebook</div>
                             </div>
                         </div>
+                        <div class="row-gap-small .visible-xs-*"></div>
                     </div>
-
-                    <div class="col-xs-4 col-md-4">
+                    <div class="col-xs-12 no-padding-lr menu-footer-mobi">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="#">About EvolableAsia <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="#">開発ならエボ <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="#">サービス <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="#">ニュース <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="#">Recruit <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="#" class="active">お問い合わせ <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-4 col-md-4 hidden-xs">
                         <label>企業情報</label>
                         <div class="row">
                             <div class="col-xs-12">
@@ -53,7 +64,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xs-4 col-md-4">
+                    <div class="col-xs-4 col-md-4 hidden-xs">
                         <label>企業情報</label>
                         <div class="row">
                             <div class="col-xs-12">
@@ -72,7 +83,7 @@
                 </div>
             </div>		
 
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12 col-md-6 hidden-xs">
                 <div class="row">
                     <div class="col-xs-4 col-md-4">
                         <label>企業情報</label>

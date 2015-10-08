@@ -1,4 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,500,500italic,700,700italic&subset=latin,vietnamese);
+@media screen and (max-width: 460px) {
+  .header-footer .btn-slim.fb-mobie-footer {
+    width: 60%;
+  }
+  .header-footer .btn-slim.ev-mobie-footer {
+    width: 60%;
+  }
+  .menu-footer-mobi a {
+    color: white;
+    border-top-color: white;
+    border-top: 2px solid #fff;
+  }
+  .menu-footer-mobi a:hover {
+    color: black;
+  }
+  .menu-footer-mobi .right-icon {
+    position: absolute;
+    left: 90%;
+    padding-top: 3%;
+  }
+}
+@media screen and (min-width: 460px) {
+  .menu-footer-mobi {
+    display: none;
+  }
+}
 a.alnk {
   color: #fff;
   text-decoration: none;
@@ -157,8 +183,24 @@ h1:after {
 .navbar-default .navbar-collapse {
   text-align: center;
 }
-#mobile-header {
+/*#mobile-header {
+    display: none;
+    .navbar-brand {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        img {
+            height: 40px;
+        }
+    }
+}*/
+.mobile-menu {
   display: none;
+}
+.mobie-brand {
+  padding-top: 3%;
+}
+.logo-mobie {
+  padding-left: 13%;
 }
 #sidr-main .sidr-class-navbar-brand img {
   padding: 10px 10px;
@@ -179,6 +221,14 @@ h1:after {
 }
 #sidr-main .sidr-class-navbar-bars {
   display: none;
+}
+.sidr-open.sidr-main-open {
+  position: relative;
+  width: 100% !important;
+  left: 0 !important;
+}
+.btn-toggle {
+  color: #212737;
 }
 .header-banner {
   height: 560px;

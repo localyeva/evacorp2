@@ -30,23 +30,23 @@ get_header();
                         <p>顧客サービス本部マネージャー</p>
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>茨城県水戸市</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>茨城キリスト教大学</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>前職</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>前職</th>
                                 <td>日本語教師</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>読書（漫画も含め）・映画鑑賞・ダンス・ゴルフ・シュノーケル</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>休日の過ごし方</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>休日の過ごし方</th>
                                 <td>エステ、ネイル、マッサージなど自分の時間を満喫しています。<br />
                                     現地駐在員の集まるサッカー部のマネージャーをしているので<br />
                                     サッカーを見に行って…夜は飲み会です！</td>
@@ -90,24 +90,24 @@ get_header();
                         <p>営業マネージャー</p>
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>徳島県小松島市</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>東京理科大学、広島大学、中央大学</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>前職</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>前職</th>
                                 <td>（前職）ペガジャパン株式会社<br>
                                     （前々職）CA Technology</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>音楽鑑賞</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>休日の過ごし方</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>休日の過ごし方</th>
                                 <td>読書、ホーチミン探索、資料作成</td>
                             </tr>
                         </table>
@@ -152,24 +152,24 @@ get_header();
                         <p>ラボ マネージャー</p>
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>大阪市</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>関西大学　法学部法律学科</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>前職</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>前職</th>
                                 <td>㈱リクルートで広告の営業をしていました。<br>
                                     IT業界はまったくの未経験です。</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>ヨット、水泳、旅行、読書、ドライブ</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>休日の過ごし方</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>休日の過ごし方</th>
                                 <td>洗濯、掃除→買い物→近所のカフェ。時々スパ、ネイル。</td>
                             </tr>
                         </table>
@@ -218,24 +218,24 @@ get_header();
                         <p>アシスタントマネージャー</p>
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>神奈川県川崎市多摩区</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>メディカルトレーナー専門学校/国立ホーチミン市ダンス学校</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>前職</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>前職</th>
                                 <td>Arabesque Dance Companyの唯一日本人のダンサー</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>映画鑑賞、読書
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>休日の過ごし方</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>休日の過ごし方</th>
                                 <td>日曜日の午前中はよさこいを日本語学校の生徒に教えています。</td>
                             </tr>
                         </table>
@@ -284,24 +284,24 @@ get_header();
                         <p>開発サポートマネージャー</p>
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>千葉県</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>千葉工業大学</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>前職</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>前職</th>
                                 <td>某ＩＴシステム開発会社</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>旅行(バックパッカー)、ＹＯＧＡ、ギター</td>
                             </tr>
 
                             <tr>
-                                <th scope="row"><span>▶ </span> 休日の過ごし方</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span> 休日の過ごし方</th>
                                 <td>教会の前の公園に座ってコーヒーを飲んだり、<br/>
                                     日本語クラブに参加して、日本語を教えたりしています。</td>
                             </tr>
@@ -352,25 +352,25 @@ get_header();
                         <p>ラボマネージャー</p>
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>福岡</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>産能短大</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>前職</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>前職</th>
                                 <td>メインフレームのSEを主に開発業務に従事してきましたが、直近の数年間はまったく別の業種にいました。</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>マーケットや地元商店街にて、掘り出し物をみつけること。<br>
                                     バイクツーリング。
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>休日の過ごし方</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>休日の過ごし方</th>
                                 <td>休み前、夜にしこたまビールを呑んで寝てます。</td>
                             </tr>
                         </table>
@@ -418,23 +418,23 @@ get_header();
                         <p>Japanese Lecture</p>
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>和歌山県</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>愛知大学</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>前職</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>前職</th>
                                 <td>不動産仲介の営業</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>野球、スキー(ベトナムではできませんが)、読書</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>休日の過ごし方</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>休日の過ごし方</th>
                                 <td>日本人学校の小中学生に野球を教えたり、<br/>
                                     ローカルのお店で友達と飲んだりすることが多いです。</td>
                             </tr>

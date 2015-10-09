@@ -12,6 +12,7 @@
         <link href="<?php echo get_template_directory_uri() ?>/img/ico/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
         <link href="<?php echo get_template_directory_uri() ?>/img/ico/favicon.ico" type="image/x-icon" rel="icon"/>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/import.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-47878088-1']);
@@ -102,8 +103,8 @@
                 <li id="gNavi01"><a href="<?php echo bloginfo('url') ?>/message"></a></li>
                 <li id="gNavi02"><a href="javascript:void();"></a>
                     <ul class="ul_mchil">
-                        <li><a href="<?php echo bloginfo('url') ?>/voice/senpai"><span>▶  </span>先輩社員の声</a></li>
-                        <li><a href="<?php echo bloginfo('url') ?>/voice/intern"><span>▶  </span>先輩インターンの声</a></li>
+                        <li><a href="<?php echo bloginfo('url') ?>/voice/senpai"><span><i class="fa fa-play"></i>  </span>先輩社員の声</a></li>
+                        <li><a href="<?php echo bloginfo('url') ?>/voice/intern"><span><i class="fa fa-play"></i>  </span>先輩インターンの声</a></li>
                     </ul>
                 </li>
                 <li id="gNavi03"><a href="<?php echo bloginfo('url') ?>/attractive"></a></li>

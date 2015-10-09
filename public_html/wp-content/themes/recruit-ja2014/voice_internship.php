@@ -30,19 +30,19 @@ get_header();
                         <!--<p>顧客サービス本部マネージャー</p>-->
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>兵庫県</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>大阪府立大学</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>温泉めぐり</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>インターン中の<br>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>インターン中の<br>
                                 　　休日の過ごし方</th>
                                 <td>グルメ探索・マッサージ</td>
                             </tr>
@@ -91,19 +91,19 @@ get_header();
                         <!--<p>顧客サービス本部マネージャー</p>-->
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>宮城県仙台市</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>宮城第一高校/早稲田大学文化構想学部</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>ストリートダンス、半身浴、読書、映画鑑賞</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>インターン中の<br>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>インターン中の<br>
 								　　休日の過ごし方</th>
                                 <td>miumiuというマッサージ屋さんに行きました。日本人街レタントン通りにあり、マッサージ前後のサービスもとても素敵なお店です。指圧マッサージに挑戦したのですが、まさに"痛気持ちいい！！！"　お手頃価格でマッサージが受けれるのはベトナムならではですよね。</td>
                             </tr>
@@ -152,19 +152,19 @@ get_header();
                         <!--<p>顧客サービス本部マネージャー</p>-->
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>宮城県仙台市</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>東北大学工学部</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>歌うこと</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>インターン中の<br>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>インターン中の<br>
                                 　　休日の過ごし方</th>
                                 <td>一緒にベトナムへインターンに来た仲間と観光!スカイデッキに登ったりベンタイン市場で買い物をしたり、マッサージを受けたりもしました。またベトナムで出会った日本人の方は、みな優しく接してくれる印象でした。休日に開催されるレジャーやスポーツなども時間を見つけて参加したいと思いました。</td>
                             </tr>
@@ -213,19 +213,19 @@ get_header();
                         <!--<p>顧客サービス本部マネージャー</p>-->
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>福岡県</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>熊本大学</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>旅行</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>インターン中の<br>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>インターン中の<br>
                                 　　休日の過ごし方</th>
                                 <td>友達と遊びに行ったり、買い物したり。ブンタウのような近場に旅行に行ったりしていました。<br>
                                     あとローカルのシャンプー屋さんでシャンプーしたりです。</td>
@@ -292,19 +292,19 @@ get_header();
                         <!--<p>顧客サービス本部マネージャー</p>-->
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>京都</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>大阪大学</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>旅行、飛行機に乗る、操縦する</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>インターン中の<br>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>インターン中の<br>
 								　　休日の過ごし方</th>
                                 <td>1区の美味しいお店探し、ビンコムセンターで買い物</td>
                             </tr>
@@ -356,19 +356,19 @@ get_header();
                         <!--<p>顧客サービス本部マネージャー</p>-->
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>岡山県</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>岡山大学</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>買い物、お酒を飲むこと</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>インターン中の<br>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>インターン中の<br>
 								　　休日の過ごし方</th>
                                 <td>ゆかりさんに誘っていただいてサッカー部に参加したり、カンボジアやブンタウにプチ旅行に行きました。</td>
                             </tr>
@@ -419,19 +419,19 @@ get_header();
                         <!--<p>顧客サービス本部マネージャー</p>-->
                         <table width="100%">
                             <tr>
-                                <th scope="row"><span>▶ </span>出身地</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身地</th>
                                 <td>東京都</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>出身校</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>出身校</th>
                                 <td>早稲田大学</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>趣味</th>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>趣味</th>
                                 <td>ジム、ジム後の読書</td>
                             </tr>
                             <tr>
-                                <th scope="row"><span>▶ </span>インターン中の<br>
+                                <th scope="row"><span><i class="fa fa-play"></i> </span>インターン中の<br>
                                 　　休日の過ごし方</th>
                                 <td>友人と旅行や外出</td>
                             </tr>

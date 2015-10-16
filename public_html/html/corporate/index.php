@@ -8,21 +8,16 @@ function assetSrc($file) {
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
-        <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script type="text/javascript" src="js/jquery.sidr.min.js"></script>
+        <script type="text/javascript" src="js/wow.js"></script>
         <link rel="stylesheet" type="text/css" href="css/jquery.sidr.dark.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
         <link rel="stylesheet" href="<?php assetSrc('css/style.css'); ?>">
         <link rel="stylesheet" href="<?php assetSrc('css/font-awesome.min.css'); ?>">
-        <link rel="stylesheet" href="<?php // assetSrc('css/jquery.sidr.dark.css'); ?>">
-        <link rel="stylesheet" href="<?php assetSrc('css/jquery.sidr.min.js'); ?>">
-        <link rel="stylesheet" href="<?php assetSrc('css/bootstrap.min.js'); ?>">
-        <link rel="stylesheet" href="<?php assetSrc('css/jquery.min.js'); ?>">
     </head>
     <body>
         <?php include('./_include/navbar.php'); ?>
@@ -38,6 +33,20 @@ function assetSrc($file) {
     <?php include('./_include/footer.php'); ?>
     <script>
         $(document).ready(function () {
+            
+            /*--------------------------------------------------
+             WOW Effects Animation
+             -------------------------------------------------*/
+            $(function () {
+                var wow = new WOW({
+                    boxClass: 'wow', // animated element css class (default is wow)
+                    animateClass: 'animated', // animation css class (default is animated)
+                    offset: 200, // distance to the element when triggering the animation (default is 0)
+                    mobile: false        // trigger animations on mobile devices (true is default)
+                });
+                wow.init();
+            });
+
             $('#img-back-top').on('click', function (e) {
                 e.preventDefault();
                 $('html,body').animate({

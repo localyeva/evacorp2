@@ -2,7 +2,7 @@
     <h1 class="text-center">News</h1>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-4 news-main-block">
+            <div class="col-xs-12 col-md-4 news-main-block wow fadeInLeft">
                 <a class="news-hover" href="#">
                     <img src="img/20.png" alt="" class="img-responsive full-width">
                     <div class="caption full-width left">
@@ -13,7 +13,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4 news-main-block">
+            <div class="col-xs-12 col-md-4 news-main-block wow fadeInLeft">
                 <a class="news-hover" href="#">
                     <img src="img/21.png" alt="" class="img-responsive full-width">
                     <div class="caption full-width left">
@@ -24,7 +24,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xs-12 col-md-4 news-main-block">
+            <div class="col-xs-12 col-md-4 news-main-block wow fadeInLeft">
                 <a class="news-hover" href="#">
                     <img src="img/22.png" alt="" class="img-responsive full-width">
                     <div class="caption full-width left">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="text-center">
+    <div class="text-center wow fadeInLeft">
         <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
     </div>
 </div>

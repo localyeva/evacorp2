@@ -19,50 +19,178 @@
     left: 90%;
     padding-top: 3%;
   }
+  h2.sv-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  h2.sv-title .intro {
+    color: white;
+    font-size: 11px;
+    padding-top: 5px;
+  }
+  h2.sv-main-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  h2.sv-main-title .intro {
+    color: white;
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  h2.about-main-title {
+    font-size: 15px;
+    text-align: center;
+  }
+  h2.about-main-title .intro {
+    color: white;
+    font-size: 10px;
+    /*padding-top: 10px;*/
+  }
+  h2.news-main-title {
+    font-size: 14px;
+  }
+  h2.news-main-title .intro {
+    color: white;
+    font-size: 15px;
+    /*padding-top: 10px;*/
+  }
+  #about-profile .header-about-banner .container h2 {
+    font-size: 15px !important;
+  }
+  .header-contact .contact-info {
+    font-size: 9px !important;
+    padding-top: 30px !important;
+  }
+  .header-contact .footer-contact {
+    height: 110px !important;
+  }
+  .header-contact .footer-contact .phone .phone-text {
+    font-size: 12px !important;
+    top: 23% !important;
+    left: 49% !important;
+  }
+  .header-contact .footer-contact .phone .phone-img {
+    left: -2% !important;
+    padding-top: 15% !important;
+  }
+  .header-contact .footer-contact .phone .detail-text {
+    top: 29% !important;
+    left: 7% !important;
+    font-size: 5px !important;
+  }
+  .header-contact .footer-contact .phone .detail-line {
+    height: 68px !important;
+  }
+  .header-contact .footer-contact .mess {
+    height: 110px !important;
+  }
+  .header-contact .footer-contact .mess .mess-img {
+    top: 25% !important;
+    left: 8% !important;
+    width: 9% !important;
+  }
+  .header-contact .footer-contact .mess .mess-text {
+    white-space: normal !important;
+    top: 26% !important;
+    left: 20% !important;
+    font-size: 9px !important;
+  }
+  .header-contact .footer-contact .mess .mess-border {
+    height: 36% !important;
+    width: 99% !important;
+    top: 18% !important;
+    left: 3% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header-contact .contact-info {
+    font-size: 17px !important;
+    padding-top: 30px !important;
+  }
+  .header-contact .footer-contact {
+    height: 110px !important;
+  }
+  .header-contact .footer-contact .phone .phone-text {
+    font-size: 25px !important;
+    top: 23% !important;
+    left: 48% !important;
+  }
+  .header-contact .footer-contact .phone .phone-img {
+    left: 0% !important;
+    padding-top: 5% !important;
+  }
+  .header-contact .footer-contact .phone .detail-text {
+    top: 33% !important;
+    left: 7% !important;
+    font-size: 14px !important;
+  }
+  .header-contact .footer-contact .phone .detail-line {
+    height: 68px !important;
+  }
+  .header-contact .footer-contact .mess {
+    height: 110px !important;
+  }
+  .header-contact .footer-contact .mess .mess-img {
+    top: 14% !important;
+    left: 6% !important;
+    width: 12% !important;
+  }
+  .header-contact .footer-contact .mess .mess-text {
+    white-space: normal !important;
+    top: 22% !important;
+    left: 19% !important;
+    font-size: 16px !important;
+  }
+  .header-contact .footer-contact .mess .mess-border {
+    height: 37% !important;
+    width: 98% !important;
+    top: 12% !important;
+    left: 4% !important;
+  }
 }
 @media screen and (min-width: 460px) {
   .menu-footer-mobi {
     display: none;
   }
+  h2.sv-title {
+    font-size: 32px;
+    text-align: center;
+  }
+  h2.sv-title .intro {
+    color: white;
+    font-size: 16px;
+    padding-top: 12px;
+  }
+  h2.sv-main-title {
+    font-size: 42px;
+    text-align: center;
+  }
+  h2.sv-main-title .intro {
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  h2.about-main-title {
+    font-size: 24px;
+    text-align: center;
+  }
+  h2.about-main-title .intro {
+    color: white;
+    font-size: 15px;
+    /*padding-top: 10px;*/
+  }
+  h2.news-main-title {
+    font-size: 14px;
+  }
+  h2.news-main-title .intro {
+    color: white;
+    font-size: 15px;
+    /*padding-top: 10px;*/
+  }
 }
 a.alnk {
   color: #fff;
   text-decoration: none;
-}
-h2.sv-title {
-  font-size: 32px;
-  text-align: center;
-}
-h2.sv-title .intro {
-  color: white;
-  font-size: 16px;
-  padding-top: 12px;
-}
-h2.sv-main-title {
-  font-size: 42px;
-  text-align: center;
-}
-h2.sv-main-title .intro {
-  color: white;
-  font-size: 18px;
-  padding-top: 10px;
-}
-h2.about-main-title {
-  font-size: 24px;
-  text-align: center;
-}
-h2.about-main-title .intro {
-  color: white;
-  font-size: 15px;
-  /*padding-top: 10px;*/
-}
-h2.news-main-title {
-  font-size: 14px;
-}
-h2.news-main-title .intro {
-  color: white;
-  font-size: 15px;
-  /*padding-top: 10px;*/
 }
 a.about-hover {
   display: block;
@@ -98,6 +226,8 @@ a .categories-text {
 }
 .btn-orange {
   background-color: #FF530D;
+  color: white;
+  font-size: 10px;
   color: #fff;
 }
 .btn-orange:hover,
@@ -182,17 +312,8 @@ h1:after {
 }
 .navbar-default .navbar-collapse {
   text-align: center;
+  padding-left: 14%;
 }
-/*#mobile-header {
-    display: none;
-    .navbar-brand {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        img {
-            height: 40px;
-        }
-    }
-}*/
 .mobile-menu {
   display: none;
 }
@@ -209,6 +330,8 @@ h1:after {
 }
 #sidr-main button {
   background-color: #FF530D;
+  color: white;
+  font-size: 10px;
   color: #fff;
   width: 100%;
   border: none;
@@ -231,13 +354,14 @@ h1:after {
   color: #212737;
 }
 .header-banner {
-  height: 560px;
-  background: url('../img/1.png') no-repeat;
+  height: 458px;
   background-size: cover;
-}
-.header-banner .container {
+  background: url('../img/1.png') 50% 0 fixed;
+  margin: 0 auto;
+  width: 100%;
   position: relative;
-  height: 560px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+  padding: 200px 0;
 }
 .header-banner .container h2 {
   color: white;
@@ -598,67 +722,237 @@ h1:after {
 #company-profile .header-contact {
   padding-bottom: 35px;
 }
-#company-profile .header-contact .phone {
+#company-profile .header-contact .footer-contact {
+  margin-bottom: 50px;
   background-color: white;
   height: 180px;
-  position: relative;
 }
-#company-profile .header-contact .phone .phone-text {
+#company-profile .header-contact .footer-contact .phone {
+  position: relative;
+  /*background-color: green;*/
+  height: 145px;
+}
+#company-profile .header-contact .footer-contact .phone .phone-text {
   position: absolute;
-  font-size: 40px;
-  font-weight: bold;
-  top: 44%;
-  left: 52%;
+  font-size: 44px;
+  font-weight: 500;
+  top: 39%;
+  left: 53%;
   transform: translate(-50%, -50%);
   color: #E11B73;
+  white-space: nowrap;
 }
-#company-profile .header-contact .phone .phone-img {
+#company-profile .header-contact .footer-contact .phone .phone-img {
   position: absolute;
-  top: 29%;
-  left: 11%;
-  width: 56px;
-  height: 56px;
+  padding-top: 6%;
+  left: 8%;
+  width: 10%;
 }
-#company-profile .header-contact .phone .detail-text {
+#company-profile .header-contact .footer-contact .phone .detail-text {
   position: absolute;
-  top: 64%;
-  left: 21%;
+  top: 60%;
+  left: 18%;
   font-size: 20px;
 }
-#company-profile .header-contact .phone .detail-line {
+#company-profile .header-contact .footer-contact .phone .detail-line {
   height: 132px;
   border-right: 3px;
   border-right-style: solid;
   border-color: #E6E6E6;
   position: absolute;
-  top: 12%;
   right: 0%;
   z-index: 999;
 }
-#company-profile .header-contact .mess {
-  background-color: white;
-  height: 180px;
+#company-profile .header-contact .footer-contact .mess {
   position: relative;
+  /*background-color: green;*/
+  height: 145px;
 }
-#company-profile .header-contact .mess .mess-img {
+#company-profile .header-contact .footer-contact .mess .mess-img {
   position: absolute;
-  top: 42%;
+  top: 31%;
   left: 15%;
   width: 47px;
-  height: 39px;
 }
-#company-profile .header-contact .mess .mess-text {
+#company-profile .header-contact .footer-contact .mess .mess-text {
   position: absolute;
-  top: 45%;
+  top: 34%;
   left: 26%;
   font-size: 24px;
   color: #E5177D;
 }
-#company-profile .header-contact .mess .mess-border {
-  height: 82px;
-  width: 460px;
+#company-profile .header-contact .footer-contact .mess .mess-border {
+  height: 50%;
+  width: 85%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 999;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #E7167B;
+}
+#about-profile {
+  letter-spacing: 2px;
+}
+#about-profile .header-about-banner {
+  background: url('../img/banner2.png') no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 112px;
+  position: relative;
+}
+#about-profile .header-about-banner .container h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#about-profile .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#about-profile .breadcrumb-cp > li {
+  display: inline-block;
+}
+#about-profile .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#about-profile .infos {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  margin-bottom: 100px;
+}
+#about-profile .evol .round1 {
+  width: 95%;
+  margin-right: 30px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C5C5C5;
+  position: relative;
+  /*margin-bottom: 100px;*/
+}
+#about-profile .evol .round1 img {
+  width: 100%;
+}
+#about-profile .footer-his {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  border-top: 1px;
+  border-top-style: solid;
+  border-color: #C5C5C5;
+  margin: 0px;
+}
+#about-profile .footer-his .title-about {
+  font-size: 30px;
+  font-weight: bold;
+}
+#about-profile .footer-his .content-about {
+  padding-top: 400px;
+}
+#about-profile #triangle {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 0 0 10px 10px;
+  border-color: transparent transparent #c4000a transparent;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+#about-profile .header-contact {
+  background-color: #E9E9E9;
+  padding-bottom: 35px;
+}
+#about-profile .header-contact .contact-info {
+  padding-top: 70px;
+  font-size: 35px;
+  font-weight: bold;
+}
+#about-profile .header-contact .contact-info .yellow {
+  background-color: #FDCD0B;
+  background-size: 100px 60px;
+  background-repeat: no-repeat;
+}
+#about-profile .header-contact .contact-info .green {
+  background-color: #ADEC00;
+  text-align: left;
+}
+#about-profile .header-contact .footer-contact {
+  background-color: white;
+  height: 180px;
+  /*width: 360px;*/
+}
+#about-profile .header-contact .footer-contact .phone {
+  position: relative;
+  /*background-color: green;*/
+  height: 145px;
+}
+#about-profile .header-contact .footer-contact .phone .phone-text {
+  position: absolute;
+  font-size: 44px;
+  font-weight: 500;
+  top: 39%;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  color: #E11B73;
+  white-space: nowrap;
+}
+#about-profile .header-contact .footer-contact .phone .phone-img {
+  position: absolute;
+  padding-top: 6%;
+  left: 8%;
+  width: 10%;
+}
+#about-profile .header-contact .footer-contact .phone .detail-text {
+  position: absolute;
+  top: 60%;
+  left: 18%;
+  font-size: 20px;
+}
+#about-profile .header-contact .footer-contact .phone .detail-line {
+  height: 132px;
+  border-right: 3px;
+  border-right-style: solid;
+  border-color: #E6E6E6;
+  position: absolute;
+  right: 0%;
+  z-index: 999;
+}
+#about-profile .header-contact .footer-contact .mess {
+  position: relative;
+  /*background-color: green;*/
+  height: 145px;
+}
+#about-profile .header-contact .footer-contact .mess .mess-img {
   position: absolute;
   top: 31%;
+  left: 15%;
+  width: 47px;
+}
+#about-profile .header-contact .footer-contact .mess .mess-text {
+  position: absolute;
+  top: 34%;
+  left: 26%;
+  font-size: 24px;
+  color: #E5177D;
+  white-space: nowrap;
+}
+#about-profile .header-contact .footer-contact .mess .mess-border {
+  height: 50%;
+  width: 85%;
+  position: absolute;
+  top: 20%;
   left: 10%;
   z-index: 999;
   background-color: transparent;

@@ -2,14 +2,16 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 navbar-collapse collapse visible-md">
+                <div class="col-md-12 text-center navbar-collapse collapse visible-md">
                     <ul class="nav navbar-nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About EvolableAsia</a></li>
                         <li><a href="#">開発ならエボ</a></li>
-                        <li><a href="#">
+                        <li>
+                            <a href="#">
                                 <img class="img-responsives" src="img/29.png">
-                            </a></li>
+                            </a>
+                        </li>
                         <li><a href="#">サービス</a></li>
                         <li><a href="#">ニュース</a></li>
                         <li><a href="#">Recruit</a></li>

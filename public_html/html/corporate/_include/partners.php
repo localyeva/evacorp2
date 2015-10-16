@@ -1,4 +1,4 @@
-<div class="container-fluid header-partners">
+<div class="container-fluid header-partners wow fadeInRight">
 	<div class="container content">
 		<div class="row">
 			<div class="col-xs-12">

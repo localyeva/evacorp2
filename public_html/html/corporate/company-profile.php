@@ -81,7 +81,7 @@ function assetSrc($file) {
                         content: "4F Saigon Finance Center 9 Dinh Tien Hoang Street, District 1, HCMC"
                     });
 
-                    infowindow.open(map, marker);
+                    infowindow.open(map, marker);http://evarecruit.localhost/
                     infowindow2.open(map2, marker2);
                     infowindow3.open(map3, marker3);
                 }

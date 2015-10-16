@@ -227,10 +227,16 @@ class broadcasting_data
 	**/
 	public function __construct( $options = [] )
 	{
+		$options = (array)$options;
 		// Import any known values from the options object.
-		foreach( (array)$options as $key => $value )
+		foreach( $options as $key => $value )
 			if ( property_exists( $this, $key ) )
 				$this->$key = $value;
+
+		// The custom fields object should be cloned.
+		if ( isset( $options[ 'custom_fields' ] ) )
+			if ( is_object( $this->custom_fields ) )
+				$this->custom_fields = clone( $options[ 'custom_fields' ] );
 
 		if ( ! $this->parent_post_id )
 			throw new Exception( 'Specify the parent post ID property when creating the broadcasting_data object.' );
@@ -298,6 +304,7 @@ class broadcasting_data
 
 		$ad = attachment_data::from_attachment_id( $id, $this->upload_dir );
 		$this->attachment_data[ $id ] = $ad;
+		return true;
 	}
 
 	/**
@@ -367,7 +374,7 @@ class broadcasting_data
 	**/
 	public function equivalent_taxonomy_term_id( $source_term_id )
 	{
-		_deprecated_function( __FUNCTION__, '23', 'Use ->equivalent_terms()->get( old_term_id ) instead.' );
+		_deprecated_function( __FUNCTION__, '23', 'Use ->terms()->get( old_term_id ) instead.' );
 		return $this->terms()->get( $source_term_id );
 	}
 
@@ -385,7 +392,8 @@ class broadcasting_data
 		@brief		Convenience method to simplify broadcasting.
 		@details	Takes one post ID and an optional array of blogs.
 
-		If no blogs are specified the post will either be rebroadcasted to the current blogs it is linked to, or nothing, if the post is not a parent.
+		If no blogs are specified the broadcasting data prepared will either rebroadcast the post to the current blogs it is linked to,
+		or nothing, if the post is not a parent.
 
 		@since		2015-06-16 19:34:29
 	**/

@@ -399,6 +399,18 @@ if (function_exists("register_field_group")) {
         'title' => 'Service',
         'fields' => array(
             array(
+                'key' => 'field_5620a35789cf9',
+                'label' => 'JP TItle',
+                'name' => 'jp_title',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'none',
+                'maxlength' => '',
+            ),
+            array(
                 'key' => 'field_55d14add95e69',
                 'label' => 'Short Description',
                 'name' => 'short_description',

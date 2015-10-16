@@ -98,7 +98,6 @@ function remove_menus_from_plugins() {
 
     remove_menu_page('edit.php?post_type=acf');     // ACF
     remove_menu_page('cptui_main_menu');          // CPT
-    remove_menu_page('threewp_broadcast');          // Broadcast
 }
 
 add_action('admin_init', 'remove_menus_from_plugins');

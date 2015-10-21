@@ -18,10 +18,10 @@ function assetSrc($file) {
     </head>
     <body>
         <?php include('./_include/navbar.php'); ?>
-        <div id="about-profile">
-            <?php include('./_include/about/banner.php'); ?>
-            <?php include('./_include/about/breadcrumbs.php'); ?>
-            <?php include('./_include/about/history.php'); ?>
+        <div id="greeting-profile">
+            <?php include('./_include/greeting/banner.php'); ?>
+            <?php include('./_include/greeting/breadcrumbs.php'); ?>
+            <?php include('./_include/greeting/gree.php'); ?>
             <?php include('./_include/compro/contact.php'); ?>
         </div>
         <?php include('./_include/footer.php'); ?>

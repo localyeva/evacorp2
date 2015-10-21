@@ -1,4 +1,4 @@
-<div class="container-fluid header-contact">
+<div class="container-fluid header-circle-contact">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 no-padding-lr text-center">

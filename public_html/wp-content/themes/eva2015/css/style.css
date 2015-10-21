@@ -102,52 +102,56 @@
     left: 3% !important;
   }
 }
-@media screen and (max-width: 800px) {
-  .header-contact .contact-info {
-    font-size: 17px !important;
-    padding-top: 30px !important;
-  }
-  .header-contact .footer-contact {
-    height: 110px !important;
-  }
-  .header-contact .footer-contact .phone .phone-text {
-    font-size: 25px !important;
-    top: 23% !important;
-    left: 48% !important;
-  }
-  .header-contact .footer-contact .phone .phone-img {
-    left: 0% !important;
-    padding-top: 5% !important;
-  }
-  .header-contact .footer-contact .phone .detail-text {
-    top: 33% !important;
-    left: 7% !important;
-    font-size: 14px !important;
-  }
-  .header-contact .footer-contact .phone .detail-line {
-    height: 68px !important;
-  }
-  .header-contact .footer-contact .mess {
-    height: 110px !important;
-  }
-  .header-contact .footer-contact .mess .mess-img {
-    top: 14% !important;
-    left: 6% !important;
-    width: 12% !important;
-  }
-  .header-contact .footer-contact .mess .mess-text {
-    white-space: normal !important;
-    top: 22% !important;
-    left: 19% !important;
-    font-size: 16px !important;
-  }
-  .header-contact .footer-contact .mess .mess-border {
-    height: 37% !important;
-    width: 98% !important;
-    top: 12% !important;
-    left: 4% !important;
-  }
-}
+/*@media screen and (max-width : 800px) {
+    .header-contact .header-circle-contact{
+        .contact-info{
+            font-size: 17px !important;
+            padding-top: 30px !important;
+        }
+        .footer-contact{
+            height: 110px !important;
+            .phone{
+                .phone-text{
+                    font-size: 25px !important;
+                    top: 23% !important;
+                    left: 48% !important;
+                }
+                .phone-img{
+                    left: 0% !important;
+                    padding-top: 5% !important;
+                }
+                .detail-text{
+                    top: 33% !important;
+                    left: 7% !important;
+                    font-size: 14px !important;
+                }
+                .detail-line{
+                    height: 68px !important;
+                }
+            }
+            .mess{
+                height: 110px !important;
+                .mess-img{
+                    top: 14% !important;
+                    left: 6% !important;
+                    width: 12% !important;
+                }
+                .mess-text{
+                    white-space: normal !important;
+                    top: 22% !important;
+                    left: 19% !important;
+                    font-size: 16px !important;
+                }
+                .mess-border{
+                    height: 37% !important;
+                    width: 98% !important;
+                    top: 12% !important;
+                    left:4% !important;
+                }
+            }
+        }
+    }
+}*/
 @media screen and (min-width: 460px) {
   .menu-footer-mobi {
     display: none;
@@ -357,6 +361,7 @@ h1:after {
   height: 458px;
   background-size: cover;
   background: url('../img/1.png') 50% 0 fixed;
+  background-repeat: no-repeat;
   margin: 0 auto;
   width: 100%;
   position: relative;
@@ -379,10 +384,18 @@ h1:after {
   font-size: 36;
 }
 .header-why {
-  background: #6EC2EE;
-  color: #fff;
+  background-size: contain;
+  background: url('../img/4.png');
+  background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.header-why .why-text-left {
+  color: #fff;
+}
+.header-why .why-text-right {
+  color: black;
+  /*padding-right: 40%;*/
 }
 .header-service .sv-main-block {
   position: relative;
@@ -534,20 +547,21 @@ h1:after {
 #company-profile {
   letter-spacing: 2px;
 }
-#company-profile .header-banner {
+#company-profile .header-com-banner {
   background: url('../img/banner.png') no-repeat;
   background-size: cover;
   height: 163px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
-#company-profile .header-banner h2:first-child {
+#company-profile .header-com-banner h2:first-child {
   margin-top: 300px;
   font-size: 41.6px;
 }
-#company-profile .header-banner .container {
+#company-profile .header-com-banner .container {
   position: relative;
   height: 147px;
 }
-#company-profile .header-banner .container h2 {
+#company-profile .header-com-banner .container h2 {
   color: white;
   font-weight: bold;
   margin: 0;
@@ -557,7 +571,7 @@ h1:after {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-#company-profile .header-banner .container.intro {
+#company-profile .header-com-banner .container.intro {
   color: white;
   font-size: 36;
 }
@@ -604,7 +618,7 @@ h1:after {
   border-style: none;
   border-color: #EEE;
   background-color: transparent;
-  border-left: 10px solid #68C7F5;
+  border-left: 5px solid #68C7F5;
 }
 #company-profile .bs-callout h2 {
   padding-left: 15px;
@@ -702,37 +716,37 @@ h1:after {
   background-color: #F2F2F2;
   margin: 0px;
 }
-#company-profile .header-contact {
+.header-contact {
   background-color: #E9E9E9;
 }
-#company-profile .header-contact .contact-info {
+.header-contact .contact-info {
   padding-top: 70px;
   font-size: 35px;
   font-weight: bold;
 }
-#company-profile .header-contact .contact-info .yellow {
+.header-contact .contact-info .yellow {
   background-color: #FDCD0B;
   background-size: 100px 60px;
   background-repeat: no-repeat;
 }
-#company-profile .header-contact .contact-info .green {
+.header-contact .contact-info .green {
   background-color: #ADEC00;
   text-align: left;
 }
-#company-profile .header-contact {
+.header-contact {
   padding-bottom: 35px;
 }
-#company-profile .header-contact .footer-contact {
+.header-contact .footer-contact {
   margin-bottom: 50px;
   background-color: white;
   height: 180px;
 }
-#company-profile .header-contact .footer-contact .phone {
+.header-contact .footer-contact .phone {
   position: relative;
   /*background-color: green;*/
   height: 145px;
 }
-#company-profile .header-contact .footer-contact .phone .phone-text {
+.header-contact .footer-contact .phone .phone-text {
   position: absolute;
   font-size: 44px;
   font-weight: 500;
@@ -742,19 +756,19 @@ h1:after {
   color: #E11B73;
   white-space: nowrap;
 }
-#company-profile .header-contact .footer-contact .phone .phone-img {
+.header-contact .footer-contact .phone .phone-img {
   position: absolute;
   padding-top: 6%;
   left: 8%;
   width: 10%;
 }
-#company-profile .header-contact .footer-contact .phone .detail-text {
+.header-contact .footer-contact .phone .detail-text {
   position: absolute;
   top: 60%;
   left: 18%;
   font-size: 20px;
 }
-#company-profile .header-contact .footer-contact .phone .detail-line {
+.header-contact .footer-contact .phone .detail-line {
   height: 132px;
   border-right: 3px;
   border-right-style: solid;
@@ -763,25 +777,25 @@ h1:after {
   right: 0%;
   z-index: 999;
 }
-#company-profile .header-contact .footer-contact .mess {
+.header-contact .footer-contact .mess {
   position: relative;
   /*background-color: green;*/
   height: 145px;
 }
-#company-profile .header-contact .footer-contact .mess .mess-img {
+.header-contact .footer-contact .mess .mess-img {
   position: absolute;
   top: 31%;
   left: 15%;
   width: 47px;
 }
-#company-profile .header-contact .footer-contact .mess .mess-text {
+.header-contact .footer-contact .mess .mess-text {
   position: absolute;
   top: 34%;
   left: 26%;
   font-size: 24px;
   color: #E5177D;
 }
-#company-profile .header-contact .footer-contact .mess .mess-border {
+.header-contact .footer-contact .mess .mess-border {
   height: 50%;
   width: 85%;
   position: absolute;
@@ -870,93 +884,132 @@ h1:after {
   right: 0px;
   bottom: 0px;
 }
-#about-profile .header-contact {
-  background-color: #E9E9E9;
-  padding-bottom: 35px;
+#circle-profile .header-circle-banner {
+  background: url('../img/banner3.png') no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 112px;
+  position: relative;
 }
-#about-profile .header-contact .contact-info {
-  padding-top: 70px;
-  font-size: 35px;
+#circle-profile .header-circle-banner .container h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#circle-profile .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#circle-profile .breadcrumb-cp > li {
+  display: inline-block;
+}
+#circle-profile .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#circle-profile .bs-callout {
+  border-left: 5px solid #FFD00E !important;
+}
+#circle-profile .bs-callout h2 {
+  padding-left: 15px;
+}
+#circle-profile .bs-callout-danger {
+  border-left-color: #68C7F5;
+}
+#circle-profile .drop-line {
+  margin-top: 10px;
+  border-style: none;
+  border-color: #EEE;
+  background-color: transparent;
+  border-bottom: 2px solid #C9C9C9;
+}
+#circle-profile .text-circle {
+  font-size: 18px;
+}
+#greeting-profile .header-gree-banner {
+  background: url('../img/banner2.png') no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 112px;
+  position: relative;
+}
+#greeting-profile .header-gree-banner .container h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#greeting-profile .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#greeting-profile .breadcrumb-cp > li {
+  display: inline-block;
+}
+#greeting-profile .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#greeting-profile .text-gree {
+  font-size: 36px;
   font-weight: bold;
 }
-#about-profile .header-contact .contact-info .yellow {
-  background-color: #FDCD0B;
-  background-size: 100px 60px;
-  background-repeat: no-repeat;
-}
-#about-profile .header-contact .contact-info .green {
-  background-color: #ADEC00;
-  text-align: left;
-}
-#about-profile .header-contact .footer-contact {
-  background-color: white;
-  height: 180px;
-  /*width: 360px;*/
-}
-#about-profile .header-contact .footer-contact .phone {
-  position: relative;
-  /*background-color: green;*/
-  height: 145px;
-}
-#about-profile .header-contact .footer-contact .phone .phone-text {
-  position: absolute;
-  font-size: 44px;
-  font-weight: 500;
-  top: 39%;
-  left: 53%;
-  transform: translate(-50%, -50%);
-  color: #E11B73;
-  white-space: nowrap;
-}
-#about-profile .header-contact .footer-contact .phone .phone-img {
-  position: absolute;
-  padding-top: 6%;
-  left: 8%;
-  width: 10%;
-}
-#about-profile .header-contact .footer-contact .phone .detail-text {
-  position: absolute;
-  top: 60%;
-  left: 18%;
-  font-size: 20px;
-}
-#about-profile .header-contact .footer-contact .phone .detail-line {
-  height: 132px;
-  border-right: 3px;
-  border-right-style: solid;
-  border-color: #E6E6E6;
-  position: absolute;
-  right: 0%;
-  z-index: 999;
-}
-#about-profile .header-contact .footer-contact .mess {
-  position: relative;
-  /*background-color: green;*/
-  height: 145px;
-}
-#about-profile .header-contact .footer-contact .mess .mess-img {
-  position: absolute;
-  top: 31%;
-  left: 15%;
-  width: 47px;
-}
-#about-profile .header-contact .footer-contact .mess .mess-text {
-  position: absolute;
-  top: 34%;
-  left: 26%;
+#greeting-profile .text-gree1 {
   font-size: 24px;
-  color: #E5177D;
-  white-space: nowrap;
+  font-weight: bold;
 }
-#about-profile .header-contact .footer-contact .mess .mess-border {
-  height: 50%;
-  width: 85%;
+#greeting-profile .text-gree2 {
+  font-size: 18px;
+}
+#greeting-profile .text-gree3 {
+  font-size: 18px;
+  list-style: none;
+}
+#greeting-profile .text-gree3 li {
+  position: relative;
+  padding-bottom: 10px;
+}
+#greeting-profile .text-gree3 li::before {
   position: absolute;
-  top: 20%;
-  left: 10%;
-  z-index: 999;
+  content: url('../img/red_dot.png');
+  margin-left: -40px;
+  margin-top: 2px;
+}
+#greeting-profile .tb-gree2 {
+  font-size: 18px;
+}
+#greeting-profile .tb-gree2 th {
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+#greeting-profile .tb-gree2 td {
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+#greeting-profile .bs-callout {
+  border-left: 5px solid #C70D22 !important;
+}
+#greeting-profile .bs-callout h2 {
+  padding-left: 15px;
+}
+#greeting-profile .bs-callout-danger {
+  border-left-color: #68C7F5;
+}
+#greeting-profile .drop-line {
+  margin: 10px 0px;
+  border-style: none;
+  border-color: #EEE;
   background-color: transparent;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #E7167B;
+  border-bottom: 2px solid #C9C9C9;
 }

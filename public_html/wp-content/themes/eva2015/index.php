@@ -14,23 +14,26 @@ if ($available_why == 1) {
     <div class="container-fluid header-why">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-5">
+                <div class="col-xs-12 col-md-3 why-text-left">
                     <div class="row-gap-big"></div>
-                    <h2>Why is Evolable Asia chosen in Vietnam</h2>
-                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</div>
+                    <h2>Why is<br> Evolable Asia<br> chosen<br> in Vietnam</h2>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-7">
+                <div class="col-xs-12 col-md-9 why-text-right">
                     <div class="row-gap-big"></div>
                     <h3></h3>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <div class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <div class="text-left">
+                        <button class="btn btn-slim ">Demo test</button>
+                    </div>
                 </div>
             </div>
             <div class="row-gap-medium"></div>
@@ -65,7 +68,7 @@ if ($available_service == 1) {
                 $num_posts = count($loop->posts);
                 ?>
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                    <div class="col-xs-12 col-md-6 no-padding-lr sv-main-block">
+                    <div class="col-xs-12 col-md-6 no-padding-lr sv-main-block wow fadeInRight">
                         <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                         <div class="caption full-width center">
                             <h2 class="sv-main-title">
@@ -94,7 +97,7 @@ if ($available_service == 1) {
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
                             <?php if ($i > 1 AND $i < 4) { ?>
-                                <div class="col-xs-12 col-md-6 no-padding-lr">
+                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInDown">
                                     <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                     <div class="caption full-width center">
                                         <h2 class="sv-title">
@@ -126,7 +129,7 @@ if ($available_service == 1) {
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
                             <?php if ($j >= 4 AND $j < 6) { ?>
-                                <div class="col-xs-12 col-md-6 no-padding-lr">
+                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInUp">
                                     <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                     <div class="caption full-width center">
                                         <h2 class="sv-title">
@@ -153,7 +156,7 @@ if ($available_service == 1) {
 $available_partner = get_partner_div();
 if ($available_partner == 1) {
     ?>
-    <div class="container-fluid header-partners">
+    <div class="container-fluid header-partners wow fadeInRight">
         <div class="container content">
             <div class="row">
                 <div class="col-xs-12">
@@ -244,7 +247,7 @@ if ($available_about == 1) {
                 $num_posts = count($loop->posts);
                 ?>
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                    <div class="col-xs-6 col-md-3 no-padding-lr about-main-block">
+                    <div class="col-xs-6 col-md-3 no-padding-lr about-main-block wow fadeInUp">
                         <a class="about-hover" href="<?php echo get_field('link') ?>">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                             <div class="caption full-width left">
@@ -286,7 +289,7 @@ if ($available_new == 1) {
                     $num_posts = count($loop->posts);
                     ?>
                     <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 news-main-block">
+                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInLeft">
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                 <div class="caption full-width left">
@@ -333,7 +336,7 @@ if ($available_blog == 1) {
                     $num_posts = count($loop->posts);
                     ?>
                     <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 news-main-block">
+                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInRight">
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                 <div class="caption full-width left">

@@ -11,10 +11,11 @@
         <title><?php echo wp_title('|', true, 'right') ?></title>
 
         <!-- Bootstrap -->
-        <link href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">
-        <link href="<?php echo get_template_directory_uri() ?>/css/style.css" rel="stylesheet">
+        <!--<link href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link href="<?php echo get_template_directory_uri() ?>/css/jquery.sidr.dark.css" rel="stylesheet">
         <link href="<?php echo get_template_directory_uri() ?>/css/animate.css" rel="stylesheet">
+        <link href="<?php echo get_template_directory_uri() ?>/css/style.css" rel="stylesheet">
         <link href="<?php echo get_template_directory_uri() ?>/css/font-awesome.min.css" rel="stylesheet">
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -71,9 +72,4 @@
                     </div>
                 </div>
             </nav>
-        </div>
-        <div class="header-banner">
-            <div class="container text-center">
-                <h2><?php echo get_slide_text() ?></h2>
-            </div>
         </div>

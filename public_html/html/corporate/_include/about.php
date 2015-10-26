@@ -1,7 +1,7 @@
 <div class="container-fluid text-center header-about">
     <h1>About<br>EvolableAsia</h1>
     <div class="row effects">
-        <div class="col-xs-6 col-md-3 no-padding-lr about-main-block wow fadeInUp">
+        <div class="col-xs-6 col-md-3 no-padding-lr about-main-block wow fadeInUp" data-wow-delay="10s">
             <a class="about-hover">
             <img src="img/12.png" alt="" class="img-responsive full-width">
             <div class="caption full-width left">

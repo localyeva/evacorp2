@@ -8,9 +8,7 @@ get_header();
 ?>
 
 <section>
-
     <div class="container company-profile">
-
         <div class="company-info">
             <?php
             $wp_query = new WP_Query();

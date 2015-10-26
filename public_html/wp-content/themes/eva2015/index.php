@@ -6,6 +6,13 @@
  */
 get_header();
 ?>
+<!--//slide-->
+<div class="header-banner">
+    <div class="container text-center">
+        <h2><?php echo get_slide_text() ?></h2>
+    </div>
+</div>
+<!--//slide End-->
 <!--//Why-->
 <?php
 $available_why = get_why_div();
@@ -235,6 +242,7 @@ if ($available_about == 1) {
         <h1><?php echo get_about_text(); ?></h1>
         <div class="row effects">
             <?php
+            $time = 0;
             $args = array(
                 'post_type' => 'company-general',
                 'posts_per_page' => -1,
@@ -247,7 +255,8 @@ if ($available_about == 1) {
                 $num_posts = count($loop->posts);
                 ?>
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                    <div class="col-xs-6 col-md-3 no-padding-lr about-main-block wow fadeInUp">
+                <?php if($time == 2){$time = 0;}?>
+                    <div class="col-xs-6 col-md-3 no-padding-lr about-main-block wow fadeInUp" data-wow-delay="<?php echo $time;?>s">
                         <a class="about-hover" href="<?php echo get_field('link') ?>">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                             <div class="caption full-width left">
@@ -258,6 +267,7 @@ if ($available_about == 1) {
                             </div>
                         </a>
                     </div>
+                <?php $time+= 0.5;?>
                 <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_postdata() ?>
@@ -277,6 +287,7 @@ if ($available_new == 1) {
         <div class="container">
             <div class="row">
                 <?php
+                $time2 = 0;
                 $args = array(
                     'post_type' => 'news',
                     'posts_per_page' => 3,
@@ -289,7 +300,7 @@ if ($available_new == 1) {
                     $num_posts = count($loop->posts);
                     ?>
                     <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInLeft">
+                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2;?>s">
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                 <div class="caption full-width left">
@@ -300,13 +311,16 @@ if ($available_new == 1) {
                                 </div>
                             </a>
                         </div>
+                    <?php $time2+= 0.5;?>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata() ?>
             </div>
-        </div>
-        <div class="text-center">
-            <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-center">
+                    <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+                </div>
+            </div>
         </div>
     </div>
     <?php
@@ -323,6 +337,7 @@ if ($available_blog == 1) {
         <div class="container">
             <div class="row">
                 <?php
+                $time3 = 0;
                 $args = array(
                     'post_type' => 'blog',
                     'posts_per_page' => 3,
@@ -336,7 +351,7 @@ if ($available_blog == 1) {
                     $num_posts = count($loop->posts);
                     ?>
                     <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInRight">
+                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3;?>s">
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                 <div class="caption full-width left">
@@ -347,13 +362,16 @@ if ($available_blog == 1) {
                                 </div>
                             </a>
                         </div>
+                    <?php $time3+= 0.5;?>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata() ?>
             </div>
-        </div>
-        <div class="text-center">
-            <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 text-center">
+                    <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+                </div>
+            </div>
         </div>
     </div>
     <?php

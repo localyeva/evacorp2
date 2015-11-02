@@ -6,7 +6,7 @@ mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
 Class Mail {
-
+    
     var $to = '';
     var $cc = '';
     var $title = '';
@@ -20,7 +20,7 @@ Class Mail {
      */
     public function validation() {
         $ret = array('status' => 0, 'messages' => array());
-
+        
         // トリムする
         $this->title = trim($this->title);
         $this->body = trim($this->body);

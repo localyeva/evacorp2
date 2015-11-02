@@ -872,6 +872,8 @@ h1:after {
   font-weight: bold;
 }
 #about-profile .footer-his .content-about {
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 400px;
 }
 #about-profile #triangle {

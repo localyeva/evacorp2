@@ -29,16 +29,16 @@
                     <div class="row">
                         <div class="col-md-12 text-center navbar-collapse collapse visible-md">
                             <ul class="nav navbar-nav">
-                                <li><a href="#">Home</a></li>
+                                <li><a href="<?php echo bloginfo('url') ?>">Home</a></li>
                                 <li><a href="<?php echo bloginfo('url') ?>/company/">About EvolableAsia</a></li>
-                                <li><a href="#">開発ならエボ</a></li>
+                                <li><a href="<?php echo bloginfo('url') ?>/company/greeting">開発ならエボ</a></li>
                                 <li>
-                                    <a href="#">
+                                    <a href="<?php echo bloginfo('url') ?>/company/circle">
                                         <img class="img-responsives" src="<?php echo get_template_directory_uri() ?>/img/29.png">
                                     </a>
                                 </li>
-                                <li><a href="#">サービス</a></li>
-                                <li><a href="#">ニュース</a></li>
+                                <li><a href="<?php echo bloginfo('url') ?>/company/greeting">サービス</a></li>
+                                <li><a href="<?php echo bloginfo('url') ?>/contact/">ニュース</a></li>
                                 <li><a href="#">Recruit</a></li>
                                 <li>
                                     <a href="#" class="active">お問い合わせ</a>

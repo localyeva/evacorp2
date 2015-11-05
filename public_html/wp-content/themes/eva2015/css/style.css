@@ -1019,3 +1019,68 @@ h1:after {
   background-color: transparent;
   border-bottom: 2px solid #C9C9C9;
 }
+#history-profile .header-circle-banner {
+  background: url('../img/banner3.png') no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 112px;
+  position: relative;
+}
+#history-profile .header-circle-banner .container h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#history-profile .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#history-profile .breadcrumb-cp > li {
+  display: inline-block;
+}
+#history-profile .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#history-profile .office-con h2 {
+  /*padding-left: 15px;*/
+  font-size: 65px;
+  letter-spacing: 20px;
+}
+#history-profile .office-con .glyphicon {
+  color: #EEE3AC;
+  padding-left: 1%;
+  padding-right: 1%;
+  top: -3px;
+  font-weight: bold;
+}
+#history-profile .office-con .text-year {
+  font-size: 20px;
+  padding-right: 2%;
+}
+#history-profile .office-con .text-des {
+  font-size: 20px;
+}
+#history-profile .drop-line {
+  margin-top: 10px;
+  border-style: none;
+  border-color: #EEE;
+  background-color: transparent;
+  border-bottom: 2px solid #C9C9C9;
+}
+#history-profile .drop-line-top {
+  margin-top: 10px;
+  border-style: none;
+  border-color: #ABABAB;
+  background-color: transparent;
+  border-bottom: 5px solid #C9C9C9;
+}
+#history-profile .text-circle {
+  font-size: 18px;
+}

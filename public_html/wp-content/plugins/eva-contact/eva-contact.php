@@ -1,9 +1,9 @@
 <?php
 
 /**
-  Plugin Name: Jobs Management
+  Plugin Name: Eva Contact
   Plugin URI:
-  Description: This plugin allows you mangage jobs through (cpt acf template)
+  Description: This plugin allows you mangage contact form mail through (cpt acf template)
   Version:     1.0
   Author:      Khang LD
   Author URI:

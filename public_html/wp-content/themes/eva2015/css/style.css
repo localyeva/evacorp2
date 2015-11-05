@@ -859,6 +859,10 @@ h1:after {
 #about-profile .evol .round1 img {
   width: 100%;
 }
+#about-profile .evol .round1 a {
+  text-decoration: none !important;
+  color: black !important;
+}
 #about-profile .footer-his {
   padding-top: 25px;
   padding-bottom: 50px;

@@ -30,7 +30,7 @@
                         <div class="col-md-12 text-center navbar-collapse collapse visible-md">
                             <ul class="nav navbar-nav">
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">About EvolableAsia</a></li>
+                                <li><a href="<?php echo bloginfo('url') ?>/company/">About EvolableAsia</a></li>
                                 <li><a href="#">開発ならエボ</a></li>
                                 <li>
                                     <a href="#">

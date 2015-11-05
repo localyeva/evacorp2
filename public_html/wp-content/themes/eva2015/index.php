@@ -163,8 +163,8 @@ if ($available_service == 1) {
 $available_partner = get_partner_div();
 if ($available_partner == 1) {
     ?>
-    <div class="container-fluid header-partners wow fadeInRight">
-        <div class="container content">
+    <div class="container-fluid header-partners">
+        <div class="container content wow fadeInRight">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="partners">

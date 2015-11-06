@@ -137,13 +137,13 @@ add_filter('wp_title', 'set_wp_title', 10, 2);
 
 /* ----------------------------------------------------------------------- Menu */
 
-function remove_menus_from_plugins() {
-
-    remove_menu_page('edit.php?post_type=acf');     // ACF
-    remove_menu_page('cptui_main_menu');          // CPT
-}
-
-add_action('admin_init', 'remove_menus_from_plugins');
+//function remove_menus_from_plugins() {
+//
+//    remove_menu_page('edit.php?post_type=acf');     // ACF
+//    remove_menu_page('cptui_main_menu');          // CPT
+//}
+//
+//add_action('admin_init', 'remove_menus_from_plugins');
 
 function remove_menus() {
 

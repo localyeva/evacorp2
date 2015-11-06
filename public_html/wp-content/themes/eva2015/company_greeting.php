@@ -7,9 +7,8 @@
  */
 get_header();
 ?>
-
-<section>
-    <div class="header-banner">
+<section id="greeting-profile">
+    <div class="header-gree-banner">
         <div class="container text-center">
             <h2>Welcome Evolable Asia</h2>
         </div>
@@ -138,6 +137,6 @@ get_header();
         </div>
         <div class="row-gap-huge"></div>
     </div>
+    <?php get_template_part('part', 'contact'); ?>
 </section>
-
 <?php get_footer(); ?>

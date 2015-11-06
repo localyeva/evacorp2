@@ -49,18 +49,7 @@ if (isset($_POST['submit'])) {
     );
 } elseif (isset($_POST['send'])) {
     //
-    require_once 'lib/Twig/Autoloader.php';
-    Twig_Autoloader::register();
-
-    $loader = new Twig_Loader_Filesystem(__DIR__ . '/mail_temp');
-
-    $twig = new Twig_Environment($loader);
-
-    //Admin用メッセージ
-    $template_admin = $twig->loadTemplate('contact-admin.html');
-
-    $subject_admin = 'ホームページからお問い合わせがありました';
-    $body_admin = $template_admin->render(array(
+    $data = array(
         'entry_time' => gmdate("Y/m/d H:i:s", time() + 9 * 3600),
         'entry_host' => gethostbyaddr(getenv("REMOTE_ADDR")),
         'entry_ua' => getenv("HTTP_USER_AGENT"),
@@ -75,68 +64,50 @@ if (isset($_POST['submit'])) {
         'inq_all' => $_SESSION['contact']['inq_all'],
         'itemSelect' => $_SESSION['contact']['itemSelect'],
         'content' => $_SESSION['contact']['content'],
-    ));
-
-    //お客様用メッセージ
-    $template_client = $twig->loadTemplate('contact-client.html');
-
-    $subject_client = 'お問い合わせありがとうございました';
-    $body_client = $template_client->render(array(
-        'company' => $_SESSION['contact']['company'],
-        'division' => $_SESSION['contact']['division'],
-        'name' => $_SESSION['contact']['name'],
-        'email' => $_SESSION['contact']['email'],
-        'tel' => $_SESSION['contact']['tel'],
-        'inq' => $_SESSION['contact']['inq'],
-        'inq_other' => $_SESSION['contact']['inq_other'],
-        'inq_all' => $_SESSION['contact']['inq_all'],
-        'itemSelect' => $_SESSION['contact']['itemSelect'],
-        'content' => $_SESSION['contact']['content'],
-    ));
-
-    // メール送信
-    require_once 'lib/Mail.php';
-
-    $fromname = 'エボラブル アジア お問い合わせ';
-
-    $mail = new Mail();
-    $mail->from = 'info@evolable.asia';
-    $mail->fromName = $fromname;
-    $mail->to = array(
-        'info@evolable.asia',
-        'fujita@evolable.asia',
-        'iwabuchi@evolable.asia',
-        'k.arai@evolableasia.com',
-        'k.ueda@evolableasia.com',
-        'kashiwagi@evolable.asia',
-        'iwabuchi@evolable.asia',
-        'm.fujita@evolableasia.com',
-        'yoshizako@evolable.asia',
-        'oishi@evolableasia.com',
-        'sul@evolable.asia',
-        'tsukagoshi@evolableasia.com',
-        'umezawa@evolable.asia',
-        'yoshimura@evolable.asia',
-        'watanabe@evolableasia.com',
-        'y_sol@soltecvn.com',
-        'yano@evolableasia.com',
-        'y.otani@evolableasia.com',
-        'ito@evolable.asia',
     );
-    $mail->title = $subject_admin;
-    $mail->body = nl2br($body_admin);
-    $mail->send();
 
-    // お客様受け取りメール送信
-    $mail2 = new Mail();
-    $mail2->from = 'info@evolable.asia';
-    $mail2->fromName = $fromname;
-    $mail2->to = $_SESSION['contact']['email'];
-    $mail2->title = $subject_client;
-    $mail2->body = nl2br($body_client);
-    $result = $mail2->send();
+    $plugins_url = dirname( __FILE__ );
+    $url = str_replace('themes/eva2015', 'plugins', $plugins_url);
+    require_once $url . '/jobs-management/lib/includes/Twig/Autoloader.php';
+    Twig_Autoloader::register();
 
-    unset($_SESSION['contact'], $loader, $twig, $subject_admin, $body_admin, $template_client, $body_client, $mail, $mail2);
+    $loader = new Twig_Loader_String;
+
+    $twig = new Twig_Environment($loader);
+
+    $from = job_get_option('wpt_job_text_from_email');
+    $fromname = job_get_option('wpt_job_text_from_name');
+    // Mail to Candidate
+    $body_candidate = job_get_option('wpt_job_text_block_candidate');
+    if (isset($body_candidate) && $body_candidate != '') {
+        $body_candidate = $twig->render($body_candidate, $data);
+        $subject_candidate = $twig->render(job_get_option('wpt_job_text_subject_candidate'), $data);
+        $headers = 'From: ' . $fromname . ' <' . $from . '>' . '\r\n';
+        //	
+        wp_mail($data['email'], stripslashes($subject_candidate), stripslashes($body_candidate), $headers);
+    }
+
+    //Admin用メッセージ
+    $body_admin = job_get_option('wpt_job_text_block_admin');
+    if (isset($body_admin) && $body_admin != '') {
+        $body_admin = $twig->render($body_admin, array_merge(
+                        $data, array(
+            'entry_time' => gmdate("Y/m/d H:i:s", time() + 9 * 3600),
+            'entry_host' => gethostbyaddr(getenv("REMOTE_ADDR")),
+            'entry_ua' => getenv("HTTP_USER_AGENT"),
+        )));
+        //
+        $subject_admin = job_get_option('wpt_job_text_subject_admin');
+        //
+        $list_email = job_get_option('wpt_job_text_list_email');
+        if (isset($list_email) && $list_email != '') {
+            $list_email = preg_split('/\r\n|\n|\r/', $list_email);
+            //
+            $headers = 'From: ' . $fromname . ' <' . $from . '>' . '\r\n';
+            //
+            wp_mail($list_email, stripslashes($subject_admin), stripslashes($body_admin), $headers);
+        }
+    }
 
     wp_redirect(home_url() . '/contact/thankyou');
     exit();

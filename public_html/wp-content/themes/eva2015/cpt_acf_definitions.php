@@ -119,6 +119,30 @@ function cptui_register_my_cpts() {
     register_post_type("company-profile", $args);
 
     $labels = array(
+        "name" => "Company History",
+        "singular_name" => "Company History",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "company-history", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 28,
+        "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h3.png',
+        "supports" => array("title"),
+    );
+    register_post_type("company-history", $args);
+
+    $labels = array(
         "name" => "Company Staff",
         "singular_name" => "Company Staff",
         "menu_name" => "スタッフ紹介",
@@ -384,6 +408,22 @@ function cptui_register_my_taxes() {
         "show_admin_column" => false,
     );
     register_taxonomy("staffcat", array("company-staff"), $args);
+
+    $labels = array(
+        "name" => "Company Taxonomy",
+        "label" => "Company Taxonomy",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "hierarchical" => true,
+        "label" => "Company Taxonomy",
+        "show_ui" => true,
+        "query_var" => true,
+        "rewrite" => array('slug' => 'company-tax', 'with_front' => true),
+        "show_admin_column" => false,
+    );
+    register_taxonomy("company-tax", array("company-profile", "company-history"), $args);
 
 // End cptui_register_my_taxes
 }

@@ -1,5 +1,5 @@
 <div class="container-fluid header-contact">
-    <div class="container">
+    <div class="container con-contact">
         <div class="row">
             <div class="col-xs-12 no-padding-lr text-center">
                 <div class="caption full-width center-block contact-info">

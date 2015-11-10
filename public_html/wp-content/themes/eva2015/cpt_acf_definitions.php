@@ -119,8 +119,8 @@ function cptui_register_my_cpts() {
     register_post_type("company-profile", $args);
 
     $labels = array(
-        "name" => "Company History",
-        "singular_name" => "Company History",
+        "name" => "Company Activities",
+        "singular_name" => "Company Activities",
     );
 
     $args = array(
@@ -134,13 +134,13 @@ function cptui_register_my_cpts() {
         "capability_type" => "post",
         "map_meta_cap" => true,
         "hierarchical" => false,
-        "rewrite" => array("slug" => "company-history", "with_front" => true),
+        "rewrite" => array("slug" => "company-activities", "with_front" => true),
         "query_var" => true,
         "menu_position" => 28,
         "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h3.png',
         "supports" => array("title"),
     );
-    register_post_type("company-history", $args);
+    register_post_type("company-activities", $args);
 
     $labels = array(
         "name" => "Company Staff",
@@ -423,7 +423,7 @@ function cptui_register_my_taxes() {
         "rewrite" => array('slug' => 'company-tax', 'with_front' => true),
         "show_admin_column" => false,
     );
-    register_taxonomy("company-tax", array("company-profile", "company-history"), $args);
+    register_taxonomy("company-tax", array("company-profile", "company-activities"), $args);
 
 // End cptui_register_my_taxes
 }
@@ -948,6 +948,61 @@ if (function_exists("register_field_group")) {
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'company-circle',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+    register_field_group(array(
+        'id' => 'acf_company-activities',
+        'title' => 'Company Activities',
+        'fields' => array(
+            array(
+                'key' => 'field_5641a299b203b',
+                'label' => 'Image',
+                'name' => 'image',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+            array(
+                'key' => 'field_5641a2d5b203c',
+                'label' => 'Description',
+                'name' => 'description',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
+            ),
+            array(
+                'key' => 'field_5641a2e8b203d',
+                'label' => 'Google Map',
+                'name' => 'google_map',
+                'type' => 'google_map',
+                'center_lat' => '10.787277',
+                'center_lng' => '106.70042699999999',
+                'zoom' => '',
+                'height' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'company-activities',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),

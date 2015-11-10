@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-12 full-width no-padding-lr">
                 <h2 class="text-center">HISTORY</h2>
-                <div class="drop-line-top"></div>
+                <div class="drop-line-top center-block"></div>
             </div>
         </div>
         <div class="row-gap-big"></div>

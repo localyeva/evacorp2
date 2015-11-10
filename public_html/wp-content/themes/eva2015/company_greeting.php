@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Author: KhangLe
  * Template Name: Company-Greeting
@@ -31,109 +30,96 @@ get_header();
     <div class="container-fluid left">
         <div class="container office-con">
             <div class="row-gap-big"></div>
-            <div class="row">
-                <div class="col-xs-12 col-md-12 no-padding-lr">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/12.png" alt="" class="img-responsive full-width main-img">
-                </div>
-            </div>
-            <div class="row-gap-big"></div>
-            <div class="row">
-                <div class="container no-padding-lr">
-                    <div class="row-gap-medium"></div>
+            <?php
+            $time = 0;
+            $args = array(
+                'post_type' => 'company-greeting',
+                'posts_per_page' => 1,
+                'orderby' => array('date' => 'DESC'),
+            );
+            $loop = new WP_Query($args);
+            ?>
+            <?php
+            if ($loop->have_posts()):
+                $num_posts = count($loop->posts);
+                ?>
+                <?php while ($loop->have_posts()): $loop->the_post(); ?>
                     <div class="row">
-                        <div class="col-xs-12 col-md-12">
-                            <span class="text-gree">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.<br> 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco .<br> 
-                                Duis aute irure dolor in reprehenderit in voluptate velit .<br>
-                                _____<br>
-                            </span>
-                            <span class="text-gree1">
-                                Duis aute irure
-                            </span>
-                        </div>
-                        <div class="row-gap-medium"></div>
-                        <div class="col-xs-12 col-md-12">
-                            <span class="text-gree2">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. quis nostrud exercitation ullamco , 
-                                quis nostrud exercitation ullamco , quis nostrud exercitation ullamco, quis nostrud exercitation ullamco<br><br>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing 
-                                elitLorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, consectetur adipisicing elite
-                                Lorem ipsum dolor sit amet, consectetur adipisicing eliteLorem ipsum dolor sit amet, consectetur adipisicing elite
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit<br><br> 
-                                Duis aute irure dolor in reprehenderit in voluptate velit. Lorem ipsum dolor sit amet, consectetur adipisicing elite
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit<br><br>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elite
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elite
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elite
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit<br><br> 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipisicing elit<br><br> 
-                                Duis aute irure dolor in reprehenderit in voluptate velit.<br>
-                            </span>
-                            <div class="row-gap-big"></div>
-                        </div>
-                        <div class="col-xs-12 col-md-12">
-                            <div class="bs-callout bs-callout-danger">
-                                <h2>Demo Demo Demo Demo</h2>
-                            </div>
-                            <div class="drop-line"></div>
-                        </div>
-                        <div class="col-xs-12 col-md-12">
-                            <div class="row-gap-medium"></div>
-                            <table class="tb-gree2">
-                                <tr>
-                                    <th>2005</th>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                </tr>
-                                <tr>
-                                    <th>2011</th>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                </tr>
-                                <tr>
-                                    <th>2011</th>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                </tr>
-                                <tr>
-                                    <th>2012</th>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                </tr>
-                                <tr>
-                                    <th>2013</th>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                </tr>
-                            </table>
+                        <div class="col-xs-12 col-md-12 no-padding-lr">
+                            <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width main-img">
                         </div>
                     </div>
                     <div class="row-gap-big"></div>
                     <div class="row">
-                        <div class="container">
+                        <div class="container no-padding-lr">
+                            <div class="row-gap-medium"></div>
                             <div class="row">
-                                <div class="col-xs-12 col-md-6 no-padding-l">
-                                    <div class="bs-callout bs-callout-danger">
-                                        <h2>Mission Statement</h2>
-                                    </div>
-                                    <div class="drop-line"></div>
-                                    <span class="text-gree2">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                <div class="col-xs-12 col-md-12">
+                                    <span class="text-gree">
+                                        <?php echo get_field('header') ?>
                                     </span>
                                 </div>
-                                <div class="col-xs-12 col-md-6 no-padding-r">
+                                <div class="row-gap-medium"></div>
+                                <div class="col-xs-12 col-md-12">
+                                    <span class="text-gree2">
+                                        <?php echo get_field('content') ?>
+                                    </span>
+                                    <div class="row-gap-big"></div>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
                                     <div class="bs-callout bs-callout-danger">
-                                        <h2>Core Value</h2>
+                                        <h2>Demo Demo Demo Demo</h2>
                                     </div>
                                     <div class="drop-line"></div>
-                                    <ul class="text-gree3">
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing</li>
-                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-12">
+                                    <div class="row-gap-medium"></div>
+                                    <?php if (have_rows('history')): ?>
+                                        <table class="tb-gree2">
+                                            <?php while (have_rows('history')): the_row(); ?>
+                                                <tr>
+                                                    <th><?php echo the_sub_field('title'); ?></th>
+                                                    <td><?php echo the_sub_field('description'); ?></td>
+                                                </tr>
+                                            <?php endwhile; ?>
+                                        </table>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                            <div class="row-gap-big"></div>
+                            <div class="row">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6 no-padding-l">
+                                            <div class="bs-callout bs-callout-danger">
+                                                <h2>Mission Statement</h2>
+                                            </div>
+                                            <div class="drop-line"></div>
+                                            <span class="text-gree2">
+                                                <?php echo get_field('mission') ?>
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-12 col-md-6 no-padding-r">
+                                            <div class="bs-callout bs-callout-danger">
+                                                <h2>Core Value</h2>
+                                            </div>
+                                            <div class="drop-line"></div>
+                                            <?php if (have_rows('core_value')): ?>
+                                                <ul class="text-gree3">
+                                                    <?php while (have_rows('core_value')): the_row(); ?>
+                                                        <li><?php echo the_sub_field('description'); ?></li>
+                                                    <?php endwhile; ?>
+                                                </ul>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata() ?>
         </div>
         <div class="row-gap-huge"></div>
     </div>

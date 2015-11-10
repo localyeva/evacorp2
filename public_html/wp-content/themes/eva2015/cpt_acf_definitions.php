@@ -364,6 +364,32 @@ function cptui_register_my_cpts() {
     );
     register_post_type("blog", $args);
 
+
+    $labels = array(
+        "name" => "Company Greeting",
+        "singular_name" => "Company Greeting",
+    );
+
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "company-greeting", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 34,
+        "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h11.png',
+        "supports" => array("title"),
+    );
+    register_post_type("company-greeting", $args);
+
+
 // End of cptui_register_my_cpts()
 }
 
@@ -647,8 +673,8 @@ if (function_exists("register_field_group")) {
                 'instructions' => '所在地をいれてください',
                 'required' => 1,
                 'default_value' => 'ホーチミン本社：4F Saigon Finance Center, 9 Dinh Tien Hoang Street, District 1, HCMC
-	ホーチミン支店：14F GOLDEN TOWER, 6 Nguyen Thi Minh Khai Street,District1, HCMC
-	ハ　ノ　イ支店：9F Viet A Building, Duy Tan Street, Cau Giay District, Ha Noi',
+    ホーチミン支店：14F GOLDEN TOWER, 6 Nguyen Thi Minh Khai Street,District1, HCMC
+    ハ　ノ　イ支店：9F Viet A Building, Duy Tan Street, Cau Giay District, Ha Noi',
                 'placeholder' => '',
                 'maxlength' => '',
                 'rows' => '',
@@ -662,7 +688,7 @@ if (function_exists("register_field_group")) {
                 'instructions' => '電話番号をいれてください',
                 'required' => 1,
                 'default_value' => 'ホーチミン本社：+84-8(39111489)
-	ハ　ノ　イ支店：+84-4(37957577), +84-4(37957578), +84-4(37957579)',
+    ハ　ノ　イ支店：+84-4(37957577), +84-4(37957578), +84-4(37957579)',
                 'placeholder' => '',
                 'maxlength' => '',
                 'rows' => '',
@@ -676,7 +702,7 @@ if (function_exists("register_field_group")) {
                 'instructions' => 'FAX番号をいれてください',
                 'required' => 1,
                 'default_value' => 'ホーチミン本社：+84-8(39118767)
-	ハ　ノ　イ支店：+84-4(37957580)',
+    ハ　ノ　イ支店：+84-4(37957580)',
                 'placeholder' => '',
                 'maxlength' => '',
                 'rows' => '',
@@ -772,7 +798,7 @@ if (function_exists("register_field_group")) {
                 'instructions' => '主要取引銀行を入力してください',
                 'required' => 1,
                 'default_value' => 'みずほ銀行
-	Bangkok bank',
+    Bangkok bank',
                 'placeholder' => '',
                 'maxlength' => '',
                 'rows' => '',
@@ -1185,6 +1211,132 @@ if (function_exists("register_field_group")) {
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'blog',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+
+    register_field_group(array(
+        'id' => 'acf_company-greeting',
+        'title' => 'Company Greeting',
+        'fields' => array(
+            array(
+                'key' => 'field_56404e4dd06f3',
+                'label' => 'Image',
+                'name' => 'image',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'thumbnail',
+                'library' => 'all',
+            ),
+            array(
+                'key' => 'field_56404e5ed06f4',
+                'label' => 'Header',
+                'name' => 'header',
+                'type' => 'wysiwyg',
+                'default_value' => '',
+                'toolbar' => 'basic',
+                'media_upload' => 'yes',
+            ),
+            array(
+                'key' => 'field_56404e83d06f5',
+                'label' => 'Content',
+                'name' => 'content',
+                'type' => 'wysiwyg',
+                'default_value' => '',
+                'toolbar' => 'full',
+                'media_upload' => 'yes',
+            ),
+            array(
+                'key' => 'field_56404e8fd06f6',
+                'label' => 'History',
+                'name' => 'history',
+                'type' => 'repeater',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_56404eefdf0c6',
+                        'label' => 'Title',
+                        'name' => 'title',
+                        'type' => 'text',
+                        'column_width' => '',
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'none',
+                        'maxlength' => '',
+                    ),
+                    array(
+                        'key' => 'field_56404f0fdf0c7',
+                        'label' => 'Description',
+                        'name' => 'description',
+                        'type' => 'text',
+                        'column_width' => '',
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'html',
+                        'maxlength' => '',
+                    ),
+                ),
+                'row_min' => '',
+                'row_limit' => '',
+                'layout' => 'table',
+                'button_label' => 'Add Row',
+            ),
+            array(
+                'key' => 'field_56404f33df0c8',
+                'label' => 'Mission',
+                'name' => 'mission',
+                'type' => 'textarea',
+                'default_value' => '',
+                'placeholder' => '',
+                'maxlength' => '',
+                'rows' => '',
+                'formatting' => 'br',
+            ),
+            array(
+                'key' => 'field_56404f48df0c9',
+                'label' => 'Core Value',
+                'name' => 'core_value',
+                'type' => 'repeater',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_56404f57df0ca',
+                        'label' => 'Description',
+                        'name' => 'description',
+                        'type' => 'text',
+                        'column_width' => '',
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'none',
+                        'maxlength' => '',
+                    ),
+                ),
+                'row_min' => '',
+                'row_limit' => '',
+                'layout' => 'table',
+                'button_label' => 'Add Row',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'company-greeting',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),

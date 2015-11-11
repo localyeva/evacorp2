@@ -1011,17 +1011,7 @@ if (function_exists("register_field_group")) {
                 'maxlength' => '',
                 'rows' => '',
                 'formatting' => 'br',
-            ),
-            array(
-                'key' => 'field_5641a2e8b203d',
-                'label' => 'Google Map',
-                'name' => 'google_map',
-                'type' => 'google_map',
-                'center_lat' => '10.787277',
-                'center_lng' => '106.70042699999999',
-                'zoom' => '',
-                'height' => '',
-            ),
+            ),            
         ),
         'location' => array(
             array(

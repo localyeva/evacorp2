@@ -28,36 +28,31 @@ get_header();
 
     <div class="container-fluid text-center">
         <div class="container">
-            <h1>Demo Demo</h1>
+            <h1>オフィス紹介</h1>
             <ul class="menu-cp center-block">
+                <?php    
+                $maps = array();
+                $args = array(
+                    'hide_empty' => 0
+                );
+                $terms = get_terms('company-tax', $args);
+                foreach ($terms as $term) {
+                ?>
                 <li>
                     <span class="glyphicon glyphicon-menu-down gly-menu" aria-hidden="true"></span>
-                    <a href="#">HOME</a>
+                    <a href="#<?php echo $term->slug?>" data-goto="<?php echo $term->slug?>" style="text-transform: uppercase"><?php echo $term->name?></a>
                 </li>
-                <li>
-                    <span class="glyphicon glyphicon-menu-down gly-menu" aria-hidden="true"></span>
-                    <a href="#" data-goto="detail-contact">Detail Contact</a>
-                </li>
-                <li>
-                    <span class="glyphicon glyphicon-menu-down gly-menu" aria-hidden="true"></span>
-                    <a href="#" data-goto="history">History EvolableAsia</a>
-                </li>
+                <?php }?>                
             </ul>
         </div>
     </div>
     
     <div class="container-fluid left">
     <?php
-    
-    $maps = array();
-    $args = array(
-        'hide_empty' => 0
-    );
-    $terms = get_terms('company-tax', $args);
     foreach ($terms as $term) {        
         if($term->slug != 'profile'){        
     ?>    
-    <div class="container office-con">
+    <div class="container office-con" id="<?php echo $term->slug?>">
         <div class="row">
             <div class="col-xs-12 full-width no-padding-lr">
                 <div class="bs-callout bs-callout-danger">
@@ -169,7 +164,7 @@ get_header();
                     while ($wp_query->have_posts()) : $wp_query->the_post();
                     ?>
 
-                    <table class="table table-responsive table-striped profileTable detail-info" style="margin-bottom: 0px">
+                    <table class="table table-responsive table-striped profileTable detail-info">
                         <tr>
                             <th>
                         <p>社名<span>Company name</span></p>
@@ -253,7 +248,7 @@ get_header();
         </div>
     </div>
 
-    <div class="container-fluid text-center" id="history">
+    <div class="container-fluid text-center" id="profile">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">

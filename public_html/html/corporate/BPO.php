@@ -18,10 +18,10 @@ function assetSrc($file) {
     </head>
     <body>
         <?php include('./_include/navbar.php'); ?>
-        <div id="reason-profile">
-            <?php include('./_include/reason/banner.php'); ?>
-            <?php include('./_include/reason/breadcrumbs.php'); ?>
-            <?php include('./_include/reason/reason.php'); ?>
+        <div id="bpo-profile">
+            <?php include('./_include/bpo/banner.php'); ?>
+            <?php include('./_include/bpo/breadcrumbs.php'); ?>
+            <?php include('./_include/bpo/bpo.php'); ?>
             <?php include('./_include/compro/contact.php'); ?>
         </div>
         <?php include('./_include/footer.php'); ?>

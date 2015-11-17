@@ -8,7 +8,7 @@
             <li>
                 <a href="#">About EvolableAsia</a> <span class="divider">></span>
             </li>
-            <li class="active">Greeting</li>
+            <li class="active">BPO</li>
         </ul>
     </div>
 </div>

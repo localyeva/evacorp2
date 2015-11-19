@@ -2,16 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/contact_confirm.php</file>
-            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/mail_temp/contact-client.html</file>
-            <file>file:/var/www/html/evacorp2/public_html/wp-content/plugins/jobs-management/lib/includes/Mail.php</file>
-            <file>file:/var/www/html/evacorp2/public_html/wp-content/plugins/jobs-management/jobs_management.php</file>
-            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/contact.php</file>
-            <file>file:/var/www/html/evacorp2/public_html/wp-content/plugins/jobs-management/lib/includes/jobs_cpt_acf_settings.php</file>
-            <file>file:/var/www/html/evacorp2/public_html/wp-content/plugins/jobs-management/lib/includes/jobs-plugin-admin.php</file>
-            <file>file:/var/www/html/evacorp2/public_html/wp-content/plugins/jobs-management/lib/includes/my-functions.php</file>
-        </group>
         <group name="Mine">
             <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/twentyfourteen/style.css</file>
             <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/functions.php</file>
@@ -23,6 +13,12 @@
             <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/index.php</file>
             <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/cpt_acf_definitions.php</file>
             <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/functions.php</file>
+        </group>
+        <group>
+            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/header.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/company_reason.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/html/corporate/css/style.less</file>
+            <file>file:/var/www/html/evacorp2/public_html/html/corporate/_include/reason/reason.php</file>
         </group>
     </open-files>
 </project-private>

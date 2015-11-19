@@ -389,7 +389,30 @@ function cptui_register_my_cpts() {
     );
     register_post_type("company-greeting", $args);
 
+    $labels = array(
+        "name" => "Company Reason",
+        "singular_name" => "Company Reason",
+    );
 
+    $args = array(
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "show_ui" => true,
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => array("slug" => "company-reason", "with_front" => true),
+        "query_var" => true,
+        "menu_position" => 35,
+        "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h11.png',
+        "supports" => array("title"),
+    );
+    register_post_type("company-reason", $args);
+    
 // End of cptui_register_my_cpts()
 }
 
@@ -1327,6 +1350,51 @@ if (function_exists("register_field_group")) {
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'company-greeting',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array(
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array(
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+    register_field_group(array(
+        'id' => 'acf_company-reason',
+        'title' => 'Company Reason',
+        'fields' => array(
+            array(
+                'key' => 'field_5642efe37b890',
+                'label' => 'Header',
+                'name' => 'header',
+                'type' => 'text',
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'formatting' => 'html',
+                'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_5642f5587b891',
+                'label' => 'Content',
+                'name' => 'content',
+                'type' => 'wysiwyg',
+                'default_value' => '',
+                'toolbar' => 'basic',
+                'media_upload' => 'yes',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'company-reason',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),

@@ -4,6 +4,7 @@
 @dark: #222222;
 @white: #ffffff;
 @light-grey: #cfcfcf;
+@grey: #959595;
 @pink: #e51783;
 @sky-blue: #42a8d9;
 @navbar-height: 100px;
@@ -1873,6 +1874,83 @@ h1 {
                     z-index: 11;
                     position: absolute;
                     bottom: 15px;
+                }
+            }
+        }
+        &.post-detail {
+            h2.post-title {
+                border-bottom: solid 1px @dark;
+                color: @dark;
+                padding-bottom: 10px;
+            }
+            .post-date {
+                color: @grey;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            .prev-post, .next-post {
+                border-top: solid 1px #000000;
+                border-bottom: solid 1px #000000;
+                padding: 10px 0;
+                font-size: 1em;
+                a {
+                    display: block;
+                    width: 100%;
+                    postion: relative;
+                    color: #000000;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    .prev, .next {
+                        text-transform: uppercase;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                h3 {
+                    margin-top: 10px;
+                    padding-top: 10px;
+                    border-top: solid 1px @light-grey;
+                    font-size: 1.2em;
+                }
+                img {
+                    width: 200px;
+                }
+            }
+            .prev-post {
+                a {
+                    text-align: right;
+                }
+                .prev {
+                    margin-right: 10px;
+                    &:before {
+                        color: #b8b8b8;
+                        content: "\e257";
+                        font-family: 'Glyphicons Halflings';
+                        font-style: normal;
+                        font-weight: 400;
+                        margin-right: 5px;
+                        position: relative;
+                        top: 2px;
+                    }
+                }
+            }
+            .next-post {
+                a {
+                    text-align: left;
+                }
+                .next {
+                    margin-left: 10px;
+                    &:after {
+                        color: #b8b8b8;
+                        content: "\e258";
+                        font-family: 'Glyphicons Halflings';
+                        font-style: normal;
+                        font-weight: 400;
+                        margin-left: 5px;
+                        position: relative;
+                        top: 2px;
+                    }
                 }
             }
         }

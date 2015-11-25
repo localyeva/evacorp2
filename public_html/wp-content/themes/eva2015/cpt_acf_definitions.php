@@ -481,7 +481,7 @@ function cptui_register_my_taxes() {
 
     $args = array(
         "labels" => $labels,
-        "hierarchical" => false,
+        "hierarchical" => true,
         "label" => "News Type",
         "show_ui" => true,
         "query_var" => true,

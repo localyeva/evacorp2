@@ -5,7 +5,10 @@
  *
  * @author khangld
  */
-class jobs_plugin_admin {
+
+require_once 'my-functions.php';
+
+class omw_page_settings {
 
     private $dir;
     private $file;
@@ -49,9 +52,8 @@ class jobs_plugin_admin {
         parse_str($query_string, $get_uri);
 
         $tab = '';
-        if ($pagenow == 'edit.php' &&
-                isset($get_uri['post_type']) && $get_uri['post_type'] == 'job' &&
-                isset($get_uri['page']) && $get_uri['page'] == 'plugin_settings') {
+        if ($pagenow == 'options-general.php' &&                
+                isset($get_uri['page']) && $get_uri['page'] == 'contact_settings') {
             if (isset($get_uri['tab']))
                 $tab = $get_uri['tab'];
             else
@@ -66,7 +68,7 @@ class jobs_plugin_admin {
      * @return void
      */
     public function add_menu_item() {
-        $page = add_submenu_page('edit.php?post_type=job', __('Contact Settings', 'plugin_textdomain'), __('Contact Settings', 'plugin_textdomain'), 'manage_options', 'plugin_settings', array($this, 'settings_page'));
+        $page = add_options_page(__('Contact Settings', 'plugin_textdomain'), __('Contact Settings', 'plugin_textdomain'), 'manage_options', 'contact_settings', array($this, 'settings_page'));
         add_action('admin_print_styles-' . $page, array($this, 'settings_assets'));
         add_action('load-' . $page, array($this, 'load_settings_plugin'));
     }
@@ -101,7 +103,7 @@ class jobs_plugin_admin {
             $this->save_settings_plugin();
             $tab = $this->get_tab();
             $url_parameters = isset($tab) ? 'updated=true&tab=' . $tab : 'updated=true';
-            wp_redirect(admin_url('edit.php?post_type=job&page=plugin_settings&' . $url_parameters));
+            wp_redirect(admin_url('options-general.php?page=contact_settings&' . $url_parameters));
         }
     }
 
@@ -139,8 +141,7 @@ class jobs_plugin_admin {
      * @return array 		Modified links
      */
     public function add_settings_link($links) {
-        $settings_link = '<a href="edit.php?post_type=job&page=plugin_settings">' . __('Settings', 'plugin_textdomain') . '</a>';
-//        $settings_link = '<a href="options-general.php?page=plugin_settings">' . __('Settings', 'plugin_textdomain') . '</a>';
+        $settings_link = '<a href="options-general.php?page=contact_settings">' . __('Settings', 'plugin_textdomain') . '</a>';
         array_push($links, $settings_link);
         return $links;
     }
@@ -257,7 +258,7 @@ class jobs_plugin_admin {
 
                 if ($tab == $section) {
                     if (isset($data['fields'])) {
-                        add_settings_section($section, $data['title'], array($this, 'settings_section'), 'plugin_settings');
+                        add_settings_section($section, $data['title'], array($this, 'settings_section'), 'contact_settings');
                         foreach ($data['fields'] as $field) {
                             // Validation callback for field
                             $validation = '';
@@ -266,9 +267,9 @@ class jobs_plugin_admin {
                             }
                             // Register field
                             $option_name = $this->settings_base . $field['id'];
-                            register_setting('plugin_settings', $option_name, $validation);
+                            register_setting('contact_settings', $option_name, $validation);
                             // Add field to page
-                            add_settings_field($field['id'], $field['label'], array($this, 'display_field'), 'plugin_settings', $section, array('field' => $field));
+                            add_settings_field($field['id'], $field['label'], array($this, 'display_field'), 'contact_settings', $section, array('field' => $field));
                         }
                     }
                 }
@@ -372,33 +373,29 @@ class jobs_plugin_admin {
             if ($tab == $section) {
                 $active = 'active';
             }
-            $html .= '<li class=" ' . $active . '"><a class="tab" href="edit.php?post_type=job&page=plugin_settings&tab=' . $section . '">' . $data['title'] . '</a></li>' . "\n";
+            $html .= '<li class=" ' . $active . '"><a class="tab" href="options-general.php?page=contact_settings&tab=' . $section . '">' . $data['title'] . '</a></li>' . "\n";
         }
         $html .= '</ul>' . "\n";
         $html .= '</div>' . "\n";
         $html .= '<div class="clear"></div>' . "\n";
 
-        if ($tab == 'list-cadidate') {
-            ob_start();
-            $html .= $this->display_field(array('field' => array('id' => 'list-candidate', 'type' => 'list-candidate')));
-            $html .= ob_get_clean();
-        } else {
-            $html .= '<form method="post" action="' . admin_url('edit.php?post_type=job&page=plugin_settings&tab=' . $tab) . '" enctype="multipart/form-data">' . "\n";
+        
+            $html .= '<form method="post" action="' . admin_url('options-general.php?page=contact_settings&tab=' . $tab) . '" enctype="multipart/form-data">' . "\n";
             // Get settings fields
             ob_start();
-            settings_fields('plugin_settings');
-            do_settings_sections('plugin_settings');
+            settings_fields('contact_settings');
+            do_settings_sections('contact_settings');
             $html .= ob_get_clean();
             $html .= '<p class="submit">' . "\n";
             $html .= '<input name="Submit" type="submit" class="button-primary" value="' . esc_attr(__('Save Settings', 'plugin_textdomain')) . '" />' . "\n";
             $html .= '<input type="hidden" name="job-settings-submit" value="Y" />' . "\n";
             $html .= '</p>' . "\n";
             $html .= '</form>' . "\n";
-        }
+        
         $html .= '</div>' . "\n";
         echo $html;
     }
 
 }
 
-new jobs_plugin_admin(__FILE__);
+new omw_page_settings(__FILE__);

@@ -1,13 +1,16 @@
 <div class="containe center bpo-1">
     <div class="row">
         <div class="col-xs-12 col-md-12 no-padding-lr text-center">
-            <span class="text-1">Demo Demo Demo Demo </span><span class="text-2">Demo Demo Demo</span><span class="text-1"> Demo</span>
+            <span class="text-1">Evolable Asia demo demo demo demo</span><br>
+            <span class="text-2">Demo Demo Demo Demo Demo Demo Demo</span>
         </div>
     </div>
     <div class="row-gap-huge"></div>
     <div class="row">
         <div class="col-xs-12 col-md-12 no-padding-lr">
-            <img src="img/69.png" alt="" class="img-responsive img-reason-1 center-block">
+            <div class="col-xs-12 col-md-12 no-padding-lr">
+                <img src="img/57.jpg" alt="" class="img-responsive img-reason-1 center-block">
+            </div>
         </div>
     </div>
     <div class="row-gap-huge"></div>

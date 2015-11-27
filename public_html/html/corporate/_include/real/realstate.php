@@ -17,6 +17,7 @@
     <div class="row-gap-huge"></div>
     <div class="row-gap-huge"></div>
     <div class="row-gap-huge"></div>
+    <?php get_sidebar() ?>
 </div>
 <div class="container center bpo-3">
     <div class="row-gap-huge"></div>

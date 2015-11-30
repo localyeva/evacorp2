@@ -34,7 +34,7 @@
                                 <li><a href="<?php echo bloginfo('url') ?>/company/greeting">開発ならエボ</a></li>
                                 <li>
                                     <a href="<?php echo bloginfo('url') ?>/company/circle">
-                                        <img class="img-responsives" src="<?php echo get_template_directory_uri() ?>/img/29.png">
+                                        <img class="img-responsives" src="<?php echo get_top_image() ?>">
                                     </a>
                                 </li>
                                 <li><a href="<?php echo bloginfo('url') ?>/company/greeting">サービス</a></li>
@@ -48,7 +48,7 @@
                         <div class="col-xs-12 visible-xs text-center no-padding-lr">
                             <div class="navbar-header mobie-brand">
                                 <a class="logo-mobie" href="#">
-                                    <img alt="Brand" src="<?php echo get_template_directory_uri() ?>/img/30.png">
+                                    <img alt="Brand" src="<?php echo get_template_directory_uri() ?>/img/29.png">
                                 </a>
                                 <a id="responsive-menu-button" class="btn btn-toggle navbar-btn pull-right" href="#">
                                     <span class="sr-only">Toggle navigation</span>

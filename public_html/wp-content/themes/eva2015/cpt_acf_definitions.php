@@ -474,6 +474,22 @@ function cptui_register_my_taxes() {
     );
     register_taxonomy("company-tax", array("company-profile", "company-activities"), $args);
 
+    $labels = array(
+        "name" => "News Type",
+        "label" => "News Type",
+        );
+
+    $args = array(
+        "labels" => $labels,
+        "hierarchical" => true,
+        "label" => "News Type",
+        "show_ui" => true,
+        "query_var" => true,
+        "rewrite" => array( 'slug' => 'news-type', 'with_front' => true ),
+        "show_admin_column" => false,
+    );
+    register_taxonomy( "news-type", array( "news" ), $args );
+
 // End cptui_register_my_taxes
 }
 

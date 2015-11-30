@@ -1,3 +1,9 @@
+<style>
+    .header-banner {
+        /*height: 35pc;*/
+        background: url("<?php echo get_slide_image(); ?>") 50% 0 fixed no-repeat !important;
+    }
+</style>
 <?php
 /*
  * Author: KhangLe
@@ -19,32 +25,54 @@ $available_why = get_why_div();
 if ($available_why == 1) {
     ?>
     <div class="container-fluid header-why">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-3 why-text-left">
-                    <div class="row-gap-big"></div>
-                    <h2>Why is<br> Evolable Asia<br> chosen<br> in Vietnam</h2>
-                    <div class="text">
-                        Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-9 why-text-right">
-                    <div class="row-gap-big"></div>
-                    <h3></h3>
-                    <div class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                    <div class="text-left">
-                        <button class="btn btn-slim ">Demo test</button>
-                    </div>
+        <div class="row">
+            <div class="col-md-2 hidden-xs"></div>
+            <div class="col-md-2 hidden-xs why-text-left text-left">
+                <div class="row-gap-big"></div>
+                <h2>Why is<br> Evolable Asia<br> chosen<br> in Vietnam</h2>
+                <div class="text">
+                    Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod
                 </div>
             </div>
-            <div class="row-gap-medium"></div>
+            <div class="col-xs-12 visible-xs why-text-left text-center">
+                <h2>Why is Evolable Asia <br> chosen in Vietnam</h2>
+                <div class="text">
+                    Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do eiusmod
+                </div>
+            </div>
+            <div class="col-md-8 hidden-xs why-text-right">
+                <div class="row-gap-big"></div>
+                <h3>Evolable Asia demo demo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut.</h3>
+                <div class="row-gap-small"></div>
+                <div class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="text-left">
+                    <button class="btn btn-slim ">Demo test</button>
+                </div>
+            </div>
+            <div class="col-xs-12 visible-xs why-text-right text-center">
+                <div class="row-gap-medium"></div>
+                <h2>Evolable Asia demo demo Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+                <div class="row-gap-small"></div>
+                <div class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-slim ">Demo test</button>
+                </div>
+            </div>
         </div>
+        <div class="row-gap-medium"></div>
     </div>
     <?php
 }
@@ -255,8 +283,12 @@ if ($available_about == 1) {
                 $num_posts = count($loop->posts);
                 ?>
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                <?php if($time == 2){$time = 0;}?>
-                    <div class="col-xs-6 col-md-3 no-padding-lr about-main-block wow fadeInUp" data-wow-delay="<?php echo $time;?>s">
+                    <?php
+                    if ($time == 2) {
+                        $time = 0;
+                    }
+                    ?>
+                    <div class="col-xs-6 col-md-3 no-padding-lr about-main-block wow fadeInUp" data-wow-delay="<?php echo $time; ?>s">
                         <a class="about-hover" href="<?php echo get_field('link') ?>">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                             <div class="caption full-width left">
@@ -267,10 +299,10 @@ if ($available_about == 1) {
                             </div>
                         </a>
                     </div>
-                <?php $time+= 0.5;?>
+                    <?php $time+= 0.5; ?>
                 <?php endwhile; ?>
-            <?php endif; ?>
-            <?php wp_reset_postdata() ?>
+    <?php endif; ?>
+    <?php wp_reset_postdata() ?>
         </div>
     </div>
     <?php
@@ -299,8 +331,8 @@ if ($available_new == 1) {
                 if ($loop->have_posts()):
                     $num_posts = count($loop->posts);
                     ?>
-                    <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2;?>s">
+        <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                 <div class="caption full-width left">
@@ -311,10 +343,10 @@ if ($available_new == 1) {
                                 </div>
                             </a>
                         </div>
-                    <?php $time2+= 0.5;?>
+                        <?php $time2+= 0.5; ?>
                     <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_postdata() ?>
+    <?php endif; ?>
+    <?php wp_reset_postdata() ?>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12 text-center">
@@ -350,8 +382,8 @@ if ($available_blog == 1) {
                 if ($loop->have_posts()):
                     $num_posts = count($loop->posts);
                     ?>
-                    <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3;?>s">
+        <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                 <div class="caption full-width left">
@@ -362,10 +394,10 @@ if ($available_blog == 1) {
                                 </div>
                             </a>
                         </div>
-                    <?php $time3+= 0.5;?>
+                        <?php $time3+= 0.5; ?>
                     <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_postdata() ?>
+    <?php endif; ?>
+    <?php wp_reset_postdata() ?>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12 text-center">

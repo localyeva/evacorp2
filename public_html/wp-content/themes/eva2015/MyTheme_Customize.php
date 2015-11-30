@@ -260,21 +260,16 @@ function theme_customize_register($wp_customize) {
 
 add_action('customize_register', 'theme_customize_register');
 
+
 //css generate
 function generate_css() {
+    var_dump(get_slide_image());
+    exit;
     ?>
     <style>
-        .keyvisual-contact{
-            background: url("<?php echo get_contact_top_pc_bg() ?>") no-repeat scroll center center / 100% auto;
-        }
-        
         .header-banner {
-            height: 35pc;
-            background: url("<?php echo get_slide_image(); ?>") no-repeat;
-            background-size: cover;
-        }
-        .header-partners .content:before {
-            content: '<?php echo get_partner_text(); ?>';
+            /*height: 35pc;*/
+            background: url("<?php echo get_slide_image(); ?>") 50% 0 fixed;
         }
     </style>
     <?php
@@ -321,7 +316,7 @@ function get_slide_image() {
     if (esc_url(get_theme_mod('slide_image')) != '') {
         return esc_url(get_theme_mod('slide_image'));
     } else {
-        return get_template_directory_uri() . '/img/1.png';
+        return get_template_directory_uri() . '/img/10.png';
     }
 }
 

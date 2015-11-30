@@ -165,6 +165,26 @@
     top: 18% !important;
     left: 5% !important;
   }
+  .header-why {
+    background: url('../img/64.png') no-repeat !important;
+    background-size: 100% 40% !important;
+    padding-top: 20px !important;
+    padding-bottom: 0px !important;
+  }
+  .header-why h2 {
+    font-size: 25px !important;
+  }
+  .header-banner {
+    background: url('../img/65.png') no-repeat !important;
+    background-size: 100% 100% !important;
+    height: 0px !important;
+    padding: 94px 0px !important;
+  }
+  .header-banner .container h2 {
+    color: white !important;
+    font-size: 18px !important;
+    top: 45% !important;
+  }
 }
 /*@media screen and (max-width : 800px) {
     .header-contact .header-circle-contact{
@@ -424,12 +444,11 @@ h1:after {
 .header-banner {
   height: 458px;
   background-size: cover;
-  background: url('../img/1.png') 50% 0 fixed;
+  background: url('../img/65.png') 50% 0 fixed;
   background-repeat: no-repeat;
   margin: 0 auto;
   width: 100%;
   position: relative;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
   padding: 200px 0;
 }
 .header-banner .container h2 {
@@ -448,7 +467,7 @@ h1:after {
   font-size: 36;
 }
 .header-why {
-  background-size: contain;
+  background-size: cover;
   background: url('../img/4.png');
   background-repeat: no-repeat;
   padding-top: 50px;
@@ -1543,5 +1562,154 @@ h1:after {
   width: 2% !important;
 }
 #bpo-profile .bpo-4 .left-1 {
+  width: 27% !important;
+}
+#real-profile .header-real-banner {
+  background: url('../img/banner4.png') no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 165px;
+  position: relative;
+}
+#real-profile .header-real-banner .container h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#real-profile .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#real-profile .breadcrumb-cp > li {
+  display: inline-block;
+}
+#real-profile .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#real-profile .bpo-1 {
+  /*        .img-reason-1{
+                    height: 510px;
+                    width: 750px;
+                    position: absolute;
+                    margin-left: 20%;
+                    margin-top: 3%;
+                }*/
+}
+#real-profile .bpo-1 .text-1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1C1C1C;
+}
+#real-profile .bpo-1 .text-2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #6ACCFD;
+}
+#real-profile .bpo-1 .gap-medium {
+  padding-bottom: 45px;
+}
+#real-profile .drop-line-bottom {
+  margin-top: -10px;
+  background-color: #F1CFF0;
+  width: 325px;
+  height: 10px;
+  margin-bottom: 30px;
+}
+#real-profile .drop-line-top {
+  margin-top: 10px;
+  background-color: #202020;
+  width: 35px;
+  height: 3px;
+}
+#real-profile .bpo-2 {
+  background: url('../img/4-grid.png') repeat;
+  /*position: relative;*/
+}
+#real-profile .bpo-2 .text-1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1C1C1C;
+}
+#real-profile .bpo-2 .text-2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1C1C1C;
+}
+#real-profile .bpo-2 .gap-medium {
+  padding-bottom: 45px;
+}
+#real-profile .bpo-3 .text-1 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: #B0B0B0;
+}
+#real-profile .bpo-3 .text-2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #202020;
+  padding-left: 15px;
+}
+#real-profile .bpo-3 .text-3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #202020;
+}
+#real-profile .bpo-3 .drop-line {
+  background-color: transparent;
+  border-bottom: 2px solid #c9c9c9;
+  border-color: #eee #eee #c9c9c9;
+  border-style: none none solid;
+  margin: 12px 0;
+}
+#real-profile .bpo-3 .bs-callout {
+  background-color: transparent;
+  border-color: #eee #eee #eee #FFD00E;
+  border-style: none none none solid;
+  border-width: 1px 1px 1px 5px;
+  margin-top: 85px;
+  padding: 1px;
+}
+#real-profile .bpo-3 .img-1 {
+  padding-top: 30px;
+}
+#real-profile .bpo-4 {
+  background: url('../img/62.jpg') repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 465px;
+  position: relative;
+}
+#real-profile .bpo-4 .text-1 {
+  color: white;
+  font-size: 27px;
+}
+#real-profile .bpo-4 .border-reason-3 {
+  border: 2px solid white;
+  padding: 18px;
+  position: relative;
+  width: 22% !important;
+  font-weight: bold;
+}
+#real-profile .bpo-4 .glyphicon-menu-right {
+  font-size: 20px;
+  padding-top: 6%;
+  color: white;
+  position: absolute;
+}
+#real-profile .bpo-4 .row-gap-giant {
+  height: 320px;
+}
+#real-profile .bpo-4 .middle-1 {
+  width: 2% !important;
+}
+#real-profile .bpo-4 .left-1 {
   width: 27% !important;
 }

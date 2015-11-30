@@ -16,9 +16,11 @@
         </group>
         <group>
             <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/header.php</file>
-            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/company_reason.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/MyTheme_Customize.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/html/corporate/real-state.php</file>
             <file>file:/var/www/html/evacorp2/public_html/html/corporate/css/style.less</file>
-            <file>file:/var/www/html/evacorp2/public_html/html/corporate/_include/reason/reason.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/index.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/html/corporate/_include/real/realstate.php</file>
         </group>
     </open-files>
 </project-private>

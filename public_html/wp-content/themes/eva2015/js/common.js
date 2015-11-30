@@ -1,3 +1,15 @@
+/*------------------------------------------------------------------ Scroll To*/
+jQuery.fn.extend(
+{
+    scrollTo: function (speed, easing)
+    {
+        return this.each(function ()
+        {
+            var targetOffset = $(this).offset().top;
+            $('html,body').animate({scrollTop: targetOffset}, speed, easing);
+        });
+    }
+});
 $(document).ready(function () {
     $(function () {
         var wow = new WOW({
@@ -8,7 +20,7 @@ $(document).ready(function () {
         });
         wow.init();
     });
-    
+
     $('#navigation li button.navbar-btn').click(function () {
         location.href = $(this).data('url');
     });
@@ -41,5 +53,12 @@ $(document).ready(function () {
     $('#responsive-menu-button').sidr({
         name: 'sidr-main',
         source: '#sidr'
+    });
+    
+    $('a').on('click', function () {
+        if ($(this).attr('data-goto') != '') {
+            var goto = $(this).attr('data-goto');
+            $('#' + goto).scrollTo(500);
+        }
     });
 });

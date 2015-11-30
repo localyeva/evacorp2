@@ -126,7 +126,7 @@ function taxonomy_edit_meta_field($term) {
                         <label for="<?php echo $t_id ?>"><?php _e($data['label']) ?></label>
                     </th>
                     <td>
-                        <textarea  id="<?php echo $t_id ?>" class="textarea"><?php echo $term_meta[$t_id] ? $term_meta[$t_id] : ''  ?></textarea>
+                        <textarea  id="<?php echo $t_id ?>" name="<?php echo $t_id ?>" class="textarea"><?php echo $term_meta[$t_id] ? stripcslashes($term_meta[$t_id]) : ''  ?></textarea>
                         <p class="description"><?php _e($data['description']) ?></p>
                         
                     </td>

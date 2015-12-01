@@ -26,7 +26,7 @@ get_header();
             </ul>
         </div>
     </div>
-    <div class="row-gap-big"></div>
+    <div class="row-gap-medium"></div>
     <div class="container center block-1">    
         <div class="row">
             <h4 class="over-text">あたり</h4>
@@ -89,10 +89,10 @@ get_header();
                     <div class="container custom-containter">
                         <div class="row">
                             <div class="col-xs-12 col-md-6">
-                                <img src="img/labo-block2-image1.png" alt="" class="img-responsive center-block">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/labo-block2-image1.png" alt="" class="img-responsive center-block">
                             </div>
                             <div class="col-xs-12 col-md-6">
-                                <img src="img/labo-block2-image2.png" alt="" class="img-responsive center-block">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/labo-block2-image2.png" alt="" class="img-responsive center-block">
                             </div>
                         </div>
                     </div>    
@@ -121,13 +121,13 @@ get_header();
                         <div class="row-gap-medium"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-12">
-                                <img src="img/labo-block3-arrow.png" alt="" class="img-responsive center-block">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/labo-block3-arrow.png" alt="" class="img-responsive center-block">
                             </div>
                         </div>
                         <div class="row-gap-medium"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-12">
-                                <img src="img/labo-block3-image.png" alt="" class="img-responsive center-block">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/labo-block3-image.png" alt="" class="img-responsive center-block">
                             </div>
                         </div>
                         <div class="row-gap-big"></div>
@@ -164,7 +164,7 @@ get_header();
                             <div class="col-xs-4 col-md-4 no-padding-lr">
                                 <article>
                                     <figure>
-                                        <img src="img/labo-block4-image1.png" alt="" class="img-responsive center-block">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block4-image1.png" alt="" class="img-responsive center-block">
                                     </figure>
                                     <div class="title text-center">
                                         <h4 class="pink-text">プロダクトマネージャー</h4><br>
@@ -173,12 +173,12 @@ get_header();
                                 </article>
                             </div>
                             <div class="col-xs-4 col-md-4">
-                                <img src="img/labo-block4-image2.png" alt="" class="img-responsive center-block image2-pos">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/labo-block4-image2.png" alt="" class="img-responsive center-block image2-pos">
                             </div>
                             <div class="col-xs-4 col-md-4 no-padding-lr">
                                 <article>
                                     <figure>
-                                        <img src="img/labo-block4-image3.png" alt="" class="img-responsive center-block">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block4-image3.png" alt="" class="img-responsive center-block">
                                     </figure>
                                     <div class="title text-center">
                                         <h4>ラボマネージャー</h4><br>
@@ -193,7 +193,7 @@ get_header();
                         <div class="col-xs-12 col-md-12">
                             <div class="container rect">
                                 <div class="col-xs-5 col-md-5">
-                                    <img src="img/labo-block4-image4.png" alt="" class="img-responsive">
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/labo-block4-image4.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="col-xs-7 col-md-7 text-rpos no-padding-l">
                                     <p>ベトナム人 SEとプロジェクトマネージャーがチームを組みプロジェクトを行います。</p><br/>
@@ -224,7 +224,7 @@ get_header();
                         <div class="row">
                             <div class="col-xs-12 col-md-6 item">
                                 <div class="rect">
-                                    <img src="img/labo-block5-image1.png" alt="" class="img-responsive center-block">
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/labo-block5-image1.png" alt="" class="img-responsive center-block">
                                 </div>
                                 <div>
                                     <h4 class="pink-text pos">1.生活サポート</h4>
@@ -237,7 +237,7 @@ get_header();
                             </div>
                             <div class="col-xs-12 col-md-6 item">
                                 <div class="rect">
-                                    <img src="img/labo-block5-image2.png" alt="" class="img-responsive center-block">
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/labo-block5-image2.png" alt="" class="img-responsive center-block">
                                 </div>
                                 <div>
                                     <h4 class="pink-text pos">2.総務/人事</h4>
@@ -253,7 +253,7 @@ get_header();
                         <div class="row">
                             <div class="col-xs-12 col-md-6 item">
                                 <div class="rect">
-                                    <img src="img/labo-block5-image3.png" alt="" class="img-responsive center-block">
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/labo-block5-image3.png" alt="" class="img-responsive center-block">
                                 </div>
                                 <div>
                                     <h4 class="pink-text pos">3.日本語教育</h4>
@@ -265,7 +265,7 @@ get_header();
                             </div>
                             <div class="col-xs-12 col-md-6 item">
                                 <div class="rect">
-                                    <img src="img/labo-block5-image4.png" alt="" class="img-responsive center-block">
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/labo-block5-image4.png" alt="" class="img-responsive center-block">
                                 </div>
                                 <div>
                                     <h4 class="pink-text pos">4.ITサポート</h4>
@@ -425,7 +425,7 @@ get_header();
                                 <article>
                                     <h4>あたり</h4>
                                     <figure>
-                                        <img src="img/labo-block8-image1.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image1.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -433,7 +433,7 @@ get_header();
                                 <article>
                                     <h4>あたり</h4>
                                     <figure>
-                                        <img src="img/labo-block8-image2.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image2.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -441,7 +441,7 @@ get_header();
                                 <article>
                                     <h4>あたり</h4>
                                     <figure>
-                                        <img src="img/labo-block8-image3.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image3.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -452,7 +452,7 @@ get_header();
                                 <article>
                                     <h4>あたり</h4>
                                     <figure>
-                                        <img src="img/labo-block8-image4.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image4.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -460,7 +460,7 @@ get_header();
                                 <article>
                                     <h4>あたり</h4>
                                     <figure>
-                                        <img src="img/labo-block8-image5.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image5.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -468,20 +468,20 @@ get_header();
                                 <article>
                                     <h4>あたり</h4>
                                     <figure>
-                                        <img src="img/labo-block8-image6.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image6.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
                         </div>
                         <div class="row-gap-big"></div>
-                        <img src="img/plus.png" alt="" class="img-responsive center-block">
+                        <img src="<?php echo get_template_directory_uri() ?>/img/plus.png" alt="" class="img-responsive center-block">
                         <div class="row rect">      
                             <h3 class="text-center">さらに品質を高めるためエボラブルアジア独自の対応を行っています。</h3>
                             <div class="col-xs-12 col-md-4 no-padding-r">
                                 <article>
                                     <h4>あたり</h4>
                                     <figure>
-                                        <img src="img/labo-block8-image8.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image8.png" alt="" class="img-responsive">
                                     </figure>
                                     <div class="title">
                                         社内で日本語スクールを実施
@@ -492,7 +492,7 @@ get_header();
                                 <article>
                                     <h4>あたり</h4>
                                     <figure>
-                                        <img src="img/labo-block8-image9.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image9.png" alt="" class="img-responsive">
                                     </figure>
                                     <div class="title">
                                         ベトナム人スタッフの個別面談を実施
@@ -503,7 +503,7 @@ get_header();
                                 <article>
                                     <h4>あたり</h4>
                                     <figure>
-                                        <img src="img/labo-block8-image10.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image10.png" alt="" class="img-responsive">
                                     </figure>
                                     <div class="title">
                                         クライアント様のフォローアップ
@@ -556,7 +556,7 @@ get_header();
                         <did class="row">
                             <div class="col-xs-6 col-md-6 no-padding-lr left phone">
                                 <div class="container">
-                                    <img src="img/42.png" alt="" class="img-responsive phone-img">
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/42.png" alt="" class="img-responsive phone-img">
                                     <span class="phone-text">(+84)9-3717-6251</span>
                                     <span class="detail-text">demo demo demo demo demo demo</span>
                                     <span class="detail-line"></span>
@@ -564,7 +564,7 @@ get_header();
                             </div>
                             <div class="col-xs-6 col-md-6 no-padding-lr center-block mess">
                                 <div class="container">
-                                    <img src="img/43.png" alt="" class="img-responsive mess-img">
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/43.png" alt="" class="img-responsive mess-img">
                                     <span class="mess-text">webdemo demo demo demo ></span>
                                     <span class="mess-border"></span>
                                 </div>

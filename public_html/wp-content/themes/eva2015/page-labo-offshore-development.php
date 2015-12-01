@@ -20,9 +20,9 @@ get_header();
                     <a href="#">HOME</a> <span class="divider">></span>
                 </li>
                 <li>
-                    <a href="#">About EvolableAsia</a> <span class="divider">></span>
+                    <a href="#">サービス</a> <span class="divider">></span>
                 </li>
-                <li class="active">LPO</li>
+                <li class="active">ラボ型オフショア開発</li>
             </ul>
         </div>
     </div>

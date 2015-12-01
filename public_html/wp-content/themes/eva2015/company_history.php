@@ -39,7 +39,7 @@ get_header();
             <?php
             $time = 0;
             $args = array(
-                'post_type' => 'company-greeting',
+                'post_type' => 'company-profile',
                 'posts_per_page' => 1,
                 'orderby' => array('date' => 'DESC'),
             );
@@ -64,32 +64,27 @@ get_header();
                             <?php endwhile; ?>
                         </div>
                     <?php endif; ?>
+
+                    <div class="row-gap-huge"></div>
+                    <div class="row">
+                        <div class="container no-padding-lr">
+                            <?php if (have_rows('images')): ?>
+                                <div class="row">
+                                    <?php while (have_rows('images')): the_row(); ?>
+                                        <div class="col-xs-12 col-md-4">
+                                            <img src="<?php echo the_sub_field('image'); ?>" alt="<?php echo the_sub_field('title'); ?>" class="img-responsive full-width">
+                                            <div class="row-gap-medium"></div>
+                                            <span class=""><?php echo the_sub_field('title'); ?></span>
+                                        </div>
+                                    <?php endwhile; ?>
+                                </div>
+                            <?php endif; ?>
+                            <div class="row-gap-medium"></div>
+                        </div>
+                    </div>
                 <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_postdata() ?>
-            <div class="row-gap-huge"></div>
-            <div class="row">
-                <div class="container no-padding-lr">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-4">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/44.png" alt="" class="img-responsive full-width">
-                            <div class="row-gap-medium"></div>
-                            <span class="">demo demo demo demo demo demo</span>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/45.png" alt="" class="img-responsive full-width">
-                            <div class="row-gap-medium"></div>
-                            <span class="">demo demo demo demo demo demo</span>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/46.png" alt="" class="img-responsive full-width">
-                            <div class="row-gap-medium"></div>
-                            <span class="">demo demo demo demo demo demo</span>
-                        </div>
-                    </div>
-                    <div class="row-gap-medium"></div>
-                </div>
-            </div>
         </div>
         <div class="row-gap-huge"></div>
     </div>

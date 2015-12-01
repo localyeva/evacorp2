@@ -37,7 +37,7 @@ function cptui_register_my_cpts() {
         "supports" => array("title"),
     );
     register_post_type("top-service", $args);
-    
+
     $labels = array(
         "name" => "FAQ",
         "singular_name" => "FAQ",
@@ -412,7 +412,7 @@ function cptui_register_my_cpts() {
         "supports" => array("title"),
     );
     register_post_type("company-reason", $args);
-    
+
 // End of cptui_register_my_cpts()
 }
 
@@ -477,7 +477,7 @@ function cptui_register_my_taxes() {
     $labels = array(
         "name" => "News Type",
         "label" => "News Type",
-        );
+    );
 
     $args = array(
         "labels" => $labels,
@@ -485,10 +485,10 @@ function cptui_register_my_taxes() {
         "label" => "News Type",
         "show_ui" => true,
         "query_var" => true,
-        "rewrite" => array( 'slug' => 'news-type', 'with_front' => true ),
+        "rewrite" => array('slug' => 'news-type', 'with_front' => true),
         "show_admin_column" => false,
     );
-    register_taxonomy( "news-type", array( "news" ), $args );
+    register_taxonomy("news-type", array("news"), $args);
 
 // End cptui_register_my_taxes
 }
@@ -751,7 +751,7 @@ if (function_exists("register_field_group")) {
                 'key' => 'field_55c02ad2361fb',
                 'label' => '役員',
                 'name' => 'officer',
-                'type' => 'textarea',
+                'type' => 'text',
                 'instructions' => '役員をいれてください',
                 'required' => 1,
                 'default_value' => '代表取締役社長　薛 悠司',
@@ -806,7 +806,7 @@ if (function_exists("register_field_group")) {
                 'key' => 'field_55c02c303b6cc',
                 'label' => 'ライセンスNo.',
                 'name' => 'licence',
-                'type' => 'textarea',
+                'type' => 'text',
                 'instructions' => 'ライセンスナンバーをいれてください',
                 'required' => 1,
                 'default_value' => 412023000388,
@@ -856,6 +856,79 @@ if (function_exists("register_field_group")) {
                 'append' => '',
                 'formatting' => 'html',
                 'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_565d5c1583a8e',
+                'label' => 'History',
+                'name' => 'history',
+                'type' => 'repeater',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_565d5c2fe21b0',
+                        'label' => 'Title',
+                        'name' => 'title',
+                        'type' => 'text',
+                        'column_width' => '',
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'none',
+                        'maxlength' => '',
+                    ),
+                    array(
+                        'key' => 'field_565d5c3e23301',
+                        'label' => 'Description',
+                        'name' => 'description',
+                        'type' => 'text',
+                        'column_width' => '',
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'html',
+                        'maxlength' => '',
+                    ),
+                ),
+                'row_min' => '',
+                'row_limit' => '',
+                'layout' => 'table',
+                'button_label' => 'Add Row',
+            ),
+            array(
+                'key' => 'field_565d5e0811f5f',
+                'label' => 'Images',
+                'name' => 'images',
+                'type' => 'repeater',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_565d5e1cae26b',
+                        'label' => 'Title',
+                        'name' => 'title',
+                        'type' => 'text',
+                        'column_width' => '',
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'none',
+                        'maxlength' => '',
+                    ),
+                    array(
+                        'key' => 'field_565d5e13a1f4c',
+                        'label' => 'Image',
+                        'name' => 'image',
+                        'type' => 'image',
+                        'column_width' => '',
+                        'save_format' => 'url',
+                        'preview_size' => 'thumbnail',
+                        'library' => 'all',
+                    ),
+                ),
+                'row_min' => '',
+                'row_limit' => '',
+                'layout' => 'table',
+                'button_label' => 'Add Row',
             ),
         ),
         'location' => array(
@@ -1050,7 +1123,7 @@ if (function_exists("register_field_group")) {
                 'maxlength' => '',
                 'rows' => '',
                 'formatting' => 'br',
-            ),            
+            ),
         ),
         'location' => array(
             array(

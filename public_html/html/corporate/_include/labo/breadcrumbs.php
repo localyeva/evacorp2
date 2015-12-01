@@ -12,4 +12,4 @@
         </ul>
     </div>
 </div>
-<div class="row-gap-big"></div>
+<div class="row-gap-medium"></div>

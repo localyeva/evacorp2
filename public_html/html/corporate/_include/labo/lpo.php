@@ -1,12 +1,13 @@
-<div class="container center block-1">
+<div class="container center block-1">    
     <div class="row">
-        <div class="col-xs-12 col-md-12 text-pos">
+        <h4 class="over-text">あたり</h4>
+        <div class="col-xs-12 col-md-12 text-pos">            
             <h2>
-                サービスサービスサービスサービスサービスサ
+                海外で開発を行うなら、
             </h2>
             <div class="row-gap-small"></div>
             <h2>
-                サービスサービスサービスサービスサービスサービ
+                エボラブルアジアのラボ型オフショア開発
             </h2>
             <div class="row-gap-small"></div>
             <h2>
@@ -25,23 +26,23 @@
                         <div class="intersection text-center">
                             <div class="row-gap-big"></div>
                             <h3>
-                                サービスサービスサービスサービスサービスサ
+                                ソーシャルゲーム、マホアプリ、スビッグデータなどがキーワードとなり
                             </h3>
                             <h3 class="pink-text">
-                                サービスサービスサービスサービスサービスサ
+                                IT人材需要が日本で急増。
                             </h3>
                             <h3>
-                                <span class="pink-text">サービスサー</span>ビスサービスサービスサービスサ
+                                <span class="pink-text">日本人SEの年収は高止まり</span>の傾向のままです。
                             </h3>
                             <div class="row-gap-medium"></div>
                             <h3>
-                                サービスサービスサー<span class="pink-text">ビスサービスサ</span>ービスサ
+                                その状況を打開するのは、<span class="pink-text">海外への進出」</span> あり、
                             </h3>
                             <h3>
-                                サービスサービスサービスサービスサービスサ
+                                「受託型オフショア開発」と「自社で海外進出」の
                             </h3>
                             <h3>
-                                サービスサービス<span class="pink-text">サービスサービスサービスサ</span>
+                                2パターンありますが 、<span class="pink-text">、方とも問題を抱えています。</span>
                             </h3>
                         </div>
                     </div>                    
@@ -81,10 +82,10 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-12 text-center">
                             <h3>
-                                ビスサービスサービスサー<span class="pink-text">サービスサー</span>ビスサ
+                                しかし 、ボラブルアジアは<span class="pink-text">ラボ型オフショア開発」</span>ビスサ
                             </h3>
                             <h3>
-                                ビスサービスサービスサー<span class="pink-text">サービスサー</span>
+                                この2つの問題を<span class="pink-text">同時に解決します!</span>
                             </h3>
                         </div>
                     </div>
@@ -109,7 +110,7 @@
 </div>
 
 <div class="container block-4">
-    <div class="row-gap-huge"></div>
+    <div style="height: 70px"></div>
     <div class="row">
         <div class="col-xs-12 col-md-12">
             <div class="container custom-containter">
@@ -267,59 +268,60 @@
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <div class="container small-container">
-        <div class="row">
-            <div class="col-xs-12 col-md-12 text-center">
-                <h2>
-                   ベトナムでラボ型オフショア開発をする
-                </h2>
-                <h1>
-                   5つの魅力
-                </h1>
-            </div>
-        </div>
-        <div class="row-gap-big"></div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h4>
-                    <span class="num">1</span><span class="txt">アジアビジネスの</span><span class="decor-txt">絶好の拠点</span>
-                </h4>                
-            </div>
-        </div>
-        <div class="row-gap-small"></div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h4>
-                    <span class="num">2</span><span class="decor-txt">勤勉で親日国</span><span class="txt">である</span>
-                </h4>                
-            </div>
-        </div>
-        <div class="row-gap-small"></div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h4>
-                    <span class="num">3</span><span class="txt">人口約9000万人。均年齢28歳の</span><span class="decor-txt">豊富な労働力</span>
-                </h4>                
-            </div>
-        </div>
-        <div class="row-gap-small"></div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h4>
-                    <span class="num">4</span><span class="txt">年5∼8%の</span><span class="decor-txt">高度経済成長</span>
-                </h4>                
-            </div>
-        </div>
-        <div class="row-gap-small"></div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h4>
-                    <span class="num">5</span><span class="txt">東南アジア1位の</span><span class="decor-txt">豊富なITエンジ ニア数</span><span>(30万人超)</span>
-                </h4>                
-            </div>
-        </div>
-    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 text-center">
+                            <h3>
+                                ベトナムでラボ型オフショア開発をする
+                            </h3>
+                            <h1>
+                                5つの魅力
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row-gap-big"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-11 col-md-offset-1">
+                            <h4>
+                                <span class="num">1</span><span class="txt">アジアビジネスの</span><span class="decor-txt">絶好の拠点</span>
+                            </h4>                
+                        </div>
+                    </div>
+                    <div class="row-gap-small"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-11 col-md-offset-1">
+                            <h4>
+                                <span class="num">2</span><span class="decor-txt">勤勉で親日国</span><span class="txt">である</span>
+                            </h4>                
+                        </div>
+                    </div>
+                    <div class="row-gap-small"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-11 col-md-offset-1">
+                            <h4>
+                                <span class="num">3</span><span class="txt">人口約9000万人。均年齢28歳の</span><span class="decor-txt">豊富な労働力</span>
+                            </h4>                
+                        </div>
+                    </div>
+                    <div class="row-gap-small"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-11 col-md-offset-1">
+                            <h4>
+                                <span class="num">4</span><span class="txt">年5∼8%の</span><span class="decor-txt">高度経済成長</span>
+                            </h4>                
+                        </div>
+                    </div>
+                    <div class="row-gap-small"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-11 col-md-offset-1">
+                            <h4>
+                                <span class="num">5</span><span class="txt">東南アジア1位の</span><span class="decor-txt">豊富なITエンジニア数</span><span>(30万人超)</span>
+                            </h4>                
+                        </div>
+                    </div>
                 </div>
+            </div>
         </div>
+        <div class="row-gap-huge"></div>
     </div>
 </div>
 <div class="container-fluid block-7">
@@ -332,27 +334,67 @@
                 </h1>
             </div>
         </div>
-</div>
+        <div class="row-gap-big"></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-md-6 rect">
+                        <h4><i class="fa fa-minus"></i>ベトナム人スタッフの求人も行 い、人員を用意します</h4>
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-md-6 rect">
+                        <h4><i class="fa fa-minus"></i>必要な設備(PCやデスクなど)も用 意します</h4>
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-md-6 rect">
+                        <h4><i class="fa fa-minus"></i>給与の支払いや社会保険などの労務も行います</h4>
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
+                <div class="row">
+                    <div class="col-md-6 rect">
+                        <h4><i class="fa fa-minus"></i>ベトナム人スタッフの社員教育も行います。</h4>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="container-fluid block-8">
     <div class="container">
         <div class="row-gap-big"></div>
         <div class="row text-center headline">
-            <h2>スビスサビビスササ</h2>
-            <h2><span class="pink-text">サビスサビスサビスサビスサビスサビスビスサ</span>サ</h2>
-            <h2><span class="pink-text">サビスサビスサビスサビスサビスサビ</span>サスビスサ</h2>
-            <h2>サビスサビスサビスサビスサビスサビサスビスササスビスサ</h2><br/>
-            <h4>サビスサビスサビスサビスサビスサビサ</h4>
-            <h4>サビスサビスサビスサビスサビスサビサスビスササスビスサ</h4>            
+            <h2>つまり、 社は、</h2>
+            <h2><span class="pink-text">「日本人プロジェクトマネージャー駐在or遠隔)</span>と</h2>
+            <h2><span class="pink-text">「必要なベトナム人スタッフ数」</span> 決めれば、</h2>
+            <h2>すぐにでもベトナムでの開発を行うことが可能なのです!</h2><br/>
+            <h4>小規模から大規模までのラボが在籍</h4>
+            <h4>総勢400名以上のベトナム人スタッフが在籍しています。</h4>            
         </div>        
-        <div class="row-gap-medium"></div>
+        <div style="padding-bottom: 30px"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <div class="container custom-containter">
                     <div class="row">
                         <div class="col-xs-12 col-md-4">
                             <article>
-                                <h4>ビスサ</h4>
+                                <h4>あたり</h4>
                                 <figure>
                                     <img src="img/labo-block8-image1.png" alt="" class="img-responsive">
                                 </figure>
@@ -360,7 +402,7 @@
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <article>
-                                <h4>ビスサ</h4>
+                                <h4>あたり</h4>
                                 <figure>
                                     <img src="img/labo-block8-image2.png" alt="" class="img-responsive">
                                 </figure>
@@ -368,7 +410,7 @@
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <article>
-                                <h4>ビスサ</h4>
+                                <h4>あたり</h4>
                                 <figure>
                                     <img src="img/labo-block8-image3.png" alt="" class="img-responsive">
                                 </figure>
@@ -379,7 +421,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-4">
                             <article>
-                                <h4>ビスサ</h4>
+                                <h4>あたり</h4>
                                 <figure>
                                     <img src="img/labo-block8-image4.png" alt="" class="img-responsive">
                                 </figure>
@@ -387,7 +429,7 @@
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <article>
-                                <h4>ビスサ</h4>
+                                <h4>あたり</h4>
                                 <figure>
                                     <img src="img/labo-block8-image5.png" alt="" class="img-responsive">
                                 </figure>
@@ -395,7 +437,7 @@
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <article>
-                                <h4>ビスサ</h4>
+                                <h4>あたり</h4>
                                 <figure>
                                     <img src="img/labo-block8-image6.png" alt="" class="img-responsive">
                                 </figure>
@@ -405,37 +447,37 @@
                     <div class="row-gap-big"></div>
                     <img src="img/plus.png" alt="" class="img-responsive center-block">
                     <div class="row rect">      
-                        <h3 class="text-center">ビスサビスサビスサビスサビスサビスサビスサビスサ</h3>
-                        <div class="col-xs-12 col-md-4">
+                        <h3 class="text-center">さらに品質を高めるためエボラブルアジア独自の対応を行っています。</h3>
+                        <div class="col-xs-12 col-md-4 no-padding-r">
                             <article>
-                                <h4>ビスサ</h4>
+                                <h4>あたり</h4>
                                 <figure>
                                     <img src="img/labo-block8-image8.png" alt="" class="img-responsive">
                                 </figure>
                                 <div class="title">
-                                    サービスサ
+                                    社内で日本語スクールを実施
                                 </div>
                             </article>
                         </div>
-                        <div class="col-xs-12 col-md-4">
+                        <div class="col-xs-12 col-md-4 no-padding-r">
                             <article>
-                                <h4>ビスサ</h4>
+                                <h4>あたり</h4>
                                 <figure>
                                     <img src="img/labo-block8-image9.png" alt="" class="img-responsive">
                                 </figure>
                                 <div class="title">
-                                    サービスサ
+                                    ベトナム人スタッフの個別面談を実施
                                 </div>
                             </article>
                         </div>
-                        <div class="col-xs-12 col-md-4">
+                        <div class="col-xs-12 col-md-4 no-padding-r">
                             <article>
-                                <h4>ビスサ</h4>
+                                <h4>あたり</h4>
                                 <figure>
                                     <img src="img/labo-block8-image10.png" alt="" class="img-responsive">
                                 </figure>
                                 <div class="title">
-                                    サービスサ
+                                    クライアント様のフォローアップ
                                 </div>
                             </article>
                         </div>
@@ -454,12 +496,13 @@
             <div class="col-xs-12 col-md-12">
                 <div class="container custom-containter">
                     <div class="row text-center">
-                        <h2>ビスサビスサビスサビスビスサビビスササ</h2>
-                        <h2>ビスサビスサビスサビスビスサビビスサビビスサビスサ</h2>
-                        <h2>ビスサビスサビスサビスビスサビビスサビスサ</h2>
+                        <h3>また、 ボ型開発を開始後、</h3>
+                        <h3>ご利用のベトナム人のチームと共に自社のベトナム法人への</h3>
+                        <h3>移行も可能なので、も安全な海外進出が可能です。</h3>
                     </div>
+                    <div class="row-gap-small"></div>
                     <div class="row rect">
-                        <h2 class="text-center">ビスサビスサビスサビス<span class="pink-text">サビスサビスサ</span>ビスサビ</h2>
+                        <h3 class="text-center">海外で開発を行うなら、 ずは<span class="pink-text">ラボ型開発が一番合理的</span>です。</h3>
                     </div>
                 </div>
             </div>

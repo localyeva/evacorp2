@@ -2186,17 +2186,21 @@ and open the template in the editor.
 }
 #labo .last-block {
   background: url('../img/pink-grid.png') repeat;
-  padding-bottom: 35px;
+  padding-bottom: 10px;
 }
 #labo .last-block .rect {
   margin-left: 0px;
   margin-right: 0px;
-  padding: 10px 30px 10px 30px;
-  border: 4px solid #FBD4E4;
+  padding: 5px 30px 5px 30px;
+  border: 4px solid #FFB2D2;
   background-color: #fff;
 }
 #labo .last-block h2 {
   line-height: 50px;
+}
+#labo .last-block h3 {
+  font-weight: bold;
+  line-height: 40px;
 }
 #labo .last-block .desc {
   padding-top: 70px;
@@ -2208,8 +2212,10 @@ and open the template in the editor.
   margin: 0;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 45%;
   transform: translate(0, -50%);
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 #labo .header-reason-banner {
   background: url('../img/labo-banner.png') no-repeat;
@@ -2242,20 +2248,24 @@ and open the template in the editor.
 }
 #labo .intersection {
   position: relative;
-  margin-top: -50px;
+  margin-top: -100px;
   background: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
   height: 400px;
   z-index: 100;
   color: #000;
 }
 #labo .intersection h3 {
   line-height: 40px;
+  font-size: 20px;
+  font-weight: bold;
 }
 #labo .intersection-text-pos {
   margin: 0;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 40%;
   transform: translate(0, -50%);
 }
 #labo .block-2 {
@@ -2280,7 +2290,11 @@ and open the template in the editor.
   background: url('../img/white-grid.png') repeat;
 }
 #labo .block-3 h3 {
+  font-weight: bold;
   line-height: 40px;
+}
+#labo .block-4 h1 {
+  font-weight: bold;
 }
 #labo .block-4 .image2-pos {
   padding-top: 40px;
@@ -2307,6 +2321,9 @@ and open the template in the editor.
 #labo .block-5 {
   background: url('../img/white-grid.png') repeat;
 }
+#labo .block-5 h2 {
+  font-weight: bold;
+}
 #labo .block-5 .rect {
   padding-top: 40px;
   border: 4px solid #c9c9c9;
@@ -2328,7 +2345,6 @@ and open the template in the editor.
 }
 #labo .block-6 {
   background: url('../img/labo-block6-image.png') no-repeat scroll center center / 100% auto;
-  height: 466px;
   background-size: cover;
 }
 #labo .block-6 .num {
@@ -2347,10 +2363,33 @@ and open the template in the editor.
   border-bottom: 2px solid #FB207A;
   font-weight: bold;
 }
+#labo .block-6 h4 {
+  letter-spacing: 4px;
+}
+#labo .block-6 h3 {
+  font-weight: bold;
+  line-height: 40px;
+}
+#labo .block-6 h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
 #labo .block-7 {
   background: url('../img/labo-block7-image.png') no-repeat scroll center center / 100% auto;
   height: 466px;
   background-size: cover;
+}
+#labo .block-7 .rect {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 10px 0 10px 10px;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+#labo .block-7 .rect i {
+  color: #ff0000;
+  padding-left: 5px;
+  padding-right: 10px;
 }
 #labo .block-8 {
   background: url('../img/1px-gradient.png') repeat;
@@ -2358,6 +2397,7 @@ and open the template in the editor.
   z-index: 1;
 }
 #labo .block-8 .headline h2 {
+  font-weight: bold;
   line-height: 50px;
 }
 #labo .block-8 .headline h4 {
@@ -2387,6 +2427,7 @@ and open the template in the editor.
 #labo .block-8 .rect h3 {
   padding-bottom: 30px;
   font-weight: bold;
+  font-size: 22px;
 }
 #labo .block-8 .bg {
   background: url('../img/labo-block8-image7.png') no-repeat scroll center center / 100% auto;
@@ -2403,6 +2444,13 @@ and open the template in the editor.
   padding: 0px;
   height: 465px;
   position: relative;
+}
+#labo .block-1 .over-text {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  color: #fff;
+  font-weight: bold;
 }
 #labo .block-1 .text-1 {
   color: white;
@@ -2432,15 +2480,15 @@ and open the template in the editor.
 }
 @media (min-width: 768px) {
   #labo .custom-containter {
-    width: 70%;
+    width: 72%;
   }
   #labo .block-6 .small-container {
-    width: 60%;
+    width: 55%;
   }
 }
 @media (max-width: 768px) {
   .intersection h3 {
-    font-size: 17px;
-    line-height: 30px !important;
+    font-size: 17px !important;
+    line-height: 25px !important;
   }
 }

@@ -21,7 +21,7 @@ function assetSrc($file) {
         <div id="labo">
             <?php include('./_include/labo/banner.php'); ?>
             <?php include('./_include/labo/breadcrumbs.php'); ?>
-            <?php include('./_include/labo/bpo.php'); ?>
+            <?php include('./_include/labo/lpo.php'); ?>
             <?php include('./_include/compro/contact.php'); ?>
         </div>
         <?php include('./_include/footer.php'); ?>

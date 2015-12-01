@@ -263,8 +263,6 @@ add_action('customize_register', 'theme_customize_register');
 
 //css generate
 function generate_css() {
-    var_dump(get_slide_image());
-    exit;
     ?>
     <style>
         .header-banner {

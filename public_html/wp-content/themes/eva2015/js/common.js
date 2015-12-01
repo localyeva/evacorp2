@@ -56,8 +56,8 @@ $(document).ready(function () {
     });
     
     $('a').on('click', function () {
-        if ($(this).attr('data-goto') != '') {
-            var goto = $(this).attr('data-goto');
+        if ($(this).data('goto') != '') {
+            var goto = $(this).data('goto');
             $('#' + goto).scrollTo(500);
         }
     });

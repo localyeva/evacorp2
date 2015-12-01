@@ -40,43 +40,37 @@
                         </ul>
                     </div>
                     <div class="col-xs-4 col-md-4 hidden-xs">
-                        <label>企業情報</label>
+                        <label>ホーチミン本社</label>
                         <div class="row">
                             <div class="col-xs-12">
-                                <p class="small">4F Saigon Finance Center, 
-                                    9 Dinh Tien Hoang Street, 
-                                    District 1, HCMC</p>
-                                <p class="small">
-                                    TEL +84-8(39111489)
-                                </p>
-                                <p class="small">
-                                    FAX +84-8(39118767)
-                                </p>
+                                <p class="small">4F Saigon Finance Center, 9 Dinh Tien Hoang Street, District 1, HCMC</p>
+                                <p class="small">TEL +84-8(39111489)</p>
+                                <p class="small">FAX +84-8(39118767)</p>
                             </div>
                         </div>
                         <div class="row-gap-medium"></div>
-                        <label>企業情報</label>
+                        <label>ホーチミン支店</label>
                         <div class="row">
                             <div class="col-xs-12">
-                                <small>4F Saigon Finance Center, 
-                                    9 Dinh Tien Hoang Street</small>
+                                <small>14F GOLDEN TOWER, 6 Nguyen Thi Minh Khai Street,District1, HCMC</small>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-4 col-md-4 hidden-xs">
-                        <label>企業情報</label>
+                        <label>ハノイ支店</label>
                         <div class="row">
                             <div class="col-xs-12">
-                                <p class="small">4F Saigon Finance Center, 
-                                    9 Dinh Tien Hoang Street, 
-                                    District 1, HCMC</p>
-                                <p class="small">
-                                    TEL +84-8(39111489)
-                                </p>
-                                <p class="small">
-                                    FAX +84-8(39118767)
-                                </p>
+                                <p class="small">9F Viet A Building, Duy Tan Street, Cau Giay District, Ha Noi</p>
+                                <p class="small">TEL +84-4(37957577)</p>
+                                <p class="small">FAX +84-4(37957580)</p>
+                            </div>
+                        </div>
+                        <div class="row-gap-medium"></div>
+                        <label>ダナン支店</label>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <small></small>
                             </div>
                         </div>
                     </div>
@@ -86,65 +80,72 @@
             <div class="col-xs-12 col-md-6 hidden-xs">
                 <div class="row">
                     <div class="col-xs-4 col-md-4">
-                        <label>企業情報</label>
+                        <label>HOME</label>
                         <div class="row">
                             <div class="col-xs-12">
-                                <p class="small">4F Saigon Finance Center, 
-                                    9 Dinh Tien Hoang Street, 
-                                    District 1, HCMC</p>
-                                <p class="small">
-                                    TEL +84-8(39111489)
-                                </p>
-                                <p class="small">
-                                    FAX +84-8(39118767)
-                                </p>
+                                <p class="small"><a class="alnk" href="<?php echo home_url('company/reason/') ?>">選ばれる理由</a></p>
+                                <p class="small"><a class="alnk" data-goto="header-service" href="javascript:void(0);">サービス</a></p>
+                                <?php
+                                $args = array(
+                                    'post_type' => 'top-service',
+                                    'posts_per_page' => -1,
+                                    'orderby' => array('date' => 'ASC'),
+                                );
+                                $loop = new WP_Query($args);
+                                ?>
+                                <?php if ($loop->have_posts()): ?>
+                                    <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                                        <p class="small"><a class="alnk" href="<?php echo get_field('redirect_url') ?>"><i class="fa fa-angle-right"></i> <?php the_title() ?></a></p>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                                <?php wp_reset_postdata() ?>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-4 col-md-4">
-                        <label>企業情報</label>
+                        <label>About EvolableAsia</label>
                         <div class="row">
                             <div class="col-xs-12">
-                                <p class="small">4F Saigon Finance Center, 
-                                    9 Dinh Tien Hoang Street, 
-                                    District 1, HCMC</p>
-                                <p class="small">
-                                    TEL +84-8(39111489)
-                                </p>
-                                <p class="small">
-                                    FAX +84-8(39118767)
-                                </p>
+                                <?php
+                                $args = array(
+                                    'post_type' => 'company-general',
+                                    'posts_per_page' => -1,
+                                    'orderby' => array('date' => 'ASC'),
+                                );
+                                $loop = new WP_Query($args);
+                                ?>
+                                <?php if ($loop->have_posts()): ?>
+                                    <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                                        <p class="small"><a class="alnk" href="<?php echo get_field('redirect_url') ?>"><i class="fa fa-angle-right"></i> <?php the_title() ?></a></p>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                                <?php wp_reset_postdata() ?>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-xs-4 col-md-4">
-                        <label>企業情報</label>
+                        <label>ニュース</label>
                         <div class="row">
                             <div class="col-xs-12">
-                                <p class="small">4F Saigon Finance Center, 
-                                    9 Dinh Tien Hoang Street, 
-                                    District 1, HCMC</p>
-                                <p class="small">
-                                    TEL +84-8(39111489)
-                                </p>
-                                <p class="small">
-                                    FAX +84-8(39118767)
-                                </p>
+                                <p class="small">Recruit</p>
+                                <p class="small"><a class="alnk" href="<?php echo home_url('recruit') ?>"><i class="fa fa-angle-right"></i> Vietnamese</a></p>
+                                <p class="small"><a class="alnk" href="<?php echo get_site_url(2) ?>"><i class="fa fa-angle-right"></i> Japanese</a></p>
                             </div>
                         </div>
+                        <label><a class="alnk" href="<?php echo home_url('contact') ?>">お問い合わせ</a></label>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-    <script src="<?php echo get_template_directory_uri() ?>/js/jquery.min.js"></script>
-    <script src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
-    <script src="<?php echo get_template_directory_uri() ?>/js/jquery-ui.js"></script>
-    <script src="<?php echo get_template_directory_uri() ?>/js/jquery.sidr.min.js"></script>
-    <script src="<?php echo get_template_directory_uri() ?>/js/wow.js"></script>
-    <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/jquery-ui.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/jquery.sidr.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/wow.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>
 </body>
 </html>

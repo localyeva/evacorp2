@@ -30,14 +30,14 @@ function cptui_register_my_cpts() {
         "capability_type" => "post",
         "map_meta_cap" => true,
         "hierarchical" => false,
-        "rewrite" => array("slug" => "service", "with_front" => true),
+        "rewrite" => array("slug" => "top-service", "with_front" => true),
         "query_var" => true,
         "menu_position" => 26,
         "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h1.png',
         "supports" => array("title"),
     );
-    register_post_type("service", $args);
-
+    register_post_type("top-service", $args);
+    
     $labels = array(
         "name" => "FAQ",
         "singular_name" => "FAQ",
@@ -553,7 +553,7 @@ if (function_exists("register_field_group")) {
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'service',
+                    'value' => 'top-service',
                     'order_no' => 0,
                     'group_no' => 0,
                 ),

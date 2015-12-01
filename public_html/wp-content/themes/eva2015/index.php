@@ -29,46 +29,43 @@ if ($available_why == 1) {
             <div class="col-md-2 hidden-xs"></div>
             <div class="col-md-2 hidden-xs why-text-left text-left">
                 <div class="row-gap-big"></div>
-                <h2>Why is<br> Evolable Asia<br> chosen<br> in Vietnam</h2>
+                <h2>Why is<br> Evolable Asia<br> chosen<br> in Vietnam?</h2>
                 <div class="text">
-                    Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,<br> sed do eiusmod
+                    なぜエボラブルアジアがベトナムのラボ型開発で選ばれるのか？
                 </div>
             </div>
             <div class="col-xs-12 visible-xs why-text-left text-center">
-                <h2>Why is Evolable Asia <br> chosen in Vietnam</h2>
+                <h2>Why is Evolable Asia<br> chosen in Vietnam?</h2>
                 <div class="text">
-                    Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do eiusmod
+                    なぜエボラブルアジアがベトナムのラボ型開発で選ばれるのか？
                 </div>
             </div>
-            <div class="col-md-8 hidden-xs why-text-right">
+            <div class="col-md-6 hidden-xs why-text-right">
                 <div class="row-gap-big"></div>
-                <h3>Evolable Asia demo demo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut.</h3>
+                <h3>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h3>
                 <div class="row-gap-small"></div>
-                <div class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="text2">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                 </div>
                 <div class="text-left">
-                    <button class="btn btn-slim ">Demo test</button>
+                    <a href="<?php echo home_url('company/reason/') ?>">
+                        <button class="btn btn-slim ">
+                            <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="col-xs-12 visible-xs why-text-right text-center">
                 <div class="row-gap-medium"></div>
-                <h2>Evolable Asia demo demo Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+                <h2>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h2>
                 <div class="row-gap-small"></div>
-                <div class="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <div class="text2">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                 </div>
                 <div class="text-center">
-                    <button class="btn btn-slim ">Demo test</button>
+                    <a href="<?php echo home_url('company/reason/') ?>">
+                        <button class="btn btn-slim ">
+                            <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -83,7 +80,7 @@ if ($available_why == 1) {
 $available_service = get_services_div();
 if ($available_service == 1) {
     ?>
-    <div class="container-fluid header-service">
+    <div id="header-service" class="container-fluid header-service">
         <div class="row">
             <div class="col-xs-12">
                 <h1 class="text-center"><?php echo get_intro_text_1() ?></h1>
@@ -92,7 +89,7 @@ if ($available_service == 1) {
         <div class="row">
             <?php
             $args = array(
-                'post_type' => 'service',
+                'post_type' => 'top-service',
                 'posts_per_page' => 1,
                 'orderby' => array('date' => 'ASC'),
             );
@@ -104,13 +101,15 @@ if ($available_service == 1) {
                 ?>
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
                     <div class="col-xs-12 col-md-6 no-padding-lr sv-main-block wow fadeInRight">
-                        <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
-                        <div class="caption full-width center">
-                            <h2 class="sv-main-title">
-                                <a class="alnk" href="<?php echo get_field('redirect_url') ?>"><?php the_title() ?></a>
-                                <div class="intro"><?php echo get_field('short_description') ?></div>
-                            </h2>
-                        </div>
+                        <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
+                            <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
+                            <div class="caption full-width center">
+                                <h2 class="sv-main-title">
+                                    <a class="alnk" href="<?php echo get_field('redirect_url') ?>"><?php the_title() ?></a>
+                                    <div class="intro"><?php echo get_field('short_description') ?></div>
+                                </h2>
+                            </div>
+                        </a>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
@@ -119,7 +118,7 @@ if ($available_service == 1) {
                 <div class="row">
                     <?php
                     $args = array(
-                        'post_type' => 'service',
+                        'post_type' => 'top-service',
                         'posts_per_page' => 5,
                         'orderby' => array('date' => 'ASC'),
                     );
@@ -132,15 +131,17 @@ if ($available_service == 1) {
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
                             <?php if ($i > 1 AND $i < 4) { ?>
-                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInDown">
-                                    <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
-                                    <div class="caption full-width center">
-                                        <h2 class="sv-title">
-                                            <a class="alnk" href="<?php echo get_field('redirect_url') ?>"><?php the_title() ?></a>
-                                            <div class="intro"><?php echo get_field('short_description') ?></div>
-                                        </h2>
+                                <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
+                                    <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInDown">
+                                        <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
+                                        <div class="caption full-width center">
+                                            <h2 class="sv-title">
+                                                <?php the_title() ?>
+                                                <div class="intro"><?php echo get_field('short_description') ?></div>
+                                            </h2>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             <?php } ?>
 
                             <?php $i++; ?>
@@ -151,7 +152,7 @@ if ($available_service == 1) {
                 <div class="row">
                     <?php
                     $args = array(
-                        'post_type' => 'service',
+                        'post_type' => 'top-service',
                         'posts_per_page' => 5,
                         'orderby' => array('date' => 'ASC'),
                     );
@@ -301,8 +302,8 @@ if ($available_about == 1) {
                     </div>
                     <?php $time+= 0.5; ?>
                 <?php endwhile; ?>
-    <?php endif; ?>
-    <?php wp_reset_postdata() ?>
+            <?php endif; ?>
+            <?php wp_reset_postdata() ?>
         </div>
     </div>
     <?php
@@ -331,7 +332,7 @@ if ($available_new == 1) {
                 if ($loop->have_posts()):
                     $num_posts = count($loop->posts);
                     ?>
-        <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                    <?php while ($loop->have_posts()): $loop->the_post(); ?>
                         <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
@@ -345,8 +346,8 @@ if ($available_new == 1) {
                         </div>
                         <?php $time2+= 0.5; ?>
                     <?php endwhile; ?>
-    <?php endif; ?>
-    <?php wp_reset_postdata() ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata() ?>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12 text-center">
@@ -382,7 +383,7 @@ if ($available_blog == 1) {
                 if ($loop->have_posts()):
                     $num_posts = count($loop->posts);
                     ?>
-        <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                    <?php while ($loop->have_posts()): $loop->the_post(); ?>
                         <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
@@ -396,8 +397,8 @@ if ($available_blog == 1) {
                         </div>
                         <?php $time3+= 0.5; ?>
                     <?php endwhile; ?>
-    <?php endif; ?>
-    <?php wp_reset_postdata() ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata() ?>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12 text-center">

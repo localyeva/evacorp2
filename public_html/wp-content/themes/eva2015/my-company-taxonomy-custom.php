@@ -10,7 +10,7 @@ $evacorp_settings['google-map'] = array(
     'placeholder',
 );
 
-function evacorp_load_media() {
+function omw_load_media() {
 //    $assets_dir = esc_url(trailingslashit(plugins_url('/assets/', __FILE__)));
 
     $assets_dir = get_template_directory_uri() . '/assets/';
@@ -29,9 +29,9 @@ function evacorp_load_media() {
     wp_enqueue_script('fancybox-admin-js');
 }
 
-add_action('admin_init', 'evacorp_load_media');
+add_action('admin_init', 'omw_load_media');
 
-function taxonomy_add_new_meta_field() {
+function omw_taxonomy_add_new_meta_field() {
     global $evacorp_settings;
     $html = '';
     //
@@ -77,9 +77,9 @@ function taxonomy_add_new_meta_field() {
     //
 }
 
-//add_action('lab_add_form_fields', 'taxonomy_add_new_meta_field', 10, 2);
+//add_action('lab_add_form_fields', 'omw_taxonomy_add_new_meta_field', 10, 2);
 
-function taxonomy_edit_meta_field($term) {
+function omw_taxonomy_edit_meta_field($term) {
     global $evacorp_settings;
     $html = '';
     //
@@ -137,9 +137,9 @@ function taxonomy_edit_meta_field($term) {
     }
 }
 
-add_action('company-tax_edit_form_fields', 'taxonomy_edit_meta_field', 10, 2);
+add_action('company-tax_edit_form_fields', 'omw_taxonomy_edit_meta_field', 10, 2);
 
-function save_taxonomy_custom_meta($term_id) {
+function omw_save_taxonomy_custom_meta($term_id) {
     global $evacorp_settings;
     //
     foreach ($evacorp_settings as $field => $data) {
@@ -155,5 +155,5 @@ function save_taxonomy_custom_meta($term_id) {
     }
 }
 
-add_action('edited_company-tax', 'save_taxonomy_custom_meta', 10, 2);
-add_action('create_company-tax', 'save_taxonomy_custom_meta', 10, 2);
+add_action('edited_company-tax', 'omw_save_taxonomy_custom_meta', 10, 2);
+add_action('create_company-tax', 'omw_save_taxonomy_custom_meta', 10, 2);

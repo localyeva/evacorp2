@@ -10,7 +10,7 @@ get_header();
 <section id="bpo-profile">
     <div class="header-reason-banner">
         <div class="container text-center">
-            <h2>Welcome Evolable Asia</h2>
+            <h2>BPO</h2>
         </div>
     </div>
     <div class="row-gap-medium"></div>
@@ -32,8 +32,8 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12 no-padding-lr text-center">
-                    <span class="text-1">Evolable Asia demo demo demo demo</span><br>
-                    <span class="text-2">Demo Demo Demo Demo Demo Demo Demo</span>
+                    <span class="text-1">Evolable Asiaは、従来とは違う</span><br>
+                    <span class="text-2">全く新しい「オフショアBPO事業」を提唱します。</span>
                 </div>
             </div>
             <div class="row-gap-huge"></div>

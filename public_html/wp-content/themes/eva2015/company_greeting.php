@@ -9,7 +9,7 @@ get_header();
 <section id="greeting-profile">
     <div class="header-gree-banner">
         <div class="container text-center">
-            <h2>Welcome Evolable Asia</h2>
+            <h2>代表挨拶</h2>
         </div>
     </div>
     <div class="row-gap-medium"></div>
@@ -68,7 +68,7 @@ get_header();
                                 </div>
                                 <div class="col-xs-12 col-md-12">
                                     <div class="bs-callout bs-callout-danger">
-                                        <h2>Demo Demo Demo Demo</h2>
+                                        <h2>略歴</h2>
                                     </div>
                                     <div class="drop-line"></div>
                                 </div>

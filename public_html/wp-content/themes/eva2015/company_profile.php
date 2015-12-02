@@ -9,7 +9,7 @@ get_header();
 <div id="company-profile">
     <div class="header-com-banner">
         <div class="container text-center">
-            <h2>Welcome Evolable Asia</h2>
+            <h2>会社概要</h2>
         </div>
     </div>
     <div class="container-fluid">
@@ -153,7 +153,7 @@ get_header();
     </div>
     <div class="container-fluid text-center" id="detail-contact">
         <div class="container detail">
-            <h1>Demo Demo</h1>
+            <h1>会社概要</h1>
             <div class="row">
                 <div class="col-xs-12 infos no-padding-lr">
                     <?php
@@ -171,75 +171,75 @@ get_header();
                     ?>
 
                     <table class="table table-responsive table-striped profileTable detail-info">
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>社名<span>Company name</span></p>
+                        <p>社名</p>
                         </th>
                         <td><?php the_field('name'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>所在地<span>Address</span></p>
+                        <p>所在地</p>
                         </th>
                         <td><?php the_field('location'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
                         <p>電話番号(Phone)</p>
                         </th>
                         <td><?php the_field('phone_number'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
                         <p>FAX</p>
                         </th>
                         <td><?php the_field('fax'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>役員<span>Office</span></p>
+                        <p>役員</p>
                         </th>
                         <td><?php the_field('officer'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>設立<span>Date of establishment</span></p>
+                        <p>設立</p>
                         </th>
                         <td><?php the_field('establishment'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>資本金<span>Capital stock</span></p>
+                        <p>資本金</p>
                         </th>
                         <td><?php the_field('Capital'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>事業内容<span>Business Description</span></p>
+                        <p>事業内容</p>
                         </th>
                         <td><?php the_field('desc'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>ライセンスNo.<span>License No.</span></p>
+                        <p>ライセンスNo.</p>
                         </th>
                         <td><?php the_field('licence'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>従業員数<span>Number of Employees</span></p>
+                        <p>従業員数</p>
                         </th>
                         <td><?php the_field('staff'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>主要取引銀行<span>Main Bank</span></p>
+                        <p>主要取引銀行</p>
                         </th>
                         <td><?php the_field('bank'); ?></td>
                         </tr>
-                        <tr>
+                        <tr align="left">
                             <th>
-                        <p>経営理念<span>Management Principles</span></p>
+                        <p>経営理念</p>
                         </th>
                         <td><?php the_field('principles'); ?></td>
                         </tr>
@@ -259,62 +259,28 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h1>Demo Demo Demo Demo</h1>
+                    <h1>関連会社</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-6 no-padding-lr evol">
                     <div class="round1">
-                        <p class="header-his"><span>demo demo demo demo demo</span></p>
+                        <p class="header-his"><span>株式会社エボラブルアジア</span></p>
                         <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/37.png" alt="" class=""></p>
-                        <p class="footer-his"><span>demo demo demo demo demo demo demo demo demo demodemo demo demo demo demodemo demo demo demo demo demo demo demo demo demo</span></p>
+                        <p class="footer-his"><span>「オンラインに特化した旅行会社として、また、旅行コンテンツOEM提供モデルを競争力として、旅行業界における主要分野（国内、海外、航空券、ホテル、旅行）とのM＆Aを含めた資本業務提携を積極的に行うことで、お客様視点を全ての基盤とした、次世代の総合旅行サービス提供。」</span></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 no-padding-lr soltec">
                     <div class="round2">
-                        <p class="header-his"><span>demo demo demo demo demo</span></p>
+                        <p class="header-his"><span>Soltec Vietnam</span></p>
                         <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/38.png" alt="" class=""></p>
-                        <p class="footer-his"><span>demo demo demo demo demo demo demo demo demo demodemo demo demo demo demodemo demo demo demo demo demo demo demo demo demo</span></p>
+                        <p class="footer-his"><span>Soltec Vietnam Companyは2010年9月17日に、（株）ソルテック工業の100％出資子会社として誕生致しました。弊社は、親会社である（株）ソルテック工業の長年培った経験と技術を生かし、ベトナムにおいて日本の品質基準に準じた各種プラント設備製作・据付工事・配管工事を展開させて頂きます。また独自の教育管理ノウハウを生かして、日本品質をベトナムで実現しております。そこで培われたマネジメントノウハウの一部はEvolable Asia Co.,Ltdにも生かされています。</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid header-contact">
-        <div class="container con-contact">
-            <div class="row">
-                <div class="col-xs-12 no-padding-lr text-center">
-                    <div class="caption full-width center-block contact-info">
-                        <p>
-                            Demo Demo Demo <span class="yellow">Demo Demo Demo</span> Demo<br/>
-                            <span class="green">Demo Demo Demo</span> Demo Demo Demo Demo Demo Demo Demo
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xs-12 no-padding-lr footer-contact">
-                    <div class="container">
-                        <did class="row">
-                            <div class="col-xs-6 col-md-6 no-padding-lr left phone">
-                                <div class="container">
-                                    <img src="<?php echo get_template_directory_uri() ?>/img/42.png" alt="" class="img-responsive phone-img">
-                                    <span class="phone-text">(+84)9-3717-6251</span>
-                                    <span class="detail-text">demo demo demo demo demo demo</span>
-                                    <span class="detail-line"></span>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-md-6 no-padding-lr center-block mess">
-                                <div class="container">
-                                    <img src="<?php echo get_template_directory_uri() ?>/img/43.png" alt="" class="img-responsive mess-img">
-                                    <span class="mess-text">webdemo demo demo demo ></span>
-                                    <span class="mess-border"></span>
-                                </div>
-                            </div>
-                        </did>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<?php get_template_part('part', 'contact'); ?>
 </div>
 <?php get_footer() ?>

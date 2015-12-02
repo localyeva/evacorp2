@@ -30,18 +30,18 @@
                         <div class="col-md-12 text-center navbar-collapse collapse visible-md">
                             <ul class="nav navbar-nav">
                                 <li><a href="<?php echo bloginfo('url') ?>">Home</a></li>
-                                <li><a href="<?php echo bloginfo('url') ?>/company/">About EvolableAsia</a></li>
-                                <li><a href="<?php echo bloginfo('url') ?>/company/greeting">開発ならエボ</a></li>
+                                <li><a href="<?php echo bloginfo('url') ?>/company/">About Evolable Asia</a></li>
+                                <li><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
                                 <li>
-                                    <a href="<?php echo bloginfo('url') ?>/company/circle">
+                                    <a href="<?php echo bloginfo('url') ?>/Home">
                                         <img class="img-responsives" src="<?php echo get_top_image() ?>">
                                     </a>
                                 </li>
-                                <li><a href="<?php echo bloginfo('url') ?>/company/greeting">サービス</a></li>
-                                <li><a href="<?php echo bloginfo('url') ?>/contact/">ニュース</a></li>
-                                <li><a href="#">Recruit</a></li>
+                                <li><a href="<?php echo bloginfo('url') ?>/service">サービス</a></li>
+                                <li><a href="<?php echo bloginfo('url') ?>/news">ニュース</a></li>
+                                <li><a href="<?php echo get_site_url(2) ?>">Recruit</a></li>
                                 <li>
-                                    <a href="#" class="active">お問い合わせ</a>
+                                    <a href="<?php echo bloginfo('url') ?>/contact/">お問い合わせ</a>
                                 </li>
                             </ul>
                         </div>
@@ -58,13 +58,13 @@
                             <div class="row mobile-menu" id="sidr">
                                 <div class="col-xs-12">
                                     <ul class="nav navbar-nav">
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="#">About EvolableAsia</a></li>
-                                        <li><a href="#">開発ならエボ</a></li>
-                                        <li><a href="#">サービス</a></li>
-                                        <li><a href="#">ニュース</a></li>
-                                        <li><a href="#">Recruit</a></li>
-                                        <li><a href="#" class="active">お問い合わせ</a></li>
+                                        <li><a href="<?php echo bloginfo('url') ?>">Home</a></li>
+                                        <li><a href="<?php echo bloginfo('url') ?>/company/">About EvolableAsia</a></li>
+                                        <li><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
+                                        <li><a href="<?php echo bloginfo('url') ?>/service">サービス</a></li>
+                                        <li><a href="<?php echo bloginfo('url') ?>/news">ニュース</a></li>
+                                        <li><a href="<?php echo get_site_url(2) ?>">Recruit</a></li>
+                                        <li><a href="<?php echo bloginfo('url') ?>/contact/">お問い合わせ</a></li>
                                     </ul>
                                 </div>
                             </div>

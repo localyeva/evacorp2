@@ -9,7 +9,7 @@ get_header();
 <section id="history-profile">
     <div class="header-circle-banner">
         <div class="container text-center">
-            <h2>Welcome Evolable Asia</h2>
+            <h2>沿革</h2>
         </div>
     </div>
     <div class="row-gap-medium"></div>

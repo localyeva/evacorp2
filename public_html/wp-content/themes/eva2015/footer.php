@@ -17,13 +17,13 @@
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <div class="btn btn-slim ev-mobie-footer center-block">お問い合わせ</div>
+                                <div class="btn btn-slim ev-mobie-footer center-block"><a class="alnk" href="<?php echo home_url('contact') ?>">お問い合わせ</a></div>
                             </div>
                         </div>
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <div class="btn btn-slim fb-mobie-footer center-block">Facebook</div>
+                                <div class="btn btn-slim fb-mobie-footer center-block"><a href="https://www.facebook.com/evolable.asia.eva">Facebook</a></div>
                             </div>
                         </div>
                         <div class="row-gap-small .visible-xs-*"></div>
@@ -32,7 +32,7 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#">Home <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
                             <li><a href="#">About EvolableAsia <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
-                            <li><a href="#">開発ならエボ <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="#">選ばれる理由<span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
                             <li><a href="#">サービス <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
                             <li><a href="#">ニュース <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
                             <li><a href="#">Recruit <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
@@ -70,7 +70,7 @@
                         <label>ダナン支店</label>
                         <div class="row">
                             <div class="col-xs-12">
-                                <small></small>
+                                <small>A/H Zone 1F Danang Software Park - 02 Quang Trung,Hai Chau District, Da Nang</small>
                             </div>
                         </div>
                     </div>

@@ -78,9 +78,13 @@ get_header();
         );
         $wp_query->query($param);
         if ($wp_query->have_posts()){
+            $num_posts = count($wp_query->posts);
+            if($num_posts > 5){
+                $num_posts = 5;
+            }
             $i=1;
             while ($wp_query->have_posts()){
-                if($i==5){                    
+                if($i>$num_posts){                    
                     break;
                 }
         ?>
@@ -99,7 +103,7 @@ get_header();
             </div>
             <?php }?>
             <div class="col-xs-12 col-md-6 list">
-            <?php if($i>1){?>            
+            <?php if($i>1 && $i <= $num_posts){?>            
                 <?php if($i<=3){?>
                 <div class="row">
                     <?php while($i<=3 && $wp_query->have_posts()){
@@ -131,11 +135,13 @@ get_header();
             <?php }}?>        
             </div>
         <?php            
-        }}?>
+        }}
+        wp_reset_postdata();
+        ?>
         </div>
         <div class="row">
             <div class="col-xs-12 full-width no-padding-lr">
-                <?php echo $maps[$term->term_id];?>
+                <?php echo isset($maps[$term->term_id])?$maps[$term->term_id]:'';?>
                 <div id="googleMap" style="width:1160px;height:400px;display: none"></div>
             </div>
         </div>
@@ -242,6 +248,7 @@ get_header();
                     <?php
                     endwhile;
                     endif;
+                    wp_reset_postdata();
                     ?>
                 </div>
             </div>

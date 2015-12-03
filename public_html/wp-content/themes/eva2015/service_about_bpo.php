@@ -190,6 +190,7 @@ get_header();
                         <td>基本的に日本からメールとSkypeを使用して指示</td>
                     </tr>
                 </table>
+
                 <p class="taC mt50"><img src="<?php echo get_template_directory_uri() ?>/img/service/about_bpo/txt_bpo04.png" alt="御社の業務をベトナムにアウトソーシングし、コストの圧縮と業務の合理化を図りましょう" width="642" height="118" /></p>
                 <div class="btnAbout"><a href="<?php echo bloginfo('url') ?>/service/bpo-result"><img src="<?php echo get_template_directory_uri() ?>/img/service/btn_about01.png" width="304" height="63" alt="開発実績" class="opa"/></a><a href="<?php echo bloginfo('url') ?>/recommend/"><img src="<?php echo get_template_directory_uri() ?>/img/service/btn_about02.png" width="305" height="63" alt="お客様の声" class="opa"/></a></div>
 

@@ -420,7 +420,7 @@ if ($available_article == 1) {
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-4">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/26.png" alt="" class="img-responsive full-width">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/b-news-1.png" alt="" class="img-responsive full-width">
                 </div>
                 <div class="col-xs-12 col-md-8">
                     <h3>高度成長を遂げるベトナムでのラボ型開発・BPOの魅力</h3>
@@ -448,7 +448,7 @@ if ($available_article == 1) {
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/26.png" alt="" class="img-responsive full-width">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/b-news-2.png" alt="" class="img-responsive full-width">
                 </div>
             </div>
         </div>

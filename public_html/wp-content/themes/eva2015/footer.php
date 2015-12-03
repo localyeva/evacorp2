@@ -130,7 +130,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <p class="small">Recruit</p>
-                                <p class="small"><a class="alnk" href="<?php echo home_url('recruit') ?>"><i class="fa fa-angle-right"></i> Vietnamese</a></p>
+                                <p class="small"><a class="alnk" href="http://jobs.evolable.asia"><i class="fa fa-angle-right"></i> Vietnamese</a></p>
                                 <p class="small"><a class="alnk" href="<?php echo get_site_url(2) ?>"><i class="fa fa-angle-right"></i> Japanese</a></p>
                             </div>
                         </div>

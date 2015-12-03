@@ -22,7 +22,7 @@ get_header();
         width: 100%;
     }
 </style>
-<div id="company-profile">
+<div class="page-wrap">
 
     <?php echo $post->post_content; ?>
 

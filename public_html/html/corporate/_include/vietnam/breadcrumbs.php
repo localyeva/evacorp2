@@ -8,7 +8,7 @@
             <li>
                 <a href="#">About EvolableAsia</a> <span class="divider">></span>
             </li>
-            <li class="active">Vietnam</li>
+            <li class="active">なぜベトナムか?</li>
         </ul>
     </div>
 </div>

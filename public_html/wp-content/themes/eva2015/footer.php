@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 center-block page-top">
-                <img src="<?php echo get_template_directory_uri() ?>/img/28.png" alt="" class="img-responsive img-top" id="img-back-top">
+                <img src="<?php echo get_template_directory_uri() ?>/img/28.png" alt="" class="img-responsive img-top hand" id="img-back-top">
             </div>
         </div>
         <div class="row">
@@ -144,6 +144,7 @@
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery-ui.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/jquery.heightLine.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery.sidr.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/wow.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>

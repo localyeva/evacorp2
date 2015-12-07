@@ -1,0 +1,25 @@
+.header-banner {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  height: 163px;
+}
+.header-banner.blue {
+  background: rgba(0, 0, 0, 0) url("../img/banner-blue.png") no-repeat scroll 0 0 cover;
+}
+.header-banner.pink {
+  background: rgba(0, 0, 0, 0) url("../img/banner-pink.png") no-repeat scroll 0 0 cover;
+}
+.header-banner.red {
+  background: rgba(0, 0, 0, 0) url("../img/banner-red.png") no-repeat scroll 0 0 cover;
+}
+.header-banner.yellow {
+  background: rgba(0, 0, 0, 0) url("../img/banner-yellow.png") no-repeat scroll 0 0 cover;
+}
+.header-banner h2 {
+  color: white;
+  font-weight: bold;
+  left: 50%;
+  margin: 0 -50% 0 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -533,7 +533,7 @@ h1:after {
 .header-partners .content:before {
   display: block;
   margin: auto auto;
-  content: '参加企業の声';
+  content: '参加企業';
   background: #1E1E1E;
   color: #fff;
   width: 100px;
@@ -2064,6 +2064,67 @@ nav.navigation {
 .vertical-menu > li > ul > li > a:hover {
   text-decoration: none;
 }
+a {
+  outline: 0;
+}
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+object,
+embed {
+  outline: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+.gap-big {
+  margin-top: 4em;
+}
+.hand {
+  cursor: pointer;
+}
+.head-banner-wrap {
+  position: relative;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  height: 163px;
+}
+.head-banner-wrap.blue {
+  background: url("../img/banner-blue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-banner-wrap.pink {
+  background: url("../img/banner-pink.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-banner-wrap.red {
+  background: url("../img/banner-red.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-banner-wrap.yellow {
+  background: url("../img/banner-yellow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-banner-wrap.green {
+  background: url("../img/banner-green.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-banner-wrap h2 {
+  color: white;
+  font-weight: bold;
+  left: 50%;
+  margin: 0 -50% 0 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -2073,6 +2134,101 @@ and open the template in the editor.
     Created on : Nov 19, 2015, 2:59:37 PM
     Author     : haudv
 */
+#vff .header-vff-banner {
+  background: url('../img/vff-banner.png') no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 112px;
+  position: relative;
+}
+#vff .header-vff-banner .container h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#vff .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#vff .breadcrumb-cp > li {
+  display: inline-block;
+}
+#vff .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#vff hr {
+  margin-top: 10px;
+  margin-bottom: 22px;
+  width: 20px;
+  border: 0;
+  border-top: 2px solid #000;
+}
+#vff .green-text {
+  color: #00a04c;
+}
+#vff .blue-text {
+  color: #44B7F6;
+}
+#vff .blue-bg {
+  background: url('../img/vff-blue-bg.png') no-repeat;
+  background-size: cover;
+}
+#vff .blue-bg h3 {
+  color: #fff;
+}
+#vff .container-fluid.bg {
+  background: url('../img/vff-bg.png') no-repeat;
+  background-size: cover;
+  height: 634px;
+}
+#vff .vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+#vff .vertical-align > [class^="col-"],
+#vff .vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+  /* Align the flex-items vertically */
+  justify-content: center;
+  /* Optional, to align inner flex-items 
+                                  horizontally within the column  */
+}
+#vff .reason2 h4 {
+  font-weight: bold;
+}
+#vff h2 {
+  line-height: 40px;
+}
+#vff .blur-black {
+  color: #CFCFCF;
+}
+#vff article {
+  text-align: center;
+}
+#vff article h4 {
+  position: absolute;
+  right: 20px;
+  padding: 10px;
+  color: #ff0000;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#vff .longbg {
+  padding-bottom: 100px;
+  background: url('../img/vietnam-grid.png') repeat;
+}
+#vff h3.post32 {
+  margin-top: -70px;
+  z-index: 100;
+}
 #vietnam-profile .header-gree-banner {
   background: url('../img/vietnam-banner.png') no-repeat;
   background-size: cover;
@@ -2120,7 +2276,7 @@ and open the template in the editor.
   line-height: 40px;
 }
 #vietnam-profile .blur-black {
-  color: #737373;
+  color: #CFCFCF;
 }
 #vietnam-profile article {
   text-align: center;
@@ -2471,4 +2627,25 @@ and open the template in the editor.
     font-size: 17px !important;
     line-height: 25px !important;
   }
+}
+.service-info article.module {
+  position: relative;
+  border: 1px solid #ccc;
+  margin-top: 2em;
+}
+.service-info article.module a .caption {
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin-top: -50%;
+  transform: translate(0px, 50%);
+}
+.service-info article.module a .excerpt {
+  padding: 10px;
+  color: #333;
+}
+.service-info article.module a:hover figure {
+  transition: 0.3s;
+  opacity: 0.9;
 }

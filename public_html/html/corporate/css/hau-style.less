@@ -7,7 +7,107 @@ and open the template in the editor.
     Created on : Nov 19, 2015, 2:59:37 PM
     Author     : haudv
 */
-
+#vff{
+    .header-vff-banner {
+        background: url('../img/vff-banner.png') no-repeat;
+        background-size: cover;
+        padding: 0px;
+        height: 112px;
+        position: relative;
+        .container {
+            h2 {
+                color: white;
+                font-size: 40px;
+                font-weight: bold;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%)
+            }
+        }
+    }
+    .breadcrumb-cp{
+        padding: 8px 15px;
+        margin-bottom: 20px;
+        list-style: none;
+        >li{
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            letter-spacing: 2px;
+        }
+    }
+        
+    hr {
+        margin-top: 10px;
+        margin-bottom: 22px;
+        width: 20px;
+        border: 0;
+        border-top: 2px solid #000;
+    }
+    .green-text {
+        color: #00a04c;
+    }
+    .blue-text {
+        color: #44B7F6;
+    }
+    .blue-bg{
+        background: url('../img/vff-blue-bg.png') no-repeat;
+        background-size: cover;
+        h3{
+            color: #fff;
+        }
+    }
+    .container-fluid.bg{
+        background: url('../img/vff-bg.png') no-repeat;
+        background-size: cover;
+        height: 634px;
+    }
+    .vertical-align {
+        display: flex;
+        flex-direction: row;
+    }
+    .vertical-align > [class^="col-"],
+    .vertical-align > [class*=" col-"] {
+      display: flex;
+      align-items: center;     /* Align the flex-items vertically */
+      justify-content: center; /* Optional, to align inner flex-items 
+                                  horizontally within the column  */
+    }
+    .reason2{
+        h4{
+            font-weight: bold
+        }
+    }
+    h2{
+        line-height: 40px;
+    }
+    .blur-black {
+        color: #CFCFCF;
+    }
+    article{
+        text-align: center;
+        h4{
+            position: absolute;
+            right: 20px;
+            padding: 10px;            
+            color: #ff0000;
+            font-weight: bold;
+            background-color: rgba(255,255,255,0.7);
+        }
+    }
+    .longbg{
+        padding-bottom: 100px;
+        background: url('../img/vietnam-grid.png') repeat;
+    }
+    h3.post32{
+        margin-top: -70px; 
+        z-index: 100;
+    }
+    
+}
 #vietnam-profile{
     .header-gree-banner {
         background: url('../img/vietnam-banner.png') no-repeat;
@@ -56,9 +156,9 @@ and open the template in the editor.
     }
     h2{
         line-height: 40px;
-    }
+    }    
     .blur-black {
-        color: #737373;
+        color: #CFCFCF;
     }
     article{
         text-align: center;

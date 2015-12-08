@@ -168,7 +168,7 @@ get_header();
                                         <figure>
                                             <img src="<?php echo get_template_directory_uri() ?>/img/why-vietnam/vietnam-block3-image2.png" alt="" class="img-responsive center-block longbg">
                                         </figure>
-                                        <h3 class="green-text post32">日本と違い、い労働人口にボリュームがある</h3>
+                                        <h3 class="green-text post32">日本と違い、若い労働人口にボリュームがある</h3>
                                         <p>若い人口が多いのでウェディングも活況</p>
                                     </article>                                
                                 </div>                                            
@@ -213,7 +213,7 @@ get_header();
                             </div>
                             <div class="col-xs-6 col-md-6">
                                 <img src="<?php echo get_template_directory_uri() ?>/img/why-vietnam/vietnam-block4-image2.png" alt="" class="img-responsive">
-                                <p>開発ならエボ開発ならエボ開発な</p>
+                                <p>高層ビルも次々と建設されている</p>
                             </div>
                         </div>
                     </div>

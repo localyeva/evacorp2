@@ -75,7 +75,7 @@ get_header();
                     <div class="row">
                         <div class="col-xs-12 col-md-12"><hr></div>
                         <div class="col-xs-12 col-md-12">
-                            <h4 class="blue-text"><?php echo get_sub_field('question');?></h4><br>
+                            <h4 class="blue-text"><?php echo get_sub_field('question');?></h4>
                             <p><?php echo get_sub_field('answer');?></p>
                         </div>
                     </div>                    
@@ -86,7 +86,7 @@ get_header();
     </div>        
     <?php if($count < $num_posts):?>
     <div class="container">
-        <div class="row-gap-medium"></div>
+        <div class="row-gap-small"></div>
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <div class="container custom-containter">

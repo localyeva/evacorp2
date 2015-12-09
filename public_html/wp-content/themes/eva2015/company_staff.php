@@ -6,6 +6,184 @@
  */
 get_header();
 ?>
+<div id="company-staff">
+    <div class="header-vff-banner">
+        <div class="container text-center">
+            <h2>STAFF HEADLINE</h2>
+        </div>
+    </div>
+    <div class="row-gap-medium"></div>
+    <div class="container-fluid">
+        <div class="container">
+            <ul class="breadcrumb-cp">
+                <li>
+                    <a href="#">HOME</a> <span class="divider">></span>
+                </li>
+                <li>
+                    <a href="#">About EvolableAsia</a> <span class="divider">></span>
+                </li>
+                <li class="active">サッカーベ</li>
+            </ul>
+        </div>
+    </div>
+    <?php
+        $wp_query = new WP_Query();
+        $param = array(
+            'post_type' => 'company-staff',
+            'order' => 'ASC',
+            'orderby' => 'meta_value',
+            'meta_key' => 'staff_number',
+            'posts_per_page' => '-1',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'staffcat',
+                    'field' => 'slug',
+                    'terms' => 'manager'
+                )
+            )
+        );
+        $wp_query->query($param);
+        $count = "";
+        if ($wp_query->have_posts()):while ($wp_query->have_posts()) : $wp_query->the_post();
+    ?>
+                    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="container custom-containter">
+                    <div class="row">
+                        <div class="row-gap-medium"></div>
+                        <div class="col-xs-3 col-md-3">
+                            <img src="<?php echo get_template_directory_uri() ?>/img/vff-logo.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-xs-9 col-md-9">
+                            <h3><?php the_title(); ?></h3>
+                            <h4><i style="color: #93D1FA;font-size: 30px">-</i>&nbsp;&nbsp;<?php the_field('staff_role'); ?></h4>
+                            <div class="row-gap-medium"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12"><hr></div>
+                        <div class="col-xs-12 col-md-12">
+                            <h4 class="blue-text">Q のスポンサー契約を結 1</h4><br>
+                            <p>Evolable Asiaは2015年8月5日サッカーベトナム代表
+                                (Vietnam Football Federation、
+                                以下VFF)
+                                のスポンサー契約を結
+                                びました。
+                                私たちのように一般消費者向けの商材を持たない企業がスポンサー契約をするというのは非常に珍しいことだと
+                                思います。 to Bでたくさんのお客様に支えられながら事業を行う立場として、
+                                B
+                                今回のスポンサー契約に至った理由をご紹介
+                                させて頂きます。</p>
+                            <p>まずはベトナムにおけるサッカーの立ち位置から説明いたします。</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12"><hr></div>
+                        <div class="col-xs-12 col-md-12">
+                            <h4 class="blue-text">Q のスポンサー契約を結</h4><br>
+                            <p>Evolable Asiaは2015年8月5日サッカーベトナム代表
+                                (Vietnam Football Federation、
+                                以下VFF)
+                                のスポンサー契約を結
+                                びました。
+                                私たちのように一般消費者向けの商材を持たない企業がスポンサー契約をするというのは非常に珍しいことだと
+                                思います。 to Bでたくさんのお客様に支えられながら事業を行う立場として、
+                                B
+                                今回のスポンサー契約に至った理由をご紹介
+                                させて頂きます。</p>
+                            <p>まずはベトナムにおけるサッカーの立ち位置から説明いたします。</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>        
+
+    <div class="container">
+        <div class="row-gap-medium"></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="container custom-containter">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <hr class="staff-divider">
+                        </div>                                
+                    </div>                            
+                </div>                        
+            </div>                    
+        </div>                
+    </div>            
+    <?php
+           
+        endwhile;
+    endif;
+    ?>
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="container custom-containter">
+                    <div class="row">
+                        <div class="row-gap-medium"></div>
+                        <div class="col-xs-3 col-md-3">
+                            <img src="<?php echo get_template_directory_uri() ?>/img/vff-logo.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col-xs-9 col-md-9">
+                            <h3>サッカ Name</h3>
+                            <h4><i style="color: #93D1FA;font-size: 30px">-</i>&nbsp;&nbsp;サッカーベトナム代表</h4>
+                            <div class="row-gap-medium"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12"><hr></div>
+                        <div class="col-xs-12 col-md-12">
+                            <h4 class="blue-text">Q のスポンサー契約を結 1</h4><br>
+                            <p>Evolable Asiaは2015年8月5日サッカーベトナム代表
+                                (Vietnam Football Federation、
+                                以下VFF)
+                                のスポンサー契約を結
+                                びました。
+                                私たちのように一般消費者向けの商材を持たない企業がスポンサー契約をするというのは非常に珍しいことだと
+                                思います。 to Bでたくさんのお客様に支えられながら事業を行う立場として、
+                                B
+                                今回のスポンサー契約に至った理由をご紹介
+                                させて頂きます。</p>
+                            <p>まずはベトナムにおけるサッカーの立ち位置から説明いたします。</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12"><hr></div>
+                        <div class="col-xs-12 col-md-12">
+                            <h4 class="blue-text">Q のスポンサー契約を結</h4><br>
+                            <p>Evolable Asiaは2015年8月5日サッカーベトナム代表
+                                (Vietnam Football Federation、
+                                以下VFF)
+                                のスポンサー契約を結
+                                びました。
+                                私たちのように一般消費者向けの商材を持たない企業がスポンサー契約をするというのは非常に珍しいことだと
+                                思います。 to Bでたくさんのお客様に支えられながら事業を行う立場として、
+                                B
+                                今回のスポンサー契約に至った理由をご紹介
+                                させて頂きます。</p>
+                            <p>まずはベトナムにおけるサッカーの立ち位置から説明いたします。</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row-gap-big"></div>
+</div>
+
+<?php get_template_part('part-contact') ?>
+</div>
 
 <section>
     <div class="container company-staff">

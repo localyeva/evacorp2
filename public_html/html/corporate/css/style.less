@@ -10,7 +10,6 @@
 @color-alink: #fff;
 @navbar-height: 100px;
 @body-font-size: 13px;
-@color-alink: #fff;
 @bold: 800;
 
 //For smartphone
@@ -1856,8 +1855,10 @@ h1 {
     .content {
         .item {
             margin-bottom: 30px;
+            height: 200px;
             img {
                 width: 100%;
+                height: 100%;
             }
             .info {
                 width: 100%;
@@ -1889,7 +1890,7 @@ h1 {
                 .category {
                     font-size: 0.8em;
                     margin-left: 15px;
-                    padding: 2px;
+                    padding: 2px 4px;
                     z-index: 11;
                     position: absolute;
                     left: 94px;
@@ -1910,6 +1911,10 @@ h1 {
                     z-index: 11;
                     position: absolute;
                     bottom: 15px;
+                    &.title {
+                        height: 45px;
+                        overflow: hidden;
+                    }
                 }
             }
         }
@@ -2064,6 +2069,9 @@ nav.navigation {
     list-style: none;
     margin: 0;
     padding: 0;
+    a {
+        color: @dark;
+    }
     > li {
         margin-bottom: 20px;
         > a {

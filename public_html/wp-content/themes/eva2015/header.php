@@ -33,7 +33,7 @@
                                 <li><a href="<?php echo bloginfo('url') ?>/company/">About Evolable Asia</a></li>
                                 <li><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
                                 <li>
-                                    <a href="<?php echo bloginfo('url') ?>/Home">
+                                    <a href="<?php echo bloginfo('url') ?>">
                                         <img class="img-responsives" src="<?php echo get_top_image() ?>">
                                     </a>
                                 </li>

@@ -9,7 +9,7 @@ get_header();
 <div id="vff">
     <div class="header-vff-banner">
         <div class="container text-center">
-            <h2>サッカーベトナム代表VFF)</h2>
+            <h2>サッカーベトナム代表(VFF)</h2>
         </div>
     </div>
     <div class="row-gap-medium"></div>
@@ -17,13 +17,7 @@ get_header();
         <div class="container">
             <ul class="breadcrumb-cp">
                 <li>
-                    <a href="#">HOME</a> <span class="divider">></span>
-                </li>
-                <li>
-                    <a href="#">About EvolableAsia</a> <span class="divider">></span>
-                </li>
-                <li>
-                    <a href="#">会社概要</a> <span class="divider">></span>
+                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
                 <li class="active">サッカーベトナム代表VFF)</li>
 
@@ -52,16 +46,8 @@ get_header();
                             <div class="row-gap-medium"></div>
                             <div class="row-gap-small"></div>
                             <div class="col-xs-12 col-md-12">
-                                <p>Evolable Asiaは2015年8月5日サッカーベトナム代表
-                                    (Vietnam Football Federation、
-                                    以下VFF)
-                                    のスポンサー契約を結
-                                    びました。
-                                    私たちのように一般消費者向けの商材を持たない企業がスポンサー契約をするというのは非常に珍しいことだと
-                                    思います。 to Bでたくさんのお客様に支えられながら事業を行う立場として、
-                                    B
-                                    今回のスポンサー契約に至った理由をご紹介
-                                    させて頂きます。</p>
+                                <p>Evolable Asiaは2015年8月5日サッカーベトナム代表(Vietnam Football Federation、以下VFF)のスポンサー契約を結びました。
+                                    私たちのように一般消費者向けの商材を持たない企業がスポンサー契約をするというのは非常に珍しいことだと思います。B to Bでたくさんのお客様に支えられながら事業を行う立場として、今回のスポンサー契約に至った理由をご紹介させて頂きます。</p>
                                 <p>まずはベトナムにおけるサッカーの立ち位置から説明いたします。</p>
                             </div>
                         </div>
@@ -90,18 +76,10 @@ get_header();
                         <div class="row">    
                             <div class="row-gap-medium"></div>
                             <div class="col-xs-12 col-md-6">
-                                サッカーはベトナムで最も人気の高いスポーツでその代表は
-                                もの凄い注目度だということです。
-                                日本で例えるならば、
-                                サッ
-                                カー日本代表と野球日本代表を合わせた注目度だと理解して
-                                頂ければと思います。
-                                一言で言えば、
-                                ベトナムのスポーツ界で圧倒的な注目を集め
-                                る存在です。
-                                そのスポンサーはといえば、
-                                ベトナムを代表する日系企業の
-                                HONDAさんなどそうそうたる企業が名を連ねています。
+                                サッカーはベトナムで最も人気の高いスポーツでその代表はもの凄い注目度だということです。
+                                日本で例えるならば、サッカー日本代表と野球日本代表を合わせた注目度だと理解して頂ければと思います。</br>
+                                一言で言えば、ベトナムのスポーツ界で圧倒的な注目を集める存在です。</br>
+                                そのスポンサーはといえば、ベトナムを代表する日系企業のHONDAさんなどそうそうたる企業が名を連ねています。
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <img src="<?php echo get_template_directory_uri() ?>/img/vff-team.png" alt="" class="img-responsive">
@@ -180,24 +158,13 @@ get_header();
                                 <hr>
                                 <div class="row-gap-small"></div>
                                 <p>私たちは2012年に設立したばかりの新しい会社です。
-                                    まだまだIT業界の中で弊社を知らない求職者の方もたくさんいます
-                                    し、
-                                    どのような会社なのか?ということを知らない方もたくさんいます。
-                                    その中でも
-                                    「どのような会社なのか?」
-                                    をVFFのスポン
-                                    サーをさせていただくことで端的に伝えられると考えました。
-                                    つまり、
-                                    「VFFスポンサーができるしっかりとした経営をした会社」
-                                    であり、
-                                    「ベトナムと共に成長しようとする会社」
-                                    であり、
-                                    オ
-                                    フショア開発という事業を通して
-                                    「世界と戦う会社」
-                                    である。
-                                    ということを象徴的にそして感覚的に求職者の方に理解してもら
-                                    えるもしくは、
+                                    まだまだIT業界の中で弊社を知らない求職者の方もたくさんいますし、
+                                    どのような会社なのか?ということを知らない方もたくさんいます。その中でも
+                                    「どのような会社なのか?」をVFFのスポンサーをさせていただくことで端的に伝えられると考えました。</br>
+                                    つまり、「VFFスポンサーができるしっかりとした経営をした会社」
+                                    であり、「ベトナムと共に成長しようとする会社」
+                                    であり、オフショア開発という事業を通して「世界と戦う会社」である。
+                                    ということを象徴的にそして感覚的に求職者の方に理解してもらえるもしくは、
                                     そのきっかけとなると考えました。
                                 </p>
                             </div>
@@ -226,7 +193,7 @@ get_header();
                                 <div class="row-gap-medium"></div>                            
                                 <hr>
                                 <div class="row-gap-small"></div>
-                                <h4>社内VFFスポンサ ーテーマ</h4>
+                                <h4>社内VFFスポンサーテーマ</h4>
                                 <div class="row-gap-small"></div>
                                 <h2><sup><i class="fa fa-quote-left blur-black"></i></sup> <i>United we play, United we win</i> <sup><i class="fa fa-quote-right blur-black"></i></sup></h2>
 
@@ -234,19 +201,11 @@ get_header();
 
                             <div class="col-xs-12 col-md-12">
                                 <div class="row-gap-medium"></div> 
-                                <p>言うまでもなく、
-                                    私たちの従業員はそのほとんどがベトナム人です。
-                                    ベトナム人の誇りであるVFFのスポンサーをするというこ
-                                    とは言ってみれば、
+                                <p>言うまでもなく、私たちの従業員はそのほとんどがベトナム人です。
+                                    ベトナム人の誇りであるVFFのスポンサーをするということは言ってみれば、
                                     一人一人の従業員の努力の成果である収益の一部をその誇りを支えることに使うということです。
-                                    つまり
-                                    、
-                                    一人一人の努力、
-                                    成果がベトナム代表を支え成長させていく力になれるということです。
-                                    私たちは United we play,
-                                    United we win という社内スローガンの通り、
-                                    VFFと共に団結し、
-                                    勝利をつかみ取ろうと考えています。
+                                    つまり、一人一人の努力、成果がベトナム代表を支え成長させていく力になれるということです。</br>
+                                    私たちは United we play,United we win という社内スローガンの通り、VFFと共に団結し、勝利をつかみ取ろうと考えています。
 
                                 </p>
                             </div>
@@ -275,11 +234,9 @@ get_header();
                                 <hr>
                                 <div class="row-gap-small"></div>
                                 <p>VFFのスポンサーをするというのはベトナムと共に成長していくという経営からの対外的な宣言です。
-                                    VFFのスポンサーとい
-                                    う重い責を自らに課すことによって、
+                                    VFFのスポンサーという重い責を自らに課すことによって、
                                     事業を通してベトナムを発展させるという意思表示です。
-                                    お客様と従業員とともにベトナ
-                                    ムの発展に寄与していきたいと考えています。
+                                    お客様と従業員とともにベトナムの発展に寄与していきたいと考えています。
                                 </p>
                             </div>
                         </div>

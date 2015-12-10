@@ -1,25 +1,21 @@
 <?php
 /*
  * Author: KhangLe
- * Template Name: Archive-FAQ
  * 
  */
 get_header();
 ?>
-
 <section>
-    <div class="container faq">
 
-        <div class="keyvisual-faq">
-            <div class="text">
-<!--                <p class="lead main">
-                    <?php echo get_contact_text_1() ?>
-                </p>
-                <p class="lead">
-                    <?php echo get_contact_text_2() ?>
-                </p>-->
+    <div class="head-banner-wrap purple">
+        <div class="container text-center">
+            <div class="col-md-12">
+                <h2>Contact</h2>
             </div>
         </div>
+    </div>
+
+    <div class="container">
 
         <?php
         $args = array('hide_empty=0');

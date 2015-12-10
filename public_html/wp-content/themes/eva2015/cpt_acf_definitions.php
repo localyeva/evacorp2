@@ -436,7 +436,7 @@ function cptui_register_my_taxes() {
         "show_ui" => true,
         "query_var" => true,
         "rewrite" => array('slug' => 'faqcat', 'with_front' => true),
-        "show_admin_column" => false,
+        "show_admin_column" => true,
     );
     register_taxonomy("faqcat", array("faq"), $args);
 
@@ -562,88 +562,6 @@ if (function_exists("register_field_group")) {
             'position' => 'normal',
             'layout' => 'no_box',
             'hide_on_screen' => array(
-            ),
-        ),
-        'menu_order' => 0,
-    ));
-
-    register_field_group(array(
-        'id' => 'acf_faq',
-        'title' => 'FAQ',
-        'fields' => array(
-            array(
-                'key' => 'field_55b8829ab0834',
-                'label' => 'Question',
-                'name' => 'question',
-                'type' => 'text',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'none',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_55b8833bb0835',
-                'label' => 'Answer',
-                'name' => 'answer',
-                'type' => 'wysiwyg',
-                'default_value' => '',
-                'toolbar' => 'full',
-                'media_upload' => 'yes',
-            ),
-            array(
-                'key' => 'field_5302f563d5725',
-                'label' => 'FAQ',
-                'name' => 'faq',
-                'type' => 'repeater',
-                'sub_fields' => array(
-                    array(
-                        'key' => 'field_5302f5f4d5726',
-                        'label' => 'Question',
-                        'name' => 'question',
-                        'type' => 'text',
-                        'column_width' => '',
-                        'default_value' => '',
-                        'placeholder' => '',
-                        'prepend' => '',
-                        'append' => '',
-                        'formatting' => 'html',
-                        'maxlength' => '',
-                    ),
-                    array(
-                        'key' => 'field_5302f605d5727',
-                        'label' => 'Answer',
-                        'name' => 'answer',
-                        'type' => 'wysiwyg',
-                        'column_width' => '',
-                        'default_value' => '',
-                        'toolbar' => 'full',
-                        'media_upload' => 'yes',
-                    ),
-                ),
-                'row_min' => '',
-                'row_limit' => '',
-                'layout' => 'row',
-                'button_label' => 'faqを追加',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'faq',
-                    'order_no' => 0,
-                    'group_no' => 0,
-                ),
-            ),
-        ),
-        'options' => array(
-            'position' => 'normal',
-            'layout' => 'no_box',
-            'hide_on_screen' => array(
-                0 => 'the_content',
             ),
         ),
         'menu_order' => 0,
@@ -1046,8 +964,8 @@ if (function_exists("register_field_group")) {
                         'key' => 'field_5667a03d0a5b9',
                         'label' => 'Question',
                         'name' => 'question',
-                        'type' => 'text',
-                        'column_width' => '',
+                        'type' => 'textarea',
+                        'column_width' => '30',
                         'default_value' => '',
                         'placeholder' => '',
                         'prepend' => '',

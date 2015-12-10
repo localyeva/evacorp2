@@ -6,16 +6,28 @@
  */
 get_header();
 ?>
-<section>
-
+<div id="faq">
     <div class="head-banner-wrap purple">
         <div class="container text-center">
             <div class="col-md-12">
-                <h2>Contact</h2>
+                <h2>FAQ</h2>
             </div>
         </div>
     </div>
-
+    <div class="row-gap-medium"></div>
+    <div class="container-fluid">
+        <div class="container">
+            <ul class="breadcrumb-cp">
+                <li>
+                    <a href="#">HOME</a> <span class="divider">></span>
+                </li>
+                <li>
+                    <a href="#">About EvolableAsia</a> <span class="divider">></span>
+                </li>
+                <li class="active">FAQ</li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <div class="faq">
             <?php
@@ -44,14 +56,15 @@ get_header();
                                     )
                                 );
                                 $loop = new WP_Query($args);
+                                $i = 0;
 
                                 while ($loop->have_posts()): $loop->the_post();
                                     ?>
                                     <li id="faq<?php the_ID(); ?>">
-                                        <h4 id="<?php the_ID(); ?>"><?php the_title(); ?></h4>
+                                        <h4 id="<?php the_ID(); ?>" <?php echo $i==0?"style='border-top:0px'":""?>><?php the_title(); ?></h4>
                                         <?php the_content(); ?>
                                     </li>
-                                <?php endwhile; ?>
+                                <?php $i++; endwhile; ?>
                             </ul>
                         </li>
                     <?php endforeach; ?>
@@ -62,7 +75,10 @@ get_header();
             <?php wp_reset_postdata(); ?>
         </div>
     </div>
-</section>
+    
+    <?php get_template_part('part-contact') ?>
+</div>
+
 
 <?php
 get_footer();

@@ -58,10 +58,10 @@ get_header();
                 <div class="container custom-containter">
                     <div class="row">
                         <div class="row-gap-medium"></div>
-                        <div class="col-xs-3 col-md-3">
+                        <div class="col-xs-6 col-md-6">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive">
                         </div>
-                        <div class="col-xs-9 col-md-9">
+                        <div class="col-xs-6 col-md-6">
                             <h3><?php the_title(); ?></h3>
                             <h4><i style="color: #93D1FA;font-size: 30px">-</i>&nbsp;&nbsp;<?php the_field('staff_role'); ?></h4>
                             <div class="row-gap-small"></div>

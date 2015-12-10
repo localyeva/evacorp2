@@ -2116,6 +2116,11 @@ input::-moz-focus-inner {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.head-banner-wrap.purple {
+  background: url("../img/banner-purple.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .head-banner-wrap h2 {
   color: #fff;
   font-weight: bold;
@@ -2134,6 +2139,19 @@ and open the template in the editor.
     Created on : Nov 19, 2015, 2:59:37 PM
     Author     : haudv
 */
+.breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.breadcrumb-cp > li {
+  display: inline-block;
+}
+.breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
 #company-staff .header-vff-banner {
   background: url('../img/vff-banner.png') no-repeat;
   background-size: cover;
@@ -2149,19 +2167,6 @@ and open the template in the editor.
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-}
-#company-staff .breadcrumb-cp {
-  padding: 8px 15px;
-  margin-bottom: 20px;
-  list-style: none;
-}
-#company-staff .breadcrumb-cp > li {
-  display: inline-block;
-}
-#company-staff .breadcrumb-cp a {
-  text-decoration: none;
-  color: black;
-  letter-spacing: 2px;
 }
 #company-staff .blue-text {
   color: #44B7F6;
@@ -2184,19 +2189,6 @@ and open the template in the editor.
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-}
-#vff .breadcrumb-cp {
-  padding: 8px 15px;
-  margin-bottom: 20px;
-  list-style: none;
-}
-#vff .breadcrumb-cp > li {
-  display: inline-block;
-}
-#vff .breadcrumb-cp a {
-  text-decoration: none;
-  color: black;
-  letter-spacing: 2px;
 }
 #vff hr {
   margin-top: 10px;
@@ -2279,19 +2271,6 @@ and open the template in the editor.
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-}
-#vietnam-profile .breadcrumb-cp {
-  padding: 8px 15px;
-  margin-bottom: 20px;
-  list-style: none;
-}
-#vietnam-profile .breadcrumb-cp > li {
-  display: inline-block;
-}
-#vietnam-profile .breadcrumb-cp a {
-  text-decoration: none;
-  color: black;
-  letter-spacing: 2px;
 }
 #vietnam-profile hr {
   margin-top: 22px;
@@ -2390,23 +2369,6 @@ and open the template in the editor.
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-}
-#labo .breadcrumb-cp {
-  padding: 8px 15px;
-  margin-bottom: 20px;
-  list-style: none;
-}
-#labo .breadcrumb-cp h3.post32 {
-  margin-top: -70px;
-  z-index: 100;
-}
-#labo .breadcrumb-cp > li {
-  display: inline-block;
-}
-#labo .breadcrumb-cp a {
-  text-decoration: none;
-  color: black;
-  letter-spacing: 2px;
 }
 #labo .intersection {
   position: relative;
@@ -2662,6 +2624,56 @@ and open the template in the editor.
     font-size: 17px !important;
     line-height: 25px !important;
   }
+}
+#faq .faq .ul_faq01 li {
+  width: 373px;
+}
+#faq .faq .ul_faq01 li p {
+  background: rgba(0, 0, 0, 0) url("../img/ico/bg_icon.png") no-repeat scroll 0 -1134px;
+  margin: 5px 6px 0;
+  padding: 0 0 0 8px;
+}
+#faq .faq .ul_faq01 li p:first-child {
+  background: rgba(0, 0, 0, 0) url("../img/ico/bg_icon.png") no-repeat scroll 5px -1250px;
+  border-bottom: 1px solid #9d72b5;
+  border-top: 1px solid #9d72b5;
+  font-weight: bold;
+  margin: 0 0 10px;
+  padding: 5px 0 5px 12px;
+}
+#faq .faq .ul_faq01 li p:first-child a {
+  color: #9d72b5;
+}
+#faq .faq .ul_faq02 li:first-child {
+  margin-top: 0;
+}
+#faq .faq .ul_faq02 > li {
+  margin-top: 60px;
+}
+#faq .faq .ul_faq02 > li h3 {
+  background: rgba(0, 0, 0, 0) url("../img/faq/bg_repeat.png") repeat-x scroll center bottom;
+}
+#faq .faq .ul_faq02 > li h3 span {
+  background: rgba(0, 0, 0, 0) url("../img/ico/bg_icon.png") no-repeat scroll 5px -1483px;
+  border-top: 2px solid #9d72b5;
+  border-bottom: 2px solid #9d72b5;
+  color: #9d72b5;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0 10px 45px;
+}
+#faq .faq .ul_faq03 li {
+  padding-bottom: 20px;
+}
+#faq .faq .ul_faq03 li h4 {
+  background: rgba(0, 0, 0, 0) url("../img/ico/bg_icon.png") no-repeat scroll 5px -1360px;
+  border-bottom: 1px dotted #888;
+  border-top: 2px solid #9d72b5;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 13px;
+  padding: 22px 0 19px 28px;
 }
 .service-info article.module {
   position: relative;

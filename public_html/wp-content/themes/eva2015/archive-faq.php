@@ -1,6 +1,7 @@
 <?php
 /*
  * Author: KhangLe
+ * Template Name: Archive-FAQ
  * 
  */
 get_header();

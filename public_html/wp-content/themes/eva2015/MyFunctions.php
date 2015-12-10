@@ -98,7 +98,7 @@ function wpbeginner_numeric_posts_nav() {
     /**     Link to last page, plus ellipses if necessary */
     if (!in_array($max, $links)) {
         if (!in_array($max - 1, $links))
-            echo '<li>…</li>' . "\n";
+            echo '<li><span>…</span></li>' . "\n";
 
         $class = $paged == $max ? ' class="active"' : '';
         printf('<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url(get_pagenum_link($max)), $max);

@@ -724,11 +724,11 @@ h1 {
             }
         }
     }
-    .breadcrumb-cp{
+    .breadcrumb-cp {
         padding: 8px 15px;
         margin-bottom: 20px;
         list-style: none;
-        >li{
+        > li {
             display: inline-block;
         }
         a{
@@ -1721,6 +1721,7 @@ h1 {
         list-style: none;
         >li{
             display: inline-block;
+            margin-right: 5px;
         }
         a{
             text-decoration: none;
@@ -2055,7 +2056,7 @@ nav.navigation {
             }
         }
         span {
-            border: solid 1px #000000;
+            border: 0;
             color: #000000;
             &:hover {
                 border: solid 1px #000000;
@@ -2072,6 +2073,11 @@ nav.navigation {
     a {
         color: @dark;
     }
+    .archive-year {
+        > a {
+            font-weight: @bold;
+        }
+    }
     > li {
         margin-bottom: 20px;
         > a {
@@ -2083,6 +2089,13 @@ nav.navigation {
             &:hover {
                 text-decoration: none;
             }
+        }
+        > span {
+            padding-left: 10px;
+            border-left: solid 4px @yellow;
+            color: @dark;
+            text-transform: uppercase;
+            font-weight: bold;
         }
         > ul {
             margin-top: 10px;

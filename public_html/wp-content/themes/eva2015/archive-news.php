@@ -18,7 +18,7 @@ $default_img = get_template_directory_uri() . '/img/default-img.jpg';
     <?php custom_breadcrumbs('news'); ?>
     <div class="row-gap-medium"></div>
     <div class="container center bpo-1">
-        <?php include 'sidebar-news.php'; ?>
+        <?php get_sidebar('news') ?>
         <div class="content col-md-9">
             <div class="row">
                 <?php

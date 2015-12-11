@@ -334,7 +334,7 @@ if ($available_new == 1) {
                     ?>
                     <?php while ($loop->have_posts()): $loop->the_post(); ?>
                         <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
-                            <a class="news-hover" href="<?php echo get_field('link') ?>">
+                            <a class="news-hover" href="<?php the_permalink() ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                 <div class="caption full-width left">
                                     <div class="news-main-title">
@@ -351,7 +351,7 @@ if ($available_new == 1) {
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12 text-center">
-                    <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+                    <a href="<?php echo home_url('news') ?>"<button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button></a>
                 </div>
             </div>
         </div>
@@ -377,7 +377,6 @@ if ($available_blog == 1) {
                     'orderby' => array('date' => 'DESC'),
                 );
                 $loop = new WP_Query($args);
-//                var_dump($loop);exit;
                 ?>
                 <?php
                 if ($loop->have_posts()):

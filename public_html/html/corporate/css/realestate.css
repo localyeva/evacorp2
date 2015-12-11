@@ -1,0 +1,164 @@
+#realestate .header-real-banner {
+  background: url('../img/realestate/realestate-banner.png') center no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 161px;
+  position: relative;
+}
+#realestate .header-real-banner .container h2 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#realestate .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#realestate .breadcrumb-cp > li {
+  display: inline-block;
+}
+#realestate .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#realestate .realastate-1 .text-1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1C1C1C;
+}
+#realestate .realastate-1 .text-2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #6ACCFD;
+}
+#realestate .realastate-2 {
+  background: url('../img/realestate/1.png') center no-repeat;
+  padding: 0px;
+  height: 420px;
+  position: relative;
+}
+#realestate .realastate-2 .text-pos {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  transform: translate(0, -50%);
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+#realestate .realastate-4 {
+  background: url('../img/realestate/6.png') bottom center;
+  width: 100%;
+  max-height: 339px;
+  min-height: 220px;
+  position: relative;
+  z-index: -1 !important;
+}
+#realestate .realastate-4 .text-center h2 {
+  color: #000;
+  font-size: 40px;
+  font-weight: bold;
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#realestate .realastate-5 h2 {
+  color: #6bc6fb;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+#realestate .realastate-6 {
+  background: url('../img/realestate/11.png') center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 100px 0px;
+}
+#realestate .realastate-6 .container .title_BPO {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  border-left: 4px solid #6bc7f8;
+  max-width: 800px;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+#realestate .realastate-6 .container .image_BPO {
+  border-top: 2px solid #cbcbcb;
+  padding-top: 20px;
+}
+#realestate .realastate-7 {
+  background: url('../img/realestate/13.png') center no-repeat;
+  background-size: cover;
+  padding: 0px;
+  position: relative;
+  height: 338px;
+}
+#realestate .realastate-7 .text-pos {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+#realestate .realastate-7 .button {
+  position: absolute;
+  text-align: center;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#realestate .realastate-7 .button a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: solid 2px #fff;
+  text-decoration: none;
+  padding: 20px 50px;
+}
+#realestate .realastate-7 .button a:hover {
+  background: #fff;
+}
+@media (max-width: 1280px) {
+  .realastate-4 {
+    height: 400px;
+  }
+  .realastate-7 .button .a {
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 1100px) {
+  .realastate-3 {
+    margin-top: -162px;
+  }
+  .realastate-4 {
+    margin-top: -60px;
+    height: 300px;
+  }
+  .realastate-7 .button .a {
+    padding: 0px !important;
+  }
+}
+@media (max-width: 768px) {
+  .realastate-3 {
+    margin-top: -100px;
+  }
+  .realastate-4 {
+    margin-top: -30px;
+    height: 250px;
+  }
+  .realastate-7 .button .a {
+    padding: 0px !important;
+  }
+}

@@ -533,7 +533,7 @@ h1:after {
 .header-partners .content:before {
   display: block;
   margin: auto auto;
-  content: '参加企業の声';
+  content: '参加企業';
   background: #1E1E1E;
   color: #fff;
   width: 100px;
@@ -2064,6 +2064,40 @@ nav.navigation {
 .vertical-menu > li > ul > li > a:hover {
   text-decoration: none;
 }
+.head-banner-wrap {
+  position: relative;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  height: 163px;
+}
+.head-banner-wrap.blue {
+  background: url("../img/banner-blue.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-banner-wrap.pink {
+  background: url("../img/banner-pink.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-banner-wrap.red {
+  background: url("../img/banner-red.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-banner-wrap.yellow {
+  background: url("../img/banner-yellow.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.head-banner-wrap h2 {
+  color: white;
+  font-weight: bold;
+  left: 50%;
+  margin: 0 -50% 0 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -2470,5 +2504,461 @@ and open the template in the editor.
   .intersection h3 {
     font-size: 17px !important;
     line-height: 25px !important;
+  }
+}
+#realestate .header-real-banner {
+  background: url('../img/realestate/realestate-banner.png') center no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 161px;
+  position: relative;
+}
+#realestate .header-real-banner .container h2 {
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#realestate .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#realestate .breadcrumb-cp > li {
+  display: inline-block;
+}
+#realestate .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#realestate .realastate-1 .text-1 {
+  color: #1C1C1C;
+}
+#realestate .realastate-1 .text-2 {
+  color: #6ACCFD;
+}
+#realestate .realastate-2 {
+  background: url('../img/realestate/1.png') center no-repeat;
+  padding: 0px;
+  height: 420px;
+}
+#realestate .realastate-2 .text-pos {
+  text-align: center;
+  margin-top: 115px;
+}
+#realestate .realastate-2 .text-pos h2 {
+  color: #fff;
+  letter-spacing: 7px;
+  font-size: 31px;
+  font-weight: normal;
+}
+#realestate .realastate-2 .text-pos h3 {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+#realestate .realastate-4 {
+  background: url('../img/realestate/66.png') center no-repeat;
+  background-size: cover;
+  padding: 0px;
+}
+#realestate .realastate-4 .realastate-4-1 {
+  padding: 120px 0px 70px;
+}
+#realestate .realastate-4 .realastate-4-1 p {
+  color: #000;
+  letter-spacing: 2px;
+}
+#realestate .realastate-4 .realastate-4-1 p span {
+  border-bottom: solid 2px #6ACCFD;
+}
+#realestate .realastate-5 {
+  background: url('../img/realestate/67.png') center no-repeat;
+  padding: 0px;
+  height: 61px;
+}
+#realestate .realastate-6 p {
+  color: #6ACCFD;
+  font-size: 18px;
+  letter-spacing: 4px;
+  padding: 80px 0px 10px;
+}
+#realestate .realastate-7 {
+  background: url('../img/realestate/11.png') center no-repeat;
+  background-size: cover;
+  padding: 0px;
+}
+#realestate .realastate-7 .realastate-7-1 {
+  padding: 100px 0px 100px;
+}
+#realestate .realastate-7 .realastate-7-1 p {
+  color: #000;
+  letter-spacing: 3px;
+  border-left: solid 4px #47ac36;
+  padding-left: 22px;
+  font-size: 25px;
+}
+#realestate .realastate-7 .realastate-7-1 .realastate-7-1-1 {
+  border-top: solid 2px #cbcbcb;
+  padding-top: 30px;
+}
+#realestate .realastate-8 {
+  background: url('../img/realestate/13.png') center no-repeat;
+  background-size: cover;
+  padding: 0px;
+}
+#realestate .realastate-8 .realastate-8-1 p {
+  color: #fff;
+  letter-spacing: 3px;
+}
+#realestate .realastate-8 .realastate-8-1 a {
+  color: #fff;
+  font-size: 18px;
+  border: solid 2px #fff;
+  position: relative;
+  text-decoration: none;
+  padding: 15px 0px;
+  letter-spacing: 3px;
+  width: 95%;
+}
+#realestate .realastate-8 .realastate-8-1 a:before {
+  width: 9px;
+  height: 15px;
+  content: " ";
+  background: url('../img/realestate/14.png') no-repeat;
+  position: absolute;
+  left: 20px;
+  top: 19px;
+}
+@media (min-width: 320px) {
+  .realastate-1 .text-1 {
+    font-size: 28px;
+  }
+  .realastate-1 .text-2 {
+    font-size: 28px;
+  }
+  .realastate-3 {
+    margin-top: -100px;
+  }
+  .realastate-4 .realastate-4-1 {
+    margin-top: -40px;
+  }
+  .realastate-4 .realastate-4-1 p {
+    font-size: 20px;
+  }
+  .realastate-8 .realastate-8-1 {
+    padding: 40px 0px;
+  }
+  .realastate-8 .realastate-8-1 p {
+    font-size: 20px;
+  }
+  .realastate-8 .realastate-8-1 .realastate-8-1-xs {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .realastate-1 .text-1 {
+    font-size: 31px;
+  }
+  .realastate-1 .text-2 {
+    font-size: 31px;
+  }
+  .realastate-3 {
+    margin-top: -142px;
+  }
+  .realastate-4 .realastate-4-1 {
+    margin-top: -70px;
+  }
+  .realastate-4 .realastate-4-1 p {
+    font-size: 26px;
+  }
+  .realastate-8 .realastate-8-1 {
+    padding: 90px 0px;
+  }
+  .realastate-8 .realastate-8-1 p {
+    font-size: 32px;
+  }
+  .realastate-8 .realastate-8-1 .realastate-8-1-xs {
+    margin-top: 0px;
+  }
+}
+#secondary .header-secondary-banner {
+  background: url('../img/secondary/1.png') center no-repeat;
+  background-size: cover;
+  padding: 0px;
+  height: 161px;
+  position: relative;
+}
+#secondary .header-secondary-banner .container h2 {
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#secondary .breadcrumb-cp {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+#secondary .breadcrumb-cp > li {
+  display: inline-block;
+}
+#secondary .breadcrumb-cp a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+}
+#secondary .secondary-1 .secondary-1-1 {
+  margin-top: 30px;
+}
+#secondary .secondary-1 .secondary-1-1 .text-1 {
+  font-size: 33px;
+  color: #000;
+}
+#secondary .secondary-1 .secondary-1-1 .text-2 {
+  font-size: 33px;
+  color: #47ac36;
+}
+#secondary .secondary-2 .text-1 {
+  font-size: 25px;
+  color: #47ac36;
+  font-weight: bold;
+  font-style: italic;
+}
+#secondary .secondary-2 .text-2 {
+  font-size: 20px;
+  color: #000;
+}
+#secondary .secondary-2 .text-3 {
+  font-size: 20px;
+  color: #47ac36;
+}
+#secondary .secondary-2 .text-4 {
+  font-size: 14px;
+  color: #000;
+  line-height: 35px;
+  text-align: justify;
+}
+#secondary .secondary-3 {
+  background: url('../img/secondary/3.png') center no-repeat;
+  padding: 0px;
+  height: 379px;
+  z-index: 2 !important;
+  position: relative;
+}
+#secondary .secondary-3 .secondary-3-1 {
+  margin: 100px auto 0px;
+  background: #fff;
+  opacity: 0.8;
+  padding: 5px 0px 2px;
+}
+#secondary .secondary-3 .secondary-3-1 p {
+  text-align: center;
+  color: #000;
+  letter-spacing: 3px;
+}
+#secondary .secondary-3 .secondary-3-1 p span {
+  color: #47ac36 !important;
+}
+#secondary .secondary-4 {
+  background: url('../img/secondary/7.png') center no-repeat;
+  background-size: cover;
+  padding: 0px;
+  z-index: 1 !important;
+  margin-top: -87px;
+}
+#secondary .secondary-4 .secondary-4-1 {
+  padding: 80px 0px;
+}
+#secondary .secondary-4 .secondary-4-1 p {
+  text-align: center;
+  color: #000;
+  letter-spacing: 3px;
+  font-size: 22px;
+  line-height: 40px;
+}
+#secondary .secondary-4 .secondary-4-1 p span {
+  border-bottom: solid 2px #47ac36;
+}
+#secondary .secondary-4 .secondary-4-1 .text-note {
+  font-size: 13px;
+}
+#secondary .secondary-4 .secondary-4-1 .secondary-4-1-1 p {
+  text-align: justify;
+  color: #000;
+  letter-spacing: 0px;
+  font-size: 14px;
+  line-height: 26px;
+}
+#secondary .secondary-4 .secondary-4-1 .secondary-4-1-1 span {
+  font-size: 20px;
+  color: #47ac36;
+}
+#secondary .secondary-4 .secondary-4-1 .secondary-4-1-1 .secondary4-link {
+  text-align: center;
+  margin-top: 30px;
+}
+#secondary .secondary-4 .secondary-4-1 .secondary-4-1-1 .secondary4-link a {
+  color: #47ac36;
+  font-size: 14px;
+  padding: 15px 30px;
+  background: #fff;
+  border: solid 2px #47ac36;
+  position: relative;
+  text-decoration: none;
+}
+#secondary .secondary-4 .secondary-4-1 .secondary-4-1-1 .secondary4-link a:hover {
+  opacity: 0.6;
+}
+#secondary .secondary-4 .secondary-4-1 .secondary-4-1-1 .secondary4-link a:before {
+  width: 7px;
+  height: 12px;
+  content: " ";
+  background: url('../img/secondary/12.png') no-repeat;
+  position: absolute;
+  left: 14px;
+  top: 17px;
+}
+#secondary .secondary-5 p {
+  color: #000;
+  letter-spacing: 3px;
+  border-left: solid 4px #47ac36;
+  padding-left: 22px;
+}
+#secondary .secondary-5 .secondary-5-1 {
+  border-top: solid 2px #cbcbcb;
+  padding-top: 60px;
+}
+#secondary .secondary-6 {
+  background: url('../img/secondary/9.png') center no-repeat;
+  background-size: cover;
+  padding: 0px;
+}
+#secondary .secondary-6 .secondary-6-1 {
+  padding: 90px 0px 123px;
+}
+#secondary .secondary-6 .secondary-6-1 p {
+  text-align: left;
+  color: #fff;
+  letter-spacing: 1px;
+}
+#secondary .secondary-6 .secondary-6-1 p .secondary-6-underline {
+  border-bottom: solid 2px #ffcf10;
+}
+#secondary .secondary-6 .secondary-6-1 p .secondary-6-number {
+  color: #47ac36;
+  margin-right: 15px;
+  padding: 1px 6px;
+  font-weight: bold;
+  background: #fff;
+  -webkit-box-shadow: 1px 1px 0px 0px #346b31;
+  -moz-box-shadow: 1px 1px 0px 0px #346b31;
+  box-shadow: 1px 1px 0px 0px #346b31;
+}
+#secondary .secondary-6 .secondary-6-1 .secondary-6-1-1 {
+  border-radius: 4px;
+  border: solid 2px #fff;
+  padding: 20px 0px;
+}
+#secondary .secondary-6 .secondary-6-1 .secondary-6-1-1 span {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 3px;
+}
+#secondary .secondary-7 {
+  background: url('../img/secondary/10.png') center no-repeat;
+  padding: 0px;
+  height: 258px;
+  margin-top: -122px;
+}
+#secondary .secondary-8 {
+  padding: 0px;
+}
+#secondary .secondary-8 .secondary-8-1 p {
+  text-align: center;
+  color: #000;
+  letter-spacing: 3px;
+  font-size: 22px;
+}
+#secondary .secondary-8 .secondary-8-1 p span {
+  color: #47ac36 !important;
+}
+#secondary .secondary-8 .secondary-8-1 .secondary8-link {
+  text-align: center;
+  margin-top: 30px;
+}
+#secondary .secondary-8 .secondary-8-1 .secondary8-link a {
+  color: #47ac36;
+  font-size: 14px;
+  padding: 15px 40px 15px 60px;
+  background: #fff;
+  border: solid 2px #47ac36;
+  position: relative;
+  text-decoration: none;
+}
+#secondary .secondary-8 .secondary-8-1 .secondary8-link a:hover {
+  opacity: 0.6;
+}
+#secondary .secondary-8 .secondary-8-1 .secondary8-link a:after {
+  width: 7px;
+  height: 12px;
+  content: " ";
+  background: url('../img/secondary/12.png') no-repeat;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+}
+#secondary .secondary-8 .secondary-8-1 .secondary8-link a:before {
+  width: 24px;
+  height: 18px;
+  content: " ";
+  background: url('../img/secondary/11.png') no-repeat;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+}
+@media (min-width: 320px) {
+  .secondary-1 .secondary-1-1 {
+    text-align: center;
+  }
+  .secondary-3 .secondary-3-1 p {
+    font-size: 16px;
+  }
+  .secondary-5 p {
+    font-size: 17px;
+  }
+  .secondary-6 .secondary-6-1 p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .secondary-6 .secondary-6-1 p .secondary-6-number {
+    font-size: 17px;
+  }
+  .secondary-6 .secondary-6-1 .secondary-6-1-1 span {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .secondary-1 .secondary-1-1 {
+    text-align: left;
+  }
+  .secondary-3 .secondary-3-1 p {
+    font-size: 25px;
+  }
+  .secondary-5 p {
+    font-size: 25px;
+  }
+  .secondary-6 .secondary-6-1 p {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .secondary-6 .secondary-6-1 p .secondary-6-number {
+    font-size: 21px;
+  }
+  .secondary-6 .secondary-6-1 .secondary-6-1-1 span {
+    font-size: 22px;
   }
 }

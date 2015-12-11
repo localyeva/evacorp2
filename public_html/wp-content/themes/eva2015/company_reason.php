@@ -7,9 +7,11 @@
 get_header();
 ?>
 <section id="reason-profile">
-    <div class="header-reason-banner">
+    <div class="head-banner-wrap purple">
         <div class="container text-center">
-            <h2>選ばれる理由</h2>
+            <div class="col-md-12">
+                <h2>選ばれる理由</h2>
+            </div>
         </div>
     </div>
     <div class="row-gap-medium"></div>
@@ -17,12 +19,12 @@ get_header();
         <div class="container">
             <ul class="breadcrumb-cp">
                 <li>
-                    <a href="#">HOME</a> <span class="divider">></span>
+                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
                 <li>
                     <a href="#">About EvolableAsia</a> <span class="divider">></span>
                 </li>
-                <li class="active">Reason</li>
+                <li class="active">選ばれる理由</li>
             </ul>
         </div>
     </div>
@@ -43,18 +45,29 @@ get_header();
         <?php while ($loop->have_posts()): $loop->the_post(); ?>
             <div class="container-fluid center reason-why-<?php echo $time; ?>">
                 <div class="container">
-                    <?php if($time != 1){echo('<div class="row-gap-huge"></div>');}?>
                     <div class="row">
-                        <div class="col-xs-12 col-md-12 no-padding-lr text-center">
-                            <span class="text-1"><?php the_title();?></span><br>
-                            <?php echo get_field('header');?>
-                            <div class="drop-line-top center-block"></div>
+                    <?php if($time != 1){echo('<div class="row-gap-huge"></div>');}?>
+                    <div class="col-xs-12 col-md-12">
+                        <div class="container custom-containter">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 no-padding-lr text-center">
+                                    <span class="text-1"><?php the_title();?></span><br>
+                                    <?php echo get_field('header');?>
+                                    <div class="drop-line-top center-block"></div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="row-gap-big"></div>
+                    </div>                    
+                    <div class="col-xs-12 col-md-12">
+                        <div class="container custom-containter">
+                        <?php remove_filter ('content', 'wpautop'); ?>
+                        <?php echo get_field('content');?>
+                        </div>
+                        <div class="row-gap-huge"></div>
                     </div>
-                    <div class="row-gap-big"></div>
-                    <?php remove_filter ('content', 'wpautop'); ?>
-                    <?php echo get_field('content');?>
-                    <div class="row-gap-huge"></div>
+                    
+                    </div>
                 </div>
             </div>
         <?php $time++; ?>

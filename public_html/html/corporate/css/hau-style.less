@@ -7,7 +7,133 @@ and open the template in the editor.
     Created on : Nov 19, 2015, 2:59:37 PM
     Author     : haudv
 */
-
+.breadcrumb-cp{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    >li{
+        display: inline-block;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        letter-spacing: 2px;
+    }
+}
+#company-staff{
+    .header-vff-banner {
+        background: url('../img/vff-banner.png') no-repeat;
+        background-size: cover;
+        padding: 0px;
+        height: 112px;
+        position: relative;
+        .container {
+            h2 {
+                color: white;
+                font-size: 40px;
+                font-weight: bold;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%)
+            }
+        }
+    }    
+    .blue-text {
+        color: #44B7F6;
+    }
+    .staff-divider{
+        border-top: 1px solid
+    }
+}
+#vff{
+    .header-vff-banner {
+        background: url('../img/vff-banner.png') no-repeat;
+        background-size: cover;
+        padding: 0px;
+        height: 112px;
+        position: relative;
+        .container {
+            h2 {
+                color: white;
+                font-size: 40px;
+                font-weight: bold;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%)
+            }
+        }
+    }
+            
+    hr {
+        margin-top: 10px;
+        margin-bottom: 22px;
+        width: 20px;
+        border: 0;
+        border-top: 2px solid #000;
+    }
+    .green-text {
+        color: #00a04c;
+    }
+    .blue-text {
+        color: #44B7F6;
+    }
+    .blue-bg{
+        background: url('../img/vff-blue-bg.png') no-repeat;
+        background-size: cover;
+        h3{
+            color: #fff;
+        }
+    }
+    .container-fluid.bg{
+        background: url('../img/vff-bg.png') no-repeat;
+        background-size: cover;
+        height: 634px;
+    }
+    .vertical-align {
+        display: flex;
+        flex-direction: row;
+    }
+    .vertical-align > [class^="col-"],
+    .vertical-align > [class*=" col-"] {
+      display: flex;
+      align-items: center;     /* Align the flex-items vertically */
+      justify-content: center; /* Optional, to align inner flex-items 
+                                  horizontally within the column  */
+    }
+    .reason2{
+        h4{
+            font-weight: bold
+        }
+    }
+    h2{
+        line-height: 40px;
+    }
+    .blur-black {
+        color: #CFCFCF;
+    }
+    article{
+        text-align: center;
+        h4{
+            position: absolute;
+            right: 20px;
+            padding: 10px;            
+            color: #ff0000;
+            font-weight: bold;
+            background-color: rgba(255,255,255,0.7);
+        }
+    }
+    .longbg{
+        padding-bottom: 100px;
+        background: url('../img/vietnam-grid.png') repeat;
+    }
+    h3.post32{
+        margin-top: -70px; 
+        z-index: 100;
+    }
+    
+}
 #vietnam-profile{
     .header-gree-banner {
         background: url('../img/vietnam-banner.png') no-repeat;
@@ -27,20 +153,7 @@ and open the template in the editor.
             }
         }
     }
-    .breadcrumb-cp{
-        padding: 8px 15px;
-        margin-bottom: 20px;
-        list-style: none;
-        >li{
-            display: inline-block;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            letter-spacing: 2px;
-        }
-    }
-        
+            
     hr {
         margin-top: 22px;
         margin-bottom: 22px;
@@ -56,9 +169,9 @@ and open the template in the editor.
     }
     h2{
         line-height: 40px;
-    }
+    }    
     .blur-black {
-        color: #737373;
+        color: #CFCFCF;
     }
     article{
         text-align: center;
@@ -147,23 +260,7 @@ and open the template in the editor.
             }
         }
     }
-    .breadcrumb-cp{
-        padding: 8px 15px;
-        margin-bottom: 20px;
-        list-style: none;h3.post32{
-        margin-top: -70px; 
-        z-index: 100;
-    }
-        >li{
-            display: inline-block;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            letter-spacing: 2px;
-        }        
-    }
-    
+        
     .intersection
     {   
         position: relative;
@@ -447,4 +544,57 @@ and open the template in the editor.
             line-height: 25px !important;
         }
     }
+}
+
+#faq{
+    .faq .ul_faq01 li {
+    width: 373px;
+  }
+  .faq .ul_faq01 li p {
+    background: rgba(0, 0, 0, 0) url("../img/ico/bg_icon.png") no-repeat scroll 0 -1134px;
+    margin: 5px 6px 0;
+    padding: 0 0 0 8px;
+  }
+  .faq .ul_faq01 li p:first-child {
+    background: rgba(0, 0, 0, 0) url("../img/ico/bg_icon.png") no-repeat scroll 5px -1250px;
+    border-bottom: 1px solid #9d72b5;
+    border-top: 1px solid #9d72b5;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 5px 0 5px 12px;
+  }
+  .faq .ul_faq01 li p:first-child a {
+    color: #9d72b5;
+  }
+  .faq .ul_faq02 li:first-child {
+    margin-top: 0;
+  }
+  .faq .ul_faq02 > li {
+    margin-top: 60px;
+  }
+  .faq .ul_faq02 > li h3 {
+    background: rgba(0, 0, 0, 0) url("../img/faq/bg_repeat.png") repeat-x scroll center bottom;
+  }
+  .faq .ul_faq02 > li h3 span {
+    background: rgba(0, 0, 0, 0) url("../img/ico/bg_icon.png") no-repeat scroll 5px -1483px;
+    border-top: 2px solid #9d72b5;
+    border-bottom: 2px solid #9d72b5;
+    color: #9d72b5;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0 10px 45px;
+  }
+  .faq .ul_faq03 li {
+    padding-bottom: 20px;
+  }
+  .faq .ul_faq03 li h4 {
+    background: rgba(0, 0, 0, 0) url("../img/ico/bg_icon.png") no-repeat scroll 5px -1360px;
+    border-bottom: 1px dotted #888;
+    border-top: 2px solid #9d72b5;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 13px;
+    padding: 22px 0 19px 28px;
+  }
 }

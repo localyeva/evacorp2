@@ -8,27 +8,21 @@
             <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/index.php</file>
             <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/cpt_acf_definitions.php</file>
         </group>
-        <group name="EVA">
-            <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/twentyfourteen/style.css</file>
-            <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/index.php</file>
-            <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/cpt_acf_definitions.php</file>
-            <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/functions.php</file>
-        </group>
         <group>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/_include/compro/offices.php</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/_include/compro/contact.php</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/_include/compro/detailinfo.php</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/_include/compro/history.php</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/company-profile.php</file>
-            <file>file:/var/www/evacorp2/public_html/wp-content/themes/eva2015/functions.php</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/_include/circle/breadcrumbs.php</file>
-            <file>file:/var/www/evacorp2/public_html/wp-content/themes/eva2015/company_reason.php</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/_include/compro/banner.php</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/_include/compro/breadcrumbs.php</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/_include/labo/breadcrumbs.php</file>
-            <file>file:/var/www/evacorp2/public_html/wp-content/themes/eva2015/company_profile.php</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/css/style.less</file>
-            <file>file:/var/www/evacorp2/public_html/html/corporate/_include/compro/menu.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/header.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/MyTheme_Customize.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/html/corporate/real-state.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/html/corporate/css/style.less</file>
+            <file>file:/var/www/html/evacorp2/public_html/wp-content/themes/eva2015/index.php</file>
+            <file>file:/var/www/html/evacorp2/public_html/html/corporate/_include/real/realstate.php</file>
+        </group>
+        <group name="EVA">
+            <file>file:/var/www/html/evacorp2.localhost/public_html/html/corporate/css/service-page.less</file>
+            <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/service.php</file>
+            <file>file:/var/www/html/evacorp2.localhost/public_html/html/corporate/css/define-style.less</file>
+            <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/cpt_acf_definitions.php</file>
+            <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/contact.php</file>
+            <file>file:/var/www/html/evacorp2.localhost/public_html/wp-content/themes/eva2015/archive-faq.php</file>
         </group>
     </open-files>
 </project-private>

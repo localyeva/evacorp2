@@ -62,3 +62,7 @@ $(document).ready(function () {
         }
     });
 });
+
+$(function(){
+    $('.service-info article.module').heightLine();
+});

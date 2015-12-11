@@ -17,10 +17,7 @@ get_header();
         <div class="container">
             <ul class="breadcrumb-cp">
                 <li>
-                    <a href="#">HOME</a> <span class="divider">></span>
-                </li>
-                <li>
-                    <a href="#">About EvolableAsia</a> <span class="divider">></span>
+                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
                 <li class="active">なぜベトナムか?</li>
             </ul>
@@ -168,7 +165,7 @@ get_header();
                                         <figure>
                                             <img src="<?php echo get_template_directory_uri() ?>/img/why-vietnam/vietnam-block3-image2.png" alt="" class="img-responsive center-block longbg">
                                         </figure>
-                                        <h3 class="green-text post32">日本と違い、い労働人口にボリュームがある</h3>
+                                        <h3 class="green-text post32">日本と違い、若い労働人口にボリュームがある</h3>
                                         <p>若い人口が多いのでウェディングも活況</p>
                                     </article>                                
                                 </div>                                            
@@ -213,7 +210,7 @@ get_header();
                             </div>
                             <div class="col-xs-6 col-md-6">
                                 <img src="<?php echo get_template_directory_uri() ?>/img/why-vietnam/vietnam-block4-image2.png" alt="" class="img-responsive">
-                                <p>開発ならエボ開発ならエボ開発な</p>
+                                <p>高層ビルも次々と建設されている</p>
                             </div>
                         </div>
                     </div>
@@ -280,40 +277,6 @@ get_header();
         <div class="row-gap-medium"></div>
     </div>
 
-    <div class="container-fluid header-contact">
-        <div class="container con-contact">
-            <div class="row">
-                <div class="col-xs-12 no-padding-lr text-center">
-                    <div class="caption full-width center-block contact-info">
-                        <p>
-                            Demo Demo Demo <span class="yellow">Demo Demo Demo</span> Demo<br/>
-                            <span class="green">Demo Demo Demo</span> Demo Demo Demo Demo Demo Demo Demo
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xs-12 no-padding-lr footer-contact">
-                    <div class="container">
-                        <did class="row">
-                            <div class="col-xs-6 col-md-6 no-padding-lr left phone">
-                                <div class="container">
-                                    <img src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/img/why-vietnam/why-vietnam/why-vietnam/42.png" alt="" class="img-responsive phone-img">
-                                    <span class="phone-text">(+84)9-3717-6251</span>
-                                    <span class="detail-text">demo demo demo demo demo demo</span>
-                                    <span class="detail-line"></span>
-                                </div>
-                            </div>
-                            <div class="col-xs-6 col-md-6 no-padding-lr center-block mess">
-                                <div class="container">
-                                    <img src="<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/<?php echo get_template_directory_uri() ?>/img/why-vietnam/why-vietnam/why-vietnam/43.png" alt="" class="img-responsive mess-img">
-                                    <span class="mess-text">webdemo demo demo demo ></span>
-                                    <span class="mess-border"></span>
-                                </div>
-                            </div>
-                        </did>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <?php get_template_part('part-contact') ?>
 </div>
 <?php get_footer(); ?>

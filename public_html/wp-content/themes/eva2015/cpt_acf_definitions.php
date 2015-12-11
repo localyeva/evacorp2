@@ -34,7 +34,7 @@ function cptui_register_my_cpts() {
         "query_var" => true,
         "menu_position" => 26,
         "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h1.png',
-        "supports" => array("title"),
+        "supports" => array("title", "excerpt"),
     );
     register_post_type("top-service", $args);
 
@@ -432,12 +432,11 @@ function cptui_register_my_taxes() {
     $args = array(
         "labels" => $labels,
         "hierarchical" => true,
-//        'has_archive' => true,
         "label" => "FAQ Category",
         "show_ui" => true,
         "query_var" => true,
         "rewrite" => array('slug' => 'faqcat', 'with_front' => true),
-        "show_admin_column" => false,
+        "show_admin_column" => true,
     );
     register_taxonomy("faqcat", array("faq"), $args);
 
@@ -563,53 +562,6 @@ if (function_exists("register_field_group")) {
             'position' => 'normal',
             'layout' => 'no_box',
             'hide_on_screen' => array(
-            ),
-        ),
-        'menu_order' => 0,
-    ));
-
-    register_field_group(array(
-        'id' => 'acf_faq',
-        'title' => 'FAQ',
-        'fields' => array(
-            array(
-                'key' => 'field_55b8829ab0834',
-                'label' => 'Question',
-                'name' => 'question',
-                'type' => 'text',
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'formatting' => 'none',
-                'maxlength' => '',
-            ),
-            array(
-                'key' => 'field_55b8833bb0835',
-                'label' => 'Answer',
-                'name' => 'answer',
-                'type' => 'wysiwyg',
-                'default_value' => '',
-                'toolbar' => 'full',
-                'media_upload' => 'yes',
-            ),
-        ),
-        'location' => array(
-            array(
-                array(
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'faq',
-                    'order_no' => 0,
-                    'group_no' => 0,
-                ),
-            ),
-        ),
-        'options' => array(
-            'position' => 'normal',
-            'layout' => 'no_box',
-            'hide_on_screen' => array(
-                0 => 'the_content',
             ),
         ),
         'menu_order' => 0,
@@ -991,15 +943,6 @@ if (function_exists("register_field_group")) {
                 'library' => 'all',
             ),
             array(
-                'key' => 'field_55c0541861d5d',
-                'label' => 'スタッフ画像 02',
-                'name' => 'image02',
-                'type' => 'image',
-                'save_format' => 'url',
-                'preview_size' => 'thumbnail',
-                'library' => 'all',
-            ),
-            array(
                 'key' => 'field_55c0543161d5e',
                 'label' => '社員番号',
                 'name' => 'staff_number',
@@ -1010,6 +953,43 @@ if (function_exists("register_field_group")) {
                 'append' => '',
                 'formatting' => 'none',
                 'maxlength' => '',
+            ),
+            array(
+                'key' => 'field_5667a0329a704',
+                'label' => 'FAQ',
+                'name' => 'faq',
+                'type' => 'repeater',
+                'sub_fields' => array(
+                    array(
+                        'key' => 'field_5667a03d0a5b9',
+                        'label' => 'Question',
+                        'name' => 'question',
+                        'type' => 'textarea',
+                        'column_width' => '30',
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'formatting' => 'html',
+                        'maxlength' => '',
+                    ),
+                    array(
+                        'key' => 'field_5667a047094ec',
+                        'label' => 'Answer',
+                        'name' => 'answer',
+                        'type' => 'textarea',
+	                'default_value' => '',
+	                'placeholder' => '',
+	                'prepend' => '',
+	                'append' => '',
+	                'formatting' => 'html',
+	                'maxlength' => '',
+                    ),
+                ),
+                'row_min' => '',
+                'row_limit' => '',
+                'layout' => 'table',
+                'button_label' => 'faqを追加',
             ),
         ),
         'location' => array(

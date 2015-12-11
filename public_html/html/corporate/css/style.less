@@ -1954,6 +1954,7 @@ h1 {
                     padding-top: 10px;
                     border-top: solid 1px @light-grey;
                     font-size: 1.2em;
+                    height: 55px;
                 }
                 img {
                     width: 60%;
@@ -1980,6 +1981,19 @@ h1 {
             .next-post {
                 a {
                     text-align: left;
+                }
+                .next {
+                    margin-left: 10px;
+                    &:after {
+                        color: #b8b8b8;
+                        content: "\e258";
+                        font-family: 'Glyphicons Halflings';
+                        font-style: normal;
+                        font-weight: 400;
+                        margin-left: 5px;
+                        position: relative;
+                        top: 2px;
+                    }
                 }
             }
         }
@@ -2059,7 +2073,6 @@ nav.navigation {
             border: 0;
             color: #000000;
             &:hover {
-                border: solid 1px #000000;
                 background: none;
                 color: #000000;
             }

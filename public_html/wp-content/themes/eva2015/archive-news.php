@@ -6,6 +6,7 @@
  */
 get_header();
 $post_type = get_post_type_object('news');
+$default_img = get_template_directory_uri() . '/img/default-img.jpg';
 ?>
 <div id="news">
     <div class="header-reason-banner">
@@ -17,54 +18,7 @@ $post_type = get_post_type_object('news');
     <?php custom_breadcrumbs('news'); ?>
     <div class="row-gap-medium"></div>
     <div class="container center bpo-1">
-        <div class="sidebar col-md-3">
-            <ul class="vertical-menu">
-                <?php
-                $taxonomies = array('news-type');
-
-                $args = array(
-                    'orderby'           => 'name',
-                    'order'             => 'ASC',
-                    'hide_empty'        => true,
-                    'exclude'           => array(),
-                    'exclude_tree'      => array(),
-                    'include'           => array(),
-                    'number'            => '',
-                    'fields'            => 'all',
-                    'slug'              => '',
-                    'parent'            => '',
-                    'hierarchical'      => true,
-                    'child_of'          => 0,
-                    'childless'         => false,
-                    'get'               => '',
-                    'name__like'        => '',
-                    'description__like' => '',
-                    'pad_counts'        => false,
-                    'offset'            => '',
-                    'search'            => '',
-                    'cache_domain'      => 'core'
-                );
-
-                $terms = get_terms($taxonomies, $args);
-
-                if (count($terms) > 0) { ?>
-                <li>
-                    <span>Category</span>
-                    <ul>
-                        <?php foreach ($terms as $term) { ?>
-                        <li><a href="<?php echo $term->taxonomy . '/' . $term->slug ?>"><?php echo $term->name . '&nbsp;(' . $term->count . ')'; ?></a></li>
-                        <?php } ?>
-                    </ul>
-                </li>
-                <?php } ?>
-                <li>
-                    <span>Archive</span>
-                    <ul>
-                        <?php getArchivesByPostType('news'); ?>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        <?php include 'sidebar-news.php'; ?>
         <div class="content col-md-9">
             <div class="row">
                 <?php
@@ -101,7 +55,7 @@ $post_type = get_post_type_object('news');
                         } ?>
                         <div class="col-md-4 item">
                             <a href="<?php echo get_permalink(); ?>">
-                                <img src="<?php echo !empty($post_image) ? $post_image : $default_img; ?>" alt="">
+                                <img src="<?php echo !empty($post_image) ? $post_image : $default_img; ?>" alt="<?php the_title(); ?>">
                                 <span class="info">
                                     <span class="overlay"></span>
                                     <span class="post-date"><?php the_time('Y.m.d'); ?></span>
@@ -124,4 +78,5 @@ $post_type = get_post_type_object('news');
         </div>
     </div>
 </div>
+<?php get_template_part('part-contact'); ?>
 <?php get_footer(); ?>

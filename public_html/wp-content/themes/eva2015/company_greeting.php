@@ -26,7 +26,6 @@ get_header();
             </ul>
         </div>
     </div>
-    <div class="row-gap-huge"></div>
     <div class="container-fluid left">
         <div class="container office-con">
             <div class="row-gap-big"></div>
@@ -45,74 +44,77 @@ get_header();
                 ?>
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
                     <div class="row">
-                        <div class="col-xs-12 col-md-12 no-padding-lr">
-                            <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width main-img">
-                        </div>
+                        <div class="col-xs-12 col-md-12">
+                            <div class="container custom-containter">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-12 no-padding-lr">
+                                        <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width main-img">
+                                    </div>
+                                </div></div></div>
                     </div>
                     <div class="row-gap-big"></div>
                     <div class="row">
-                        <div class="container no-padding-lr">
-                            <div class="row-gap-medium"></div>
-                            <div class="row">
-                                <div class="col-xs-12 col-md-12">
-                                    <span class="text-gree">
-                                        <?php echo get_field('header') ?>
-                                    </span>
-                                </div>
+                        <div class="col-xs-12 col-md-12 ">
+                            <div class="container custom-containter">                            
                                 <div class="row-gap-medium"></div>
-                                <div class="col-xs-12 col-md-12">
-                                    <span class="text-gree2">
-                                        <?php echo get_field('content') ?>
-                                    </span>
-                                    <div class="row-gap-big"></div>
-                                </div>
-                                <div class="col-xs-12 col-md-12">
-                                    <div class="bs-callout bs-callout-danger">
-                                        <h2>略歴</h2>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-12">
+                                        <span class="text-gree">
+                                            <?php echo get_field('header') ?>
+                                        </span>
                                     </div>
-                                    <div class="drop-line"></div>
-                                </div>
-                                <div class="col-xs-12 col-md-12">
                                     <div class="row-gap-medium"></div>
-                                    <?php if (have_rows('history')): ?>
-                                        <table class="tb-gree2">
-                                            <?php while (have_rows('history')): the_row(); ?>
-                                                <tr>
-                                                    <th><?php echo the_sub_field('title'); ?></th>
-                                                    <td><?php echo the_sub_field('description'); ?></td>
-                                                </tr>
-                                            <?php endwhile; ?>
-                                        </table>
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-                            <div class="row-gap-big"></div>
-                            <div class="row">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-6 no-padding-l">
-                                            <div class="bs-callout bs-callout-danger">
-                                                <h2>Mission Statement</h2>
-                                            </div>
-                                            <div class="drop-line"></div>
-                                            <span class="text-gree2">
-                                                <?php echo get_field('mission') ?>
-                                            </span>
-                                        </div>
-                                        <div class="col-xs-12 col-md-6 no-padding-r">
-                                            <div class="bs-callout bs-callout-danger">
-                                                <h2>Core Value</h2>
-                                            </div>
-                                            <div class="drop-line"></div>
-                                            <?php if (have_rows('core_value')): ?>
-                                                <ul class="text-gree3">
-                                                    <?php while (have_rows('core_value')): the_row(); ?>
-                                                        <li><?php echo the_sub_field('description'); ?></li>
-                                                    <?php endwhile; ?>
-                                                </ul>
-                                            <?php endif; ?>
-                                        </div>
+                                    <div class="col-xs-12 col-md-12">
+                                        <span class="text-gree2">
+                                            <?php echo get_field('content') ?>
+                                        </span>
+                                        <div class="row-gap-big"></div>
                                     </div>
+                                    <div class="col-xs-12 col-md-12">
+                                        <div class="bs-callout bs-callout-danger">
+                                            <h2>略歴</h2>
+                                        </div>
+                                        <div class="drop-line"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-12">
+                                        <div class="row-gap-medium"></div>
+                                        <?php if (have_rows('history')): ?>
+                                            <table class="tb-gree2">
+                                                <?php while (have_rows('history')): the_row(); ?>
+                                                    <tr>
+                                                        <th><?php echo the_sub_field('title'); ?></th>
+                                                        <td><?php echo the_sub_field('description'); ?></td>
+                                                    </tr>
+                                                <?php endwhile; ?>
+                                            </table>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div class="row-gap-big"></div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="bs-callout bs-callout-danger">
+                                            <h2>Mission Statement</h2>
+                                        </div>
+                                        <div class="drop-line"></div>
+                                        <span class="text-gree2">
+                                            <?php echo get_field('mission') ?>
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <div class="bs-callout bs-callout-danger">
+                                            <h2>Core Value</h2>
+                                        </div>
+                                        <div class="drop-line"></div>
+                                        <?php if (have_rows('core_value')): ?>
+                                            <ul class="text-gree3">
+                                                <?php while (have_rows('core_value')): the_row(); ?>
+                                                    <li><?php echo the_sub_field('description'); ?></li>
+                                                <?php endwhile; ?>
+                                            </ul>
+                                        <?php endif; ?>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

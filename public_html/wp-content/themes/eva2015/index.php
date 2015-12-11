@@ -411,6 +411,23 @@ if ($available_blog == 1) {
 }
 ?>
 <!--//Blog End-->
+<div class="container-fluid block-center vff-bg">
+    <div class="container">
+        <div class="row-gap-big"></div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <div class="row-gap-medium"></div>
+                <h3>Evolable Asia はサッカーベトナム代表の公式スポンサーです。</h3>
+                <p>サッカーベトナム代表(VFF)とスポンサー契約を結んだ経緯について詳しくはこちらから。</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <a href="<?php echo home_url('vff') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/top-vff-team.png" alt="" class="img-responsive"></a>
+            </div>
+            
+        </div>
+        <div class="row-gap-big"></div>
+    </div>
+</div>
 <!--//Articles-->
 <?php
 $available_article = get_article_div();

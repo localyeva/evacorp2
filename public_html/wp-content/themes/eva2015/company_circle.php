@@ -26,7 +26,7 @@ get_header();
             </ul>
         </div>
     </div>
-    <div class="row-gap-huge"></div>
+    <div class="row-gap-big"></div>
     <?php
     $time = 0;
     $args = array(
@@ -41,34 +41,35 @@ get_header();
         $num_posts = count($loop->posts);
         ?>
         <?php while ($loop->have_posts()): $loop->the_post(); ?>
-            <div class="container office-con">
-                <div class="row">
-                    <div class="col-xs-12 full-width no-padding-lr">
-                        <div class="bs-callout bs-callout-danger">
-                            <h2><?php the_title() ?></h2>
-                        </div>
-                        <div class="drop-line"></div>
-                    </div>
-                </div>
-                <div class="row-gap-big"></div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-12 no-padding-lr">
-                        <img src="<?php echo get_field('img'); ?>" alt="" class="img-responsive full-width main-img">
-                    </div>
-                </div>
-                <div class="row-gap-big"></div>
-                <div class="row">
-                    <div class="container no-padding-lr">
+            <div class="container">
+                <div class="col-xs-12 col-md-12">
+                    <div class="container custom-containter">
+
                         <div class="row">
-                            <?php 
-                                foreach (get_field('images') as $key => $val) {
-                                    if($key < 3){
-                            ?>
-                                <div class="col-xs-12 col-md-4">
-                                    <img src="<?php echo $val['image']; ?>" alt="" class="img-responsive full-width">
+                            <div class="col-xs-12 full-width">
+                                <div class="bs-callout bs-callout-danger">
+                                    <h2><?php the_title() ?></h2>
                                 </div>
+                                <div class="drop-line"></div>
+                            </div>
+                        </div>
+                        <div class="row-gap-big"></div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <img src="<?php echo get_field('img'); ?>" alt="" class="img-responsive full-width main-img">
+                            </div>
+                        </div>
+                        <div class="row-gap-big"></div>
+                        <div class="row">
                             <?php
-                                    }
+                            foreach (get_field('images') as $key => $val) {
+                                if ($key < 3) {
+                                    ?>
+                                    <div class="col-xs-12 col-md-4">
+                                        <img src="<?php echo $val['image']; ?>" alt="" class="img-responsive full-width">
+                                    </div>
+                                    <?php
+                                }
                             }
                             ?>
                         </div>
@@ -83,7 +84,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="row-gap-huge"></div>
+            <div class="row-gap-big"></div>
         <?php endwhile; ?>
     <?php endif; ?>
     <?php wp_reset_postdata() ?>

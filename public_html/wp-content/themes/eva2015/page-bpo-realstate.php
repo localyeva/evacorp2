@@ -10,7 +10,7 @@ get_header();
 <div id="realestate">
 	<div class="header-real-banner">
 	    <div class="container text-center">
-	        <h2>不 動 産 B P O</h2>
+	        <h2>不動産BPO</h2>
 	    </div>
 	</div>
 	<div class="row-gap-medium"></div>
@@ -18,12 +18,12 @@ get_header();
 	    <div class="container">
 	        <ul class="breadcrumb-cp">
 	            <li>
-	                    <a href="#">HOME</a> <span class="divider">></span>
+	                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
 	                </li>
 	                <li>
-	                    <a href="#">サービス</a> <span class="divider">></span>
+	                    <a href="<?php echo home_url('service') ?>">サービス</a> <span class="divider">></span>
 	                </li>
-	                <li class="active">不 動 産 B P O</li>
+	                <li class="active">不動産BPO</li>
 	        </ul>
 	    </div>
 	</div>
@@ -32,8 +32,8 @@ get_header();
 	<div class="container center realastate-1">
 	    <div class="row">
 	        <div class="col-xs-12 col-md-12 no-padding-lr text-center">
-	                <span class="text-1">不 動 産 の サ イト 更 新 に は 、</span>
-	                <span class="text-2">動 産 に 特 化 し た B P O</span>
+	                <span class="text-1">不動産のサイト更新には、</span>
+	                <span class="text-2">不動産に特化したBPO</span>
 	                <span class="text-1">を 。</span>
 	        </div>
 	    </div>
@@ -97,7 +97,7 @@ get_header();
 	    <div class="container center realastate-7-1">
 	        <div class="row" style="max-width:800px;margin:auto;">
 	            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-	                <p>事例紹介 ゲーム開発会社A社の場合</p>
+	                <p>事例紹介 不動産会社A社の場合</p>
 	            </div>
 	            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 	                <img src="<?php echo get_template_directory_uri() ?>/img/realestate/12.png" class="img-responsive center-block realastate-7-1-1">
@@ -117,10 +117,10 @@ get_header();
 	        <div class="row-gap-big"></div>
 	        <div class="row" style="max-width:600px;margin:auto;">
 	            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center no-padding-lr">
-	                <a href="#" class="center-block">開発実績</a>
+	                <a href="<?php echo home_url('service/about_bpo') ?>" class="center-block">BPOについて</a>
 	            </div>  
 	            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center no-padding-lr realastate-8-1-xs">
-	                <a href="#" class="center-block">参加企業の声</a>
+	                <a href="<?php echo home_url('recomend') ?>" class="center-block">参加企業の声</a>
 	            </div>                         
 	        </div>        
 	    </div>

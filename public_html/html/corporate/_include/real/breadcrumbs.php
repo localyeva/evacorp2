@@ -6,10 +6,15 @@
                 <a href="#">HOME</a> <span class="divider">></span>
             </li>
             <li>
-                <a href="#">About EvolableAsia</a> <span class="divider">></span>
+                <a href="#">サービス</a> <span class="divider">></span>
             </li>
-            <li class="active">Real State</li>
+            <li class="active">不動産BPO</li>
         </ul>
     </div>
 </div>
-<div class="row-gap-big"></div>
+
+<div class="row-gap-medium"></div>
+
+<div>
+    
+</div>

@@ -324,4 +324,15 @@ function getArchivesByPostType($post_type = 'post', $year = null, $month = null)
     }
 }
 
-?>
+function onw_header_template(){
+    
+    global $wp_query;
+    
+    $query = $wp_query->query;
+    
+    if (isset($query['year']) && isset($query['monthnum'])){
+        wp_redirect(home_url('page-attributes'));
+    }
+}
+
+add_action('template_redirect', 'onw_header_template');

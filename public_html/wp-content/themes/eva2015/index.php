@@ -357,7 +357,9 @@ if ($available_new == 1) {
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-12 text-center">
-                    <a href="<?php echo home_url('news') ?>"<button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button></a>
+                    <a href="<?php echo home_url('news') ?>">
+                        <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+                    </a>
                 </div>
             </div>
         </div>

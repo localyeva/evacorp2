@@ -334,26 +334,57 @@ a{
     &.alnk{
         color: @color-alink;
         text-decoration: none;
+        display: block;
+        positon:relative;
+        .caption-eva{
+            position:absolute;
+            width:100%;
+            height:100%;
+            top:0%;
+            -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+            -webkit-transition-property: color, background-color;
+            transition-property: color, background-color;
+        }
+        &:hover .caption-eva{
+            background:rgba(0,0,0,0.25); 
+        }        
     }
     &.about-hover{
         display: block;
-        opacity: 1;
-        transition: opacity .45s ease-in-out;
-        -moz-transition: opacity .45s ease-in-out;
-        -webkit-transition: opacity .45s ease-in-out;
-        &:hover{
-            opacity: 0.5;
+        positon:relative;
+        .caption{
+            position:absolute;
+            width:100%;
+            height:100%;
+            top:0%;
+            -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+            -webkit-transition-property: color, background-color;
+            transition-property: color, background-color;
+        }
+        &:hover .caption{
+            background:rgba(0,0,0,0.25); 
         }
     }
 
     &.news-hover{
         display: block;
-        opacity: 1;
-        transition: opacity .45s ease-in-out;
-        -moz-transition: opacity .45s ease-in-out;
-        -webkit-transition: opacity .45s ease-in-out;
-        &:hover{
-            opacity: 0.5;
+        positon:relative;
+        width:93%; margin:auto;
+        .caption-eva{
+            position:absolute;
+            width:93%;
+            height:100%;
+            top:0;
+            left:auto;
+            -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+            -webkit-transition-property: color, background-color;
+            transition-property: color, background-color;            
+        }
+        &:hover .caption-eva{
+            background:rgba(0,0,0,0.25); 
         }
     }
 

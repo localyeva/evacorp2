@@ -103,6 +103,7 @@ if ($available_service == 1) {
                     <div class="col-xs-12 col-md-6 no-padding-lr sv-main-block wow fadeInRight">
                         <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
+                            <div class="caption-eva"></div>
                             <div class="caption full-width center">
                                 <h2 class="sv-main-title">
                                     <a class="alnk" href="<?php echo get_field('redirect_url') ?>"><?php the_title() ?></a>
@@ -134,6 +135,7 @@ if ($available_service == 1) {
                                 <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                                     <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInDown">
                                         <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
+                                        <div class="caption-eva" ></div>
                                         <div class="caption full-width center">
                                             <h2 class="sv-title">
                                                 <?php the_title() ?>
@@ -165,15 +167,18 @@ if ($available_service == 1) {
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
                             <?php if ($j >= 4 AND $j < 6) { ?>
-                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInUp">
-                                    <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
-                                    <div class="caption full-width center">
-                                        <h2 class="sv-title">
-                                            <a class="alnk" href="<?php echo get_field('redirect_url') ?>"><?php the_title() ?></a>
-                                            <div class="intro"><?php echo get_field('short_description') ?></div>
-                                        </h2>
+                                <a class="alnk" href="<?php echo get_field('redirect_url') ?>">
+                                    <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInUp">
+                                        <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
+                                        <div class="caption-eva" ></div>
+                                        <div class="caption full-width center">
+                                            <h2 class="sv-title">
+                                                <a class="alnk" href="<?php echo get_field('redirect_url') ?>"><?php the_title() ?></a>
+                                                <div class="intro"><?php echo get_field('short_description') ?></div>
+                                            </h2>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             <?php } ?>
                             <?php $j++; ?>
                         <?php endwhile; ?>
@@ -333,10 +338,11 @@ if ($available_new == 1) {
                     $num_posts = count($loop->posts);
                     ?>
                     <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
+                        <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
                             <a class="news-hover" href="<?php the_permalink() ?>">
-                                <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
-                                <div class="caption full-width left">
+                                <img src="<?php echo get_field('image') ?>" alt="" style="width:100%; height:auto;">
+                                <div class="caption-eva" ></div>
+                                <div class="caption left">
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>
                                     </div>
@@ -383,9 +389,10 @@ if ($available_blog == 1) {
                     $num_posts = count($loop->posts);
                     ?>
                     <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
+                        <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
+                                <div class="caption-eva" ></div>
                                 <div class="caption full-width left">
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>

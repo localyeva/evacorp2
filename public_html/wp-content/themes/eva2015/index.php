@@ -1,9 +1,3 @@
-<style>
-    .header-banner {
-        /*height: 35pc;*/
-        background: url("<?php echo get_slide_image(); ?>") 50% 0 fixed no-repeat !important;
-    }
-</style>
 <?php
 /*
  * Author: KhangLe
@@ -13,7 +7,7 @@
 get_header();
 ?>
 <!--//slide-->
-<div class="header-banner">
+<div class="header-banner" style="background: url('http://img.dummy-image-generator.com/business/dummy-2040x750-Graph.jpg') fixed;">
     <div class="container text-center">
         <h2><?php echo get_slide_text() ?></h2>
     </div>

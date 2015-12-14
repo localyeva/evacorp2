@@ -23,7 +23,7 @@
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <div class="btn btn-slim fb-mobie-footer center-block"><a href="https://www.facebook.com/evolable.asia.eva">Facebook</a></div>
+                                <div class="btn btn-slim fb-mobie-footer center-block"><a class="alnk" href="https://www.facebook.com/evolable.asia.eva">Facebook</a></div>
                             </div>
                         </div>
                         <div class="row-gap-small .visible-xs-*"></div>

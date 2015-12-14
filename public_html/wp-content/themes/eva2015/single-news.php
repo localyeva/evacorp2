@@ -33,8 +33,8 @@ if (!empty($next_post)) {
     <?php custom_breadcrumbs('news'); ?>
     <div class="row-gap-medium"></div>
     <div class="container center bpo-1">
-        <?php get_sidebar('news') ?>
-        <div class="content post-detail col-md-9">
+        <?php // get_sidebar('news') ?>
+        <div class="content post-detail col-md-12">
             <div class="row">
                 <div class="post-date text-center">( <?php the_time('Y.m.d'); ?> )</div>
                 <h2 class="post-title text-center"><?php the_title(); ?></h2>

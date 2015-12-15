@@ -8,9 +8,11 @@
 get_header();
 ?>
 <section id="bpo-profile">
-    <div class="header-reason-banner">
+    <div class="head-banner-wrap yellow">
         <div class="container text-center">
-            <h2>BPO</h2>
+            <div class="col-md-12">
+                <h2>BPO</h2>
+            </div>
         </div>
     </div>
     <div class="row-gap-medium"></div>
@@ -27,34 +29,36 @@ get_header();
             </ul>
         </div>
     </div>
-    <div class="row-gap-huge"></div>
+    <div class="row-gap-medium"></div>
     <div class="container-fluid center bpo-1">
-        <div class="container">
+        <div class="container center">
             <div class="row">
                 <div class="col-xs-12 col-md-12 no-padding-lr text-center">
                     <span class="text-1">Evolable Asiaは、従来とは違う</span><br>
                     <span class="text-2">全く新しい「オフショアBPO事業」を提唱します。</span>
                 </div>
             </div>
-            <div class="row-gap-huge"></div>
-            <div class="row">
-                <div class="col-xs-12 col-md-12 no-padding-lr">
-                    <div class="col-xs-12 col-md-12 no-padding-lr">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/57.jpg" alt="" class="img-responsive img-reason-1 center-block">
-                    </div>
-                </div>
+        </div>
+    </div>
+
+    <div class="row-gap-huge"></div>
+    <div class="row-gap-big"></div>
+
+    <div class="bpo-2">
+    </div>
+    <div class="container center bpo-2-1 text-center">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-dm-12 col-lg-12">         
+                <img src="<?php echo get_template_directory_uri() ?>/img/bpo/3.png" class="img-responsive center-block">           
             </div>
-            <div class="row-gap-huge"></div>
+            <div class="col-xs-12 col-sm-12 col-dm-12 col-lg-12">         
+                <img src="<?php echo get_template_directory_uri() ?>/img/bpo/6.png" class="img-responsive center-block">           
+            </div>
+            <div class="col-xs-12 col-sm-12 col-dm-12 col-lg-12">         
+                <img src="<?php echo get_template_directory_uri() ?>/img/bpo/7.png" class="img-responsive center-block">           
+            </div> 
         </div>
-    </div>
-    <div class="container-fluid center bpo-2">
-        <div class="container">
-            <div class="row-gap-huge"></div>
-            <div class="row-gap-huge"></div>
-            <div class="row-gap-huge"></div>
-            <div class="row-gap-huge"></div>
-        </div>
-    </div>
+    </div>   
     <div class="container-fluid center bpo-3">
         <div class="container">
             <div class="row-gap-huge"></div>
@@ -75,7 +79,7 @@ get_header();
                 ?>
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
                     <?php if($count_i == 1){?>
-                    <div class="row">
+                    <div class="row" style="max-width:800px;margin:auto;">
                         <div class="col-xs-12 col-md-12 no-padding-lr text-center">
                             <span class="text-1"><?php the_title();?></span><br>
                             <span class="text-3"><?php the_content();?></span>
@@ -87,7 +91,7 @@ get_header();
                             the_content();
                         }else{
                     ?>
-                    <div class="row">
+                    <div class="row" style="max-width:800px;margin:auto;">
                         <div class="col-xs-12 col-md-12 no-padding-lr">
                             <div class="bs-callout">
                                 <span class="text-2"><?php the_title();?></span>
@@ -105,26 +109,26 @@ get_header();
             <div class="row-gap-huge"></div>
         </div>
     </div>
-    <div class="container-fluid center bpo-4">
-        <div class="row-gap-giant"></div>
-        <div class="row">
-            <div class="col-xs-12 col-md-3 no-padding-lr left-1"></div>
-            <div class="col-xs-12 col-md-3 no-padding-lr border-reason-3">
-                <div class="glyphicon glyphicon-menu-right text-left"></div>
-                <div class="text-1 text-center">
-                    Lorem ipsum.
+    <div class="bpo-4">
+        <div class="container center bpo-4-1">
+            <div class="row text-center" style="max-width:800px;margin:auto;">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p>御社の業務をベトナムにアウトソーシングし、</p>
+                    <p>コストの圧縮と業務の合理化を図りましょう!</p>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-1 no-padding-lr middle-1"></div>
-            <div class="col-xs-12 col-md-3 no-padding-lr border-reason-3">
-                <div class="glyphicon glyphicon-menu-right text-left"></div>
-                <div class="text-1 text-center">
-                    Lorem ipsum ipsum.
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-2 no-padding-lr"></div>
+            <div class="row-gap-big"></div>
+            <div class="row" style="max-width:600px;margin:auto;">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center no-padding-lr">
+                    <a href="<?php echo home_url('service/about_bpo') ?>" class="center-block">開発実績</a>
+                </div>  
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center no-padding-lr bpo-4-1-xs">
+                    <a href="<?php echo home_url('recomend') ?>" class="center-block">参加企業の声</a>
+                </div>                         
+            </div>        
         </div>
-    </div>
+    </div>  
+
     <?php get_template_part('part', 'contact'); ?>
 </section>
 <?php get_footer(); ?>

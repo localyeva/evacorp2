@@ -7,11 +7,13 @@
 get_header();
 ?>
 <div id="company-profile">
-    <div class="header-com-banner">
+    <div class="head-banner-wrap blue">
         <div class="container text-center">
-            <h2>会社概要</h2>
+            <div class="col-md-12">
+                <h2>会社概要</h2>
+            </div>
         </div>
-    </div>
+    </div>       
     <div class="container-fluid">
         <div class="container">
             <ul class="breadcrumb-cp">

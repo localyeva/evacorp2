@@ -7,11 +7,13 @@
 get_header();
 ?>
 <div id="vff">
-    <div class="header-vff-banner">
+    <div class="head-banner-wrap blue">
         <div class="container text-center">
-            <h2>サッカーベトナム代表(VFF)</h2>
+            <div class="col-md-12">
+                <h2>サッカーベトナム代表(VFF)</h2>
+            </div>
         </div>
-    </div>
+    </div>       
     <div class="row-gap-medium"></div>
     <div class="container-fluid">
         <div class="container">

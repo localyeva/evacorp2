@@ -7,11 +7,13 @@
 get_header();
 ?>
 <section id="circle-profile">
-    <div class="header-circle-banner">
+    <div class="head-banner-wrap yellow">
         <div class="container text-center">
-            <h2>取り組み紹介</h2>
+            <div class="col-md-12">
+                <h2>取り組み紹介</h2>
+            </div>
         </div>
-    </div>
+    </div>    
     <div class="row-gap-medium"></div>
     <div class="container-fluid">
         <div class="container">

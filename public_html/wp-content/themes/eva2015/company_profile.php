@@ -133,7 +133,7 @@ get_header();
     <div class="container-fluid text-center">
         <div class="container">
             <h1>オフィス紹介</h1>
-            <ul class="menu-cp center-block">
+            <div class="row center-block" style="max-width:700px;margin:auto;background:#f5f5f5;border:solid 1px #ccc;padding:15px 0px 15px 40px;">
                 <?php    
                 $maps = array();
                 $args = array(
@@ -142,12 +142,12 @@ get_header();
                 $terms = get_terms('company-tax', $args);
                 foreach ($terms as $term) {
                 ?>
-                <li>
-                    <span class="glyphicon glyphicon-menu-down gly-menu" aria-hidden="true"></span>
-                    <a href="#<?php echo $term->slug?>" data-goto="<?php echo $term->slug?>" style="text-transform: uppercase"><?php echo $term->name?></a>
-                </li>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" style="padding:15px 5px;text-align:left;">
+                    <span style="color:#A0D8FB !important;" class="glyphicon glyphicon-menu-down gly-menu" aria-hidden="true"></span>
+                    <a style="color:black;" href="#<?php echo $term->slug?>" data-goto="<?php echo $term->slug?>" style="text-transform: uppercase"><?php echo $term->name?></a>
+                </div>
                 <?php }?>                
-            </ul>
+            </div>
         </div>
     </div>
     

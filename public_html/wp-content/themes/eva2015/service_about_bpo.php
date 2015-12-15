@@ -10,8 +10,6 @@ get_header();
 
 <section>
 
-    dddddddddddddddddddd
-
     <div class="container service-about-labo">
         <div class="row">
             <div class="col-md-12 col-xs-12">
@@ -47,7 +45,7 @@ get_header();
                 </div>
 
                 <h3 class="h3About">BPO実績内容</h3>
-                <table class="aboutTable01 table">
+                <table class="aboutTable01">
                     <tr>
                         <th class="size01">&nbsp;</th>
                         <th>仕事内容</th>

@@ -29,7 +29,7 @@ get_header();
         </div>
     </div>
     <div class="container">
-        <div class="faq" style="max-width:800px;margin:auto;">
+        <div class="faq">
             <?php
             $args = array('hide_empty=0');
             $terms = get_terms('faqcat', $args);

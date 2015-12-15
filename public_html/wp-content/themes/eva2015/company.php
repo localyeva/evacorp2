@@ -7,11 +7,13 @@
 get_header();
 ?>
 <section id="about-profile">
-    <div class="header-about-banner">
+    <div class="head-banner-wrap red">
         <div class="container text-center">
-            <h2>About Evolable Asia</h2>
+            <div class="col-md-12">
+                <h2>About Evolable Asia</h2>
+            </div>
         </div>
-    </div>
+    </div>    
     <div class="row-gap-big"></div>
     <div class="container-fluid">
         <div class="container">

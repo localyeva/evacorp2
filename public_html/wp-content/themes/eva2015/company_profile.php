@@ -130,6 +130,33 @@ get_header();
             </div>
         </div>
     </div>
+
+    <div class="container-fluid text-center" id="profile">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>関連会社</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 no-padding-lr evol">
+                    <div class="round1">
+                        <p class="header-his"><span>株式会社エボラブルアジア</span></p>
+                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/37.png" alt="" class=""></p>
+                        <p class="footer-his"><span>「オンラインに特化した旅行会社として、また、旅行コンテンツOEM提供モデルを競争力として、旅行業界における主要分野（国内、海外、航空券、ホテル、旅行）とのM＆Aを含めた資本業務提携を積極的に行うことで、お客様視点を全ての基盤とした、次世代の総合旅行サービス提供。」</span></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 no-padding-lr soltec">
+                    <div class="round2">
+                        <p class="header-his"><span>Soltec Vietnam</span></p>
+                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/38.png" alt="" class=""></p>
+                        <p class="footer-his"><span>Soltec Vietnam Companyは2010年9月17日に、（株）ソルテック工業の100％出資子会社として誕生致しました。弊社は、親会社である（株）ソルテック工業の長年培った経験と技術を生かし、ベトナムにおいて日本の品質基準に準じた各種プラント設備製作・据付工事・配管工事を展開させて頂きます。また独自の教育管理ノウハウを生かして、日本品質をベトナムで実現しております。そこで培われたマネジメントノウハウの一部はEvolable Asia Co.,Ltdにも生かされています。</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid text-center">
         <div class="container">
             <h1>オフィス紹介</h1>
@@ -254,33 +281,6 @@ get_header();
         }
     }
     ?>
-    </div>
-    
-
-    <div class="container-fluid text-center" id="profile">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <h1>関連会社</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-6 no-padding-lr evol">
-                    <div class="round1">
-                        <p class="header-his"><span>株式会社エボラブルアジア</span></p>
-                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/37.png" alt="" class=""></p>
-                        <p class="footer-his"><span>「オンラインに特化した旅行会社として、また、旅行コンテンツOEM提供モデルを競争力として、旅行業界における主要分野（国内、海外、航空券、ホテル、旅行）とのM＆Aを含めた資本業務提携を積極的に行うことで、お客様視点を全ての基盤とした、次世代の総合旅行サービス提供。」</span></p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 no-padding-lr soltec">
-                    <div class="round2">
-                        <p class="header-his"><span>Soltec Vietnam</span></p>
-                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/38.png" alt="" class=""></p>
-                        <p class="footer-his"><span>Soltec Vietnam Companyは2010年9月17日に、（株）ソルテック工業の100％出資子会社として誕生致しました。弊社は、親会社である（株）ソルテック工業の長年培った経験と技術を生かし、ベトナムにおいて日本の品質基準に準じた各種プラント設備製作・据付工事・配管工事を展開させて頂きます。また独自の教育管理ノウハウを生かして、日本品質をベトナムで実現しております。そこで培われたマネジメントノウハウの一部はEvolable Asia Co.,Ltdにも生かされています。</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 <?php get_template_part('part', 'contact'); ?>

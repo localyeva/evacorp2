@@ -25,7 +25,109 @@ get_header();
             </ul>
         </div>
     </div>
+    <div class="container-fluid text-center" id="detail-contact">
+        <div class="container detail">
+            <h1>会社概要</h1>
+            <div class="row" style="max-width:800px;margin:auto;">
+                <div class="col-xs-12 infos no-padding-lr">
+                    <?php
+                    $wp_query = new WP_Query();
+                    $param = array(
+                    'post_type' => 'company-profile',
+                    'order' => 'DESC',
+                    'post_status' => 'publish',
+                    'posts_per_page' => '1',
+                    'paged' => $paged,
+                    );
+                    $wp_query->query($param);
+                    if ($wp_query->have_posts()):
+                    while ($wp_query->have_posts()) : $wp_query->the_post();
+                    ?>
 
+                    <table class="table table-responsive table-striped profileTable detail-info">
+                        <tr align="left">
+                            <th>
+                        <p>社名</p>
+                        </th>
+                        <td><?php the_field('name'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>所在地</p>
+                        </th>
+                        <td><?php the_field('location'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>電話番号(Phone)</p>
+                        </th>
+                        <td><?php the_field('phone_number'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>FAX</p>
+                        </th>
+                        <td><?php the_field('fax'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>役員</p>
+                        </th>
+                        <td><?php the_field('officer'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>設立</p>
+                        </th>
+                        <td><?php the_field('establishment'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>資本金</p>
+                        </th>
+                        <td><?php the_field('Capital'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>事業内容</p>
+                        </th>
+                        <td><?php the_field('desc'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>ライセンスNo.</p>
+                        </th>
+                        <td><?php the_field('licence'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>従業員数</p>
+                        </th>
+                        <td><?php the_field('staff'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>主要取引銀行</p>
+                        </th>
+                        <td><?php the_field('bank'); ?></td>
+                        </tr>
+                        <tr align="left">
+                            <th>
+                        <p>経営理念</p>
+                        </th>
+                        <td><?php the_field('principles'); ?></td>
+                        </tr>
+                    </table>
+
+                    <?php
+                    endwhile;
+                    endif;
+                    wp_reset_postdata();
+                    ?>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid text-center">
         <div class="container">
             <h1>オフィス紹介</h1>
@@ -151,109 +253,7 @@ get_header();
     }
     ?>
     </div>
-    <div class="container-fluid text-center" id="detail-contact">
-        <div class="container detail">
-            <h1>会社概要</h1>
-            <div class="row">
-                <div class="col-xs-12 infos no-padding-lr">
-                    <?php
-                    $wp_query = new WP_Query();
-                    $param = array(
-                    'post_type' => 'company-profile',
-                    'order' => 'DESC',
-                    'post_status' => 'publish',
-                    'posts_per_page' => '1',
-                    'paged' => $paged,
-                    );
-                    $wp_query->query($param);
-                    if ($wp_query->have_posts()):
-                    while ($wp_query->have_posts()) : $wp_query->the_post();
-                    ?>
-
-                    <table class="table table-responsive table-striped profileTable detail-info">
-                        <tr align="left">
-                            <th>
-                        <p>社名</p>
-                        </th>
-                        <td><?php the_field('name'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>所在地</p>
-                        </th>
-                        <td><?php the_field('location'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>電話番号(Phone)</p>
-                        </th>
-                        <td><?php the_field('phone_number'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>FAX</p>
-                        </th>
-                        <td><?php the_field('fax'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>役員</p>
-                        </th>
-                        <td><?php the_field('officer'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>設立</p>
-                        </th>
-                        <td><?php the_field('establishment'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>資本金</p>
-                        </th>
-                        <td><?php the_field('Capital'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>事業内容</p>
-                        </th>
-                        <td><?php the_field('desc'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>ライセンスNo.</p>
-                        </th>
-                        <td><?php the_field('licence'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>従業員数</p>
-                        </th>
-                        <td><?php the_field('staff'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>主要取引銀行</p>
-                        </th>
-                        <td><?php the_field('bank'); ?></td>
-                        </tr>
-                        <tr align="left">
-                            <th>
-                        <p>経営理念</p>
-                        </th>
-                        <td><?php the_field('principles'); ?></td>
-                        </tr>
-                    </table>
-
-                    <?php
-                    endwhile;
-                    endif;
-                    wp_reset_postdata();
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="container-fluid text-center" id="profile">
         <div class="container">

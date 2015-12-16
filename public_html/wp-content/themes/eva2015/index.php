@@ -12,8 +12,11 @@ get_header();
         //background: url("<?php echo get_slide_image(); ?>") 50% 0 fixed no-repeat !important;
     }
     .parallax-window {
-        min-height: 458px;
+        min-height: 600px;
         background: transparent;
+    }
+    .carousel-caption{
+        top: 40%;
     }
 </style>
 
@@ -39,16 +42,28 @@ get_header();
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-        <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/img/testparallax.jpg"></div>        
+        <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/img/testparallax.jpg"></div>       
+        <div class="carousel-caption">
+            <h2><?php echo get_slide_text() ?></h2>
+        </div>
     </div>
     <div class="item">       
         <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/img/testparallax2.jpg"></div>
+        <div class="carousel-caption">
+            <h2><?php echo get_slide_text() ?></h2>
+        </div>
     </div>
     <div class="item">       
         <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/img/testparallax.jpg"></div>
+        <div class="carousel-caption">
+            <h2><?php echo get_slide_text() ?></h2>
+        </div>
     </div>
     <div class="item">
-        <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/img/testparallax2.jpg"></div>       
+        <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/img/testparallax2.jpg"></div> 
+        <div class="carousel-caption">
+            <h2><?php echo get_slide_text() ?></h2>
+        </div>
     </div>    
   </div>
 

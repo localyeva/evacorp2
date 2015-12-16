@@ -1,3 +1,13 @@
+<style>
+    .header-banner {
+        /*height: 35pc;*/
+        //background: url("<?php echo get_slide_image(); ?>") 50% 0 fixed no-repeat !important;
+    }
+    .parallax-window {
+    min-height: 458px;
+    //background: transparent;
+}
+</style>
 <?php
 /*
  * Author: KhangLe
@@ -7,11 +17,16 @@
 get_header();
 ?>
 <!--//slide-->
-<div class="header-banner" style="background: url('http://img.dummy-image-generator.com/business/dummy-2040x750-Graph.jpg') fixed;">
+
+<!--div class="header-banner">
     <div class="container text-center">
         <h2><?php echo get_slide_text() ?></h2>
     </div>
-</div>
+</div-->
+
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/img/testparallax.jpg"></div>    
+ 
 <!--//slide End-->
 <!--//Why-->
 <?php
@@ -425,7 +440,7 @@ if ($available_blog == 1) {
             <div class="col-xs-12 col-md-4">
                 <a href="<?php echo home_url('vff') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/top-vff-team.png" alt="" class="img-responsive"></a>
             </div>
-            
+
         </div>
         <div class="row-gap-big"></div>
     </div>
@@ -477,3 +492,5 @@ if ($available_article == 1) {
 ?>
 <!--//Articles End-->
 <?php get_footer(); ?>
+
+<script src="<?php echo get_template_directory_uri() ?>/assets/parallax/parallax.js"></script>

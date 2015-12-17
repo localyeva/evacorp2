@@ -436,7 +436,7 @@ if ($available_new == 1) {
 $available_blog = get_blog_div();
 if ($available_blog == 1) {
     ?>
-    <div class="container-fluid block-center header-news home-blog-bg">
+<div class="container-fluid block-center header-news home-blog-bg" style="display:none">
         <h1 class="text-center"><?php echo get_blog_text(); ?></h1>
         <div class="container">
             <div class="row">

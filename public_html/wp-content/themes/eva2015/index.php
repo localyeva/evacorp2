@@ -415,8 +415,9 @@ if ($available_blog == 1) {
     <?php
 }
 ?>
-<!--//Blog End-->
 -->
+<!--//Blog End-->
+
 
 <div class="container-fluid block-center vff-bg">
     <div class="container">

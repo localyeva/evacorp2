@@ -10,8 +10,6 @@ get_header();
 
 <section>
 
-    dddddddddddddddddddd
-
     <div class="container service-about-labo">
         <div class="row">
             <div class="col-md-12 col-xs-12">

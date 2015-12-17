@@ -51,7 +51,7 @@ get_header();
             </div>
         </div>
     </div>
-
+    <div class="row-gap-big"></div>
     <div class="container contact">
 
         <form id="contact-form" class="form-horizontal" method="POST" action="<?php bloginfo('url') ?>/contact/confirm" novalidate="novalidate">

@@ -262,18 +262,14 @@ add_action('customize_register', 'theme_customize_register');
 
 
 //css generate
-function generate_css() {
+function eva2015_generate_css() {
     ?>
     <style>
-        .header-banner {
-            /*height: 35pc;*/
-            background: url("<?php echo get_slide_image(); ?>") 50% 0 fixed;
-        }
     </style>
     <?php
 }
 
-add_action('wp_head', 'generate_css');
+add_action('wp_head', 'eva2015_generate_css');
 
 /* COMPANY */
 function get_company_video(){

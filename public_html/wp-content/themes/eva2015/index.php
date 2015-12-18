@@ -6,9 +6,54 @@
  */
 get_header();
 ?>
-<!--//slide-->
-<div class="header-banner" style="background: url('http://img.dummy-image-generator.com/business/dummy-2040x750-Graph.jpg') fixed;">
-    <div class="container text-center">
+
+<?php
+$args = array(
+    'post_type' => 'home-slider',
+    'posts_per_page' => -1,
+    'orderby' => array('date' => 'DESC'),
+);
+$loop = new WP_Query($args);
+$home_slider = array();
+if ($loop->have_posts()) {
+    while ($loop->have_posts()) {
+        $loop->the_post();
+        while (have_rows('images')) {
+            the_row();
+            $home_slider[]['image'] = get_sub_field('image');
+        }
+    }
+}
+?>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <?php for ($i = 0; $i < count($home_slider); $i++): ?>
+            <li data-target="#myCarousel" data-slide-to="<?php echo $i ?>" class="<?php echo ($i == 0) ? 'active' : '' ?>"></li>
+        <?php endfor; ?>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <?php for ($i = 0; $i < count($home_slider); $i++): ?>
+            <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>      
+            </div>
+        <?php endfor; ?>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+    <div class="carousel-caption">
         <h2><?php echo get_slide_text() ?></h2>
     </div>
 </div>
@@ -40,7 +85,7 @@ if ($available_why == 1) {
                 <div class="row-gap-small"></div>
                 <div class="text-small">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                 </div>
-                <div class="text-left">
+                <div class="text-center">
                     <a href="<?php echo home_url('company/reason/') ?>">
                         <button class="btn btn-slim ">
                             <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
@@ -75,7 +120,7 @@ $available_service = get_services_div();
 if ($available_service == 1) {
     ?>
     <div id="header-service" class="container-fluid header-service">
-        <div class="row">
+        <div class="row service-bg">
             <div class="col-xs-12">
                 <h1 class="text-center"><?php echo get_intro_text_1() ?></h1>
             </div>
@@ -267,7 +312,11 @@ $available_about = get_about_div();
 if ($available_about == 1) {
     ?>
     <div class="container-fluid text-center header-about">
-        <h1><?php echo get_about_text(); ?></h1>
+        <div class="row about-bg">
+            <div class="col-xs-12">
+                <h1 class="text-center"><?php echo get_about_text(); ?></h1>
+            </div>
+        </div>
         <div class="row effects">
             <?php
             $time = 0;
@@ -314,7 +363,7 @@ if ($available_about == 1) {
 $available_new = get_new_div();
 if ($available_new == 1) {
     ?>
-    <div class="container-fluid block-center header-news">
+    <div class="container-fluid block-center header-news home-news-bg">
         <h1 class="text-center"><?php echo get_new_text(); ?></h1>
         <div class="container">
             <div class="row">
@@ -369,7 +418,7 @@ if ($available_new == 1) {
 $available_blog = get_blog_div();
 if ($available_blog == 1) {
     ?>
-    <div class="container-fluid block-center header-news">
+<div class="container-fluid block-center header-news home-blog-bg" style="display:none">
         <h1 class="text-center"><?php echo get_blog_text(); ?></h1>
         <div class="container">
             <div class="row">
@@ -431,7 +480,7 @@ if ($available_blog == 1) {
             <div class="col-xs-12 col-md-4">
                 <a href="<?php echo home_url('vff') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/top-vff-team.png" alt="" class="img-responsive"></a>
             </div>
-            
+
         </div>
         <div class="row-gap-big"></div>
     </div>

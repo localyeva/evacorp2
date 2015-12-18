@@ -1,15 +1,15 @@
 /*------------------------------------------------------------------ Scroll To*/
 jQuery.fn.extend(
-{
-    scrollTo: function (speed, easing)
-    {
-        return this.each(function ()
         {
-            var targetOffset = $(this).offset().top;
-            $('html,body').animate({scrollTop: targetOffset}, speed, easing);
+            scrollTo: function (speed, easing)
+            {
+                return this.each(function ()
+                {
+                    var targetOffset = $(this).offset().top;
+                    $('html,body').animate({scrollTop: targetOffset}, speed, easing);
+                });
+            }
         });
-    }
-});
 $(document).ready(function () {
     $(function () {
         var wow = new WOW({
@@ -54,7 +54,7 @@ $(document).ready(function () {
         name: 'sidr-main',
         source: '#sidr'
     });
-    
+
     $('a').on('click', function () {
         if ($(this).data('goto') != '') {
             var goto = $(this).data('goto');
@@ -63,6 +63,24 @@ $(document).ready(function () {
     });
 });
 
-$(function(){
+$(function () {
     $('.service-info article.module').heightLine();
+
+    $('p.footer-his').heightLine();
+});
+
+$(function () {
+    if ($('#myCarousel').length > 0) {
+        $('.carousel').carousel({
+            interval: 4000
+        });
+
+        $('#myCarousel').on('slide.bs.carousel', function (event) {
+            // do something…
+            img_src = $(event.relatedTarget.innerHTML).attr('data-image-src');
+            //alert(img_src);
+
+            $("img.parallax-slider").attr('src', img_src);
+        });
+    }
 });

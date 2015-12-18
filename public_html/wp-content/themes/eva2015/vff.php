@@ -81,41 +81,17 @@ get_header();
                                 サッカーはベトナムで最も人気の高いスポーツでその代表はもの凄い注目度だということです。
                                 日本で例えるならば、サッカー日本代表と野球日本代表を合わせた注目度だと理解して頂ければと思います。</br>
                                 一言で言えば、ベトナムのスポーツ界で圧倒的な注目を集める存在です。</br>
-                                そのスポンサーはといえば、ベトナムを代表する日系企業のHONDAさんなどそうそうたる企業が名を連ねています。
+                                そのスポンサーはといえば、ベトナムを代表するそうそうたる企業が名を連ねています。</br></br>
+                                その他スポンサー企業の情報は下記をご覧ください。
+                                VFFホームページ(ベトナム語) <a href="http://vff.org.vn/">http://vff.org.vn/</a>
                             </div>
                             <div class="col-xs-12 col-md-6">
                                 <img src="<?php echo get_template_directory_uri() ?>/img/vff-team.png" alt="" class="img-responsive">
                             </div>
                         </div>
 
-                        <div class="row-gap-huge"></div>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-12 text-center">
-                                <h2>スポンサー企業一覧 抜粋)</h2>
-                                <div class="row-gap-medium"></div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row vertical-align center-block">
-                            <div class="col-xs-3 col-md-3">
-                                <img src="<?php echo get_template_directory_uri() ?>/img/vff-honda-logo.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="col-xs-3 col-md-3">
-                                <img src="<?php echo get_template_directory_uri() ?>/img/vff-bird-logo.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="col-xs-3 col-md-3">
-                                <img src="<?php echo get_template_directory_uri() ?>/img/vff-viettel-logo.png" alt="" class="img-responsive">
-                            </div>
-                            <div class="col-xs-3 col-md-3">
-                                <img src="<?php echo get_template_directory_uri() ?>/img/vff-petro-logo.png" alt="" class="img-responsive">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-12 text-center">
-                                <div class="row-gap-big"></div>
-                                <p>VFFホームページ(ベトナム語) <a href="http://vff.org.vn/">http://vff.org.vn/</a></p>                            
-                            </div>
-                        </div>
+                      
+                     
                     </div>
                 </div>
             </div>

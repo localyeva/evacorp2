@@ -139,14 +139,14 @@ get_header();
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-6 no-padding-lr evol">
+                <div class="col-xs-12 col-md-6 no-padding-lr evol module-eva">
                     <div class="round1">
                         <p class="header-his"><span>株式会社エボラブルアジア</span></p>
                         <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/37.png" alt="" class=""></p>
                         <p class="footer-his"><span>「オンラインに特化した旅行会社として、また、旅行コンテンツOEM提供モデルを競争力として、旅行業界における主要分野（国内、海外、航空券、ホテル、旅行）とのM＆Aを含めた資本業務提携を積極的に行うことで、お客様視点を全ての基盤とした、次世代の総合旅行サービス提供。」</span></p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6 no-padding-lr soltec">
+                <div class="col-xs-12 col-md-6 no-padding-lr soltec module-eva">
                     <div class="round2">
                         <p class="header-his"><span>Soltec Vietnam</span></p>
                         <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/38.png" alt="" class=""></p>

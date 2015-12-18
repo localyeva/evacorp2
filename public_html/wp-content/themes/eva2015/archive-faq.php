@@ -19,17 +19,14 @@ get_header();
         <div class="container">
             <ul class="breadcrumb-cp">
                 <li>
-                    <a href="#">HOME</a> <span class="divider">></span>
-                </li>
-                <li>
-                    <a href="#">About EvolableAsia</a> <span class="divider">></span>
+                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
                 <li class="active">FAQ</li>
             </ul>
         </div>
     </div>
     <div class="container">
-        <div class="faq" style="max-width:800px;margin:auto;">
+        <div class="faq">
             <?php
             $args = array('hide_empty=0');
             $terms = get_terms('faqcat', $args);

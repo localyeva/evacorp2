@@ -85,7 +85,7 @@ if ($available_why == 1) {
                 <div class="row-gap-small"></div>
                 <div class="text2">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                 </div>
-                <div class="text-left">
+                <div class="text-center">
                     <a href="<?php echo home_url('company/reason/') ?>">
                         <button class="btn btn-slim ">
                             <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
@@ -120,7 +120,7 @@ $available_service = get_services_div();
 if ($available_service == 1) {
     ?>
     <div id="header-service" class="container-fluid header-service">
-        <div class="row">
+        <div class="row service-bg">
             <div class="col-xs-12">
                 <h1 class="text-center"><?php echo get_intro_text_1() ?></h1>
             </div>
@@ -312,7 +312,11 @@ $available_about = get_about_div();
 if ($available_about == 1) {
     ?>
     <div class="container-fluid text-center header-about">
-        <h1><?php echo get_about_text(); ?></h1>
+        <div class="row about-bg">
+            <div class="col-xs-12">
+                <h1 class="text-center"><?php echo get_about_text(); ?></h1>
+            </div>
+        </div>
         <div class="row effects">
             <?php
             $time = 0;
@@ -359,7 +363,7 @@ if ($available_about == 1) {
 $available_new = get_new_div();
 if ($available_new == 1) {
     ?>
-    <div class="container-fluid block-center header-news">
+    <div class="container-fluid block-center header-news home-news-bg">
         <h1 class="text-center"><?php echo get_new_text(); ?></h1>
         <div class="container">
             <div class="row">
@@ -412,7 +416,7 @@ if ($available_new == 1) {
 $available_blog = get_blog_div();
 if ($available_blog == 1) {
     ?>
-    <div class="container-fluid block-center header-news">
+<div class="container-fluid block-center header-news home-blog-bg" style="display:none">
         <h1 class="text-center"><?php echo get_blog_text(); ?></h1>
         <div class="container">
             <div class="row">

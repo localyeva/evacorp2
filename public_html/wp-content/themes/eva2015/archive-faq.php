@@ -21,9 +21,6 @@ get_header();
                 <li>
                     <a href="#">HOME</a> <span class="divider">></span>
                 </li>
-                <li>
-                    <a href="#">About EvolableAsia</a> <span class="divider">></span>
-                </li>
                 <li class="active">FAQ</li>
             </ul>
         </div>

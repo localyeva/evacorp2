@@ -69,7 +69,7 @@ if ($available_why == 1) {
             <div class="col-md-2 hidden-xs why-text-left text-left">
                 <div class="row-gap-big"></div>
                 <h2>Why is<br> Evolable Asia<br> chosen<br> in Vietnam?</h2>
-                <div class="text">
+                <div class="text-small">
                     なぜエボラブルアジアがベトナムのラボ型開発で選ばれるのか？
                 </div>
             </div>
@@ -83,7 +83,7 @@ if ($available_why == 1) {
                 <div class="row-gap-big"></div>
                 <h3>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h3>
                 <div class="row-gap-small"></div>
-                <div class="text2">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
+                <div class="text-small">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                 </div>
                 <div class="text-center">
                     <a href="<?php echo home_url('company/reason/') ?>">
@@ -97,7 +97,7 @@ if ($available_why == 1) {
                 <div class="row-gap-medium"></div>
                 <h2>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h2>
                 <div class="row-gap-small"></div>
-                <div class="text2">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
+                <div class="text-small">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                 </div>
                 <div class="text-center">
                     <a href="<?php echo home_url('company/reason/') ?>">
@@ -337,7 +337,7 @@ if ($available_about == 1) {
                         $time = 0;
                     }
                     ?>
-                    <div class="col-xs-6 col-md-3 no-padding-lr about-main-block wow fadeInUp" data-wow-delay="<?php echo $time; ?>s">
+                    <div class="col-xs-12 col-md-3 no-padding-lr about-main-block wow fadeInUp" data-wow-delay="<?php echo $time; ?>s">
                         <a class="about-hover" href="<?php echo get_field('link') ?>">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                             <div class="caption full-width left">
@@ -385,6 +385,7 @@ if ($available_new == 1) {
                             <a class="news-hover" href="<?php the_permalink() ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" style="width:100%; height:auto;">
                                 <div class="caption-eva" ></div>
+                                <span class="overlay"></span>                                
                                 <div class="caption left">
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>
@@ -412,6 +413,7 @@ if ($available_new == 1) {
 ?>
 <!--//News End-->
 <!--//Blog-->
+<!--
 <?php
 $available_blog = get_blog_div();
 if ($available_blog == 1) {
@@ -438,6 +440,7 @@ if ($available_blog == 1) {
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                 <div class="caption-eva" ></div>
+                                <span class="overlay"></span>
                                 <div class="caption full-width left">
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>
@@ -461,7 +464,10 @@ if ($available_blog == 1) {
     <?php
 }
 ?>
+-->
 <!--//Blog End-->
+
+
 <div class="container-fluid block-center vff-bg">
     <div class="container">
         <div class="row-gap-big"></div>

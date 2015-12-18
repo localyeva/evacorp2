@@ -24,6 +24,12 @@ and open the template in the editor.
     background: url('../img/top-vff-bg.png') no-repeat;
     background-size: cover;
     color: #fff;
+    h3{
+        font-size:@sub-title-font-size;
+    }
+    p{
+        font-size:@description-font-size;
+    }
 }
 #company-staff{
     .header-vff-banner {
@@ -246,6 +252,10 @@ and open the template in the editor.
         transform: translate(0, -50%);
         letter-spacing: 3px;
         font-weight: bold;
+        h2{
+            font-size: @title-font-size;
+        }
+        
     }
     .header-reason-banner {
         background: url('../img/labo-banner.png') no-repeat;
@@ -273,7 +283,8 @@ and open the template in the editor.
         background: rgba(255,255,255,1);
         padding-left: 5px;
         padding-right: 5px;
-        height: 400px;h3.post32{
+        height: 400px;
+        h3.post32{
             margin-top: -70px; 
             z-index: 100;
         }
@@ -281,7 +292,7 @@ and open the template in the editor.
         color: #000;       
         h3{
             line-height: 40px;
-            font-size: 20px;
+            font-size: @sub-sub-title-font-size;
             font-weight: bold;
         }
     }
@@ -316,13 +327,21 @@ and open the template in the editor.
         h3{
             font-weight: bold;
             line-height: 40px;
+            font-size:@sub-title-font-size;
         }
     }
 
     .block-4{
         h1{
             font-weight: bold;
+            font-size:@title-font-size;
         }
+        h4{
+            font-size:@sub-sub-title-font-size;
+        }
+        h5{
+            font-size:@description-font-size;
+        }        
         .image2-pos{
             padding-top: 40px;
         }
@@ -339,6 +358,7 @@ and open the template in the editor.
         }
         .text-rpos{
             padding-top: 25px;
+            font-size:@description-font-size;
         }
         .small-container{
             width:90%;
@@ -351,6 +371,7 @@ and open the template in the editor.
         background: url('../img/white-grid.png') repeat;
         h2{
             font-weight: bold;
+            font-size:@title-font-size;
         }
         .rect{
             //padding: 20px 50px 20px 50px;

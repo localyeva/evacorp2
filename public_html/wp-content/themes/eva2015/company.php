@@ -21,9 +21,7 @@ get_header();
                 <li>
                     <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
-                <li>
-                    <a href="<?php echo home_url('company') ?>">About EvolableAsia</a> <span class="divider">></span>
-                </li>
+                <li class="active">About EvolableAsia</li>
             </ul>
         </div>
     </div>

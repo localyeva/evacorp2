@@ -19,7 +19,7 @@ get_header();
         <div class="container">
             <ul class="breadcrumb-cp">
                 <li>
-                    <a href="#">HOME</a> <span class="divider">></span>
+                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
                 <li class="active">FAQ</li>
             </ul>

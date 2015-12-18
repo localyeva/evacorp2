@@ -11,7 +11,7 @@ get_header();
     <div class="head-banner-wrap blue">
         <div class="container text-center">
             <div class="col-md-12">
-                <h2>STAFF HEADLINE</h2>
+                <h2>スタッフ紹介</h2>
             </div>
         </div>
     </div>       
@@ -20,12 +20,12 @@ get_header();
         <div class="container">
             <ul class="breadcrumb-cp">
                 <li>
-                    <a href="#">HOME</a> <span class="divider">></span>
+                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
                 <li>
-                    <a href="#">About EvolableAsia</a> <span class="divider">></span>
+                    <a href="<?php echo home_url('company') ?>">About EvolableAsia</a> <span class="divider">></span>
                 </li>
-                <li class="active">サッカーベ</li>
+                <li class="active">スタッフ紹介</li>
             </ul>
         </div>
     </div>

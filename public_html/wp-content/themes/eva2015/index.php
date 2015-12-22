@@ -6,9 +6,54 @@
  */
 get_header();
 ?>
-<!--//slide-->
-<div class="header-banner" style="background: url('http://img.dummy-image-generator.com/business/dummy-2040x750-Graph.jpg') fixed;">
-    <div class="container text-center">
+
+<?php
+$args = array(
+    'post_type' => 'home-slider',
+    'posts_per_page' => -1,
+    'orderby' => array('date' => 'DESC'),
+);
+$loop = new WP_Query($args);
+$home_slider = array();
+if ($loop->have_posts()) {
+    while ($loop->have_posts()) {
+        $loop->the_post();
+        while (have_rows('images')) {
+            the_row();
+            $home_slider[]['image'] = get_sub_field('image');
+        }
+    }
+}
+?>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <?php for ($i = 0; $i < count($home_slider); $i++): ?>
+            <li data-target="#myCarousel" data-slide-to="<?php echo $i ?>" class="<?php echo ($i == 0) ? 'active' : '' ?>"></li>
+        <?php endfor; ?>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <?php for ($i = 0; $i < count($home_slider); $i++): ?>
+            <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>      
+            </div>
+        <?php endfor; ?>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+    <div class="carousel-caption">
         <h2><?php echo get_slide_text() ?></h2>
     </div>
 </div>
@@ -24,7 +69,7 @@ if ($available_why == 1) {
             <div class="col-md-2 hidden-xs why-text-left text-left">
                 <div class="row-gap-big"></div>
                 <h2>Why is<br> Evolable Asia<br> chosen<br> in Vietnam?</h2>
-                <div class="text">
+                <div class="text-small">
                     なぜエボラブルアジアがベトナムのラボ型開発で選ばれるのか？
                 </div>
             </div>
@@ -38,9 +83,9 @@ if ($available_why == 1) {
                 <div class="row-gap-big"></div>
                 <h3>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h3>
                 <div class="row-gap-small"></div>
-                <div class="text2">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
+                <div class="text-small">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                 </div>
-                <div class="text-left">
+                <div class="text-center">
                     <a href="<?php echo home_url('company/reason/') ?>">
                         <button class="btn btn-slim ">
                             <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
@@ -52,7 +97,7 @@ if ($available_why == 1) {
                 <div class="row-gap-medium"></div>
                 <h2>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h2>
                 <div class="row-gap-small"></div>
-                <div class="text2">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
+                <div class="text-small">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                 </div>
                 <div class="text-center">
                     <a href="<?php echo home_url('company/reason/') ?>">
@@ -75,7 +120,7 @@ $available_service = get_services_div();
 if ($available_service == 1) {
     ?>
     <div id="header-service" class="container-fluid header-service">
-        <div class="row">
+        <div class="row service-bg">
             <div class="col-xs-12">
                 <h1 class="text-center"><?php echo get_intro_text_1() ?></h1>
             </div>
@@ -267,7 +312,11 @@ $available_about = get_about_div();
 if ($available_about == 1) {
     ?>
     <div class="container-fluid text-center header-about">
-        <h1><?php echo get_about_text(); ?></h1>
+        <div class="row about-bg">
+            <div class="col-xs-12">
+                <h1 class="text-center"><?php echo get_about_text(); ?></h1>
+            </div>
+        </div>
         <div class="row effects">
             <?php
             $time = 0;
@@ -288,7 +337,7 @@ if ($available_about == 1) {
                         $time = 0;
                     }
                     ?>
-                    <div class="col-xs-6 col-md-3 no-padding-lr about-main-block wow fadeInUp" data-wow-delay="<?php echo $time; ?>s">
+                    <div class="col-xs-12 col-md-3 no-padding-lr about-main-block wow fadeInUp" data-wow-delay="<?php echo $time; ?>s">
                         <a class="about-hover" href="<?php echo get_field('link') ?>">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                             <div class="caption full-width left">
@@ -314,11 +363,18 @@ if ($available_about == 1) {
 $available_new = get_new_div();
 if ($available_new == 1) {
     ?>
-    <div class="container-fluid block-center header-news">
+    <div class="container-fluid block-center header-news home-news-bg">
         <h1 class="text-center"><?php echo get_new_text(); ?></h1>
         <div class="container">
             <div class="row">
                 <?php
+                $terms = get_terms('news-type', 'hide_empty=0');
+                foreach ($terms as $term) {
+                    $all_terms[] = $term->name;
+                }
+                $bg_color = array('categories-pink', 'categories-yellow', 'categories-blue');
+                $class_category = array_combine($all_terms, $bg_color);
+                //
                 $time2 = 0;
                 $args = array(
                     'post_type' => 'news',
@@ -331,14 +387,29 @@ if ($available_new == 1) {
                 if ($loop->have_posts()):
                     $num_posts = count($loop->posts);
                     ?>
-                    <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                    <?php while ($loop->have_posts()): $loop->the_post(); 
+                        $postId = get_the_ID();
+                        $terms = get_the_terms($postId, 'news-type');
+                        $categories = array();
+                        if (is_array($terms) && count($terms) > 0) {
+                            foreach ($terms as $term) {
+                                $categories[] = $term->name;
+                            }
+                        }
+
+                        
+                    ?>
                         <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
                             <a class="news-hover" href="<?php the_permalink() ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" style="width:100%; height:auto;">
                                 <div class="caption-eva" ></div>
+                                <span class="overlay"></span>                                
                                 <div class="caption left">
                                     <div class="news-main-title">
-                                        <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>
+                                        <span class="date-text"><?php the_date('Y.m.d'); ?></span>
+                                        <?php if (count($categories) > 0) { ?>
+                                        <span class="categories-text <?php echo $class_category[$term->name] ?>"><?php echo implode(', ', $categories); ?></span>
+                                        <?php } ?>
                                     </div>
                                     <h2 class="intro more"><?php the_title(); ?></h2>
                                 </div>
@@ -363,11 +434,12 @@ if ($available_new == 1) {
 ?>
 <!--//News End-->
 <!--//Blog-->
+<!--
 <?php
 $available_blog = get_blog_div();
 if ($available_blog == 1) {
     ?>
-    <div class="container-fluid block-center header-news">
+<div class="container-fluid block-center header-news home-blog-bg" style="display:none">
         <h1 class="text-center"><?php echo get_blog_text(); ?></h1>
         <div class="container">
             <div class="row">
@@ -389,6 +461,7 @@ if ($available_blog == 1) {
                             <a class="news-hover" href="<?php echo get_field('link') ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                 <div class="caption-eva" ></div>
+                                <span class="overlay"></span>
                                 <div class="caption full-width left">
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>
@@ -412,7 +485,10 @@ if ($available_blog == 1) {
     <?php
 }
 ?>
+-->
 <!--//Blog End-->
+
+
 <div class="container-fluid block-center vff-bg">
     <div class="container">
         <div class="row-gap-big"></div>
@@ -425,7 +501,7 @@ if ($available_blog == 1) {
             <div class="col-xs-12 col-md-4">
                 <a href="<?php echo home_url('vff') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/top-vff-team.png" alt="" class="img-responsive"></a>
             </div>
-            
+
         </div>
         <div class="row-gap-big"></div>
     </div>

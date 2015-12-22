@@ -17,13 +17,10 @@ $reg_content = @$_SESSION['contact']['content'];
 
 $arr_itemSelect = array(
     '▼下記からお選びください',
-    'ベトナムでラボ型オフショア開発に関心がある',
     'ベトナムでラボ型オフショア開発を検討している',
     'ベトナムでBPOを検討している',
-    'エボラブルアジアデザインチームに興味がある',
     'ベトナムのITビジネス事情を視察したいと思っている',
     'ベトナムを活用してコストダウンする提案をしてほしい',
-    '詳しい資料を送ってほしい',
     '採用に関するお問い合わせ',
     'その他',
 );
@@ -47,19 +44,21 @@ get_header();
     <div class="head-banner-wrap red">
         <div class="container text-center">
             <div class="col-md-12">
-                <h2>Contact</h2>
+                <h2>お問い合わせ</h2>
             </div>
         </div>
     </div>
 
     <div class="container contact">
-
+            <ul class="breadcrumb-cp">
+                <li>
+                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
+                </li>
+                <li class="active">お問い合わせ</li>
+            </ul>
         <form id="contact-form" class="form-horizontal" method="POST" action="<?php bloginfo('url') ?>/contact/confirm" novalidate="novalidate">
             <h2 class="title">下記に必要事項をご記入の上、お問い合わせください。</h2>
-            <p>
-                <span class="red">※</span>
-                印の入力は必須です。
-            </p>
+
             <div class="form-group">
                 <label for="contact-company-name" class="col-sm-3 control-label">会社名<span class="red">※</span></label>
                 <div class="col-sm-9">
@@ -117,9 +116,7 @@ get_header();
                         <label class="checkbox-inline">
                             <input type="checkbox" name="inq[]" value="Facebook" <?php echo $arr_inq_checked[6] ?>/> Facebook
                         </label>
-                        <label class="checkbox-inline">
-                            <input type="checkbox" name="inq[]" value="テレビ" <?php echo $arr_inq_checked[7] ?>/> EVOLABLE ASIAブログ
-                        </label>
+                        
                     </div>
                     <div class="checkbox">
                         <label class="other">
@@ -140,13 +137,13 @@ get_header();
             <div class="form-group">
                 <label for="contact-content" class="col-sm-3 control-label">お問い合わせ内容<span class="red">※</span></label>
                 <div class="col-sm-9">
-                    <textarea id="contact-content" name="content" class="form-control"><?php echo $reg_content ?></textarea>
+                    <textarea id="contact-content" name="content" class="form-control" rows="10"><?php echo $reg_content ?></textarea>
                 </div>
             </div>
-
+         
             <div class="col-sm-12 privacy">
                 <div class="box">
-                    <h3>【個人情報の取り扱いについて】</h3>
+                    <strong>【個人情報の取り扱いについて】</strong>
                     <ul>
                         <li>
                             <strong>EVOLABLE ASIA CO., Ltd</strong>（以下「当社」）は、以下のとおり個人情報保護方針を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。

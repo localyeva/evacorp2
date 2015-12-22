@@ -168,7 +168,7 @@ get_header();
                                             <img src="<?php echo get_template_directory_uri() ?>/img/why-vietnam/vietnam-block3-image2.png" alt="" class="img-responsive center-block longbg">
                                         </figure>
                                         <h3 class="green-text post32">日本と違い、若い労働人口にボリュームがある</h3>
-                                        <p>若い人口が多いのでウェディングも活況</p>
+                                        <p>職場には若いが多く活気がある</p>
                                     </article>                                
                                 </div>                                            
                             </div>                     

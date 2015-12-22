@@ -120,7 +120,7 @@ get_header();
             <div class="row-gap-big"></div>
             <div class="row" style="max-width:600px;margin:auto;">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center no-padding-lr">
-                    <a href="<?php echo home_url('service/about_bpo') ?>" class="center-block">開発実績</a>
+                    <a href="<?php echo home_url('service/bpo-real-estate') ?>" class="center-block">不動産BPO</a>
                 </div>  
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center no-padding-lr bpo-4-1-xs">
                     <a href="<?php echo home_url('recomend') ?>" class="center-block">参加企業の声</a>

@@ -120,80 +120,89 @@ get_header();
 ?>
 
 <section>
+    <div class="head-banner-wrap red">
+        <div class="container text-center">
+            <div class="col-md-12">
+                <h2>Contact</h2>
+            </div>
+        </div>
+    </div>    
+    <div class="row-gap-big"></div>
     <div class="container contact">
+        <div class="row" style="max-width:800px;margin:auto;">
+            <p class="eva-info">
+                <b>EVOLABLE ASIA Co., Ltd</b><br/>
+                4 Floor, Saigon Finance Center<br/>
+                No 9, Dinh Tien Hoang Street, Dist.1, HCM City.<br/>
+                Tel : (84.8) 39111489<br/>
+                Fax : (84.8) 39118767<br/>
+                Email : info@evolable.asia
+            </p>
+            <table class="table table-bordered">
+                <colgroup>
+                    <col class="col-sm-2">
+                    <col class="col-sm-10">
+                </colgroup>
+                <tr>
+                    <td>会社名</td>
+                    <td><?php echo $_SESSION['contact']['company'] ?></td>
+                </tr>
+                <tr>
+                    <td>部署名</td>
+                    <td><?php echo $_SESSION['contact']['division'] ?></td>
+                </tr>
+                <tr>
+                    <td>お名前</td>
+                    <td><?php echo $_SESSION['contact']['name'] ?></td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td><?php echo $_SESSION['contact']['email'] ?></td>
+                </tr>
+                <tr>
+                    <td>Tel</td>
+                    <td><?php echo $_SESSION['contact']['tel'] ?></td>
+                </tr>
+                <tr>
+                    <td>どこでエボラブルアジアを知りましたか?</td>
+                    <td>
+                        <?php if (!is_null($_SESSION['contact']['inq_all'])): ?>
+                            <ul>
+                                <?php foreach ($_SESSION['contact']['inq_all'] as $value): ?>
+                                    <li><?php echo $value ?></li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>お問い合わせ項目</td>
+                    <td><?php echo $_SESSION['contact']['itemSelect'] ?></td>
+                </tr>
+                <tr>
+                    <td>お問い合わせ内容</td>
+                    <td><?php echo $_SESSION['contact']['content'] ?></td>
+                </tr>
+            </table>
 
-        <p class="eva-info">
-            EVOLABLE ASIA Co., Ltd<br/>
-            4 Floor, Saigon Finance Center<br/>
-            No 9, Dinh Tien Hoang Street, Dist.1, HCM City.<br/>
-            Tel : (84.8) 39111489<br/>
-            Fax : (84.8) 39118767<br/>
-            Email : info@evolable.asia
-        </p>
-
-        <table class="table table-bordered">
-            <colgroup>
-                <col class="col-sm-2">
-                <col class="col-sm-10">
-            </colgroup>
-            <tr>
-                <td>会社名</td>
-                <td><?php echo $_SESSION['contact']['company'] ?></td>
-            </tr>
-            <tr>
-                <td>部署名</td>
-                <td><?php echo $_SESSION['contact']['division'] ?></td>
-            </tr>
-            <tr>
-                <td>お名前</td>
-                <td><?php echo $_SESSION['contact']['name'] ?></td>
-            </tr>
-            <tr>
-                <td>E-mail</td>
-                <td><?php echo $_SESSION['contact']['email'] ?></td>
-            </tr>
-            <tr>
-                <td>Tel</td>
-                <td><?php echo $_SESSION['contact']['tel'] ?></td>
-            </tr>
-            <tr>
-                <td>どこでエボラブルアジアを知りましたか?</td>
-                <td>
-                    <?php if (!is_null($_SESSION['contact']['inq_all'])): ?>
-                        <ul>
-                            <?php foreach ($_SESSION['contact']['inq_all'] as $value): ?>
-                                <li><?php echo $value ?></li>
-                            <?php endforeach; ?>
-                        <?php endif; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>お問い合わせ項目</td>
-                <td><?php echo $_SESSION['contact']['itemSelect'] ?></td>
-            </tr>
-            <tr>
-                <td>お問い合わせ内容</td>
-                <td><?php echo $_SESSION['contact']['content'] ?></td>
-            </tr>
-        </table>
-        <table class="table table-borderless">
-            <tr>
-                <td>
-                    <form method="POST">
-                        <div class="center">
-                            <a class="btn inline-block" href="<?php echo bloginfo('url') ?>/contact">
-                                <button class="btn btn-warning center-block inline-block btn-confirm" type="button">
-                                    戻る
-                                </button>
-                            </a>
-                            <button class="btn btn-success center-block inline-block btn-confirm" type="submit">同意して送信</button>
-                            <input type="hidden" name="send" value="send"/>
-                        </div>
-                    </form>
-                </td>
-            </tr>
-        </table>
+            <form method="POST">
+                <div class="center">
+                    <button class="btn btn-success center-block inline-block btn-confirm" type="submit">同意して送信</button>
+                    <div class="row-gap-big"></div> 
+                    <table class="table table-borderless">
+                        <tr>
+                            <td>                                
+                                <a class="btn inline-block" href="<?php echo bloginfo('url') ?>/contact">
+                                    <button class="btn btn-default center-block inline-block btn-confirm" type="button">戻る</button>
+                                </a>
+                                <input type="hidden" name="send" value="send"/>
+                            </td>
+                        </tr>
+                    </table>                                
+                </div>
+            </form>
+        </div>
     </div>
+    <div class="row-gap-big"></div>    
 </section>
 
 <?php get_footer(); ?>

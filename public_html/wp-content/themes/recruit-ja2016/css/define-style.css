@@ -1,0 +1,25 @@
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.row-gap-small {
+  height: 10px;
+}
+.row-gap-medium {
+  height: 20px;
+}
+.row-gap-big {
+  height: 50px;
+}
+.row-gap-huge {
+  height: 100px;
+}
+.no-padding-lr {
+  padding-left: 0;
+  padding-right: 0;
+}

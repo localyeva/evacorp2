@@ -1,0 +1,247 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,500,500italic,700,700italic&subset=latin,vietnamese);
+@body-font-size: 14px;
+@font-size-1: 0.714em;
+@font-size-2: 3.214em;
+@font-size-3: 1.429em;
+@font-size-4: 0.875em;/*footer*/
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    font-size:@body-font-size;
+    color:#000;
+}
+
+#index{
+	background: url(../img/top/bg_t01.jpg) no-repeat scroll center top #f8f8f8;
+}
+.head-cruit{
+	max-width:1000px;
+	margin:auto;
+	padding-top:25px;
+	a:hover img{
+		opacity:0.5;
+	}	
+}
+
+.navbar-default{
+	border:none;
+	background:none;
+	padding-top:23px;
+}
+
+.navbar .navbar-nav {
+	border:none;
+	li{
+		padding:0px 18px;
+		a:hover{
+			opacity:0.5;
+		}
+		.text-above-line{
+			font-weight:bold;
+			color:#000;
+		}
+		.text-below-line{
+			color:#e69698;
+			font-weight:bold;
+			font-size: @font-size-1;
+			text-transform: uppercase;
+		}		
+	}
+	.dropdown-menu{
+		left:18px;
+		li{
+			padding:0px;
+			a:hover{
+				background:#fff;
+				color:#e69698;
+			}
+		}
+		li:after{
+			content:"";
+		}
+		li:before{
+			content:"";
+		}	
+	}		
+}
+
+.social-cruit{
+	max-width:1000px;
+	margin:-20px auto;
+}
+
+.title-cruit{
+	margin-top:50px;
+	h1{
+		font-size:@font-size-2;
+		font-weight:bold;
+		letter-spacing:5px;
+		span{
+			color:#b71f22;
+		}
+	}
+}
+.category-cruit{
+	max-width:1000px;
+	margin:auto;
+	padding-top:70px;
+	.category-cruit-item{
+		margin-top:80px;
+		a{
+			text-decoration:none;
+			&:hover{
+				opacity:0.5;
+			}
+			&:hover p{
+				opacity:0.5;
+			}		
+			p{
+				font-size:@font-size-3;
+				color:#000;
+			}
+			span{
+				font-size:@font-size-1;
+				color:#ccc;
+				text-transform: uppercase;
+				letter-spacing:2px;
+			}		
+		}
+	}
+}
+.footer-cruit{
+	margin-top:150px;
+	background:#000;
+	.footer-cruit-content{
+		max-width:1000px;
+		margin:auto;	
+		color:#fff;
+		font-size:@font-size-4;		
+		.footer-cruit-content-group{
+			padding:30px 0;
+			ul{
+				list-style-type:none;
+				text-align:left;
+				margin-left:-30px;
+				li{
+					line-height:30px;
+					a{
+						color:#fff;
+						text-decoration:none;
+						font-weight:bold;					
+						&:hover{
+							text-decoration:underline;
+						}
+					}
+				}
+			}
+			.footer-cruit-content-item-ul-1{
+				border-right:solid 1px #474443;
+				.list-style{
+					color:yellow;
+					padding-right:5px;
+				}
+				.footer-cruit-content-item-ul-1-1{
+					margin-left:-38px;		
+					.list-style-child{
+						color:#fff;
+						padding-right:3px;
+						text-transform: uppercase;
+
+					}						
+				}
+			}
+		}		
+	}
+}
+.copyright{
+    background: url('../img/top/bg_footer.png') center no-repeat;
+    background-size: cover;
+    padding: 0px;   
+}
+
+@media (min-width: 320px) {
+	.head-cruit-item{
+		padding-top:20px;
+	}
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: left;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: left;
+    }	
+
+   	.navbar .navbar-nav {
+		li:after{
+			position:absolute;
+		}
+		li:before{
+			position:absolute;
+			content:"";
+		}
+   	}
+
+	.social-cruit{	
+		.social-cruit-content{
+			text-align:center;
+		}
+	}
+
+	.title-cruit{
+		h1{
+			font-size:@font-size-3;
+			letter-spacing:5px;
+		}
+	}	
+}
+@media (min-width: 768px) {
+	.head-cruit-item{
+		padding-top:0px;
+	}  
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+   	.navbar .navbar-nav {
+		li:after{
+			position:absolute;
+			content:"|";
+			top:25%;
+			left:0;
+			color:#595757;
+			font-size:@font-size-1;	
+		}
+		li:before{
+			position:absolute;
+			content:"|";
+			top:25%;
+			left:100%;
+			color:#595757;
+			font-size:@font-size-1;	
+		}
+   	}    
+
+	.social-cruit{	
+		.social-cruit-content{
+			text-align:right;
+		}
+	}	 	
+	.title-cruit{
+		h1{
+			font-size:@font-size-2;
+			letter-spacing:5px;
+		}
+	}	
+}
+
+@import "define-style.less";

@@ -368,6 +368,13 @@ if ($available_new == 1) {
         <div class="container">
             <div class="row">
                 <?php
+                $terms = get_terms('news-type', 'hide_empty=0');
+                foreach ($terms as $term) {
+                    $all_terms[] = $term->name;
+                }
+                $bg_color = array('categories-pink', 'categories-yellow', 'categories-blue');
+                $class_category = array_combine($all_terms, $bg_color);
+                //
                 $time2 = 0;
                 $args = array(
                     'post_type' => 'news',
@@ -390,6 +397,7 @@ if ($available_new == 1) {
                             }
                         }
 
+                        
                     ?>
                         <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
                             <a class="news-hover" href="<?php the_permalink() ?>">
@@ -400,7 +408,7 @@ if ($available_new == 1) {
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span>
                                         <?php if (count($categories) > 0) { ?>
-                                        <span class="categories-text"><?php echo implode(', ', $categories); ?></span>
+                                        <span class="categories-text <?php echo $class_category[$term->name] ?>"><?php echo implode(', ', $categories); ?></span>
                                         <?php } ?>
                                     </div>
                                     <h2 class="intro more"><?php the_title(); ?></h2>

@@ -35,13 +35,13 @@ get_header();
                             <div class="row-gap-big"></div>
                             <div class="row-gap-small"></div>
                             <div class="col-xs-12 col-md-12 text-center">
-                                <h2>Evolable Asiaは</h2>
+                                <h2 class="vff-title">Evolable Asiaは</h2>
                                 <div class="row-gap-small"></div>
-                                <h2><span class="blue-text">サッカーベトナム代表</span>の公式スポンサーです</h2>
+                                <h2 class="vff-sub"><span class="blue-text">サッカーベトナム代表</span>の公式スポンサーです</h2>
                                 <div class="row-gap-medium"></div>                            
                                 <hr>
                                 <div class="row-gap-small"></div>
-                                <img src="<?php echo get_template_directory_uri() ?>/img/vff-logo.png" alt="" class="img-responsive center-block">
+                                <img src="<?php echo get_template_directory_uri() ?>/img/vff-logo.png" alt="" class="img-responsive center-block img-vff">
                             </div>                        
                         </div>
                         <div class="row">

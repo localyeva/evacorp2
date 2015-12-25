@@ -149,5 +149,7 @@
 <script src="<?php echo get_template_directory_uri() ?>/js/wow.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/parallax/parallax.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/jquery.validate.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/contact.js"></script>
 </body>
 </html>

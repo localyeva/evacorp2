@@ -368,6 +368,13 @@ if ($available_new == 1) {
         <div class="container">
             <div class="row">
                 <?php
+                $terms = get_terms('news-type', 'hide_empty=0');
+                foreach ($terms as $term) {
+                    $all_terms[] = $term->name;
+                }
+                $bg_color = array('categories-pink', 'categories-yellow', 'categories-blue');
+                $class_category = array_combine($all_terms, $bg_color);
+                //
                 $time2 = 0;
                 $args = array(
                     'post_type' => 'news',
@@ -380,7 +387,18 @@ if ($available_new == 1) {
                 if ($loop->have_posts()):
                     $num_posts = count($loop->posts);
                     ?>
-                    <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                    <?php while ($loop->have_posts()): $loop->the_post(); 
+                        $postId = get_the_ID();
+                        $terms = get_the_terms($postId, 'news-type');
+                        $categories = array();
+                        if (is_array($terms) && count($terms) > 0) {
+                            foreach ($terms as $term) {
+                                $categories[] = $term->name;
+                            }
+                        }
+
+                        
+                    ?>
                         <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
                             <a class="news-hover" href="<?php the_permalink() ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" style="width:100%; height:auto;">
@@ -388,7 +406,10 @@ if ($available_new == 1) {
                                 <span class="overlay"></span>                                
                                 <div class="caption left">
                                     <div class="news-main-title">
-                                        <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>
+                                        <span class="date-text"><?php the_date('Y.m.d'); ?></span>
+                                        <?php if (count($categories) > 0) { ?>
+                                        <span class="categories-text <?php echo $class_category[$term->name] ?>"><?php echo implode(', ', $categories); ?></span>
+                                        <?php } ?>
                                     </div>
                                     <h2 class="intro more"><?php the_title(); ?></h2>
                                 </div>

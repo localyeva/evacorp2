@@ -16,8 +16,19 @@ get_header();
             </div>
         </div>
     </div>
-
     <div class="container service-info">
+
+       <div class="container">
+            <ul class="breadcrumb-cp">
+                <li>
+                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
+                </li>
+                <li>
+                    <a href="<?php echo home_url('service') ?>">サービス</a> <span class="divider">></span>
+                </li>
+            </ul>
+        </div>
+
         <div class="row">
             <!--<div class="col-xs-12 col-md-12">-->
             <?php

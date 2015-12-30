@@ -135,7 +135,7 @@ get_header('contact');
     <div class="row contact-content-2 center">
         <span class="active">step.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入力</span>>
         <span>step.2&nbsp;&nbsp;&nbsp;&nbsp;内容確認</span>>
-        <span>step.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>step.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完了</span>
     </div>
     <div class="row-gap-big"></div>
     <div class=" row contact-content-3">

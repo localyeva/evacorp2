@@ -46,13 +46,20 @@ get_header('contact');
                 <tr>
                     <td>希望職種<span class="color-red">※</span></td>
                     <td>
+                        <?php $job = (isset($_GET['job'])) ? $_GET['job'] : ''; ?>
                         <select name="item" class="size02" id="itemList">
                             <option value="">希望職種を選択して下さい</option>
-                            <option value="[006]【Special  program】MUSOUインターンシッププログラム（1年単位のプログラム）">[006]【Special  program】MUSOUインターンシッププログラム（1年単位のプログラム）</option>
-                            <option value="[005]【Special  program】GC（Global Career）プログラム">[005]【Special  program】GC（Global Career）プログラム</option>
-                            <option value="[003]ラボ担当ジュニアマネージャ">[003]ラボ担当ジュニアマネージャ</option>
-                            <option value="[002]ラボ担当マネージャー">[002]ラボ担当マネージャー</option>
-                            <option value="[001]セールス">[001]セールス</option>                        
+                            <?php
+                            $args = array('posts_per_page' => 5, 'post_type' => 'requirement');
+                            $myposts = get_posts($args);
+                            foreach ($myposts as $post) {
+                                ?>
+                                <option <?php
+                                if ($job == $post->post_title) {
+                                    echo "selected";
+                                }
+                                ?> value="<?php echo $post->post_title; ?>"><?php echo $post->post_title; ?></option>
+                                <?php } ?>
                             <option value="その他">その他</option>
                         </select>
                     </td>

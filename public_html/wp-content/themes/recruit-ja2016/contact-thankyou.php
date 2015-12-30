@@ -18,7 +18,7 @@ get_header('contact');
         <div class="contact-content-1-title">
             <div class="contact-content-1-title-row">
                 <div class="contact-content-1-title-cell">
-                    <span>よくある</span>
+                    <span>応募フォーム</span>
                 </div>                             
             </div>
         </div>   

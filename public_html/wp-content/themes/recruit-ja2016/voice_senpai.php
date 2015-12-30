@@ -19,7 +19,7 @@ get_header();
         </div>
         <h2>voice</h2>   
     </div>
-    <div class="row voice-senpai-content-2 center">
+    <div class="row voice-senpai-content-2 center" id="anchor01">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_01.jpg" width="371" height="248">
             <div class="voice-senpai-content-2-image">
@@ -116,7 +116,7 @@ get_header();
         </div>        
     </div>
     
-    <div class="row voice-senpai-content-2 center">
+    <div class="row voice-senpai-content-2 center" id="anchor02">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_04.jpg" width="371" height="248">
             <div class="voice-senpai-content-2-image">
@@ -209,7 +209,7 @@ get_header();
         </div>        
     </div>
 
-    <div class="row voice-senpai-content-2 center">
+    <div class="row voice-senpai-content-2 center" id="anchor03">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_07.jpg" width="371" height="248">
             <div class="voice-senpai-content-2-image">
@@ -307,7 +307,7 @@ get_header();
         </div>        
     </div>
 
-    <div class="row voice-senpai-content-2 center">
+    <div class="row voice-senpai-content-2 center" id="anchor04">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_10.jpg" width="371" height="248">   
             <div class="voice-senpai-content-2-image">
@@ -409,7 +409,7 @@ get_header();
         </div>        
     </div>
 
-    <div class="row voice-senpai-content-2 center">
+    <div class="row voice-senpai-content-2 center" id="anchor05">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_14.jpg" width="371" height="248">
             <div class="voice-senpai-content-2-image">
@@ -506,7 +506,7 @@ get_header();
         </div>        
     </div>
 
-    <div class="row voice-senpai-content-2 center">
+    <div class="row voice-senpai-content-2 center" id="anchor06">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_17.jpg" width="371" height="248">
             <div class="voice-senpai-content-2-image">
@@ -603,7 +603,7 @@ get_header();
         </div>        
     </div>
 
-    <div class="row voice-senpai-content-2 center">
+    <div class="row voice-senpai-content-2 center" id="anchor07">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_20.jpg" width="371" height="248">
             <div class="voice-senpai-content-2-image">

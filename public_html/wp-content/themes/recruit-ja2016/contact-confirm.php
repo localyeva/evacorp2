@@ -125,7 +125,7 @@ get_header('contact');
         <div class="contact-content-1-title">
             <div class="contact-content-1-title-row">
                 <div class="contact-content-1-title-cell">
-                    <span>よくある</span>
+                    <span>応募フォーム</span>
                 </div>                             
             </div>
         </div>   
@@ -133,9 +133,9 @@ get_header('contact');
         <div class="row-gap-big"></div>  
     </div>    
     <div class="row contact-content-2 center">
-        <span>step.1</span>>
-        <span class="active">step.2</span>>
-        <span>step.3</span>
+        <span class="active">step.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入力</span>>
+        <span>step.2&nbsp;&nbsp;&nbsp;&nbsp;内容確認</span>>
+        <span>step.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
     </div>
     <div class="row-gap-big"></div>
     <div class=" row contact-content-3">

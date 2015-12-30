@@ -30,7 +30,7 @@ get_header();
     </div>
 
     <section class="reason-why">
-        <div class="row-gap-huge"></div>
+        <div class="row-gap-medium"></div>
         <div class="container-fluid center reason-why-1">
             <div class="container">
                 <div class="row">
@@ -90,11 +90,11 @@ get_header();
                                     </div>
                                     <div class="col-xs-12 col-md-5 no-padding-lr left"> </div>
                                     <div class="col-xs-12 col-md-7 no-padding-lr">
-                                        <p class="text-5">Evolable asiaは、人材の豊富さに加え、技術者の質の高さにこだわった採用を常に行っています。ベトナム最大手の求人サイトVietnam Worksとの結びつきも深く、多くの優秀な技術者を集めることに強い自信を持っています。人材の中途率は99%で即戦力であることに重きを置いているため、迅速に高いクォリティの仕事を行うことができます。</p>
+                                        <p>Evolable asiaは、人材の豊富さに加え、技術者の質の高さにこだわった採用を常に行っています。ベトナム最大手の求人サイトVietnam Worksとの結びつきも深く、多くの優秀な技術者を集めることに強い自信を持っています。人材の中途率は99%で即戦力であることに重きを置いているため、迅速に高いクォリティの仕事を行うことができます。</p>
                                     </div>
                                 </div>
                                 <div class="gap-big"> </div>
-                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span class="text-4">従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社似合った人材を選定できるのも質が高く、幅広い人材を確保できるEvolable Asiaならではの強みだと考えています。</span>
+                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span>従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社似合った人材を選定できるのも質が高く、幅広い人材を確保できるEvolable Asiaならではの強みだと考えています。</span>
                                 </div>
                             </div>
                             <div class="row-gap-big"> </div>
@@ -162,7 +162,7 @@ get_header();
                                 <div class="col-xs-12 col-md-6 col-md-offset-3 no-padding-lr border-reason-3">
                                     <a href="<?php echo home_url('company/circle') ?>">
                                         <div class="glyphicon glyphicon-menu-right text-left"> </div>
-                                        <div class="text-6 text-center">社内の取り組みについて詳しくはこちら</div>
+                                        <div class="text-6 text-center m-l-5">社内の取り組みについて詳しくはこちら</div>
                                     </a>
                                 </div>
                             </div>

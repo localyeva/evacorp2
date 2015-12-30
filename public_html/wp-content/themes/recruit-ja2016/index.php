@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-        <div class="container">
+        <div class="container index-content">
             <div class="row title-cruit">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
                     <h1>ベトナムが</h1>

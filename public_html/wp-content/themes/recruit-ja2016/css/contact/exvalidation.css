@@ -18,15 +18,15 @@
 
 	.formError .formErrorClose {
 		border: solid #252525 2px;
-		border-radius: 9px 9px 9px 9px;
-		-moz-border-radius: 9px 9px 9px 9px;
-		-webkit-border-radius: 9px 9px 9px 9px;
+		border-radius: 12px 12px 12px 12px;
+		-moz-border-radius: 12px 12px 12px 12px;
+		-webkit-border-radius: 12px 12px 12px 12px;
 		display: block;
-		width: 16px;
-		height: 16px;
+		width: 24px;
+		height: 24px;
 		position: absolute;
-		top: -4px;
-		right: -4px;
+		top: -11px;
+		right: -7px;
 		color: #efefef;
 		background: #333;
 		font-weight: bold;

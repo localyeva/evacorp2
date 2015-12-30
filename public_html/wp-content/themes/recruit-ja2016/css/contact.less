@@ -1,0 +1,137 @@
+.contact-content{
+	.color-red{
+		color:@color-red;
+	}
+	.contact-content-header{
+		a{
+			padding:0 10px;
+		}
+		a:hover img{
+			opacity:0.5;
+		}
+	}
+	.contact-content-1{
+		max-width:1000px;	
+		margin:auto;	
+		.contact-content-1-title{
+			display:table;
+			width:100%;
+			.contact-content-1-title-row{
+				display:table-row;
+				.contact-content-1-title-cell{
+					display:table-cell;
+					background:@color-white;
+					vertical-align:middle;				
+					background: url(../img/message/txt_m05.png) repeat-x scroll center center;
+					padding-top:5px;
+					span{
+						background: @color-white; 
+						font-size:@font-size-28;
+						letter-spacing:3px;
+						font-weight:bold;							
+					}
+					.color-red{
+						color:@color-red;
+					}										
+				}								
+			}			
+		}
+		h2{
+			color:@color-red;
+			text-transform: uppercase;
+			font-size:@font-size-9;
+			font-weight:bold;
+			margin-top:0px;
+		}	
+		p{
+			font-size:@font-size-12;
+			line-height:20px;
+		}				
+	}
+	.contact-content-2{
+		color:@color-gray;
+		max-width:500px;	
+		margin:auto;	
+		span{
+			padding:5px 20px;
+			background:@color-gray;
+			text-transform: uppercase;
+			color:@color-white;
+			margin:0 5px 0 2px;
+		}
+		.active{
+			background:@color-body;
+		}
+	}
+	.contact-content-3{
+		max-width:750px;	
+		margin:auto;
+		p{
+			font-size:@font-size-12;
+			line-height:20px;
+		}
+		input[type="text"] {
+			color:#000;
+			border:none !important;
+			height:30px;
+			padding:0 5px;
+			background:url('../img/bg_td.png') repeat-x left top;
+		}
+		textarea{
+			height:115px;
+			padding:0 5px;
+			border:none !important;
+			background: #ebebeb url('../img/bg_td.png') repeat-x left top;
+		}
+		input[type="checkbox"]{
+			margin-right: 5px;
+		}
+		.back-link{
+			color:@color-body;
+			text-decoration:none;
+		}
+		.back-link:hover{
+			color:@color-gray;
+		}
+		.link-top{
+			color:@color-body;
+			text-decoration:underline;
+			font-size:@font-size-body;
+		}	
+		a:hover img{
+			opacity:0.5;
+		}						
+	}	
+}
+
+@media (min-width: 320px) {
+	.contact-content{
+		.size01{
+			width: 120px;
+		}
+		.size02{
+			width: 240px;
+		}
+		.size03{
+			width: 60px;
+		}	
+	}
+}
+@media (min-width: 768px) { 
+	.contact-content{	
+		.size01{
+			width: 259px;
+		}
+		.size02{
+			width: 580px;
+		}
+		.size03{
+			width: 71px;
+		}		
+	}
+}
+
+@media (min-width: 1024px) {	
+}
+@media (min-width: 1220px) {		  		 
+}

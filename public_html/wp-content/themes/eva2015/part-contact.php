@@ -1,5 +1,5 @@
 <div class="container-fluid header-contact">
-    <div class="container">
+    <div class="container contact-width">
         <div class="row">
             <div class="col-xs-12 no-padding-lr text-center">
                 <div class="caption full-width center-block contact-info">
@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="col-xs-12 no-padding-lr footer-contact">
-                <div class="container">
+                <div class="container contact-width">
                     <did class="row">
                         <div class="col-xs-6 col-md-6 no-padding-lr left phone">
                             <div class="container">

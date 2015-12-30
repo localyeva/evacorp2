@@ -265,38 +265,38 @@ function cptui_register_my_cpts() {
     );
     register_post_type("labo-result", $args);
 
-    $labels = array(
-        "name" => "BPO result",
-        "singular_name" => "BPO result",
-        "menu_name" => "BPO実績",
-        "add_new" => "BPO実績を追加",
-        "add_new_item" => "BPO実績記事を書く",
-        "edit_item" => "BPO実績記事を編集",
-        "new_item" => "新しいBPO実績記事",
-        "view_item" => "BPO実績記事を見る",
-        "search_items" => "BPO実績記事を探す",
-        "not_found" => "BPO実績記事はありません",
-        "not_found_in_trash" => "ゴミ箱にBPO実績記事はありません",
-    );
-
-    $args = array(
-        "labels" => $labels,
-        "description" => "",
-        "public" => true,
-        "show_ui" => true,
-        "has_archive" => false,
-        "show_in_menu" => true,
-        "exclude_from_search" => false,
-        "capability_type" => "post",
-        "map_meta_cap" => true,
-        "hierarchical" => false,
-        "rewrite" => array("slug" => "service/bpo-result", "with_front" => true),
-        "query_var" => true,
-        "menu_position" => 32,
-        "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h7.png',
-        "supports" => array("title", "editor"),
-    );
-    register_post_type("bpo-result", $args);
+//    $labels = array(
+//        "name" => "BPO result",
+//        "singular_name" => "BPO result",
+//        "menu_name" => "BPO実績",
+//        "add_new" => "BPO実績を追加",
+//        "add_new_item" => "BPO実績記事を書く",
+//        "edit_item" => "BPO実績記事を編集",
+//        "new_item" => "新しいBPO実績記事",
+//        "view_item" => "BPO実績記事を見る",
+//        "search_items" => "BPO実績記事を探す",
+//        "not_found" => "BPO実績記事はありません",
+//        "not_found_in_trash" => "ゴミ箱にBPO実績記事はありません",
+//    );
+//
+//    $args = array(
+//        "labels" => $labels,
+//        "description" => "",
+//        "public" => true,
+//        "show_ui" => true,
+//        "has_archive" => false,
+//        "show_in_menu" => true,
+//        "exclude_from_search" => false,
+//        "capability_type" => "post",
+//        "map_meta_cap" => true,
+//        "hierarchical" => false,
+//        "rewrite" => array("slug" => "service/bpo-result", "with_front" => true),
+//        "query_var" => true,
+//        "menu_position" => 32,
+//        "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h7.png',
+//        "supports" => array("title", "editor"),
+//    );
+//    register_post_type("bpo-result", $args);
 
     $labels = array(
         "name" => "Recommend",
@@ -413,29 +413,29 @@ function cptui_register_my_cpts() {
     );
     register_post_type("company-greeting", $args);
 
-    $labels = array(
-        "name" => "Company Reason",
-        "singular_name" => "Company Reason",
-    );
-
-    $args = array(
-        "labels" => $labels,
-        "description" => "",
-        "public" => true,
-        "show_ui" => true,
-        "has_archive" => false,
-        "show_in_menu" => true,
-        "exclude_from_search" => false,
-        "capability_type" => "post",
-        "map_meta_cap" => true,
-        "hierarchical" => false,
-        "rewrite" => array("slug" => "company-reason", "with_front" => true),
-        "query_var" => true,
-        "menu_position" => 35,
-        "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h11.png',
-        "supports" => array("title"),
-    );
-    register_post_type("company-reason", $args);
+//    $labels = array(
+//        "name" => "Company Reason",
+//        "singular_name" => "Company Reason",
+//    );
+//
+//    $args = array(
+//        "labels" => $labels,
+//        "description" => "",
+//        "public" => true,
+//        "show_ui" => true,
+//        "has_archive" => false,
+//        "show_in_menu" => true,
+//        "exclude_from_search" => false,
+//        "capability_type" => "post",
+//        "map_meta_cap" => true,
+//        "hierarchical" => false,
+//        "rewrite" => array("slug" => "company-reason", "with_front" => true),
+//        "query_var" => true,
+//        "menu_position" => 35,
+//        "menu_icon" => get_template_directory_uri() . '/img/ad-ico/h11.png',
+//        "supports" => array("title"),
+//    );
+//    register_post_type("company-reason", $args);
 
 // End of cptui_register_my_cpts()
 }

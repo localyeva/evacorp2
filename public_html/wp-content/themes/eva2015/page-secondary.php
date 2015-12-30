@@ -163,7 +163,7 @@ get_header();
 	    <div class="container center secondary-6-1">
 	        <div class="row" style="max-width:680px;margin:auto;">
 	            <div class="col-xs-12 col-sm-12 col-md12 col-lg-12">        
-	                <p><span class="secondary-6-number">1</span>クオリティの高い運営を行え、ユーザーの<span class="secondary-6-underline">アクティブ数・課金率を維持!</span></p>
+	                <p><span class="secondary-6-number">1</span>品質の高い運営を行え、ユーザーの<span class="secondary-6-underline">アクティブ数・課金率を維持!</span></p>
 	                <p><span class="secondary-6-number">2</span>特化した専任チームなので、<span class="secondary-6-underline">迅速で正確な対応</span>が行える!</p>
 	                <p><span class="secondary-6-number">3</span>人員コストは日本で運営する場合に比べ<span class="secondary-6-underline">30～40%削減!</span></p>
 	                <p><span class="secondary-6-number">4</span>日本では<span class="secondary-6-underline">新規事業に人員を配置</span>でき、新たな売り上げも!</p>

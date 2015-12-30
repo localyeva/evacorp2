@@ -427,7 +427,7 @@ get_header();
                                 <article>
                                 
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image1.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image1.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -435,7 +435,7 @@ get_header();
                                 <article>
                                
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image2.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image2.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -443,7 +443,7 @@ get_header();
                                 <article>
                           
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image3.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image3.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -454,7 +454,7 @@ get_header();
                                 <article>
                               
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image4.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image4.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -462,7 +462,7 @@ get_header();
                                 <article>
                                
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image5.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image5.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -470,7 +470,7 @@ get_header();
                                 <article>
                              
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image6.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image6.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -479,33 +479,33 @@ get_header();
                         <img src="<?php echo get_template_directory_uri() ?>/img/plus.png" alt="" class="img-responsive center-block">
                         <div class="row rect">      
                             <h3 class="text-center">さらに品質を高めるためエボラブルアジア独自の対応を行っています。</h3>
-                            <div class="col-xs-12 col-md-4 no-padding-r">
+                            <div class="col-xs-12 col-md-4">
                                 <article>
                               
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image8.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image8.png" alt="" class="img-responsive">
                                     </figure>
                                     <div class="title">
                                         社内で日本語スクールを実施
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-xs-12 col-md-4 no-padding-r">
+                            <div class="col-xs-12 col-md-4">
                                 <article>
                                  
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image9.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image9.png" alt="" class="img-responsive">
                                     </figure>
                                     <div class="title">
                                         ベトナム人スタッフの個別面談を実施
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-xs-12 col-md-4 no-padding-r">
+                            <div class="col-xs-12 col-md-4">
                                 <article>
                               
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image10.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image10.png" alt="" class="img-responsive">
                                     </figure>
                                     <div class="title">
                                         クライアント様のフォローアップ

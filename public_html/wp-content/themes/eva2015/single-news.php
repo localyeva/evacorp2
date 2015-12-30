@@ -34,7 +34,7 @@ if (!empty($next_post)) {
     <div class="row-gap-medium"></div>
     <?php custom_breadcrumbs('news'); ?>
     <div class="row-gap-medium"></div>
-    <div class="container center bpo-1">
+    <div class="container center bpo-1 contact-width">
         <?php // get_sidebar('news') ?>
         <div class="content post-detail col-md-12">
             <div class="row">

@@ -9,7 +9,7 @@ get_header('contact');
 <div class="container contact-content">
     <div class="row-gap-medium"></div> 
     <div class="contact-content-header center">
-        <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/logo.png" alt="EVOLABLE ASIA" widtd="156" height="51" /></a>
+        <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/logo.png" alt="EVOLABLE ASIA" widtd="156" height="51" class="margin-img"/></a>
         <a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t03.jpg" alt="日本人スタッフ募集 Recruit" widtd="115" height="56" /></a>
     </div>
     <div class="row-gap-big"></div> 
@@ -31,9 +31,9 @@ get_header('contact');
     </div>    
     <div class="row-gap-medium"></div>
     <div class="row contact-content-2 center">
-        <span class="active">step.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入力</span>>
-        <span>step.2&nbsp;&nbsp;&nbsp;&nbsp;内容確認</span>>
-        <span>step.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完了</span>
+        <span class="active">step.1</span>>
+        <span>step.2</span>>
+        <span>step.3</span>
     </div>
     <div class="row-gap-big"></div>
     <div class=" row contact-content-3">

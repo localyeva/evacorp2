@@ -407,16 +407,16 @@ a{
         background-color: #D82670;
         color: white;
         padding: 3px 5px 2px 5px;
-    }       
+    }
     .categories-pink{
         background-color: #e51783;
-    }    
+    }
     .categories-yellow{
         background-color: #ffd00e;
-    }  
+    }
     .categories-blue{
         background-color: #42a8d9;
-    }        
+    }
 }
 .text-center {
     text-align: center;
@@ -601,7 +601,7 @@ h1 {
         .text-small{
             font-size:@description-font-size;
             line-height: @line-height;
-        }        
+        }
         /*padding-right: 40%;*/
     }
 }
@@ -695,11 +695,11 @@ h1 {
                 }
                 .intro{
                     font-size:18px;
-                }                
+                }
             }
         }
     }
-    
+
     .about-bg{
         background: url('../img/home-about-bg2.png') no-repeat scroll 50% 50%;
         background-color: #fff;
@@ -731,14 +731,14 @@ h1 {
             bottom: 0px;
             position: absolute;
             z-index: 0;
-        }        
+        }
         .caption{
             padding-left: 1.4em;
             position: absolute;
             top: 76%;
             .news-main-title{
                 font-size:@description-font-size;
-            }            
+            }
             h2{
                 color: white;
                 margin: 0;
@@ -962,8 +962,7 @@ h1 {
         margin-bottom: 100px;
     }
     .evol{
-        .round1{
-            width: 95%;
+        .round1 {
             background-color: transparent;
             border-style: solid;
             border-width: 1px;
@@ -972,13 +971,11 @@ h1 {
         }
     }
     .soltec{
-        .round2{
-            width: 95%;
+        .round2 {
             background-color: transparent;
             border-style: solid;
             border-width: 1px;
             border-color: #C5C5C5;
-            margin-left: 30px;
         }
     }
     .img-his{
@@ -999,7 +996,36 @@ h1 {
         background-color: #F2F2F2;
         margin: 0px;
     }
+    .round1, .round2 {
+        .img-his {
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
 }
+
+.invisible-vertical-gap {
+    height: 30px;
+    display: block;
+}
+
+@media only screen and (min-width : 767px) {
+    #company-profile {
+        .round1 {
+            margin-right: 15px;
+        }
+        .round2 {
+            margin-left: 15px;
+        }
+    }
+    .invisible-vertical-gap {
+        display: none;
+    }
+}
+
+
 .header-contact{
     background: url('../img/4-grid.png') repeat;
     .contact-info{
@@ -1748,7 +1774,7 @@ h1 {
         background-color: #202020;
         width: 35px;
         height: 3px;
-    }    
+    }
 
     .bpo-3{
         .text-1{
@@ -2203,6 +2229,7 @@ nav.navigation {
 .error{
     color: #ff0000;
 }
+
 @import "define-style.less";
 @import "service-page.less";
 @import "hau-style.less";

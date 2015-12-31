@@ -2,7 +2,7 @@
 /*
  * Author: KhangLe
  * Template Name: Company-Profile
- * 
+ *
  */
 get_header();
 ?>
@@ -13,7 +13,7 @@ get_header();
                 <h2>会社概要</h2>
             </div>
         </div>
-    </div>       
+    </div>
     <div class="container-fluid">
         <div class="container">
             <ul class="breadcrumb-cp hidden-sm hidden-xs">
@@ -142,14 +142,14 @@ get_header();
                 <div class="col-xs-12 col-md-6 no-padding-lr evol module-eva">
                     <div class="round1">
                         <p class="header-his"><span>株式会社エボラブルアジア</span></p>
-                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/37.png" alt="" class=""></p>
+                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/37.png" alt="" class="img-responsive"></p>
                         <p class="footer-his"><span>「オンラインに特化した旅行会社として、また、旅行コンテンツOEM提供モデルを競争力として、旅行業界における主要分野（国内、海外、航空券、ホテル、旅行）とのM＆Aを含めた資本業務提携を積極的に行うことで、お客様視点を全ての基盤とした、次世代の総合旅行サービス提供。」</span></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 no-padding-lr soltec module-eva">
                     <div class="round2">
                         <p class="header-his"><span>Soltec Vietnam</span></p>
-                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/38.png" alt="" class=""></p>
+                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/38.png" alt="" class="img-responsive"></p>
                         <p class="footer-his"><span>Soltec Vietnam Companyは2010年9月17日に、（株）ソルテック工業の100％出資子会社として誕生致しました。弊社は、親会社である（株）ソルテック工業の長年培った経験と技術を生かし、ベトナムにおいて日本の品質基準に準じた各種プラント設備製作・据付工事・配管工事を展開させて頂きます。また独自の教育管理ノウハウを生かして、日本品質をベトナムで実現しております。そこで培われたマネジメントノウハウの一部はEvolable Asia Co.,Ltdにも生かされています。</span></p>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ get_header();
         <div class="container">
             <h1>オフィス紹介</h1>
             <div class="row center-block" style="max-width:700px;margin:auto;background:#f5f5f5;border:solid 1px #ccc;padding:15px 0px 15px 40px;">
-                <?php    
+                <?php
                 $maps = array();
                 $args = array(
                     'hide_empty' => 0
@@ -173,16 +173,16 @@ get_header();
                     <span style="color:#A0D8FB !important;" class="glyphicon glyphicon-menu-down gly-menu" aria-hidden="true"></span>
                     <a style="color:black;" href="#<?php echo $term->slug?>" data-goto="<?php echo $term->slug?>" style="text-transform: uppercase"><?php echo $term->name?></a>
                 </div>
-                <?php }?>                
+                <?php }?>
             </div>
         </div>
     </div>
-    
+
     <div class="container-fluid left">
     <?php
-    foreach ($terms as $term) {        
-        if($term->slug != 'profile'){        
-    ?>    
+    foreach ($terms as $term) {
+        if($term->slug != 'profile'){
+    ?>
     <div class="container office-con" id="<?php echo $term->slug?>">
         <div class="row">
             <div class="col-xs-12 full-width no-padding-lr">
@@ -215,14 +215,14 @@ get_header();
             }
             $i=1;
             while ($wp_query->have_posts()){
-                if($i>$num_posts){                    
+                if($i>$num_posts){
                     break;
                 }
         ?>
-        
+
             <?php if($i==1){
                 $i++;
-                $wp_query->the_post();   
+                $wp_query->the_post();
                 $maps[$term->term_id] = get_taxonomy_info(get_the_ID());
             ?>
             <div class="col-xs-12 col-md-6 no-padding-lr">
@@ -234,7 +234,7 @@ get_header();
             </div>
             <?php }?>
             <div class="col-xs-12 col-md-6 list">
-            <?php if($i>1 && $i <= $num_posts){?>            
+            <?php if($i>1 && $i <= $num_posts){?>
                 <?php if($i<=3){?>
                 <div class="row">
                     <?php while($i<=3 && $wp_query->have_posts()){
@@ -262,10 +262,10 @@ get_header();
                         </div>
                     </div>
                     <?php $i++;}?>
-                </div>            
-            <?php }}?>        
+                </div>
+            <?php }}?>
             </div>
-        <?php            
+        <?php
         }}
         wp_reset_postdata();
         ?>

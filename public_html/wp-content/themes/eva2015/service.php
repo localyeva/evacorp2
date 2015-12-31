@@ -19,7 +19,7 @@ get_header();
     <div class="container service-info">
 
        <div class="container">
-            <ul class="breadcrumb-cp">
+            <ul class="breadcrumb-cp hidden-sm hidden-xs">
                 <li>
                     <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>

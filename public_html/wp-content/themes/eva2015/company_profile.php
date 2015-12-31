@@ -143,7 +143,11 @@ get_header();
                     <div class="round1">
                         <p class="header-his"><span>株式会社エボラブルアジア</span></p>
                         <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/37.png" alt="" class="img-responsive"></p>
-                        <p class="footer-his"><span>「オンラインに特化した旅行会社として、また、旅行コンテンツOEM提供モデルを競争力として、旅行業界における主要分野（国内、海外、航空券、ホテル、旅行）とのM＆Aを含めた資本業務提携を積極的に行うことで、お客様視点を全ての基盤とした、次世代の総合旅行サービス提供。」</span></p>
+                        <p class="footer-his"><span>当社は2007年5月11日に設立しました。「One Asia」をビジョンに掲げ、アジアの様々なチャンスやリソースを繋ぐ架け橋となることを目指しています。 
+「オンライン旅行事業―日本で一番多く、人々の想いと空の旅を繋ぐ 」,
+「オフショア開発事業―アジアの優秀な人材と企業を繋ぐ」、
+「訪日インバウンド事業―アジアの人々の心に日本での感動を届ける」 
+この3つの事業を柱に独自性が高いビジネスモデルとベンチャー企業ならではのスピード感を強みに、高成長を続けています。</span></p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 no-padding-lr soltec module-eva">

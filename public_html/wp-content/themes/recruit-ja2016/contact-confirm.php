@@ -1,10 +1,9 @@
 <?php
 /*
- * Author: KhangLe
- * Template Name: Contact-Confirm
+ * Autdor: KhaCao
+ * Template Name: contact-confirm
  * 
  */
-
 //お問い合わせフォーム内容
 $reg_item = @htmlspecialchars($_POST['item']);
 $reg_name = @htmlspecialchars($_POST['cname']);
@@ -115,51 +114,74 @@ if (isset($_POST['action']) && $_POST['action'] == 'confirm') {
 
 get_header('contact');
 ?>
-
-<div id="container" class="clearfix">
-    <div class="wrapContetn">
-        <p class="taC t20b0"><img src="<?php echo get_template_directory_uri() ?>/img/img_step02.png" alt="" width="528" height="28" /></p>
-        <form method="post" class="form-1" action="<?php echo bloginfo('url') ?>/contact/confirm" >
-            <div class="t20b0">
-                <table class="tableContact" cellspacing="0" >
-                    <tr>
-                        <th>希望職種</th>
-                        <td><?php echo $reg_item ?></td>
-                    </tr>
-                    <tr>
-                        <th>お名前</th>
-                        <td><?php echo $reg_name ?></td>
-                    </tr>
-                    <tr>
-                        <th>メールアドレス</th>
-                        <td><?php echo $reg_email ?></td>
-                    </tr>
-                    <tr>
-                        <th>TEL</th>
-                        <td><?php echo $reg_tel ?></td>
-                    </tr>
-                    <tr>
-                        <th>ご住所</th>
-                        <td><?php echo $reg_add ?></td>
-                    </tr>
-                    <tr>
-                        <th>年齢</th>
-                        <td><?php echo $reg_age ?></td>
-                    </tr>
-                    <tr>
-                        <th>最終学歴</th>
-                        <td><?php echo $reg_rate ?></td>
-                    </tr>
-                    <tr>
-                        <th>職歴</th>
-                        <td><?php echo nl2br($reg_career) ?></td>
-                    </tr>
-                    <tr>
-                        <th class="bd_bot">自己PR・備考</th>
-                        <td class="bd_bot"><?php echo nl2br($reg_intro) ?></td>
-                    </tr>
-                </table>
+<div class="container contact-content">
+    <div class="row-gap-medium"></div> 
+    <div class="contact-content-header center">
+        <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/logo.png" alt="EVOLABLE ASIA" widtd="156" height="51" class="margin-img"/></a>
+        <a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t03.jpg" alt="日本人スタッフ募集 Recruit" widtd="115" height="56" /></a>
+    </div>
+    <div class="row-gap-big"></div> 
+    <div class="row contact-content-1 center">
+        <div class="contact-content-1-title">
+            <div class="contact-content-1-title-row">
+                <div class="contact-content-1-title-cell">
+                    <span>応募フォーム</span>
+                </div>                             
             </div>
+        </div>   
+        <h2>contact</h2>   
+        <div class="row-gap-big"></div>  
+    </div>    
+    <div class="row contact-content-2 center">
+        <span class="active">step.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;入力</span>>
+        <span>step.2&nbsp;&nbsp;&nbsp;&nbsp;内容確認</span>>
+        <span>step.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完了</span>
+    </div>
+    <div class="row-gap-big"></div>
+    <div class=" row contact-content-3">
+        <form method="post" class="form-1" action="<?php echo bloginfo('url') ?>/contact/confirm" >
+            <table class="table table-bordered">
+                <colgroup>
+                    <col class="col-xs-12 col-sm-3 col-dm-3 col-lg-3">
+                    <col class="col-xs-12 col-sm-9 col-dm-9 col-lg-9">
+                </colgroup>
+                <tr>
+                    <td>希望職種</td>
+                    <td><?php echo $reg_item ?></td>
+                </tr>
+                <tr>
+                    <td>お名前</td>
+                    <td><?php echo $reg_name ?></td>
+                </tr>
+                <tr>
+                    <td>メールアドレス</td>
+                    <td><?php echo $reg_email ?></td>
+                </tr>
+                <tr>
+                    <td>TEL</td>
+                    <td><?php echo $reg_tel ?></td>
+                </tr>
+                <tr>
+                    <td>ご住所</td>
+                    <td><?php echo $reg_add ?></td>
+                </tr>
+                <tr>
+                    <td>年齢</td>
+                    <td><?php echo $reg_age ?></td>
+                </tr>
+                <tr>
+                    <td>最終学歴</td>
+                    <td><?php echo $reg_rate ?></td>
+                </tr>
+                <tr>
+                    <td>職歴</td>
+                    <td><?php echo nl2br($reg_career) ?></td>
+                </tr>
+                <tr>
+                    <td class="bd_bot">自己PR・備考</td>
+                    <td><?php echo nl2br($reg_intro) ?></td>
+                </tr>
+            </table>  
             <input type="hidden" name="cname" value="<?php echo $reg_name ?>" />
             <input type="hidden" name="email" value="<?php echo $reg_email ?>" />
             <input type="hidden" name="tel" value="<?php echo $reg_tel ?>" />
@@ -168,19 +190,20 @@ get_header('contact');
             <input type="hidden" name="age" value="<?php echo $reg_age ?>" />
             <input type="hidden" name="rate" value="<?php echo $reg_rate ?>" />
             <input type="hidden" name="career" value="<?php echo $reg_career ?>" />
-            <input type="hidden" name="intro" value="<?php echo $reg_intro ?>" />
-
-            <p style="text-align:right;"><a href="javascript:history.back()">入力内容を修正する</a></p>
-            <p align="center">
-                <input type="image" src="<?php echo get_template_directory_uri() ?>/img//btn_send.png" onMouseOver="this.src = '<?php echo get_template_directory_uri() ?>/img/btn_send.png'" onMouseOut="this.src = '<?php echo get_template_directory_uri() ?>/img/btn_send.png'"  class="t20b20"/>
+            <input type="hidden" name="intro" value="<?php echo $reg_intro ?>" />            
+            <p style="text-align:right;"><a href="javascript:history.back()" class="back-link">入力内容を修正する</a></p>
+            <div class="row-gap-medium"></div>
+            <div class="center">
+                <a href="#" class="submit-link"><img src="<?php echo get_template_directory_uri() ?>/img/btn_send.png"></a>
                 <input type="hidden" name="action" value="send" />
-            </p>
-            <p class="taC fz12">上記フォームで送信できない場合は、必要項目をご記入の上、<br />
-                <a id="mailContact" href="#"></a>までメールをお送りください。</p>
-            <!-- Anti spam part2: clickable email address -->
-
+                <div class="row-gap-big"></div>
+                <p>
+                    上記フォームで送信できない場合は、必要項目をご記入の上、<br/>
+                    までメールをお送りください。                
+                </p>
+            </div>
         </form>
     </div>
+    <div class="row-gap-big"></div>                                       
 </div>
-
 <?php get_footer('contact'); ?>

@@ -1,0 +1,129 @@
+.faq-content{
+	.faq-content-1{
+		max-width:1000px;	
+		margin:30px auto 0;		
+		.faq-content-1-title{
+			display:table;
+			width:100%;
+			.faq-content-1-title-row{
+				display:table-row;
+				.faq-content-1-title-cell{
+					display:table-cell;
+					background:@color-white;
+					vertical-align:middle;				
+					background: url(../img/message/txt_m05.png) repeat-x scroll center center;
+					padding-top:5px;
+					span{
+						background: @color-white; 
+						font-size:@font-size-28;
+						letter-spacing:3px;
+						font-weight:bold;							
+					}
+					.color-red{
+						color:@color-red;
+					}										
+				}								
+			}			
+		}
+		h2{
+			color:@color-red;
+			text-transform: uppercase;
+			font-size:@font-size-9;
+			font-weight:bold;
+			margin-top:0px;
+		}					
+	}
+	.faq-content-2{
+        background: url('../img/faq/img_demo.png') center no-repeat;
+        padding: 0px;
+        height: 275px;
+	}	
+	.faq-content-3{
+		max-width:1000px;	
+		margin:auto;	
+		h1{
+			font-size:@font-size-18;
+			font-weight:bold;
+			border-bottom:solid 1px @color-red;
+			padding-bottom:10px;
+			span{
+				font-size:@font-size-20;	
+				color:@color-red;	
+				padding-right:10px;	
+			}
+		}
+		a{
+			text-decoration:none;
+			color:@color-body;
+		}
+		a:hover{
+			color:@color-gray;
+		}			
+		ul{
+			list-style: none;
+			margin-left:-25px;
+			li{
+				line-height:30px;
+				.padding-r{
+					color:@color-red;
+					padding-right:5px;
+				}
+				a{
+					font-size:@font-size-12;
+				}
+			}			
+		}			
+	}
+	.faq-content-4{
+		max-width:1000px;	
+		margin:auto;
+		h1{
+			border-bottom: 1px solid @color-red;
+  			font-weight: bold;
+  			background: url('../img/faq/ico_ques1.png') no-repeat left top;	
+  			padding: 5px 0px 15px 50px;
+  			margin-bottom: 20px;
+  			margin-top: 70px;  				
+		}
+		h2{
+			border-bottom: 1px dotted @color-body;
+  			background: url('../img/faq/ico_ques2.png') no-repeat left top;	
+  			padding: 5px 0px 15px 50px;
+  			margin-bottom: 20px;
+  			margin-top: 35px;  				
+		}		
+		p{
+			line-height:25px;
+		}
+	}	
+}
+
+@media (min-width: 320px) {
+	.faq-content{
+		.faq-content-4{
+			h1{
+				font-size:@font-size-20;
+			}
+			h2{
+				font-size:@font-size-16;
+			}
+		}
+	}
+}
+@media (min-width: 768px) { 
+	.faq-content{	
+		.faq-content-4{
+			h1{
+				font-size:@font-size-28;
+			}
+			h2{
+				font-size:@font-size-20;
+			}
+		}		
+	}
+}
+
+@media (min-width: 1024px) {	
+}
+@media (min-width: 1220px) {		  		 
+}

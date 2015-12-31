@@ -1,0 +1,122 @@
+.attractive-content{
+	.attractive-content-1{
+		max-width:1000px;	
+		margin:30px auto 0;		
+		.attractive-content-1-title{
+			display:table;
+			width:100%;
+			.attractive-content-1-title-row{
+				display:table-row;
+				.attractive-content-1-title-cell{
+					display:table-cell;
+					background:@color-white;
+					vertical-align:middle;				
+					background: url(../img/message/txt_m05.png) repeat-x scroll center center;
+					padding-top:5px;
+					span{
+						background: @color-white; 
+						font-size:@font-size-28;
+						letter-spacing:3px;
+						font-weight:bold;							
+					}
+					.color-red{
+						color:@color-red;
+					}										
+				}								
+			}			
+		}
+		h2{
+			color:@color-red;
+			text-transform: uppercase;
+			font-size:@font-size-9;
+			font-weight:bold;
+			margin-top:0px;
+		}					
+	}
+	.attractive-content-2{
+        background: url('../img/attrac/bg_a01_new.png') center no-repeat;
+        padding: 0px;
+        height: 276px;
+
+	}	
+	.attractive-content-3{
+		img{
+			margin:auto;
+		}
+		max-width:1000px;	
+		margin:auto;	
+		.attractive-content-3-title{
+			display:table;
+			width:100%;
+			.attractive-content-3-title-row{
+				display:table-row;
+				.attractive-content-3-title-cell-1,.attractive-content-3-title-cell-2{
+					display:table-cell;
+					background:@color-white;
+					vertical-align:middle;
+				}
+				.attractive-content-3-title-cell-1{
+					width:70px;
+				}
+				.attractive-content-3-title-cell-2{
+					background: url(../img/attrac/line.jpg) repeat-x scroll center center;
+					padding-top:5px;
+					span{
+						background: @color-white; 
+						font-weight:bold;							
+					}
+					.color-red{
+						color:@color-red;
+					}					
+				}								
+			}			
+		}
+		p{
+			line-height:25px;
+		}	
+		ul{
+			margin-left:-20px;
+			li{
+				line-height:25px;
+			}
+		}		
+	}
+}
+
+@media (min-width: 320px) {
+	.attractive-content{
+		.attractive-content-3{	
+			.attractive-content-3-title{
+				.attractive-content-3-title-row{
+					.attractive-content-3-title-cell-2{
+						span{
+							font-size:@font-size-16;	
+							letter-spacing:0px;												
+						}				
+					}								
+				}			
+			}		
+		}	
+	}
+}
+@media (min-width: 768px) { 
+	.attractive-content{
+		.attractive-content-3{	
+			.attractive-content-3-title{
+				.attractive-content-3-title-row{
+					.attractive-content-3-title-cell-2{
+						span{
+							font-size:@font-size-28;	
+							letter-spacing:3px;												
+						}				
+					}								
+				}			
+			}		
+		}		
+	}
+}
+
+@media (min-width: 1024px) {	
+}
+@media (min-width: 1220px) {		  		 
+}

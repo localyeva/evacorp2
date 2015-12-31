@@ -2215,6 +2215,20 @@ nav.navigation {
         }
     }
 }
+
+.navbar-fixed-top {
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 1s, visibility 1s;
+    }
+    &.invisible {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1s, visibility 1s;
+    }
+}
+
 #vff{
     .vff-title{
         font-size: @title-font-size;

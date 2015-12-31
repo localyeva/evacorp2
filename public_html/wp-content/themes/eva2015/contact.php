@@ -60,7 +60,7 @@ get_header();
             <h2 class="title">下記に必要事項をご記入の上、お問い合わせください。</h2>
 
             <div class="form-group">
-                <label for="contact-company-name" class="col-sm-3 control-label">会社名<span class="red">※</span></label>
+                <label for="contact-company-name" class="col-sm-3 control-label">御社名<span class="red">※</span></label>
                 <div class="col-sm-9">
                     <input type="text" id="contact-company-name" name="company" class="form-control" placeholder="" value="<?php echo $reg_company ?>" />
                 </div>

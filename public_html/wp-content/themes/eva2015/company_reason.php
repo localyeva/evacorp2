@@ -50,7 +50,7 @@ get_header();
                     <div class="col-xs-12 col-md-12">
                         <div class="container custom-containter">
                             <div class="row">
-                                <div class="col-xs-12 col-md-12 no-padding-lr left" style="text-align: center;"><span class="text-4">ベトナムでの2012年3月の設立から3年で500名まで拡大。<br /></span><span class="text-4">今では日系最大規模のラボ型開発企業に成長し、更に人員環境の整備を行っています。</span>
+                                <div class="col-xs-12 col-md-12 no-padding-lr left" style="text-align: center;"><span class="text-4">ベトナムでの2012年3月の設立から3年で500名まで拡大。<br /></span><span class="text-4">今では東南アジア地域で日系最大規模のラボ型開発企業に成長し、更に人員環境の整備を行っています。</span>
                                 </div>
                                 <div class="gap-medium"> </div>
                                 <div class="col-xs-12 col-md-12 no-padding-lr text-center"><span class="text-5">Evolable Asiaの要員数</span>
@@ -90,7 +90,7 @@ get_header();
                                     </div>
                                     <div class="col-xs-12 col-md-5 no-padding-lr left"> </div>
                                     <div class="col-xs-12 col-md-7 no-padding-lr">
-                                        <p>Evolable asiaは、人材の豊富さに加え、技術者の質の高さにこだわった採用を常に行っています。ベトナム最大手の求人サイトVietnam Worksとの結びつきも深く、多くの優秀な技術者を集めることに強い自信を持っています。人材の中途率は99%で即戦力であることに重きを置いているため、迅速に高いクォリティの仕事を行うことができます。</p>
+                                        <p class="text-5">人材の豊富さに加え、技術者の質の高さにこだわった採用を常に行っています。ベトナム最大手の求人サイトVietnam Worksとの結びつきも深く、多くの優秀な技術者を集めることに強い自信を持っています。人材の中途率は99%で即戦力であることに重きを置いているため、迅速に高いクォリティの仕事を行うことができます。</p>
                                     </div>
                                 </div>
                                 <div class="gap-big"> </div>
@@ -198,7 +198,7 @@ get_header();
                         <div class="container custom-containter">
                             <div class="row">
                                 <div class="col-xs-12 col-md-12 no-padding-lr">
-                                    <p class="text-5">Evolable Asiaでは、ラボ運営をより円滑にすることを目的とし、各ラボへ日本人のラボマネージャーを配置しています。ラボマネージャーはラボの立ち上がり以降、長期にわたりラボ運営をサポートいたします。
+                                    <p class="text-5">ラボ運営をより円滑にすることを目的とし、各ラボへ日本人のラボマネージャーを配置しています。ラボマネージャーはラボの立ち上がり以降、長期にわたりラボ運営をサポートいたします。
                                         <br />例えばラボメンバーの選定からアサイン、メンバーの状態のケア、また赴任者の生活のケアまでサポートします。
                                         <br />そのため初めての企業でも、安心してローリスクでベトナム進出することができます。</p>
                                 </div>
@@ -243,7 +243,7 @@ get_header();
                         <div class="container custom-containter">
                             <div class="row">
                                 <div class="col-xs-12 col-md-12 no-padding-lr">
-                                    <p class="text-5">Evolable Asiaは、日系最大規模のラボ型開発企業として、べトナム国内での繋がり・取り組みにも力を注いでいます。</p>
+                                    <p class="text-5">日系最大規模のラボ型開発企業として、べトナム国内での繋がり・取り組みにも力を注いでいます。</p>
                                 </div>
                             </div>
                             <div class="row-gap-medium"> </div>
@@ -269,7 +269,7 @@ get_header();
                                         </div>
                                         <div class="col-xs-12 col-md-9 text-left"><span class="text-7">JLIC(Japanese and literacy of IT Collge</span><span class="text-7">)<br /></span>
                                             <p class="text-5">日本人の日本語教師が４人常駐し、業務時間外で日本語教室を運営しています。ラボチームのスタッフは無料で日本語の授業を受講することができます。初心者、初級者用のクラスだけでなく、必要に応じ、上級者用のクラスも随時設けられ、スタッフの更なる日本語レベルアップに段階に応じ対応しています。
-                                                <br />「ＪＬＩＣ」とはJapanese and Literacy of IT Collegeの略です。 ＪＬＩＣの主な業務内容は、 エンジニアに対する日本語教育と日本語ができるコミュニケーター向けのＩＴ教育です。 この2目標を達成すべく、日本語教師たちは日々奮闘しています。</p>
+                                                <br />「JLIC」とはJapanese and Literacy of IT Collegeの略です。 JLICの主な業務内容は、 エンジニアに対する日本語教育と日本語ができるコミュニケーター向けのIT教育です。 この2目標を達成すべく、日本語教師たちは日々奮闘しています。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -282,6 +282,7 @@ get_header();
                             <div class="row-gap-big"> </div>
                             <div class="row">
                                 <div class="col-xs-12 col-md-12 no-padding-lr">
+   <div class="row-gap-big"></div>
                                     <div class="col-xs-12 col-md-3 no-padding-r"><img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/vff.jpg" alt="" />
                                     </div>
                                     <div class="col-xs-12 col-md-9 text-left"><span class="text-7">サッカーベトナム代表(VFF)公式サポーター<br /> </span>

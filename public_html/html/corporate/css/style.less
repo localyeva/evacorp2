@@ -595,7 +595,7 @@ h1 {
     .why-text-right{
         color: black;
         h3{
-            font-size:@sub-sub-title-font-size;
+            font-size:@sub-title-font-size;
             line-height: @line-height;
         }
         .text-small{
@@ -1526,9 +1526,8 @@ h1 {
         }
         .glyphicon-arrow-right{
             font-size: 40px;
-            padding-left: 30%;
-            padding-top: 5%;
-            padding-top: 5%;
+            padding-left: 32%;
+            padding-top: 82%;
         }
     }
     .reason-why-3{
@@ -1567,8 +1566,7 @@ h1 {
         }
         .glyphicon-menu-right{
             font-size: @sub-sub-title-font-size;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 3%;
             color: #AB17A1;
             position: absolute;
         }
@@ -1577,12 +1575,6 @@ h1 {
         }
         .gap-medium{
             padding-bottom: 65px;
-        }
-        .m-l-20{
-            margin-left: 20px;
-        }
-        .font-1{
-            font-size: 1em;
         }
     }
     .reason-why-4{
@@ -2217,15 +2209,16 @@ nav.navigation {
 }
 
 .navbar-fixed-top {
+    top: -120px;
     &.visible {
         visibility: visible;
-        opacity: 1;
-        transition: opacity 1s, visibility 1s;
+        top: 0px;
+        transition: top 1s, visibility 1s;
     }
     &.invisible {
         visibility: hidden;
-        opacity: 0;
-        transition: opacity 1s, visibility 1s;
+        top: -120px;
+        transition: top 1s, visibility 1s;
     }
 }
 

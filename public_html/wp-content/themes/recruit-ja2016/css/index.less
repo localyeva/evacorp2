@@ -1,0 +1,68 @@
+#index{
+	background: url(../img/top/bg_t01.jpg) no-repeat scroll center top #f8f8f8;
+}
+.index-content{
+	.title-cruit{
+		margin-top:50px;
+		h1{
+			font-size:@font-size-44;
+			font-weight:bold;
+			letter-spacing:5px;
+			span{
+				color:@color-red;
+			}
+		}
+	}
+	.category-cruit{
+		max-width:1000px;
+		margin:auto;
+		padding-top:70px;
+		.category-cruit-item{
+			margin-top:80px;
+			a{
+				text-decoration:none;
+				&:hover{
+					opacity:0.5;
+				}
+				&:hover p{
+					opacity:0.5;
+				}		
+				p{
+					color:@color-body;
+				}
+				span{
+					font-size:@font-size-9;
+					color:@color-gray;
+					text-transform: uppercase;
+					letter-spacing:2px;
+				}		
+			}
+		}
+	}	
+}
+
+@media (min-width: 320px) {
+	.index-content{
+		.title-cruit{
+			h1{
+				font-size:@font-size-20;
+				letter-spacing:5px;
+			}
+		}	
+	}
+}
+@media (min-width: 768px) { 
+	.index-content{	
+		.title-cruit{
+			h1{
+				font-size:@font-size-44;
+				letter-spacing:5px;
+			}
+		}	
+	}
+}
+
+@media (min-width: 1024px) {	
+}
+@media (min-width: 1220px) {		  		 
+}

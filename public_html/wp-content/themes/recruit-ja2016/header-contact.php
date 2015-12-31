@@ -1,25 +1,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title><?php echo wp_title('|', true, 'right') ?></title>
-        
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="description" content="ベトナムでオフショア開発、ラボ型オフショア開発、BPOを行なうEVOLABLE ASIA(エボラブルアジア)の求人特設サイト。エボラブルアジアの求人応募フォームです。海外で働きたい方やインターンの希望者はこちらからどうぞ。" />
-        <meta name="keywords" content="ベトナム,オフショア開発,ラボ型オフショア開発,BPO,アウトソーシング,ホーチミン,エボラブルアジア,EVOLABLE ASIA,海外,求人,海外で働く,転職,インターン" />
-        
-        <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ?>/img/ico/favicon.ico" />
-        <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri() ?>/img/ico/favicon.ico" />
-        <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/contact/exvalidation.css" />
-        <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/contact/base.css" />
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/import.css" type="text/css" media="all" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Anti spam part1: the contact form start -->
-        <style>
-            .hid_url {
-                display: none;
-            }
-        </style>
-        <!-- Anti spam part1: the contact form end -->
+        <meta name="description" content="ベトナムでオフショア開発、ラボ型オフショア開発、BPOを行なうEVOLABLE ASIA(エボラブルアジア)の求人特設サイトです。「海外で働きたい！」と思っているあなた、EVAではグローバルな視点をもつ仲間を求めています。" />
+        <meta name="keywords" content="ベトナム,オフショア開発,ラボ型オフショア開発,BPO,アウトソーシング,ホーチミン,エボラブルアジア,EVOLABLE ASIA,海外,求人,海外で働く,転職,インターン " />
+
+        <title><?php echo wp_title('|', true, 'right') ?></title>
+
+        <!-- Bootstrap -->
+        <!--<link href="<?php echo get_template_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="<?php echo get_template_directory_uri() ?>/img/ico/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+        <link href="<?php echo get_template_directory_uri() ?>/img/ico/favicon.ico" type="image/x-icon" rel="icon"/>   
+        <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/contact/exvalidation.css" />     
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href="<?php echo get_template_directory_uri() ?>/css/jquery.sidr.dark.css" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/style.css" type="text/css" media="all" />
+        <link href="<?php echo get_template_directory_uri() ?>/css/animate.css" rel="stylesheet">
+        <link href="<?php echo get_template_directory_uri() ?>/css/font-awesome.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->   
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-47878088-1']);
@@ -34,16 +38,18 @@
                 s.parentNode.insertBefore(ga, s);
             })();
         </script>
-        <?php wp_head(); ?>
+        <script type="text/javascript">
+            var _trackingid = 'LFT-10308-1';
+            (function () {
+                var lft = document.createElement('script');
+                lft.type = 'text/javascript';
+                lft.async = true;
+                lft.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//track.list-finder.jp/js/ja/track.js';
+                var snode = document.getElementsByTagName('script')[0];
+                snode.parentNode.insertBefore(lft, snode);
+            })();
+        </script>
+        <?php wp_head(); ?>                    
     </head>
-    <?php global $body_id; ?>
+    <?php global $body_id; ?>    
     <body id="<?php echo $body_id ?>">
-        <div id="headerWrap" class="clearfix"> 
-            <!-- /header start -->
-            <div class="headerLogo clearfix">
-                <p class="logo"><a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/logo.png" width="156" height="51" class="opa" /></a></p>
-                <p class="floatR"><a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/btn_head.png" width="115" height="56" alt="" class="opa"/></a></p>
-            </div>
-            <h2 class="mb55"><img src="<?php echo get_template_directory_uri() ?>/img/h2_contact.png" width="1000" height="43" alt="" /></h2>
-            <!-- /header end --> 
-        </div>

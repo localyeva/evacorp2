@@ -98,6 +98,7 @@ $.fn.scrollEnd = function(callback, timeout) {
 /* fix top menu */
 $(function () {
     var nav = $('#navigation');
+    var lastScrollTop = 0;
     nav.removeClass('navbar-fixed-top');
     $(window).scroll(function (e) {
         var scroll = $(this).scrollTop();
@@ -105,7 +106,12 @@ $(function () {
             if (!nav.hasClass('navbar-fixed-top')) {
                 nav.addClass('navbar-fixed-top');
             }
-            nav.addClass('invisible').removeClass('visible');
+            if (scroll > lastScrollTop) {
+                nav.addClass('invisible').removeClass('visible');
+            } else {
+                nav.removeClass('invisible').addClass('visible');
+            }
+            lastScrollTop = scroll;
         } else {
             if (nav.hasClass('navbar-fixed-top')) {
                 nav.removeClass('navbar-fixed-top');
@@ -114,6 +120,8 @@ $(function () {
     });
 
     $(window).scrollEnd(function(){
-        nav.removeClass('invisible').addClass('visible');
+        if (nav.hasClass('invisible')) {
+            nav.removeClass('invisible').addClass('visible');
+        }
     }, 500);
 });

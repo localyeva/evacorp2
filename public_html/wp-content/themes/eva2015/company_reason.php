@@ -159,11 +159,15 @@ get_header();
                             </div>
                             <div class="row-gap-big"> </div>
                             <div class="row">
-                                <div class="col-xs-12 col-md-6 col-md-offset-3 no-padding-lr border-reason-3">
-                                    <a href="<?php echo home_url('company/circle') ?>">
-                                        <div class="glyphicon glyphicon-menu-right text-left"> </div>
-                                        <div class="text-6 text-center m-l-5">社内の取り組みについて詳しくはこちら</div>
-                                    </a>
+                                <div class="col-xs-12 col-md-12 no-padding-lr">
+                                    <div class="text-left">
+                                        <div class="col-xs-12 col-md-6 no-padding-lr border-reason-3">
+                                            <a href="<?php echo home_url('company/circle') ?>">
+                                                <div class="glyphicon glyphicon-menu-right text-left"> </div>
+                                                <div class="text-6 text-center font-1 m-l-20">社内の取り組みについて詳しくはこちら</div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

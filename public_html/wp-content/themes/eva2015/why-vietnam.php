@@ -169,7 +169,7 @@ get_header();
                                             <img src="<?php echo get_template_directory_uri() ?>/img/why-vietnam/vietnam-block3-image2.png" alt="" class="img-responsive center-block longbg">
                                         </figure>
                                         <h3 class="green-text post32">日本と違い、若い労働人口にボリュームがある</h3>
-                                        <p>職場には若いが多く活気がある</p>
+                                        <p>職場には若い人が多く活気がある</p>
                                     </article>
                                 </div>
                             </div>
@@ -193,7 +193,7 @@ get_header();
                             </div>
 
                             <div class="col-xs-12 col-md-12 text-center">
-                                <h2>年5∼8%の<span class="green-text">高度経済成長</span></h2>
+                                <h2>年5∼10%の<span class="green-text">高度経済成長</span></h2>
                                 <div class="row-gap-small"></div>
                                 <hr>
                             </div>

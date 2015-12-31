@@ -11,9 +11,9 @@ include_once (dirname(__FILE__) . '/MyTheme_Customize.php');
 include_once(dirname(__FILE__) . '/cpt_acf_definitions.php');
 include_once(dirname(__FILE__) . '/my-company-taxonomy-custom.php');
 
-@ini_set('upload_max_size', '64M');
-@ini_set('post_max_size', '64M');
-@ini_set('max_execution_time', '300');
+//@ini_set('upload_max_size', '64M');
+//@ini_set('post_max_size', '64M');
+//@ini_set('max_execution_time', '300');
 
 
 // アイキャッチ画像作成

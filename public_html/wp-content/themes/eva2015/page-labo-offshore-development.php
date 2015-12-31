@@ -67,7 +67,7 @@ get_header();
                                 </h3>
                                 <div class="row-gap-medium"></div>
                                 <h3>
-                                    その状況を打開するのは、<span class="pink-text">海外への進出」</span> あり、
+                                    その状況を打開するのは、<span class="pink-text">海外への進出</span> あり、
                                 </h3>
                                 <h3>
                                     「受託型オフショア開発」と「自社で海外進出」の
@@ -113,7 +113,7 @@ get_header();
                         <div class="row">
                             <div class="col-xs-12 col-md-12 text-center">
                                 <h3>
-                                    しかし、エボラブルアジアは<span class="pink-text">ラボ型オフショア開発」</span>で、
+                                    しかし、エボラブルアジアは<span class="pink-text">ラボ型オフショア開発</span>で、
                                 </h3>
                                 <h3>
                                     この2つの問題を<span class="pink-text">同時に解決します!</span>
@@ -148,7 +148,7 @@ get_header();
                     <div class="row">
                         <div class="col-xs-12 col-md-12 text-center">
                             <h1>
-                                「ラボ型オフショア開発とは?」
+                                ラボ型オフショア開発とは?
                             </h1>
                             <div class="row-gap-small"></div>
                             <h4>
@@ -218,7 +218,7 @@ get_header();
                         <div class="row">
                             <div class="col-xs-12 col-md-12 text-center">
                                 <h2>
-                                    ラボ型オフショア開発で行っているサポート
+                                    EVOLABLE ASIAが行っているサポート
                                 </h2>
                             </div>
                         </div>
@@ -412,11 +412,11 @@ get_header();
             <div class="row-gap-big"></div>
             <div class="row text-center headline">
                 <h2>つまり、御社は、</h2>
-                <h2><span class="pink-text">「日本人プロジェクトマネージャー駐在or遠隔)</span>と</h2>
+                <h2><span class="pink-text">「日本人プロジェクトマネージャー」(駐在or遠隔)</span>と</h2>
                 <h2><span class="pink-text">「必要なベトナム人スタッフ数」</span> 決めれば、</h2>
                 <h2>すぐにでもベトナムでの開発を行うことが可能なのです!</h2><br/>
                 <h4>小規模から大規模までのラボが在籍</h4>
-                <h4>総勢400名以上のベトナム人スタッフが在籍しています。</h4>            
+                <h4>総勢500名以上のベトナム人スタッフが就業しています。</h4>            
             </div>        
             <div style="padding-bottom: 30px"></div>
             <div class="row">

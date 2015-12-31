@@ -17,7 +17,7 @@ get_header();
     <div class="row-gap-medium"></div>
     <div class="container-fluid">
         <div class="container">
-            <ul class="breadcrumb-cp">
+            <ul class="breadcrumb-cp hidden-sm hidden-xs">
                 <li>
                     <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
@@ -30,7 +30,7 @@ get_header();
     </div>
 
     <section class="reason-why">
-        <div class="row-gap-huge"></div>
+        <div class="row-gap-medium"></div>
         <div class="container-fluid center reason-why-1">
             <div class="container">
                 <div class="row">
@@ -94,7 +94,7 @@ get_header();
                                     </div>
                                 </div>
                                 <div class="gap-big"> </div>
-                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span class="text-4">従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社似合った人材を選定できるのも質が高く、幅広い人材を確保できるEvolable Asiaならではの強みだと考えています。</span>
+                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span>従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社似合った人材を選定できるのも質が高く、幅広い人材を確保できるEvolable Asiaならではの強みだと考えています。</span>
                                 </div>
                             </div>
                             <div class="row-gap-big"> </div>
@@ -159,11 +159,15 @@ get_header();
                             </div>
                             <div class="row-gap-big"> </div>
                             <div class="row">
-                                <div class="col-xs-12 col-md-6 col-md-offset-3 no-padding-lr border-reason-3">
-                                    <a href="<?php echo home_url('company/circle') ?>">
-                                        <div class="glyphicon glyphicon-menu-right text-left"> </div>
-                                        <div class="text-6 text-center">社内の取り組みについて詳しくはこちら</div>
-                                    </a>
+                                <div class="col-xs-12 col-md-12 no-padding-lr">
+                                    <div class="text-left">
+                                        <div class="col-xs-12 col-md-6 no-padding-lr border-reason-3">
+                                            <a href="<?php echo home_url('company/circle') ?>">
+                                                <div class="glyphicon glyphicon-menu-right text-left"> </div>
+                                                <div class="text-6 text-center font-1 m-l-20">社内の取り組みについて詳しくはこちら</div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

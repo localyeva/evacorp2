@@ -151,5 +151,6 @@
 <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery.validate.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/contact.js"></script>
+<?php wp_footer(); ?>
 </body>
 </html>

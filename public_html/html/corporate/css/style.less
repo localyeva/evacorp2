@@ -15,7 +15,11 @@
 @sub-title-font-size: 1.714em;
 @sub-sub-title-font-size: 1.286em;
 @description-font-size: 1em;
+@line-height: 190%;
 
+.font-base{
+    font-family: 'Roboto',sans-serif,'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Helvetica Neue', Helvetica, Arial;
+}
 
 //For smartphone
 @media screen and (max-width : 820px) {
@@ -376,11 +380,11 @@ a{
 
     &.news-hover{
         display: block;
-        positon:relative;
+        position:relative;
         width:93%; margin:auto;
         .caption-eva{
             position:absolute;
-            width:93%;
+            width:100%;
             height:100%;
             top:0;
             left:auto;
@@ -403,16 +407,16 @@ a{
         background-color: #D82670;
         color: white;
         padding: 3px 5px 2px 5px;
-    }       
+    }
     .categories-pink{
         background-color: #e51783;
-    }    
+    }
     .categories-yellow{
         background-color: #ffd00e;
-    }  
+    }
     .categories-blue{
         background-color: #42a8d9;
-    }        
+    }
 }
 .text-center {
     text-align: center;
@@ -426,7 +430,8 @@ a{
     }
 }
 body, html {
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    .font-base;
 }
 // reset heading padding
 h1, h2, h3, h4, h5, h6 {
@@ -577,24 +582,26 @@ h1 {
     background: url('../img/4.png');
     background-repeat: no-repeat;
     padding-top: 50px;
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
     .why-text-left{
         color: #fff;
         h2{
-            font-size:@title-font-size;
+            font-size: 2.8em;
         }
         .text-small{
-            font-size:@description-font-size;
+            font-size: 1.3em;
         }
     }
     .why-text-right{
         color: black;
         h3{
             font-size:@sub-title-font-size;
+            line-height: @line-height;
         }
         .text-small{
             font-size:@description-font-size;
-        }        
+            line-height: @line-height;
+        }
         /*padding-right: 40%;*/
     }
 }
@@ -688,11 +695,11 @@ h1 {
                 }
                 .intro{
                     font-size:18px;
-                }                
+                }
             }
         }
     }
-    
+
     .about-bg{
         background: url('../img/home-about-bg2.png') no-repeat scroll 50% 50%;
         background-color: #fff;
@@ -719,19 +726,19 @@ h1 {
             background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 45%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
             background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 45%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
-            width: 93%;
+            width: 100%;
             height: 50%;
             bottom: 0px;
             position: absolute;
             z-index: 0;
-        }        
+        }
         .caption{
             padding-left: 1.4em;
             position: absolute;
             top: 76%;
             .news-main-title{
                 font-size:@description-font-size;
-            }            
+            }
             h2{
                 color: white;
                 margin: 0;
@@ -792,7 +799,7 @@ h1 {
     }
 }
 .header-articles {
-    background: #DADADA;
+    background: #f2f2f2;
     padding-top: 50px;
     padding-bottom: 50px;
     h3 {
@@ -803,7 +810,7 @@ h1 {
         font-weight: 700;
     }
     p{
-        font-size: @description-font-size;
+        font-size: calc(@description-font-size - 0.1);
     }
     img {
         margin-bottom: 15px;
@@ -955,8 +962,7 @@ h1 {
         margin-bottom: 100px;
     }
     .evol{
-        .round1{
-            width: 95%;
+        .round1 {
             background-color: transparent;
             border-style: solid;
             border-width: 1px;
@@ -965,13 +971,11 @@ h1 {
         }
     }
     .soltec{
-        .round2{
-            width: 95%;
+        .round2 {
             background-color: transparent;
             border-style: solid;
             border-width: 1px;
             border-color: #C5C5C5;
-            margin-left: 30px;
         }
     }
     .img-his{
@@ -992,12 +996,41 @@ h1 {
         background-color: #F2F2F2;
         margin: 0px;
     }
+    .round1, .round2 {
+        .img-his {
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
 }
+
+.invisible-vertical-gap {
+    height: 30px;
+    display: block;
+}
+
+@media only screen and (min-width : 767px) {
+    #company-profile {
+        .round1 {
+            margin-right: 15px;
+        }
+        .round2 {
+            margin-left: 15px;
+        }
+    }
+    .invisible-vertical-gap {
+        display: none;
+    }
+}
+
+
 .header-contact{
     background: url('../img/4-grid.png') repeat;
     .contact-info{
         padding-top: 70px;
-        font-size: 35px;
+        font-size: 34.5px;
         font-weight: bold;
         .yellow{
             background-image: linear-gradient(bottom, rgb(255, 213, 26) 20%, rgba(0,0,0,0) 0%);
@@ -1029,18 +1062,18 @@ h1 {
             height: 145px;
             .phone-text{
                 position: absolute;
-                font-size: 44px;
+                font-size: 33px;
                 font-weight: 500;
                 top: 39%;
-                left: 53%;
+                left: 59%;
                 transform: translate(-50%, -50%);
                 color: #E11B73;
                 white-space: nowrap;
             }
             .phone-img{
                 position: absolute;
-                padding-top: 6%;
-                left: 8%;
+                padding-top: 9%;
+                left: 16%;
                 width: 10%;
             }
             .detail-text{
@@ -1736,7 +1769,7 @@ h1 {
         background-color: #202020;
         width: 35px;
         height: 3px;
-    }    
+    }
 
     .bpo-3{
         .text-1{
@@ -2191,6 +2224,7 @@ nav.navigation {
 .error{
     color: #ff0000;
 }
+
 @import "define-style.less";
 @import "service-page.less";
 @import "hau-style.less";

@@ -65,46 +65,47 @@ if ($available_why == 1) {
     ?>
     <div class="container-fluid header-why">
         <div class="row">
-            <div class="col-md-2 hidden-xs"></div>
-            <div class="col-md-2 hidden-xs why-text-left text-left">
-                <div class="row-gap-big"></div>
-                <h2>Why is<br> Evolable Asia<br> chosen<br> in Vietnam?</h2>
-                <div class="text-small">
-                    なぜエボラブルアジアがベトナムのラボ型開発で選ばれるのか？
+            <div class="container">
+                <div class="col-md-4 hidden-xs why-text-left text-left">
+                    <div class="row-gap-big"></div>
+                    <h2>Why is<br> Evolable Asia<br> chosen<br> in Vietnam?</h2>
+                    <div class="text-small">
+                        なぜエボラブルアジアが<br/>ベトナムのラボ型開発で<br/>選ばれるのか？
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-12 visible-xs why-text-left text-center">
-                <h2>Why is Evolable Asia<br> chosen in Vietnam?</h2>
-                <div class="text">
-                    なぜエボラブルアジアがベトナムのラボ型開発で選ばれるのか？
+                <div class="col-xs-12 visible-xs why-text-left text-center">
+                    <h2>Why is Evolable Asia<br> chosen in Vietnam?</h2>
+                    <div class="text">
+                        なぜエボラブルアジアが<br/>ベトナムのラボ型開発で<br/>選ばれるのか？
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 hidden-xs why-text-right">
-                <div class="row-gap-big"></div>
-                <h3>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h3>
-                <div class="row-gap-small"></div>
-                <div class="text-small">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
+                <div class="col-md-8 hidden-xs why-text-right">
+                    <div class="row-gap-big"></div>
+                    <h3>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h3>
+                    <div class="row-gap-small"></div>
+                    <div class="text-small">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
+                    </div>
+                    <div class="">
+                        <a href="<?php echo home_url('company/reason/') ?>">
+                            <button class="btn btn-slim ">
+                                <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <a href="<?php echo home_url('company/reason/') ?>">
-                        <button class="btn btn-slim ">
-                            <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
-                        </button>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-12 visible-xs why-text-right text-center">
-                <div class="row-gap-medium"></div>
-                <h2>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h2>
-                <div class="row-gap-small"></div>
-                <div class="text-small">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
-                </div>
-                <div class="text-center">
-                    <a href="<?php echo home_url('company/reason/') ?>">
-                        <button class="btn btn-slim ">
-                            <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
-                        </button>
-                    </a>
+                <div class="col-xs-12 visible-xs why-text-right text-center">
+                    <div class="row-gap-big"></div>
+                    <h2>Evolable Asiaは、御社の開発チームをベトナムでワールドワイド級の人材で迅速に構築します。</h2>
+                    <div class="row-gap-small"></div>
+                    <div class="text-small">2012年の設立から、今では日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
+                    </div>
+                    <div class="text-center">
+                        <a href="<?php echo home_url('company/reason/') ?>">
+                            <button class="btn btn-slim ">
+                                <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -387,7 +388,8 @@ if ($available_new == 1) {
                 if ($loop->have_posts()):
                     $num_posts = count($loop->posts);
                     ?>
-                    <?php while ($loop->have_posts()): $loop->the_post(); 
+                    <?php
+                    while ($loop->have_posts()): $loop->the_post();
                         $postId = get_the_ID();
                         $terms = get_the_terms($postId, 'news-type');
                         $categories = array();
@@ -396,9 +398,7 @@ if ($available_new == 1) {
                                 $categories[] = $term->name;
                             }
                         }
-
-                        
-                    ?>
+                        ?>
                         <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
                             <a class="news-hover" href="<?php the_permalink() ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" style="width:100%; height:auto;">
@@ -408,7 +408,7 @@ if ($available_new == 1) {
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span>
                                         <?php if (count($categories) > 0) { ?>
-                                        <span class="categories-text <?php echo $class_category[$term->name] ?>"><?php echo implode(', ', $categories); ?></span>
+                                            <span class="categories-text <?php echo $class_category[$term->name] ?>"><?php echo implode(', ', $categories); ?></span>
                                         <?php } ?>
                                     </div>
                                     <h2 class="intro more"><?php the_title(); ?></h2>
@@ -439,49 +439,49 @@ if ($available_new == 1) {
 $available_blog = get_blog_div();
 if ($available_blog == 1) {
     ?>
-<div class="container-fluid block-center header-news home-blog-bg" style="display:none">
-        <h1 class="text-center"><?php echo get_blog_text(); ?></h1>
-        <div class="container">
-            <div class="row">
-                <?php
-                $time3 = 0;
-                $args = array(
-                    'post_type' => 'blog',
-                    'posts_per_page' => 3,
-                    'orderby' => array('date' => 'DESC'),
-                );
-                $loop = new WP_Query($args);
-                ?>
-                <?php
-                if ($loop->have_posts()):
-                    $num_posts = count($loop->posts);
-                    ?>
-                    <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
-                            <a class="news-hover" href="<?php echo get_field('link') ?>">
-                                <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
-                                <div class="caption-eva" ></div>
-                                <span class="overlay"></span>
-                                <div class="caption full-width left">
-                                    <div class="news-main-title">
-                                        <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>
+    <div class="container-fluid block-center header-news home-blog-bg" style="display:none">
+            <h1 class="text-center"><?php echo get_blog_text(); ?></h1>
+            <div class="container">
+                <div class="row">
+    <?php
+    $time3 = 0;
+    $args = array(
+        'post_type' => 'blog',
+        'posts_per_page' => 3,
+        'orderby' => array('date' => 'DESC'),
+    );
+    $loop = new WP_Query($args);
+    ?>
+    <?php
+    if ($loop->have_posts()):
+        $num_posts = count($loop->posts);
+        ?>
+        <?php while ($loop->have_posts()): $loop->the_post(); ?>
+                                    <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
+                                        <a class="news-hover" href="<?php echo get_field('link') ?>">
+                                            <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
+                                            <div class="caption-eva" ></div>
+                                            <span class="overlay"></span>
+                                            <div class="caption full-width left">
+                                                <div class="news-main-title">
+                                                    <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>
+                                                </div>
+                                                <h2 class="intro more"><?php the_title(); ?></h2>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <h2 class="intro more"><?php the_title(); ?></h2>
-                                </div>
-                            </a>
-                        </div>
-                        <?php $time3+= 0.5; ?>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_postdata() ?>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-md-12 text-center">
-                    <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+            <?php $time3+= 0.5; ?>
+        <?php endwhile; ?>
+    <?php endif; ?>
+    <?php wp_reset_postdata() ?>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 text-center">
+                        <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     <?php
 }
 ?>

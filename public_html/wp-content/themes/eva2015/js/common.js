@@ -85,16 +85,6 @@ $(function () {
     }
 });
 
-$.fn.scrollEnd = function(callback, timeout) {
-  $(this).scroll(function(){
-    var $this = $(this);
-    if ($this.data('scrollTimeout')) {
-      clearTimeout($this.data('scrollTimeout'));
-    }
-    $this.data('scrollTimeout', setTimeout(callback,timeout));
-  });
-};
-
 /* fix top menu */
 $(function () {
     var nav = $('#navigation');
@@ -111,17 +101,13 @@ $(function () {
             } else {
                 nav.removeClass('invisible').addClass('visible');
             }
-            lastScrollTop = scroll;
         } else {
             if (nav.hasClass('navbar-fixed-top')) {
-                nav.removeClass('navbar-fixed-top');
+                if (scroll == 0) {
+                    nav.removeClass('navbar-fixed-top');
+                }
             }
         }
+        lastScrollTop = scroll;
     });
-
-    $(window).scrollEnd(function(){
-        if (nav.hasClass('invisible')) {
-            nav.removeClass('invisible').addClass('visible');
-        }
-    }, 500);
 });

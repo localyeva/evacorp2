@@ -54,27 +54,29 @@ get_header();
                 <div class="container custom-containter">
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
-                            <div class="intersection text-c-pc container">
+                            <div class="intersection text-center">
                                 <div class="row-gap-big"></div>
-                                <h3>
-                                    ソーシャルゲーム、スマホアプリ、ビッグデータなどがキーワードとなり
-                                </h3>
-                                <h3 class="pink-text">
-                                    IT人材需要が日本で急増。
-                                </h3>
-                                <h3>
-                                    <span class="pink-text">日本人SEの年収は高止まり</span>の傾向のままです。
-                                </h3>
-                                <div class="row-gap-medium"></div>
-                                <h3>
-                                    その状況を打開するのは、<span class="pink-text">海外への進出」</span> あり、
-                                </h3>
-                                <h3>
-                                    「受託型オフショア開発」と「自社で海外進出」の
-                                </h3>
-                                <h3>
-                                    2パターンありますが 、<span class="pink-text">両方とも問題を抱えています。</span>
-                                </h3>
+                                <div class="text-c-pc">
+                                    <h3>
+                                        ソーシャルゲーム、スマホアプリ、ビッグデータなどがキーワードとなり
+                                    </h3>
+                                    <h3 class="pink-text">
+                                        IT人材需要が日本で急増。
+                                    </h3>
+                                    <h3>
+                                        <span class="pink-text">日本人SEの年収は高止まり</span>の傾向のままです。
+                                    </h3>
+                                    <div class="row-gap-medium"></div>
+                                    <h3>
+                                        その状況を打開するのは、<span class="pink-text">海外への進出」</span> あり、
+                                    </h3>
+                                    <h3>
+                                        「受託型オフショア開発」と「自社で海外進出」の
+                                    </h3>
+                                    <h3>
+                                        2パターンありますが 、<span class="pink-text">両方とも問題を抱えています。</span>
+                                    </h3>
+                                </div>
                             </div>
                         </div>                    
                     </div>

@@ -54,7 +54,7 @@ get_header();
                 <div class="container custom-containter">
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
-                            <div class="intersection text-left container">
+                            <div class="intersection text-c-pc container">
                                 <div class="row-gap-big"></div>
                                 <h3>
                                     ソーシャルゲーム、スマホアプリ、ビッグデータなどがキーワードとなり

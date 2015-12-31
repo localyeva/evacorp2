@@ -115,6 +115,8 @@
                             s.parentNode.insertBefore(po, s);
                         })();
                     </script>
+
+
                     <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">Tweet</a>
                     <script>!function (d, s, id) {
                             var js, fjs = d.getElementsByTagName(s)[0];
@@ -124,8 +126,14 @@
                                 js.src = "//platform.twitter.com/widgets.js";
                                 fjs.parentNode.insertBefore(js, fjs);
                             }
-                        }(document, "script", "twitter-wjs");</script>
-                    <div class="fb-like" data-href="<?php echo bloginfo('url') ?>" data-width="400" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                        }(document, "script", "twitter-wjs");
+                    </script>
+
+
+                    <div class="iineBtn-fb">
+                        <div class="fb-like" data-href="<?php echo bloginfo('url') ?>" data-width="400" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                    </div>
+                    
                 </div>
             </div>
         </div>

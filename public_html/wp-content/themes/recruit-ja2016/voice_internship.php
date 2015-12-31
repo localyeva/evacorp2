@@ -21,14 +21,14 @@ get_header();
     </div>
     <div class="row voice-senpai-content-2 center">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/yamamoto01.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/yamamoto01.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/yamamoto02.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/yamamoto02.jpg" width="178" height="119" class="img-responsive">
                     <div><p>メコン川クルーズで蛇と戯れました。超怖かったです。</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/yamamoto03.jpg" width="176" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/yamamoto03.jpg" width="176" height="119" class="img-responsive">
                     <div><p>社員旅行に参加させていただきました！美女に囲まれてこの表情。</p></div>
                 </div>
             </div>
@@ -127,14 +127,14 @@ get_header();
     </div>
     <div class="row voice-senpai-content-2 center">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/fujiwara01.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/fujiwara01.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/fujiwara02.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/fujiwara02.jpg" width="178" height="119" class="img-responsive">
                     <div><p>EVAオフィスの前にある屋台にて。現地の方に混ざって食後のコーヒータイム。</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/fujiwara03.jpg" width="176" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/fujiwara03.jpg" width="176" height="119" class="img-responsive">
                     <div><p>ベトナム人社員の皆さんに日本語の授業をさせて頂きました！</p></div>
                 </div>
             </div>
@@ -233,14 +233,14 @@ get_header();
     </div>    
     <div class="row voice-senpai-content-2 center">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/ono01.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/ono01.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/ono02.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/ono02.jpg" width="178" height="119" class="img-responsive">
                     <div><p>ベトナム人コーディネーターに社内環境についてのインタビューをしました。</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/ono03.jpg" width="176" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/ono03.jpg" width="176" height="119" class="img-responsive">
                     <div><p>社員さんとローカルのお店でヤギの焼肉をいただきました！</p></div>
                 </div>
             </div>
@@ -339,10 +339,10 @@ get_header();
     </div>
     <div class="row voice-senpai-content-2 center">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/takeda01.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/takeda01.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/takeda02.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/takeda02.jpg" width="178" height="119" class="img-responsive">
                     <div><p>仕事も遊びも全力☆もっとエボラブルアジアが好きになった社員旅行！</p></div>
                 </div>
             </div>
@@ -465,7 +465,7 @@ get_header();
     </div>
     <div class="row voice-senpai-content-2 center">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/kondo01.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/kondo01.jpg" width="371" height="248" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
             <h1>近藤 里穂</h1>
@@ -562,7 +562,7 @@ get_header();
     </div> 
     <div class="row voice-senpai-content-2 center">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/ishii01.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/ishii01.jpg" width="371" height="248" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
             <h1>石居 美穂子</h1>
@@ -659,7 +659,7 @@ get_header();
     </div> 
     <div class="row voice-senpai-content-2 center">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/asano01.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/asano01.jpg" width="371" height="248" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
             <h1>浅野 総一郎</h1>

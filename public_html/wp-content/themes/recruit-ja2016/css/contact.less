@@ -4,7 +4,7 @@
 	}
 	.contact-content-header{
 		a{
-			padding:0 10px;
+			padding:0px 10px; 
 		}
 		a:hover img{
 			opacity:0.5;
@@ -12,7 +12,7 @@
 	}
 	.contact-content-1{
 		max-width:1000px;	
-		margin:auto;	
+		margin:30px auto 0;		
 		.contact-content-1-title{
 			display:table;
 			width:100%;
@@ -53,7 +53,7 @@
 		max-width:500px;	
 		margin:auto;	
 		span{
-			padding:5px 10px;
+			padding:5px 15px;
 			background:@color-gray;
 			text-transform: uppercase;
 			color:@color-white;
@@ -106,6 +106,11 @@
 
 @media (min-width: 320px) {
 	.contact-content{
+		.contact-content-header{
+			.margin-img{
+				margin-bottom:20px
+			}
+		}
 		.size01{
 			width: 120px;
 		}
@@ -119,6 +124,11 @@
 }
 @media (min-width: 768px) { 
 	.contact-content{	
+		.contact-content-header{
+			.margin-img{
+				margin-bottom:0px
+			}			
+		}
 		.size01{
 			width: 259px;
 		}

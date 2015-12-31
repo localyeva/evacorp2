@@ -21,7 +21,7 @@ get_header();
     </div>
     <div class="row message-content-2 center">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/message/img_m01.jpg" alt="代表取締役社長 薛 悠司" width="376" height="517">
+            <img src="<?php echo get_template_directory_uri() ?>/img/message/img_m01.jpg" alt="代表取締役社長 薛 悠司" width="376" height="517" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
             <h1>グローバル人材として<br/>一緒に成長できる仲間を求めています！</h1>

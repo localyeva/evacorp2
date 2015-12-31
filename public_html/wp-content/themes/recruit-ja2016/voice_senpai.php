@@ -21,14 +21,14 @@ get_header();
     </div>
     <div class="row voice-senpai-content-2 center" id="anchor01">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_01.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_01.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_02.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_02.jpg" width="178" height="119" class="img-responsive">
                     <div><p>ベトナムに赴任された駐在員の方のサポートも業務の一つです</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_03.jpg" width="176" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_03.jpg" width="176" height="119" class="img-responsive">
                     <div><p>週末など休日には旅行をするなどして自分の時間を楽しんでいます。</p></div>
                 </div>
             </div>
@@ -118,10 +118,10 @@ get_header();
     
     <div class="row voice-senpai-content-2 center" id="anchor02">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_04.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_04.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_05.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_05.jpg" width="178" height="119" class="img-responsive">
                     <div><p>日本から視察に来られたお客様をご対応します</p></div>
                 </div>
             </div>            
@@ -211,14 +211,14 @@ get_header();
 
     <div class="row voice-senpai-content-2 center" id="anchor03">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_07.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_07.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_08.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_08.jpg" width="178" height="119" class="img-responsive">
                     <div><p>担当ラボのマネージャーと採用や今後について定期的に打ち合わせします。</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_09.jpg" width="176" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_09.jpg" width="176" height="119" class="img-responsive">
                     <div><p>ベトナム最高です！</p></div>
                 </div>
             </div>            
@@ -309,18 +309,18 @@ get_header();
 
     <div class="row voice-senpai-content-2 center" id="anchor04">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_10.jpg" width="371" height="248">   
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_10.jpg" width="371" height="248" class="img-responsive">   
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_11.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_11.jpg" width="178" height="119" class="img-responsive">
                     <div><p>ベトナム語が話せるので、ベトナム人スタッフのサポートをします。</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_12.jpg" width="176" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_12.jpg" width="176" height="119" class="img-responsive">
                     <div><p>ベトナムに来て数年が立ちますが、ベトナムはやっぱり楽しい！！</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_13.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_13.jpg" width="178" height="119" class="img-responsive">
                     <div><p>自分を見つめ直す時間が沢山あります。</p></div>
                 </div>                
             </div>                    
@@ -411,14 +411,14 @@ get_header();
 
     <div class="row voice-senpai-content-2 center" id="anchor05">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_14.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_14.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_15.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_15.jpg" width="178" height="119" class="img-responsive">
                     <div><p>担当ラボのマネージャーと採用や今後について定期的に打ち合わせします</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_16.jpg" width="176" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_16.jpg" width="176" height="119" class="img-responsive">
                     <div><p>休日は旅行に行き、現地の子供と遊んだりしています。</p></div>
                 </div>
             </div>            
@@ -508,14 +508,14 @@ get_header();
 
     <div class="row voice-senpai-content-2 center" id="anchor06">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_17.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_17.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_18.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_18.jpg" width="178" height="119" class="img-responsive">
                     <div><p>ラボ運営がスムーズに行くようにサポートしています</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_19.jpg" width="176" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_19.jpg" width="176" height="119" class="img-responsive">
                     <div><p>ベトナム生活はとっても楽しいですよ！！</p></div>
                 </div>
             </div>            
@@ -605,14 +605,14 @@ get_header();
 
     <div class="row voice-senpai-content-2 center" id="anchor07">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_20.jpg" width="371" height="248">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_20.jpg" width="371" height="248" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_21.jpg" width="178" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_21.jpg" width="178" height="119" class="img-responsive">
                     <div><p>勉強熱心な社員と朝7:00から授業しています。</p></div>
                 </div>
                 <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_22.jpg" width="176" height="119">
+                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_22.jpg" width="176" height="119" class="img-responsive">
                     <div><p>休日はベトナムの歴史ある場所を探索しています。</p></div>
                 </div>
             </div>            

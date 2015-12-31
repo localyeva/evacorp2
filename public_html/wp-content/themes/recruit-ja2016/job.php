@@ -20,7 +20,7 @@ get_header();
     <div class="row-gap-medium"></div>
     <div class="row job-content-2">
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
-            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_j01.jpg">
+            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_j01.jpg" class="img-responsive">
         </div>          
         <div class="col-xs-12 col-sm-8 col-dm-8 col-lg-8 no-padding-lr">
             <h1>ラボ担当マネージャー</h1>
@@ -34,7 +34,7 @@ get_header();
     <div class="row-gap-big"></div>
     <div class="row job-content-2">
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
-            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_j02.jpg">
+            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_j02.jpg" class="img-responsive">
         </div>          
         <div class="col-xs-12 col-sm-8 col-dm-8 col-lg-8 no-padding-lr">
             <h1>開発サポートマネージャー</h1>
@@ -57,7 +57,7 @@ get_header();
     <div class="row-gap-big"></div>
     <div class="row job-content-2">
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
-            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_jno.jpg">
+            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_jno.jpg" class="img-responsive">
         </div>          
         <div class="col-xs-12 col-sm-8 col-dm-8 col-lg-8 no-padding-lr">
             <h1>セールス&マーケティング</h1>
@@ -75,7 +75,7 @@ get_header();
     <div class="row-gap-big"></div>
     <div class="row job-content-2">
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
-            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_j03.jpg">
+            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_j03.jpg" class="img-responsive">
         </div>          
         <div class="col-xs-12 col-sm-8 col-dm-8 col-lg-8 no-padding-lr">
             <h1>日本語教師</h1>
@@ -89,7 +89,7 @@ get_header();
     <div class="row-gap-big"></div>
     <div class="row job-content-2">
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
-            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_j04.jpg">
+            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_j04.jpg" class="img-responsive">
         </div>          
         <div class="col-xs-12 col-sm-8 col-dm-8 col-lg-8 no-padding-lr">
             <h1>顧客サービス</h1>

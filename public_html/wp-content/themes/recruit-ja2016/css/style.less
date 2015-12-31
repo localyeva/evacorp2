@@ -120,7 +120,7 @@ body, html {
 	}
 }
 .copyright{
-	background: url("../img/top/bg_footer.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: url("../img/top/bg_footer.png") repeat scroll center center rgba(2, 255, 255, 0);
   	color: #3e3a39;
   	padding: 15px;
   	font-size:@font-size-9;
@@ -133,15 +133,12 @@ body, html {
 	border:solid 1px @color-gray;	
 	padding:18px 0;	
 	h1{
-		font-size:@font-size-28;
 		font-weight:bold;
-		line-height:40px;
 		span{
 			color:@color-pink;
 		}
 	}
 	h2{
-		font-size:@font-size-20;
 		font-weight:bold;
 		margin-top:5px;
 		border-bottom: 1px dotted @color-body;
@@ -149,6 +146,9 @@ body, html {
 		span{
 			color:@color-red;
 		}			
+	}
+	img{
+		margin:auto;
 	}
 	a:hover{
 		opacity:0.5;
@@ -227,6 +227,16 @@ body, html {
 			text-align:center;
 		}
 	}
+
+	.contact-box{
+		h1{
+			font-size:@font-size-20;
+			line-height:25px;
+		}
+		h2{
+			font-size:@font-size-16;			
+		}
+	}	
 }
 @media (min-width: 768px) {
 	.head-cruit-item{
@@ -282,7 +292,16 @@ body, html {
 		.social-cruit-content{
 			text-align:right;
 		}
-	}	 	
+	}
+	.contact-box{
+		h1{
+			font-size:@font-size-28;
+			line-height:40px;
+		}
+		h2{
+			font-size:@font-size-20;			
+		}
+	}			 	
 }
 
 @media (min-width: 1024px) {

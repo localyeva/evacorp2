@@ -60,7 +60,7 @@ get_header();
             </p>     
         </div>
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
-            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt01.png">
+            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt01.png" class="img-responsive">
         </div>
     </div>     
 
@@ -83,7 +83,7 @@ get_header();
             </p>     
         </div>
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
-            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt02.png">
+            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt02.png" class="img-responsive">
         </div>
     </div>          
     <div class="row-gap-medium"></div>
@@ -166,7 +166,7 @@ get_header();
             </p>     
         </div>
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
-            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt07.png">
+            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt07.png" class="img-responsive">
         </div>        
     </div>    
     <div class="row-gap-medium"></div>
@@ -189,7 +189,7 @@ get_header();
             </p>     
         </div>
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
-            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt08.png">
+            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt08.png" class="img-responsive">
         </div>
     </div>  
     <div class="row-gap-medium"></div>
@@ -230,13 +230,13 @@ get_header();
     <div class="row-gap-medium"></div>
     <div class="row attractive-content-3">
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center">
-            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt10_1.png">
+            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt10_1.png" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center">
-            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt10_2.png">
+            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt10_2.png" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center">
-            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt10_3.png">
+            <img src="<?php echo get_template_directory_uri() ?>/img/attrac/img_tt10_3.png" class="img-responsive">
         </div>                
     </div>  
     <div class="row-gap-medium"></div>

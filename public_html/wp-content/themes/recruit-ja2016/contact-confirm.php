@@ -117,7 +117,7 @@ get_header('contact');
 <div class="container contact-content">
     <div class="row-gap-medium"></div> 
     <div class="contact-content-header center">
-        <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/logo.png" alt="EVOLABLE ASIA" widtd="156" height="51" /></a>
+        <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/logo.png" alt="EVOLABLE ASIA" widtd="156" height="51" class="margin-img"/></a>
         <a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t03.jpg" alt="日本人スタッフ募集 Recruit" widtd="115" height="56" /></a>
     </div>
     <div class="row-gap-big"></div> 

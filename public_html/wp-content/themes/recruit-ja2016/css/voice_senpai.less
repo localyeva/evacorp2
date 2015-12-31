@@ -1,7 +1,7 @@
 .voice-senpai-content{
 	.voice-senpai-content-1{
 		max-width:1000px;	
-		margin:auto;	
+		margin:30px auto;	
 		.voice-senpai-content-1-title{
 			display:table;
 			width:100%;
@@ -15,7 +15,6 @@
 					padding-top:5px;
 					span{
 						background: @color-white; 
-						font-size:@font-size-28;
 						letter-spacing:3px;
 						font-weight:bold;							
 					}
@@ -34,10 +33,13 @@
 		}					
 	}
 	.voice-senpai-content-2{
+		img{
+			margin:auto;
+		}
 		max-width:1000px;	
 		margin:50px auto 0;
 		.voice-senpai-content-2-image{
-		margin-top:20px;
+			margin-top:20px;
 			width:100%;
 			.voice-senpai-content-2-image-item{
 				width:50%;
@@ -91,7 +93,6 @@
 			background: url(../img/voice/h3_bg_1.png) repeat scroll center center;
 			display: block; 
 			span{
-				display: inline-block;
 				font-size:@font-size-12;
 				letter-spacing:1px;
 				padding-left:10px;
@@ -101,12 +102,41 @@
 }
 
 @media (min-width: 320px) {
-	.voice-senpai-content{
-
+	.voice-senpai-content{	
+		.voice-senpai-content-1{
+			.voice-senpai-content-1-title{
+				.voice-senpai-content-1-title-row{
+					.voice-senpai-content-1-title-cell{
+						span{
+							font-size:@font-size-20;					
+						}										
+					}								
+				}			
+			}					
+		}	
 	}
 }
 @media (min-width: 768px) { 
 	.voice-senpai-content{	
+		.voice-senpai-content-1{
+			.voice-senpai-content-1-title{
+				.voice-senpai-content-1-title-row{
+					.voice-senpai-content-1-title-cell{
+						span{
+							font-size:@font-size-28;					
+						}										
+					}								
+				}			
+			}					
+		}
+
+		.voice-senpai-content-2{
+			.voice-senpai-content-2-question{
+				span{
+					display: inline-block;
+				}		
+			}		
+		}	
 	}
 }
 

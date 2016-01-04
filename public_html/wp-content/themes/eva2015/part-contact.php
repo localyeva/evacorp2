@@ -1,5 +1,5 @@
 <div class="container-fluid header-contact">
-    <div class="container">
+    <div class="container contact-width">
         <div class="row">
             <div class="col-xs-12 no-padding-lr text-center">
                 <div class="caption full-width center-block contact-info">
@@ -10,12 +10,12 @@
                 </div>
             </div>
             <div class="col-xs-12 no-padding-lr footer-contact">
-                <div class="container">
+                <div class="container contact-width">
                     <did class="row">
                         <div class="col-xs-6 col-md-6 no-padding-lr left phone">
                             <div class="container">
                                 <img src="<?php echo get_template_directory_uri() ?>/img/42.png" alt="" class="img-responsive phone-img">
-                                <span class="phone-text">(+84)9-3717-6251</span>
+                                <span class="phone-text">(+84)8-3911-1489</span>
                                 <span class="detail-text">お電話は日本人スタッフが対応します。</span>
                                 <span class="detail-line"></span>
                             </div>

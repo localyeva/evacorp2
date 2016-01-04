@@ -117,7 +117,7 @@ function custom_breadcrumbs($custom_taxonomy)
     // Settings
     $separator          = '&gt;';
     $breadcrums_id      = 'breadcrumbs';
-    $breadcrums_class   = 'breadcrumb-cp';
+    $breadcrums_class   = 'breadcrumb-cp hidden-sm hidden-xs';
     $home_title         = 'HOME';
 
     // Get the query & post information

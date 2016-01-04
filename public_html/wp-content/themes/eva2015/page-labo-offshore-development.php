@@ -17,7 +17,7 @@ get_header();
     <div class="row-gap-medium"></div>
     <div class="container-fluid">
         <div class="container">
-            <ul class="breadcrumb-cp">
+            <ul class="breadcrumb-cp hidden-sm hidden-xs">
                 <li>
                     <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
@@ -54,7 +54,7 @@ get_header();
                 <div class="container custom-containter">
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
-                            <div class="intersection text-center">
+                            <div class="intersection text-c-pc">
                                 <div class="row-gap-big"></div>
                                 <h3>
                                     ソーシャルゲーム、スマホアプリ、ビッグデータなどがキーワードとなり
@@ -67,7 +67,7 @@ get_header();
                                 </h3>
                                 <div class="row-gap-medium"></div>
                                 <h3>
-                                    その状況を打開するのは、<span class="pink-text">海外への進出」</span> あり、
+                                    その状況を打開するのは、<span class="pink-text">海外への進出</span> あり、
                                 </h3>
                                 <h3>
                                     「受託型オフショア開発」と「自社で海外進出」の
@@ -113,7 +113,7 @@ get_header();
                         <div class="row">
                             <div class="col-xs-12 col-md-12 text-center">
                                 <h3>
-                                    しかし、エボラブルアジアは<span class="pink-text">ラボ型オフショア開発」</span>で、
+                                    しかし、エボラブルアジアは<span class="pink-text">ラボ型オフショア開発</span>で、
                                 </h3>
                                 <h3>
                                     この2つの問題を<span class="pink-text">同時に解決します!</span>
@@ -148,7 +148,7 @@ get_header();
                     <div class="row">
                         <div class="col-xs-12 col-md-12 text-center">
                             <h1>
-                                「ラボ型オフショア開発とは?」
+                                ラボ型オフショア開発とは?
                             </h1>
                             <div class="row-gap-small"></div>
                             <h4>
@@ -194,10 +194,10 @@ get_header();
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
                             <div class="container rect">
-                                <div class="col-xs-5 col-md-5">
+                                <div class="col-xs-12 col-md-6">
                                     <img src="<?php echo get_template_directory_uri() ?>/img/labo-block4-image4.png" alt="" class="img-responsive">
                                 </div>
-                                <div class="col-xs-7 col-md-7 text-rpos no-padding-l">
+                                <div class="col-xs-12 col-md-6 text-rpos no-padding-l">
                                     <p>ベトナム人 SEとプロジェクトマネージャーがチームを組みプロジェクトを行います。</p><br/>
                                     <p>プロジェクトマネージャーが開発依頼を行い、ベトナム人SEが納品を行っていく流れです。</p>
                                 </div>
@@ -218,7 +218,7 @@ get_header();
                         <div class="row">
                             <div class="col-xs-12 col-md-12 text-center">
                                 <h2>
-                                    ラボ型オフショア開発で行っているサポート
+                                    EVOLABLE ASIAが行っているサポート
                                 </h2>
                             </div>
                         </div>
@@ -263,6 +263,15 @@ get_header();
                                         <li>日本語教師による講義</li>
                                         <li> 日本語能力試験および日本語IT能力試験推進</li>
                                     </ul>
+                                    <div class="row-gap-small"></div>
+                                    <span style="font-weight: bold">◆モチベーションアップのための各種制度/イベント</span><br/>
+                                    <ul>
+                                        <li>キックオフ(年4回)</li>
+                                        <li>社員旅行</li>
+                                        <li>社員旅行</li>
+                                        <li>季節のイベント(クリスマス・新年会・忘年会等)</li>
+                                    </ul>
+                                    <span>※その他、一体感のあるチーム構成を目的とした、様々な制度/イベントを用意しております。</span>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-6 item">
@@ -275,15 +284,6 @@ get_header();
                                         <li>開発環境整備</li>
                                         <li>システムに関する各種サポート</li>
                                     </ul>
-                                    <div class="row-gap-small"></div>
-                                    <span style="font-weight: bold">◆モチベーションアップのための各種制度/イベント</span><br/>
-                                    <ul>
-                                        <li>キックオフ(年4回)</li>
-                                        <li>社員旅行</li>
-                                        <li>社員旅行</li>
-                                        <li>季節のイベント(クリスマス・新年会・忘年会等)</li>
-                                    </ul>
-                                    <span>※その他、一体感のあるチーム構成を目的とした、様々な制度/イベントを用意しております。</span>
                                 </div>
                             </div>
                         </div>                    
@@ -312,41 +312,41 @@ get_header();
                         <div class="row-gap-big"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h4>
+                                <h5 class="tsu5">
                                     <span class="num">1</span><span class="txt">アジアビジネスの</span><span class="decor-txt">絶好の拠点</span>
-                                </h4>                
+                                </h5>                
                             </div>
                         </div>
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h4>
+                                <h5 class="tsu5">
                                     <span class="num">2</span><span class="decor-txt">勤勉で親日国</span><span class="txt">である</span>
-                                </h4>                
+                                </h5>                
                             </div>
                         </div>
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h4>
+                                <h5 class="tsu5">
                                     <span class="num">3</span><span class="txt">人口約9000万人。平均年齢28歳の</span><span class="decor-txt">豊富な労働力</span>
-                                </h4>                
+                                </h5>                
                             </div>
                         </div>
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h4>
+                                <h5 class="tsu5">
                                     <span class="num">4</span><span class="txt">年5～8%の</span><span class="decor-txt">高度経済成長</span>
-                                </h4>                
+                                </h5>                
                             </div>
                         </div>
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h4>
+                                <h5 class="tsu5">
                                     <span class="num">5</span><span class="txt">東南アジア1位の</span><span class="decor-txt">豊富なITエンジニア数</span><span>(30万人超)</span>
-                                </h4>                
+                                </h5>                
                             </div>
                         </div>
                     </div>
@@ -412,11 +412,11 @@ get_header();
             <div class="row-gap-big"></div>
             <div class="row text-center headline">
                 <h2>つまり、御社は、</h2>
-                <h2><span class="pink-text">「日本人プロジェクトマネージャー駐在or遠隔)</span>と</h2>
+                <h2><span class="pink-text">「日本人プロジェクトマネージャー」(駐在or遠隔)</span>と</h2>
                 <h2><span class="pink-text">「必要なベトナム人スタッフ数」</span> 決めれば、</h2>
                 <h2>すぐにでもベトナムでの開発を行うことが可能なのです!</h2><br/>
                 <h4>小規模から大規模までのラボが在籍</h4>
-                <h4>総勢400名以上のベトナム人スタッフが在籍しています。</h4>            
+                <h4>総勢500名以上のベトナム人スタッフが就業しています。</h4>            
             </div>        
             <div style="padding-bottom: 30px"></div>
             <div class="row">
@@ -427,7 +427,7 @@ get_header();
                                 <article>
                                 
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image1.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image1.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -435,7 +435,7 @@ get_header();
                                 <article>
                                
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image2.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image2.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -443,7 +443,7 @@ get_header();
                                 <article>
                           
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image3.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image3.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -454,7 +454,7 @@ get_header();
                                 <article>
                               
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image4.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image4.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -462,7 +462,7 @@ get_header();
                                 <article>
                                
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image5.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image5.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -470,7 +470,7 @@ get_header();
                                 <article>
                              
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image6.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image6.png" alt="" class="img-responsive">
                                     </figure>
                                 </article>
                             </div>
@@ -479,33 +479,33 @@ get_header();
                         <img src="<?php echo get_template_directory_uri() ?>/img/plus.png" alt="" class="img-responsive center-block">
                         <div class="row rect">      
                             <h3 class="text-center">さらに品質を高めるためエボラブルアジア独自の対応を行っています。</h3>
-                            <div class="col-xs-12 col-md-4 no-padding-r">
+                            <div class="col-xs-12 col-md-4">
                                 <article>
                               
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image8.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image8.png" alt="" class="img-responsive">
                                     </figure>
                                     <div class="title">
                                         社内で日本語スクールを実施
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-xs-12 col-md-4 no-padding-r">
+                            <div class="col-xs-12 col-md-4">
                                 <article>
                                  
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image9.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image9.png" alt="" class="img-responsive">
                                     </figure>
                                     <div class="title">
                                         ベトナム人スタッフの個別面談を実施
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-xs-12 col-md-4 no-padding-r">
+                            <div class="col-xs-12 col-md-4">
                                 <article>
                               
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri() ?>/img/labo-block8-image10.png" alt="" class="img-responsive">
+                                        <img src="<?php echo get_template_directory_uri() ?>/img/about_labo/labo-block8-image10.png" alt="" class="img-responsive">
                                     </figure>
                                     <div class="title">
                                         クライアント様のフォローアップ

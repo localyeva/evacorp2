@@ -18,7 +18,7 @@ get_header();
 	<div class="row-gap-medium"></div>
 	<div class="container-fluid">
 	    <div class="container">
-	        <ul class="breadcrumb-cp">
+	        <ul class="breadcrumb-cp hidden-sm hidden-xs">
 	            <li>
 	                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
 	                </li>
@@ -96,10 +96,10 @@ get_header();
 	    <div class="container center secondary-4-1">
 	        <div class="row" style="max-width:800px;margin:auto;">
 	            <div class="col-xs-12 col-sm-12 col-md12 col-lg-12">        
-	                <p><span>大手モバイルゲーム会社</span>や<span>株式会社マイネット様との実績※を</span></p>
-	                <p>多く持つEvolable Asiaでは、</p>
-	                <p>そこで生まれた<span>施策や問題点を、ノウハウ</span>として蓄積</p>
-	                <p>ゲームの運用業務を<span>品質を落とすことなく引き継ぐこと</span>が可能です。</p>
+	                <p><span>大手モバイルゲーム会社</span>や<span>株式会社マイネット様との実績を</span></p>
+	                <p>持つEvolable Asiaでは、</p>
+	                <p>そこで生まれた<span>施策や問題点をノウハウ</span>として蓄積</p>
+	                <p>ゲーム運用の<span>品質を落とすことなく引き継ぐこと</span>が可能。</p>
 	                <p class="text-note">※2015年11月時点で8タイトルの運営実績があります。</p>
 	            </div>
 	        </div>
@@ -163,7 +163,7 @@ get_header();
 	    <div class="container center secondary-6-1">
 	        <div class="row" style="max-width:680px;margin:auto;">
 	            <div class="col-xs-12 col-sm-12 col-md12 col-lg-12">        
-	                <p><span class="secondary-6-number">1</span>クオリティの高い運営を行え、ユーザーの<span class="secondary-6-underline">アクティブ数・課金率を維持!</span></p>
+	                <p><span class="secondary-6-number">1</span>品質の高い運営を行え、ユーザーの<span class="secondary-6-underline">アクティブ数・課金率を維持!</span></p>
 	                <p><span class="secondary-6-number">2</span>特化した専任チームなので、<span class="secondary-6-underline">迅速で正確な対応</span>が行える!</p>
 	                <p><span class="secondary-6-number">3</span>人員コストは日本で運営する場合に比べ<span class="secondary-6-underline">30～40%削減!</span></p>
 	                <p><span class="secondary-6-number">4</span>日本では<span class="secondary-6-underline">新規事業に人員を配置</span>でき、新たな売り上げも!</p>

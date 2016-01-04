@@ -84,3 +84,30 @@ $(function () {
         });
     }
 });
+
+/* fix top menu */
+$(function () {
+    var nav = $('#navigation');
+    var lastScrollTop = 0;
+    nav.removeClass('navbar-fixed-top');
+    $(window).scroll(function (e) {
+        var scroll = $(this).scrollTop();
+        if (scroll > nav.height()) {
+            if (!nav.hasClass('navbar-fixed-top')) {
+                nav.addClass('navbar-fixed-top');
+            }
+            if (scroll > lastScrollTop) {
+                nav.addClass('invisible').removeClass('visible');
+            } else {
+                nav.removeClass('invisible').addClass('visible');
+            }
+        } else {
+            if (nav.hasClass('navbar-fixed-top')) {
+                if (scroll == 0) {
+                    nav.removeClass('navbar-fixed-top');
+                }
+            }
+        }
+        lastScrollTop = scroll;
+    });
+});

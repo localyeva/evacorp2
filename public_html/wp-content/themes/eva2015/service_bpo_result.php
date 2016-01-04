@@ -18,7 +18,7 @@ get_header();
     <div class="row-gap-medium"></div>
     <div class="container-fluid">
         <div class="container">
-            <ul class="breadcrumb-cp">
+            <ul class="breadcrumb-cp hidden-sm hidden-xs">
                 <li>
                     <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
@@ -59,56 +59,60 @@ get_header();
             </div> 
         </div>
     </div>   
+
     <div class="container-fluid center bpo-3">
         <div class="container">
             <div class="row-gap-huge"></div>
             <div class="row-gap-medium"></div>
-            <?php
-            $time = 0;
-            $args = array(
-                'post_type' => 'bpo-result',
-                'posts_per_page' => -1,
-                'orderby' => array('date' => 'ASC'),
-            );
-            $loop = new WP_Query($args);
-            ?>
-            <?php
-            if ($loop->have_posts()):
-                $num_posts = count($loop->posts);
-                $count_i = 1;
-                ?>
-                <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                    <?php if($count_i == 1){?>
-                    <div class="row" style="max-width:800px;margin:auto;">
-                        <div class="col-xs-12 col-md-12 no-padding-lr text-center">
-                            <span class="text-1"><?php the_title();?></span><br>
-                            <span class="text-3"><?php the_content();?></span>
-                            <div class="drop-line-top center-block"></div>
-                        </div>
+            <div class="row" style="max-width:800px;margin:auto;">
+                <div class="col-xs-12 col-md-12 no-padding-lr text-center">
+                    <span class="text-1">ACTUAL CONTENTS</span>
+                    <br>
+                    <span class="text-3"><p><span class="text-3">BPO 実績内容</span>
+                        </p>
+                    </span>
+                    <div class="drop-line-top center-block"></div>
+                </div>
+            </div>
+            <div class="row-gap-big"></div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12 no-padding-lr"><img class="img-responsive img-reason-1 center-block" src="<?php echo get_template_directory_uri() ?>/img/bpo/8.png" alt="" />
+                </div>
+            </div>
+            <div class="row" style="max-width:800px;margin:auto;">
+                <div class="col-xs-12 col-md-12 no-padding-lr">
+                    <div class="bs-callout">
+                        <span class="text-2">事例紹介1　旅行会社A社の場合</span>
                     </div>
-                    <div class="row-gap-big"></div>
-                    <?php }elseif($count_i == 2){
-                            the_content();
-                        }else{
-                    ?>
-                    <div class="row" style="max-width:800px;margin:auto;">
-                        <div class="col-xs-12 col-md-12 no-padding-lr">
-                            <div class="bs-callout">
-                                <span class="text-2"><?php the_title();?></span>
-                            </div>
-                            <div class="drop-line"></div>
-                            <?php the_content();?>
-                        </div>
+                    <div class="drop-line"></div>
+                    <p><img class="img-responsive img-1 center-block" src="<?php echo get_template_directory_uri() ?>/img/bpo/9.png" alt="" />
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="max-width:800px;margin:auto;">
+                <div class="col-xs-12 col-md-12 no-padding-lr">
+                    <div class="bs-callout">
+                        <span class="text-2">事例紹介2　不動産会社B社の場合</span>
                     </div>
-                    <?php }
-                        $count_i++;
-                    ?>
-                <?php endwhile; ?>
-            <?php endif; ?>
-            <?php wp_reset_postdata() ?>
+                    <div class="drop-line"></div>
+                    <p><img class="img-responsive img-1 center-block" src="<?php echo get_template_directory_uri() ?>/img/bpo/10.png" alt="" />
+                    </p>
+                </div>
+            </div>
+            <div class="row" style="max-width:800px;margin:auto;">
+                <div class="col-xs-12 col-md-12 no-padding-lr">
+                    <div class="bs-callout">
+                        <span class="text-2">事例紹介3　金物販売会社C社の場合</span>
+                    </div>
+                    <div class="drop-line"></div>
+                    <p><img class="img-responsive img-1 center-block" src="<?php echo get_template_directory_uri() ?>/img/bpo/11.png" alt="" />
+                    </p>
+                </div>
+            </div>
             <div class="row-gap-huge"></div>
         </div>
     </div>
+
     <div class="bpo-4">
         <div class="container center bpo-4-1">
             <div class="row text-center" style="max-width:800px;margin:auto;">
@@ -120,7 +124,7 @@ get_header();
             <div class="row-gap-big"></div>
             <div class="row" style="max-width:600px;margin:auto;">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center no-padding-lr">
-                    <a href="<?php echo home_url('service/about_bpo') ?>" class="center-block">開発実績</a>
+                    <a href="<?php echo home_url('service/bpo-real-estate') ?>" class="center-block">不動産BPO</a>
                 </div>  
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center no-padding-lr bpo-4-1-xs">
                     <a href="<?php echo home_url('recomend') ?>" class="center-block">参加企業の声</a>

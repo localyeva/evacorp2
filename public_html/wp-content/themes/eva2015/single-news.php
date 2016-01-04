@@ -34,7 +34,7 @@ if (!empty($next_post)) {
     <div class="row-gap-medium"></div>
     <?php custom_breadcrumbs('news'); ?>
     <div class="row-gap-medium"></div>
-    <div class="container center bpo-1">
+    <div class="container center bpo-1 contact-width">
         <?php // get_sidebar('news') ?>
         <div class="content post-detail col-md-12">
             <div class="row">
@@ -42,7 +42,7 @@ if (!empty($next_post)) {
                 <h2 class="post-title text-center"><?php the_title(); ?></h2>
                 <div class="row-gap-medium"></div>
                 <div class="post-content col-md-12 col-xs-12 no-padding-lr">
-                    <img src="<?php echo !empty($featured_image) ? $featured_image : $default_img; ?>" alt="<?php the_title(); ?>" style="margin: 0px auto 20px auto; display: block;" />
+                    <img class="img-responsive" src="<?php echo !empty($featured_image) ? $featured_image : $default_img; ?>" alt="<?php the_title(); ?>" style="margin: 0px auto 20px auto; display: block;" />
                     <p style="text-align: justify;"><?php echo $post->post_content ?></p>
                 </div>
                 <div class="clearfix"></div>
@@ -52,7 +52,7 @@ if (!empty($next_post)) {
                     <div class="prev-post col-md-4 col-xs-4">
                         <a href="<?php echo get_permalink($prev_post->ID); ?>" title="<?php echo $prev_post->post_title; ?>">
                             <span class="prev">Prev</span>
-                            <img src="<?php echo !empty($prev_post_image) ? $prev_post_image : $default_img; ?>" alt="<?php echo $prev_post->post_title; ?>" />
+                            <img class="img-responsive" src="<?php echo !empty($prev_post_image) ? $prev_post_image : $default_img; ?>" alt="<?php echo $prev_post->post_title; ?>" />
                             <h3><?php echo mb_substr($prev_post->post_title, 0, 25) . '...'; ?></h3>
                         </a>
                     </div>
@@ -60,7 +60,7 @@ if (!empty($next_post)) {
                     <?php if (!empty( $next_post )) { ?>
                     <div class="next-post  col-md-4 col-xs-4 pull-right">
                         <a href="<?php echo get_permalink($next_post->ID); ?>" title="<?php echo $next_post->post_title; ?>">
-                            <img src="<?php echo !empty($next_post_image) ? $next_post_image : $default_img; ?>" alt="<?php echo $next_post->post_title; ?>" />
+                            <img class="img-responsive" src="<?php echo !empty($next_post_image) ? $next_post_image : $default_img; ?>" alt="<?php echo $next_post->post_title; ?>" />
                             <span class="next">Next</span>
                             <h3><?php echo mb_substr($next_post->post_title, 0, 25) . '...'; ?></h3>
                         </a>

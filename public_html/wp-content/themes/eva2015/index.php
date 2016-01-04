@@ -2,7 +2,7 @@
 /*
  * Author: KhangLe
  * Template Name: Index
- * 
+ *
  */
 get_header();
 ?>
@@ -38,7 +38,7 @@ if ($loop->have_posts()) {
     <div class="carousel-inner" role="listbox">
         <?php for ($i = 0; $i < count($home_slider); $i++): ?>
             <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
-                <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>      
+                <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
             </div>
         <?php endfor; ?>
     </div>
@@ -86,10 +86,8 @@ if ($available_why == 1) {
                     <div class="text-small">2012年の設立以降、今では東南アジア地域で日系最大規模のラボ型オフショア開発企業としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                     </div>
                     <div class="">
-                        <a href="<?php echo home_url('company/reason/') ?>">
-                            <button class="btn btn-slim ">
-                                <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
-                            </button>
+                        <a href="<?php echo home_url('company/reason/') ?>" class="btn btn-slim">
+                            <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
                         </a>
                     </div>
                 </div>
@@ -100,10 +98,8 @@ if ($available_why == 1) {
                     <div class="text-small">2012年の設立以降、今では東南アジア地域で日系最大規模のラボ型オフショア開発としてさらに成長を続けるEvolable Asia。その成長の背景には、「高品質な人材の提供」と「安心のサポートシステム」があります。Evolable Asiaでは質が高く幅広い技術者を豊富に確保し、最適な環境で終業してもらえるノウハウと実績を持っています。また日本人ラボマネージャーが常駐し、初めてベトナム進出する企業も、より安心して業務をスタートできるようなサポートシステムが整っています。詳しくはこちらのページをご覧ください。
                     </div>
                     <div class="text-center">
-                        <a href="<?php echo home_url('company/reason/') ?>">
-                            <button class="btn btn-slim ">
-                                <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
-                            </button>
+                        <a href="<?php echo home_url('company/reason/') ?>" class="btn btn-slim">
+                            <i class="fa fa-angle-right"></i>エボラブルアジアが選ばれる理由
                         </a>
                     </div>
                 </div>
@@ -403,7 +399,7 @@ if ($available_new == 1) {
                             <a class="news-hover" href="<?php the_permalink() ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" style="width:100%; height:auto;">
                                 <div class="caption-eva" ></div>
-                                <span class="overlay"></span>                                
+                                <span class="overlay"></span>
                                 <div class="caption left">
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span>

@@ -255,7 +255,7 @@ and open the template in the editor.
         h2{
             font-size: @title-font-size;
         }
-        
+
     }
     .header-reason-banner {
         background: url('../img/labo-banner.png') no-repeat;
@@ -408,6 +408,9 @@ and open the template in the editor.
             text-align: center;
             color: #fff;
             margin-right: 10px;
+        }
+        h5.tsu5{
+            font-size: @sub-sub-title-font-size;
         }
         .txt{
             display: inline-block;            
@@ -572,7 +575,7 @@ and open the template in the editor.
             line-height: 25px !important;
         }
     }
-    
+
     #labo{
         .text-c-pc{
             text-align: left;
@@ -650,4 +653,18 @@ and open the template in the editor.
 }
 .carousel-caption{
     top: 40%;
+}
+
+/* sp */
+@media screen and (max-width: 600px){
+    #labo{
+        .block-6{
+            .num{
+                padding: 4px 5px;
+            }
+            h5.tsu5{
+                font-size: @description-font-size;
+            }
+        }
+    }
 }

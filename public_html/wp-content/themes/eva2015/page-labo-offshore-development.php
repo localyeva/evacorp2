@@ -194,10 +194,10 @@ get_header();
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
                             <div class="container rect">
-                                <div class="col-xs-12 col-md-12">
+                                <div class="col-xs-12 col-md-6">
                                     <img src="<?php echo get_template_directory_uri() ?>/img/labo-block4-image4.png" alt="" class="img-responsive">
                                 </div>
-                                <div class="col-xs-12 col-md-12 text-rpos no-padding-l">
+                                <div class="col-xs-12 col-md-6 text-rpos no-padding-l">
                                     <p>ベトナム人 SEとプロジェクトマネージャーがチームを組みプロジェクトを行います。</p><br/>
                                     <p>プロジェクトマネージャーが開発依頼を行い、ベトナム人SEが納品を行っていく流れです。</p>
                                 </div>
@@ -263,6 +263,15 @@ get_header();
                                         <li>日本語教師による講義</li>
                                         <li> 日本語能力試験および日本語IT能力試験推進</li>
                                     </ul>
+                                    <div class="row-gap-small"></div>
+                                    <span style="font-weight: bold">◆モチベーションアップのための各種制度/イベント</span><br/>
+                                    <ul>
+                                        <li>キックオフ(年4回)</li>
+                                        <li>社員旅行</li>
+                                        <li>社員旅行</li>
+                                        <li>季節のイベント(クリスマス・新年会・忘年会等)</li>
+                                    </ul>
+                                    <span>※その他、一体感のあるチーム構成を目的とした、様々な制度/イベントを用意しております。</span>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-6 item">
@@ -275,15 +284,6 @@ get_header();
                                         <li>開発環境整備</li>
                                         <li>システムに関する各種サポート</li>
                                     </ul>
-                                    <div class="row-gap-small"></div>
-                                    <span style="font-weight: bold">◆モチベーションアップのための各種制度/イベント</span><br/>
-                                    <ul>
-                                        <li>キックオフ(年4回)</li>
-                                        <li>社員旅行</li>
-                                        <li>社員旅行</li>
-                                        <li>季節のイベント(クリスマス・新年会・忘年会等)</li>
-                                    </ul>
-                                    <span>※その他、一体感のあるチーム構成を目的とした、様々な制度/イベントを用意しております。</span>
                                 </div>
                             </div>
                         </div>                    
@@ -312,7 +312,7 @@ get_header();
                         <div class="row-gap-big"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h5>
+                                <h5 class="tsu5">
                                     <span class="num">1</span><span class="txt">アジアビジネスの</span><span class="decor-txt">絶好の拠点</span>
                                 </h5>                
                             </div>
@@ -320,7 +320,7 @@ get_header();
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h5>
+                                <h5 class="tsu5">
                                     <span class="num">2</span><span class="decor-txt">勤勉で親日国</span><span class="txt">である</span>
                                 </h5>                
                             </div>
@@ -328,7 +328,7 @@ get_header();
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h5>
+                                <h5 class="tsu5">
                                     <span class="num">3</span><span class="txt">人口約9000万人。平均年齢28歳の</span><span class="decor-txt">豊富な労働力</span>
                                 </h5>                
                             </div>
@@ -336,7 +336,7 @@ get_header();
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h5>
+                                <h5 class="tsu5">
                                     <span class="num">4</span><span class="txt">年5～8%の</span><span class="decor-txt">高度経済成長</span>
                                 </h5>                
                             </div>
@@ -344,7 +344,7 @@ get_header();
                         <div class="row-gap-small"></div>
                         <div class="row">
                             <div class="col-xs-12 col-md-11 col-md-offset-1">
-                                <h5>
+                                <h5 class="tsu5">
                                     <span class="num">5</span><span class="txt">東南アジア1位の</span><span class="decor-txt">豊富なITエンジニア数</span><span>(30万人超)</span>
                                 </h5>                
                             </div>

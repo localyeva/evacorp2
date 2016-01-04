@@ -129,7 +129,6 @@
                         }(document, "script", "twitter-wjs");
                     </script>
 
-
                     <div class="iineBtn-fb">
                         <div class="fb-like" data-href="<?php echo bloginfo('url') ?>" data-width="400" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
                     </div>

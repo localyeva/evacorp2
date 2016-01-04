@@ -63,7 +63,6 @@ if ($loop->have_posts()) {
 $available_why = get_why_div();
 if ($available_why == 1) {
     ?>
-    <!--
     <div class="container-fluid header-why">
         <div class="row">
             <div class="container">
@@ -107,7 +106,7 @@ if ($available_why == 1) {
             </div>
         </div>
         <div class="row-gap-medium"></div>
-    </div>-->
+    </div>
     <?php
 }
 ?>
@@ -117,7 +116,6 @@ if ($available_why == 1) {
 $available_service = get_services_div();
 if ($available_service == 1) {
     ?>
-    <!--
     <div id="header-service" class="container-fluid header-service">
         <div class="row service-bg">
             <div class="col-xs-12">
@@ -225,7 +223,7 @@ if ($available_service == 1) {
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
     <?php
 }
 ?>

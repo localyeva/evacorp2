@@ -17,6 +17,15 @@
 @description-font-size: 1em;
 @line-height: 190%;
 
+
+@sp-title-font-size: @title-font-size - 0.5em;
+@sp-sub-title-font-size: @sub-title-font-size - 0.3em;
+@sp-sub-sub-title-font-size: @sub-sub-title-font-size - 0.120em;
+
+.sp-sub-sub-title-font-size{
+    font-size: calc(@sub-sub-title-font-size - 0.120em);
+}
+
 .font-base{
     font-family: 'Roboto',sans-serif,'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'Helvetica Neue', Helvetica, Arial;
 }
@@ -143,6 +152,56 @@
             }
         }
     }
+    
+    #reason-profile{
+        .reason-why-1{                        
+            .text-2, .text-3 {
+                font-size: @sp-title-font-size !important;
+            }
+            .text-5 {
+                font-size: @sp-sub-title-font-size !important;
+            }
+        }
+        .reason-why-2 {
+            .text-2, .text-3 {
+                font-size: @sp-title-font-size !important;
+            }
+            .text-5 {
+                padding-top: 10px;
+                padding-left: 0px !important;
+            }
+            
+            .glyphicon-arrow-right {
+                font-size: 40px;
+                padding-left: 40% !important;
+                padding-top: 10px !important;
+            }
+        }
+        
+        .reason-why-3 {
+            .text-2, .text-3 {
+                font-size: @sp-title-font-size !important;
+            }
+            .text-6 {
+                font-size: @sp-sub-sub-title-font-size !important;
+            }
+        }
+        .reason-why-4{                        
+            .text-2, .text-3 {
+                font-size: @sp-title-font-size !important;
+            }
+        }
+        .reason-why-5{                        
+            .text-2, .text-3 {
+                font-size: @sp-title-font-size !important;
+            }
+        }
+        .text-left .text-4 {
+            padding: 0 0px;
+            text-align: left;
+        }
+    }
+    
     #about-profile{
         .header-about-banner {
             .container {
@@ -168,7 +227,7 @@
     }
     .header-contact{
         .contact-info{
-            font-size: 9px !important;
+            font-size: 13px !important;
             padding-top: 30px !important;
         }
         .con-contact{
@@ -192,7 +251,7 @@
                 .detail-text{
                     top: 29% !important;
                     left: 18% !important;
-                    font-size: 5px !important;
+                    font-size: 7px !important;
                 }
                 .detail-line{
                     height: 68px !important;
@@ -209,7 +268,7 @@
                     white-space: normal !important;
                     top: 29% !important;
                     left: 22% !important;
-                    font-size: 8px !important;
+                    font-size: 10px !important;
                 }
                 .mess-border{
                     height: 36% !important;
@@ -221,7 +280,7 @@
         }
     }
     .header-why {
-        background: url('../img/64.png') no-repeat !important;
+        background: #fff url('../img/64.png') no-repeat !important;
         background-size: 100% 40% !important;
         padding-top: 20px !important;
         padding-bottom: 0px !important;
@@ -579,7 +638,7 @@ h1 {
 }
 .header-why {
     background-size: cover;
-    background: url('../img/4.png');
+    background: #fff url('../img/4.png');
     background-repeat: no-repeat;
     padding-top: 50px;
     /*padding-bottom: 50px;*/
@@ -1030,7 +1089,7 @@ h1 {
     background: url('../img/4-grid.png') repeat;
     .contact-info{
         padding-top: 70px;
-        font-size: 34.5px;
+        font-size: @title-font-size;
         font-weight: bold;
         .yellow{
             background-image: linear-gradient(bottom, rgb(255, 213, 26) 20%, rgba(0,0,0,0) 0%);
@@ -1065,7 +1124,7 @@ h1 {
                 font-size: 33px;
                 font-weight: 500;
                 top: 39%;
-                left: 59%;
+                left: 50%;
                 transform: translate(-50%, -50%);
                 color: #E11B73;
                 white-space: nowrap;
@@ -1073,14 +1132,14 @@ h1 {
             .phone-img{
                 position: absolute;
                 padding-top: 9%;
-                left: 16%;
+                left: 5%;
                 width: 10%;
             }
             .detail-text{
                 position: absolute;
                 top: 60%;
-                left: 18%;
-                font-size: 20px;
+                left: 7%;
+                font-size: 18px;
             }
             .detail-line{
                 height: 132px;
@@ -1099,23 +1158,23 @@ h1 {
             .mess-img{
                 position: absolute;
                 top: 31%;
-                left: 15%;
+                left: 10%;
                 width: 47px;
             }
             .mess-text{
                 position: absolute;
                 top: 34%;
-                left: 26%;
-                font-size: 24px;
+                left: 22%;
+                font-size: 22px;
                 color: #E5177D;
 
             }
             .mess-border{
                 height: 50%;
-                width: 85%;
+                width: 91%;
                 position: absolute;
                 top: 20%;
-                left: 10%;
+                left: 7%;
                 z-index: 999;
                 background-color: transparent;
                 border-style: solid;
@@ -1565,8 +1624,9 @@ h1 {
             position: relative;
         }
         .glyphicon-menu-right{
-            font-size: @sub-sub-title-font-size;
-            padding-top: 3%;
+            font-size: @sub-sub-title-font-size;//1.286em @sub-sub-title-font-size;
+            padding-top: 10px;
+            float: right;
             color: #AB17A1;
             position: absolute;
         }

@@ -30,13 +30,13 @@
                     </div>
                     <div class="col-xs-12 no-padding-lr menu-footer-mobi">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Home <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
-                            <li><a href="#">About EvolableAsia <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
-                            <li><a href="#">選ばれる理由<span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
-                            <li><a href="#">サービス <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
-                            <li><a href="#">ニュース <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
-                            <li><a href="#">Recruit <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
-                            <li><a href="#" class="active">お問い合わせ <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="<?php echo bloginfo('url') ?>">Home <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="<?php echo bloginfo('url') ?>/company">About EvolableAsia <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由<span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="<?php echo bloginfo('url') ?>/service">サービス <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="<?php echo bloginfo('url') ?>/news">ニュース <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="<?php echo get_site_url(2) ?>">Recruit <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
+                            <li><a href="<?php echo bloginfo('url') ?>/contact/" class="active">お問い合わせ <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
                         </ul>
                     </div>
                     <div class="col-xs-4 col-md-4 hidden-xs">
@@ -84,7 +84,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <p class="small"><a class="alnk" href="<?php echo home_url('company/reason/') ?>">選ばれる理由</a></p>
-                                <p class="small"><a class="alnk" data-goto="header-service" href="javascript:void(0);">サービス</a></p>
+                                <p class="small"><a class="alnk" data-goto="header-service" href="<?php echo bloginfo('url') ?>/service">サービス</a></p>
                                 <?php
                                 $args = array(
                                     'post_type' => 'top-service',

@@ -94,7 +94,7 @@ get_header();
                                     </div>
                                 </div>
                                 <div class="gap-big"> </div>
-                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span>従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社似合った人材を選定できるのも質が高く、幅広い人材を確保できるEvolable Asiaならではの強みだと考えています。</span>
+                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span class="text-4">従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社似合った人材を選定できるのも質が高く、幅広い人材を確保できるEvolable Asiaならではの強みだと考えています。</span>
                                 </div>
                             </div>
                             <div class="row-gap-big"> </div>

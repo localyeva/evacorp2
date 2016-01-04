@@ -85,6 +85,27 @@ $(function () {
     }
 });
 
+/*  Paralax slider */
+$(function () {
+    var setBanerHeight = function() {
+        var headerHeight = $('#navigation').height();
+        $('#myCarousel')
+            .height($(window).height() - headerHeight)
+            .find('.carousel-inner').height($(window).height() - headerHeight)
+            .find('.item').each(function() {
+                $(this)
+                    .height($(window).height() - headerHeight)
+                    .find('.parallax-window').height($(window).height() - headerHeight);
+            });
+    }
+
+    $( window ).resize(function() {
+        setBanerHeight();
+    });
+
+    setBanerHeight();
+});
+
 /* fix top menu */
 $(function () {
     var nav = $('#navigation');

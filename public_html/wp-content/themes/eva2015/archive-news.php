@@ -57,7 +57,7 @@ $default_img = get_template_directory_uri() . '/img/default-img.jpg';
                         ?>
                         <div class="col-md-4 item">
                             <a href="<?php echo get_permalink(); ?>">
-                                <img src="<?php echo !empty($post_image) ? $post_image : $default_img; ?>" alt="<?php the_title(); ?>">
+                                <img class="img-responsive" src="<?php echo !empty($post_image) ? $post_image : $default_img; ?>" alt="<?php the_title(); ?>">
                                 <span class="info">
                                     <span class="overlay"></span>
                                     <span class="post-date"><?php the_time('Y.m.d'); ?></span>

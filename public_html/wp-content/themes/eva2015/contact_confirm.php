@@ -66,8 +66,7 @@ if (isset($_POST['submit'])) {
         'content' => $_SESSION['contact']['content'],
     );
 
-    $plugins_url = dirname( __FILE__ );
-    require_once '/lib/includes/Twig/Autoloader.php';
+    require_once 'lib/Twig/Autoloader.php';
     Twig_Autoloader::register();
 
     $loader = new Twig_Loader_String;

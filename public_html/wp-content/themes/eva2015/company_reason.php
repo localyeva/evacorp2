@@ -146,7 +146,7 @@ get_header();
                                     <p class="text-5">ベトナム人スタッフを雇用する多くの企業が、離職率の高さやモチベーションの低下を悩みとしています。Evolable Asiaはスタッフに常に楽しんで、また意識を高く仕事をしてもらうための取り組みを数多く行っています。そのため高い人材定着率を誇り、安定したサービスを提供できます。</p>
                                 </div>
                                 <div class="gap-medium"> </div>
-                                <div class="col-xs-12 col-md-12 no-padding-lr"><img class="img-responsive img-reason-2 center-block" src="http://evacorp.test/wp-content/uploads/52.jpg" alt="" />
+                                <div class="col-xs-12 col-md-12 no-padding-lr"><img class="img-responsive img-reason-2 center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/52.jpg" alt="" />
                                 </div>
                             </div>
                             <div class="row-gap-big"> </div>

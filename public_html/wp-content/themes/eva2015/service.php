@@ -24,7 +24,7 @@ get_header();
                     <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
                 <li>
-                    <a href="<?php echo home_url('service') ?>">サービス</a> <span class="divider">></span>
+                    <a href="<?php echo home_url('service') ?>">サービス</a>
                 </li>
             </ul>
         </div>
@@ -42,7 +42,7 @@ get_header();
             <?php if ($loop->have_posts()): ?>
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
                     <div class="col-xs-12 col-md-4">
-                        <article class="module wow fadeInDown">
+                        <article class="module">
                             <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
 
                                 <figure>

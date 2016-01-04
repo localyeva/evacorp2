@@ -360,6 +360,7 @@ if ($available_about == 1) {
 $available_new = get_new_div();
 if ($available_new == 1) {
     ?>
+    <!--
     <div class="container-fluid block-center header-news home-news-bg">
         <h1 class="text-center"><?php echo get_new_text(); ?></h1>
         <div class="container">
@@ -424,13 +425,12 @@ if ($available_new == 1) {
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <?php
 }
 ?>
 <!--//News End-->
 <!--//Blog-->
-<!--
 <?php
 $available_blog = get_blog_div();
 if ($available_blog == 1) {
@@ -481,10 +481,8 @@ if ($available_blog == 1) {
     <?php
 }
 ?>
--->
 <!--//Blog End-->
 
-<!--
 <div class="container-fluid block-center vff-bg">
     <div class="container">
         <div class="row-gap-big"></div>
@@ -501,13 +499,12 @@ if ($available_blog == 1) {
         </div>
         <div class="row-gap-big"></div>
     </div>
-</div>-->
+</div>
 <!--//Articles-->
 <?php
 $available_article = get_article_div();
 if ($available_article == 1) {
     ?>
-    <!--
     <div class="container-fluid header-articles">
         <div class="container">
             <div class="row">
@@ -544,7 +541,7 @@ if ($available_article == 1) {
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
     <?php
 }
 ?>

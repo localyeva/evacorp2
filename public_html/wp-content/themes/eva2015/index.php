@@ -360,7 +360,6 @@ if ($available_about == 1) {
 $available_new = get_new_div();
 if ($available_new == 1) {
     ?>
-    <!--
     <div class="container-fluid block-center header-news home-news-bg">
         <h1 class="text-center"><?php echo get_new_text(); ?></h1>
         <div class="container">
@@ -400,7 +399,7 @@ if ($available_new == 1) {
                             <a class="news-hover" href="<?php the_permalink() ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" style="width:100%; height:auto;">
                                 <div class="caption-eva" ></div>
-                                <span class="overlay"></span>
+                                <!--<span class="overlay"></span>-->
                                 <div class="caption left">
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span>
@@ -425,7 +424,7 @@ if ($available_new == 1) {
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
     <?php
 }
 ?>

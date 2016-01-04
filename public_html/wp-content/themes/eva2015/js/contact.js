@@ -34,12 +34,12 @@ $().ready(function() {
             }
         },
         messages: {
-            'company': 'エラーCompany',
-            'ur_name': 'エラーName',
-            'email': 'エラーEmail',
-            'tel': 'エラーTel',
-            'itemSelect': 'エラーSelect',
-            'content': 'エラーContent'
+            'company': '入力してください',
+            'ur_name': '入力してください',
+            'email': '入力してください',
+            'tel': '入力してください',
+            'itemSelect': '入力してください',
+            'content': '入力してください'
         },
         submitHandler: function(form) {
             form.submit();

@@ -555,9 +555,9 @@ h1 {
     width: 100%;
     position: relative;
     /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
-/*    margin: 0 auto;
-    width: 100%;
-    position: relative; */
+    /*    margin: 0 auto;
+        width: 100%;
+        position: relative; */
     padding: 200px 0;
     .container {
         h2 {
@@ -2238,6 +2238,42 @@ nav.navigation {
 }
 .error{
     color: #ff0000;
+}
+
+.dont-break-out {
+
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.post-content{
+    p {
+        a{
+            .dont-break-out;
+        }
+    } 
+    img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
 }
 
 @import "define-style.less";

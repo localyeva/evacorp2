@@ -63,6 +63,7 @@ if ($loop->have_posts()) {
 $available_why = get_why_div();
 if ($available_why == 1) {
     ?>
+    <!--
     <div class="container-fluid header-why">
         <div class="row">
             <div class="container">
@@ -106,7 +107,7 @@ if ($available_why == 1) {
             </div>
         </div>
         <div class="row-gap-medium"></div>
-    </div>
+    </div>-->
     <?php
 }
 ?>
@@ -116,6 +117,7 @@ if ($available_why == 1) {
 $available_service = get_services_div();
 if ($available_service == 1) {
     ?>
+    <!--
     <div id="header-service" class="container-fluid header-service">
         <div class="row service-bg">
             <div class="col-xs-12">
@@ -223,7 +225,7 @@ if ($available_service == 1) {
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <?php
 }
 ?>
@@ -233,6 +235,7 @@ if ($available_service == 1) {
 $available_partner = get_partner_div();
 if ($available_partner == 1) {
     ?>
+    <!--
     <div class="container-fluid header-partners">
         <div class="container content wow fadeInRight">
             <div class="row">
@@ -298,7 +301,7 @@ if ($available_partner == 1) {
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <?php
 }
 ?>
@@ -308,6 +311,7 @@ if ($available_partner == 1) {
 $available_about = get_about_div();
 if ($available_about == 1) {
     ?>
+    <!--
     <div class="container-fluid text-center header-about">
         <div class="row about-bg">
             <div class="col-xs-12">
@@ -350,7 +354,7 @@ if ($available_about == 1) {
             <?php endif; ?>
             <?php wp_reset_postdata() ?>
         </div>
-    </div>
+    </div>-->
     <?php
 }
 ?>
@@ -360,6 +364,7 @@ if ($available_about == 1) {
 $available_new = get_new_div();
 if ($available_new == 1) {
     ?>
+    <!--
     <div class="container-fluid block-center header-news home-news-bg">
         <h1 class="text-center"><?php echo get_new_text(); ?></h1>
         <div class="container">
@@ -424,7 +429,7 @@ if ($available_new == 1) {
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <?php
 }
 ?>
@@ -484,7 +489,7 @@ if ($available_blog == 1) {
 -->
 <!--//Blog End-->
 
-
+<!--
 <div class="container-fluid block-center vff-bg">
     <div class="container">
         <div class="row-gap-big"></div>
@@ -501,12 +506,13 @@ if ($available_blog == 1) {
         </div>
         <div class="row-gap-big"></div>
     </div>
-</div>
+</div>-->
 <!--//Articles-->
 <?php
 $available_article = get_article_div();
 if ($available_article == 1) {
     ?>
+    <!--
     <div class="container-fluid header-articles">
         <div class="container">
             <div class="row">
@@ -543,7 +549,7 @@ if ($available_article == 1) {
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <?php
 }
 ?>

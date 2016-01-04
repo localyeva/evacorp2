@@ -117,7 +117,7 @@
                                 ?>
                                 <?php if ($loop->have_posts()): ?>
                                     <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                                        <p class="small"><a class="alnk" href="<?php echo get_field('redirect_url') ?>"><i class="fa fa-angle-right"></i> <?php the_title() ?></a></p>
+                                        <p class="small"><a class="alnk" href="<?php echo get_field('link') ?>"><i class="fa fa-angle-right"></i> <?php the_title() ?></a></p>
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                                 <?php wp_reset_postdata() ?>

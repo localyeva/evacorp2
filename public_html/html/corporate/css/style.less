@@ -2287,12 +2287,6 @@ nav.navigation {
 }
 
 #vff{
-    .vff-title{
-        font-size: @title-font-size;
-    }
-    .vff-sub{
-        font-size: @sub-title-font-size;
-    }
     .img-vff{
         width: 30%;
     }
@@ -2364,6 +2358,22 @@ nav.navigation {
             }    
         }
     }
+    #vff{
+        .vff-title{
+            font-size: @sp-sub-title-font-size;
+        }
+        .vff-sub{
+            font-size: @sp-sub-sub-title-font-size;
+        }   
+        .vff-content{
+            h2{
+                font-size: @sp-sub-sub-title-font-size;
+            }
+            h3{
+                font-size: @sp-sub-sub-title-font-size;
+            }
+        }
+    }
 }
 @media (min-width: 768px){
     #bpo-profile{
@@ -2388,7 +2398,23 @@ nav.navigation {
                 font-size: 30px;
             }
         }           
-    }    
+    }   
+    #vff{
+        .vff-title{
+            font-size: @title-font-size;
+        }
+        .vff-sub{
+            font-size: @sub-title-font-size;
+        }   
+        .vff-content{
+            h2{
+                font-size: @title-font-size;
+            }
+            h3{
+                font-size:@sub-sub-title-font-size;
+            }
+        }         
+    }     
 }
 @import "define-style.less";
 @import "service-page.less";

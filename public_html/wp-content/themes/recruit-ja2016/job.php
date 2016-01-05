@@ -33,31 +33,8 @@ get_header();
     </div>
     <div class="row-gap-big"></div>
     <div class="row job-content-2">
-        <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center">
-            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_j02.jpg" class="img-responsive">
-        </div>          
-        <div class="col-xs-12 col-sm-8 col-dm-8 col-lg-8 no-padding-lr">
-            <h1>開発サポートマネージャー</h1>
-            <p>
-                お客様のラボチームの開発をサポートするお仕事です。<br/>
-                開発内容を理解し、進捗・品質管理を行い、トラブル時にはメンバーと一緒に開発業務にあたることもあります。<br/>
-                ＜仕事内容＞
-            </p>
-            <ul>
-                <li>担当ラボの開発ソリューション提案</li>
-                <li>担当ラボのお客様のプロマネとの恊働での開発管理</li>
-                <li>担当ラボの開発トラブル時の対応</li>
-                <li>社内システムの開発管理</li>
-                <li>ベトナム人エンジニアのスキル向上トレーニングの立案/遂行</li>
-                <li>面接時など用のテスト用課題の立案</li>
-            </ul>            
-            <a href="<?php echo bloginfo('url') ?>/requirements/"><img src="<?php echo get_template_directory_uri() ?>/img/job/btn_j01.png" alt="募集要項をチェック" width="212" height="43"></a>
-        </div>      
-    </div>
-    <div class="row-gap-big"></div>
-    <div class="row job-content-2">
-        <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center">
-            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_jno.jpg" class="img-responsive">
+        <div class="col-xs-12 col-sm-4 col-dm-4 col-lg-4 center no-padding-lr">
+            <img src="<?php echo get_template_directory_uri() ?>/img/job/img_jno.jpg" width="300" class="img-responsive">
         </div>          
         <div class="col-xs-12 col-sm-8 col-dm-8 col-lg-8 no-padding-lr">
             <h1>セールス&マーケティング</h1>

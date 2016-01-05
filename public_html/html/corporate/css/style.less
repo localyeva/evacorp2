@@ -40,52 +40,30 @@
         .con-contact{
             width: 600px;
         }
-        .col-xs-6 {
-            width: 40% !important;
-        }
         .footer-contact{
-            height: 110px !important;
             .phone{
                 .phone-text{
                     font-size: 20px !important;
-                    top: 20% !important;
-                    left: 50% !important;
                 }
                 .phone-img{
-                    left: 8% !important;
-                    padding-top: 5% !important;
                 }
                 .detail1-text{
-                    left: 10% !important;
                     font-size: 9px !important;
                 }
                 .detail-text{
-                    top: 30% !important;
-                    left: 20% !important;
                     font-size: 9px !important;
                 }
                 .detail-line{
-                    height: 68px !important;
+                    display: none;
                 }
             }
             .mess{
-                height: 110px !important;
                 .mess-img{
-                    top: 25% !important;
-                    left: 12% !important;
                     width: 9% !important;
                 }
                 .mess-text{
                     white-space: normal !important;
-                    top: 28% !important;
-                    left: 24% !important;
                     font-size: 12px !important;
-                }
-                .mess-border{
-                    height: 35% !important;
-                    width: 84% !important;
-                    top: 18% !important;
-                    left: 9% !important;
                 }
             }
         }
@@ -288,49 +266,26 @@
             width: 50% !important;
         }
         .footer-contact{
-            height: 110px !important;
             .phone{
                 .phone-text{
                     font-size: 12px !important;
-                    top: 23% !important;
-                    left: 44% !important;
                 }
                 .phone-img{
-                    left: 6% !important;
-                    padding-top: 3% !important;
                 }
                 .detail1-text{
-                    top: 9% !important;
-                    left: 18% !important;
                     font-size: 7px !important;
                 }
                 .detail-text{
-                    top: 29% !important;
-                    left: 18% !important;
                     font-size: 7px !important;
-                }
-                .detail-line{
-                    height: 68px !important;
                 }
             }
             .mess{
-                height: 110px !important;
                 .mess-img{
-                    top: 28% !important;
-                    left: 9% !important;
                     width: 9% !important;
                 }
                 .mess-text{
                     white-space: normal !important;
-                    top: 29% !important;
-                    left: 22% !important;
                     font-size: 8px !important;
-                }
-                .mess-border{
-                    height: 36% !important;
-                    width: 96% !important;
-                    top: 18% !important;
-                    left: 5% !important;
                 }
             }
         }
@@ -1170,38 +1125,29 @@ h1 {
     .footer-contact{
         margin-bottom: 50px;
         background-color: white;
-        height: 180px;
-        padding: 30px 0 30px 0;
+        padding: 20px 0 30px 0;
         .phone{
             position: relative;
-            /*background-color: green;*/
-            height: 145px;
             .phone-text{
-                position: absolute;
+                display: inline-block;
                 font-size: 33px;
-                font-weight: 500;
-                top: 39%;
-                left: 47%;
-                transform: translate(-50%, -50%);
+                font-weight: 500;               
                 color: #E11B73;
                 white-space: nowrap;
             }
             .phone-img{
-                position: absolute;
-                padding-top: 9%;
-                left: 2%;
-                width: 10%;
+                width: 11%;
+                display: inline-block;
             }
             .detail1-text{
-                position: absolute;
-                left: 4%;
+                padding-top: 15px;
+                padding-left: 10px;
                 font-size: 18px;
             }
             .detail-text{
-                position: absolute;
                 top: 60%;
-                left: 4%;
                 font-size: 18px;
+                padding-left: 10px;
             }
             .detail-line{
                 height: 132px;
@@ -1209,39 +1155,28 @@ h1 {
                 border-right-style: solid;
                 border-color: #E6E6E6;
                 position: absolute;
+                top: 0%;
                 right: 0%;
                 z-index: 999;
             }
         }
         .mess{
             position: relative;
-            /*background-color: green;*/
-            height: 145px;
             .mess-img{
-                position: absolute;
-                top: 31%;
-                left: 10%;
+                display: inline-block;
                 width: 47px;
             }
             .mess-text{
-                position: absolute;
-                top: 34%;
-                left: 22%;
+                margin-top: 7%;
+                //transform: translate(0, -50%);
+                display: inline-block;
                 font-size: 22px;
                 color: #E5177D;
-
-            }
-            .mess-border{
-                height: 50%;
-                width: 91%;
-                position: absolute;
-                top: 20%;
-                left: 7%;
-                z-index: 999;
                 background-color: transparent;
                 border-style: solid;
                 border-width: 2px;
                 border-color: #E7167B;
+                padding: 10px 50px 10px 20px;
             }
         }
     }

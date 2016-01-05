@@ -395,11 +395,11 @@ if ($available_new == 1) {
                             }
                         }
                         ?>
-                        <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
+                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
                             <a class="news-hover" href="<?php the_permalink() ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" style="width:100%; height:auto;">
                                 <div class="caption-eva" ></div>
-                                <!--<span class="overlay"></span>-->
+                                <span class="overlay"></span>
                                 <div class="caption left">
                                     <div class="news-main-title">
                                         <span class="date-text"><?php the_date('Y.m.d'); ?></span>

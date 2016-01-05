@@ -8,11 +8,7 @@ get_header();
 ?>
 <div id="vff">
     <div class="head-banner-wrap blue">
-        <div class="container text-center">
-            <div class="col-md-12">
-                <h2>サッカーベトナム代表(VFF)</h2>
-            </div>
-        </div>
+        <h2>サッカーベトナム代表(VFF)</h2>
     </div>       
     <div class="row-gap-medium"></div>
     <div class="container-fluid">
@@ -62,7 +58,7 @@ get_header();
     </div>
 
 
-    <div class="container-fluid">
+    <div class="container-fluid vff-content">
         <div class="row-gap-huge"></div>
         <div class="container">
             <div class="row">
@@ -90,8 +86,8 @@ get_header();
                             </div>
                         </div>
 
-                      
-                     
+
+
                     </div>
                 </div>
             </div>
@@ -99,7 +95,7 @@ get_header();
         <div class="row-gap-huge"></div>
     </div>
 
-    <div class="container-fluid blue-bg">
+    <div class="container-fluid blue-bg vff-content">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
@@ -118,7 +114,7 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid vff-content">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
@@ -154,7 +150,7 @@ get_header();
         <div class="row-gap-big"></div>
         <div class="row-gap-small"></div>
     </div>
-    <div class="container-fluid reason2">
+    <div class="container-fluid reason2 vff-content">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12">
@@ -194,7 +190,7 @@ get_header();
         </div>
         <div class="row-gap-big"></div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid vff-content">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-12">

@@ -34,7 +34,7 @@ get_header();
                 ・やる気あふれる若者<br/>
                 ・無限の可能性<br/>
                 そして2011年にエボラブルアジアを創業、2012年に会社設立にいたりました。<br/>
-                創業当時10名だったメンバーは2014年10月現在、 ホーチミン・ハノイで400名を数えるまでに成長し、 ベトナムで最大の日系開発・BPO事業者となりました。<br/>
+                創業当時10名だったメンバーは2014年10月現在、 ホーチミン・ハノイで500名を数えるまでに成長し、 ベトナムで最大の日系開発・BPO事業者となりました。<br/>
                 そして、今なお凄まじい勢いで成長し続けています。<br/>
                 その成長を共に加速していける、自身の成長も加速し続ける人材を我々は求めています。<br/>
                 「アジアを代表する開発・運用会社を作る。」というエボラブルアジアの経営理念を体現していける仲間を我々は本気で探しています！<br/>
@@ -45,15 +45,14 @@ get_header();
     <div class="row message-content-3">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <h1>Mission Statement</h1>
-            <p>To be No.1 in providing IT software development support in Asia.</p>
+            <p>To be No.1 IT Software Provider in Asia</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <h1>Core Value</h1>
             <ul>
-                <li>Client is comrade</li>
-                <li>Make customers satisfied</li>
-                <li>Fun Fun Funny</li>
-                <li>Think you'll be No.1</li>
+                <li>Fun Fun Funy</li>
+                <li>Change for growth</li>
+                <li>United we play, united we win</li>
             </ul>
         </div>        
     </div>

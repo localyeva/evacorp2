@@ -57,14 +57,14 @@
                 <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 center">
                     <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/logo.png" alt="EVOLABLE ASIA" width="156" height="51" /></a>
                 </div>
-                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 center head-cruit-item">
+                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 center head-cruit-item hidden-xs">
                     <a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t03.jpg" alt="日本人スタッフ募集 Recruit" width="115" height="56" /></a>
                 </div>
-                <div class="col-xs-12 col-sm-1 col-md-3 col-lg-3"></div>
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 center head-cruit-item">
+                <div class="col-xs-12 col-sm-1 col-md-3 col-lg-3 hidden-xs"></div>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 center head-cruit-item hidden-xs">
                     <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t02.jpg" alt="EVOLABLE ASIA CORPORATE SITE" width="202" height="50" /></a>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 center head-cruit-item">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 center head-cruit-item hidden-xs">
                     <a href="<?php echo bloginfo('url') ?>/contact"><img src="<?php echo get_template_directory_uri() ?>/img/header/btn_t01.jpg" alt="応募フォーム" width="199" height="50" /></a>
                 </div>                                                                
             </div>
@@ -96,7 +96,7 @@
                         <li><a href="<?php echo bloginfo('url') ?>/job"><span class="text-above-line">仕事内容</span><br/><span class="text-below-line">job description</span></a></li>
                         <li><a href="<?php echo bloginfo('url') ?>/requirements"><span class="text-above-line">募集要項</span><br/><span class="text-below-line">requiremants</span></a></li>
                         <li><a href="<?php echo bloginfo('url') ?>/faq"><span class="text-above-line">よくある質問</span><br/><span class="text-below-line">faq</span></a></li>                                                
-                        <li><a href="<?php echo bloginfo('url') ?>/contact"><span class="text-above-line">応募フォーム</span><br/><span class="text-below-line">contact</span></a></li>                        
+                        <li><a href="<?php echo bloginfo('url') ?>/contact"><span class="text-above-line">代表の想い</span><br/><span class="text-below-line">contact</span></a></li>                        
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav> 

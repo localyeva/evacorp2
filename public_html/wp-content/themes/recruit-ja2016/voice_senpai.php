@@ -21,36 +21,18 @@ get_header();
     </div>
     <div class="row voice-senpai-content-2 center" id="anchor01">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_01.jpg" width="371" height="248" class="img-responsive">
-            <div class="voice-senpai-content-2-image">
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_02.jpg" width="178" height="119" class="img-responsive">
-                    <div><p>ベトナムに赴任された駐在員の方のサポートも業務の一つです</p></div>
-                </div>
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_03.jpg" width="176" height="119" class="img-responsive">
-                    <div><p>週末など休日には旅行をするなどして自分の時間を楽しんでいます。</p></div>
-                </div>
-            </div>
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_01.jpg" width="371" height="371" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
-            <h1>岩淵 由香理</h1>
-            <h2>顧客サービス本部マネージャー</h2>
+            <h1>中村 夕夏</h1>
+            <h2>ラボ担当ジュニアマネージャー</h2>
             <div class="voice-senpai-content-2-table">
                 <div class="voice-senpai-content-2-row">
                     <div class="voice-senpai-content-2-cell-1">
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身地
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        茨城県水戸市
-                    </div>                    
-                </div>
-                <div class="voice-senpai-content-2-row">
-                    <div class="voice-senpai-content-2-cell-1">
-                        <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身校
-                    </div>
-                    <div class="voice-senpai-content-2-cell-2">
-                        茨城キリスト教大学
+                        沖縄県
                     </div>                    
                 </div>
                 <div class="voice-senpai-content-2-row">
@@ -58,7 +40,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>前職
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        日本語教師
+                        新卒入社
                     </div>                    
                 </div>
                 <div class="voice-senpai-content-2-row">
@@ -66,7 +48,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>趣味
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        読書（漫画も含め）・映画鑑賞・ダンス・ゴルフ・シュノーケル
+                        ダンス、カラオケ、ネットサーフィン、マッサージ
                     </div>                    
                 </div>  
                 <div class="voice-senpai-content-2-row">
@@ -74,7 +56,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>休日の過ごし方
                     </div>
                     <div class="voice-senpai-content-2-cell-2 last">
-                        エステ、ネイル、マッサージなど自分の時間を満喫しています。現地駐在員の集まるサッカー部のマネージャーをしているのでサッカーを見に行って…夜は飲み会です！
+                        インターン生と観光。日曜は駐在員の集まるサッカーチームのマネージャーをしているので、試合を応援して夜はみんなで飲み会！
                     </div>                    
                 </div>                                                              
             </div>
@@ -118,7 +100,7 @@ get_header();
     
     <div class="row voice-senpai-content-2 center" id="anchor02">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_04.jpg" width="371" height="248" class="img-responsive">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_04.jpg" width="371" height="371" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
                     <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_05.jpg" width="178" height="119" class="img-responsive">
@@ -211,15 +193,11 @@ get_header();
 
     <div class="row voice-senpai-content-2 center" id="anchor03">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_07.jpg" width="371" height="248" class="img-responsive">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_07.jpg" width="371" height="371" class="img-responsive">
             <div class="voice-senpai-content-2-image">
                 <div class="voice-senpai-content-2-image-item">
                     <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_08.jpg" width="178" height="119" class="img-responsive">
                     <div><p>担当ラボのマネージャーと採用や今後について定期的に打ち合わせします。</p></div>
-                </div>
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_09.jpg" width="176" height="119" class="img-responsive">
-                    <div><p>ベトナム最高です！</p></div>
                 </div>
             </div>            
         </div>
@@ -309,40 +287,18 @@ get_header();
 
     <div class="row voice-senpai-content-2 center" id="anchor04">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_10.jpg" width="371" height="248" class="img-responsive">   
-            <div class="voice-senpai-content-2-image">
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_11.jpg" width="178" height="119" class="img-responsive">
-                    <div><p>ベトナム語が話せるので、ベトナム人スタッフのサポートをします。</p></div>
-                </div>
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_12.jpg" width="176" height="119" class="img-responsive">
-                    <div><p>ベトナムに来て数年が立ちますが、ベトナムはやっぱり楽しい！！</p></div>
-                </div>
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_13.jpg" width="178" height="119" class="img-responsive">
-                    <div><p>自分を見つめ直す時間が沢山あります。</p></div>
-                </div>                
-            </div>                    
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_10.jpg" width="371" height="371" class="img-responsive">                       
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
-            <h1>藤川 源太</h1>
-            <h2>アシスタントマネージャー</h2>
+            <h1>梅澤 美帆</h1>
+            <h2>マーケティング部アシスタントマネージャー</h2>
             <div class="voice-senpai-content-2-table">
                 <div class="voice-senpai-content-2-row">
                     <div class="voice-senpai-content-2-cell-1">
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身地
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        神奈川県川崎市多摩区
-                    </div>                    
-                </div>
-                <div class="voice-senpai-content-2-row">
-                    <div class="voice-senpai-content-2-cell-1">
-                        <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身校
-                    </div>
-                    <div class="voice-senpai-content-2-cell-2">
-                        メディカルトレーナー専門学校/国立ホーチミン市ダンス学校
+                        青森県
                     </div>                    
                 </div>
                 <div class="voice-senpai-content-2-row">
@@ -350,7 +306,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>前職
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        Arabesque Dance Companyの唯一日本人のダンサー
+                       Poste Co., Ltd
                     </div>                    
                 </div>
                 <div class="voice-senpai-content-2-row">
@@ -358,7 +314,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>趣味
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        映画鑑賞、読書
+                        旅行、音楽鑑賞、読書
                     </div>                    
                 </div>  
                 <div class="voice-senpai-content-2-row">
@@ -366,7 +322,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>休日の過ごし方
                     </div>
                     <div class="voice-senpai-content-2-cell-2 last">
-                        日曜日の午前中はよさこいを日本語学校の生徒に教えています。
+                        家の近くのカフェで読書、旅行、バイクでお出かけ
                     </div>                    
                 </div>                                                              
             </div>
@@ -375,57 +331,46 @@ get_header();
                 <span>あなたの仕事内容を教えてください。</span>
             </p>
             <p>
-                いつまでも、ダンス業界に居るのも体力的に限界が来ていたので、何かベトナムで仕事は無いかなと探している時に、日本に居る私のダンスの先生と以前エボラブルアジアでラボマネージャーをされていた方が知り合いで、そこから縁がありまして、2013年の5月に入社することになりました。
+                社内の様々なプロジェクトの企画・運営、日本人社員採用のサポートやインターン生の受入などを行っています。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>エボラブルアジアに入社しようと思ったきっかけを教えてください。</span>
             </p>
             <p>
-                私の仕事は、ベトナム語が少し出来るのでコミュニケーターとして映像関係のラボにサポートとして入っています。日本側又は駐在のお客様から指示を受け、ベトナム人スタッフへ伝える仕事をしています。
+               もともとソル社長とは知り合いで、ソル社長のベトナムに対する想いを聞く機会がたくさんありました。その想いに共感し、是非一緒に働いてみたいと思ったことがきっかけです。またベトナム国内でもエボラブルアジアはとても名を馳せている企業だったので、なぜ成功しているのか興味がありました。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>エボラブルアジアで働く楽しさを教えてください。</span>
             </p>
             <p>
-                エボラブルアジアの皆はとてもよい子ばかりで頼もしいばかりです！ また、駐在員の方が居るラボも多いいので直接に指摘されたり、楽しい所だけでは無いですが、やりがいを持って働いています。
+                どんどん仕事を任せてもらえるので毎日とても充実しています。周りには様々な経験を持った方々が多くいるので、行き詰った時でもすぐアドバイスをくれる環境も自身の成長にはとても良い環境です！
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>ベトナムで働く楽しさを教えてください。</span>
             </p>
             <p>
-                ベトナムは特に今上り調子で発展盛りの国なので、とても活気に溢れています！バイクが走っている量が日本より多いせいでしょうか？ 働いた後の路上での一杯もまた、日本と違って格別です！
+                急成長している国というのが目に見えて分かります。皆の成長に負けないように自分も成長しなきゃと思える環境がベトナムにはあります！
             </p> 
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>未来に一緒に働く方達へ一言お願いします。</span>
             </p>
             <p>
-                一緒に会社の皆とコミュニケーションを取りながら、楽しい環境を作って、<br/>
-                スタッフそしてお客様が活動しやすい環境を作って行きましょう。
+                与えられた仕事だけやる、というのが性に合わないという方は是非エボラブルアジアへ！
             </p>                                               
         </div>        
     </div>
 
     <div class="row voice-senpai-content-2 center" id="anchor05">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_14.jpg" width="371" height="248" class="img-responsive">
-            <div class="voice-senpai-content-2-image">
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_15.jpg" width="178" height="119" class="img-responsive">
-                    <div><p>担当ラボのマネージャーと採用や今後について定期的に打ち合わせします</p></div>
-                </div>
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_16.jpg" width="176" height="119" class="img-responsive">
-                    <div><p>休日は旅行に行き、現地の子供と遊んだりしています。</p></div>
-                </div>
-            </div>            
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_14.jpg" width="371" height="371" class="img-responsive">            
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
             <h1>伊藤 淳史</h1>
-            <h2>開発サポートマネージャー</h2>
+            <h2>システム開発部マネージャー</h2>
             <div class="voice-senpai-content-2-table">
                 <div class="voice-senpai-content-2-row">
                     <div class="voice-senpai-content-2-cell-1">
@@ -433,14 +378,6 @@ get_header();
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
                         千葉県
-                    </div>                    
-                </div>
-                <div class="voice-senpai-content-2-row">
-                    <div class="voice-senpai-content-2-cell-1">
-                        <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身校
-                    </div>
-                    <div class="voice-senpai-content-2-cell-2">
-                        千葉工業大学
                     </div>                    
                 </div>
                 <div class="voice-senpai-content-2-row">
@@ -508,44 +445,28 @@ get_header();
 
     <div class="row voice-senpai-content-2 center" id="anchor06">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_17.jpg" width="371" height="248" class="img-responsive">
-            <div class="voice-senpai-content-2-image">
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_18.jpg" width="178" height="119" class="img-responsive">
-                    <div><p>ラボ運営がスムーズに行くようにサポートしています</p></div>
-                </div>
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_19.jpg" width="176" height="119" class="img-responsive">
-                    <div><p>ベトナム生活はとっても楽しいですよ！！</p></div>
-                </div>
-            </div>            
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_17.jpg" width="371" height="371" class="img-responsive">
+                        
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
-            <h1>隈 洋二郎</h1>
-            <h2>ラボマネージャー</h2>
+            <h1>大西 昌則</h1>
+            <h2>日本語教師</h2>
             <div class="voice-senpai-content-2-table">
                 <div class="voice-senpai-content-2-row">
                     <div class="voice-senpai-content-2-cell-1">
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身地
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        福岡
+                        大阪府
                     </div>                    
                 </div>
-                <div class="voice-senpai-content-2-row">
-                    <div class="voice-senpai-content-2-cell-1">
-                        <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身校
-                    </div>
-                    <div class="voice-senpai-content-2-cell-2">
-                        産能短大
-                    </div>                    
-                </div>
+                
                 <div class="voice-senpai-content-2-row">
                     <div class="voice-senpai-content-2-cell-1">
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>前職
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        メインフレームのSEを主に開発業務に従事してきましたが、直近の数年間はまったく別の業種にいました。
+                        小学校日本語サポーター
                     </div>                    
                 </div>
                 <div class="voice-senpai-content-2-row">
@@ -553,7 +474,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>趣味
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        マーケットや地元商店街にて、掘り出し物をみつけること。<br/>バイクツーリング。
+                        音楽鑑賞
                     </div>                    
                 </div>  
                 <div class="voice-senpai-content-2-row">
@@ -561,7 +482,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>休日の過ごし方
                     </div>
                     <div class="voice-senpai-content-2-cell-2 last">
-                        休み前、夜にしこたまビールを呑んで寝てます。
+                        バイクに乗る
                     </div>                    
                 </div>                                                              
             </div>
@@ -570,79 +491,64 @@ get_header();
                 <span>あなたの仕事内容を教えてください。</span>
             </p>
             <p>
-                お客様ラボの開設準備、スタート、運営、その後の成長拡大に伴うサポートを中心に、人材、設備等、作業環境に関する満足度の向上を目指し、問題が発生した場合の対応、お客様やラボメンバーが快適且つ効率的に業務を遂行できるような環境づくりを心がけています。また、駐在の方々の海外生活、ベトナム人との意思疎通といった、日本国内とは違った環境においても、業務に支障をきたすことのない様にアドバイスが出来るよう努力しています
+               社内向けの日本語教育やIT教育はもちろん、日本のIT企業へ人材を送り出すための日本語教育、対外向けのIT日本語能力試験などにも取り組んでいます。
+また、フェイスブックやブログからも日々発信を続けています。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>エボラブルアジアに入社しようと思ったきっかけを教えてください。</span>
             </p>
             <p>
-                シンガポール、マレーシアと東南アジアに長期間生活をしてきました。ベトナムにも短期にて訪問した経験があり、その時、ベトナムに強い関心を抱いていたので、エボラブルの話しがきた際、飛びつきました。
+               エボラブルアジアなら日本語教育以外にもさまざまな職種にチャレンジできると思ったからです。実際に赴任してからは、IT日本語教育や社内のブログ作成などに携わることができました。今後も新しいことに挑戦していきたいと考えています。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>エボラブルアジアで働く楽しさを教えてください。</span>
             </p>
             <p>
-                日本人、ベトナム人の文化、習慣の違い、各ラボによっても独自の雰囲気があるので、難しい面も多々ありますが、そのような状況を乗り越え、お互いわかり合えたときに充実感を感じます。多国籍企業ならではですね。
+                毎朝、ベトナム人スタッフや学生が私に元気な声で「先生、おはようございます！」と言ってくれます。気持ちのこもった挨拶をいただくと「今日も1日楽しく頑張ろう！」という気持ちになります。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>ベトナムで働く楽しさを教えてください。</span>
             </p>
             <p>
-                物価が安い、親日的、治安が良い。コロニアル建築、東南アジア的街の喧騒を感じつつも、一方では近代的ビルの建築など、成長のダイナミズムの中に身をおくのは自身のエネルギーも高まります。
+                仕事で失敗して落ち込むことがあっても、ベトナム人の気さくさや優しさに触れることで嫌なことも忘れることができます。大げさに聞こえるかもしれませんが、ベトナムに赴任してから一番感じていることです。
             </p> 
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>未来に一緒に働く方達へ一言お願いします。</span>
             </p>
             <p>
-                ベトナムと成長を共するエボラブルアジア。是非、一緒に成長パラダイムを加速させていきましょう！
+               べトナムにはまだまだビジネスチャンスが眠っています。エボラブルアジアで働きながら、そのチャンスを私たちと一緒に探してみませんか。
             </p>                                               
         </div>        
     </div>
 
     <div class="row voice-senpai-content-2 center" id="anchor07">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_20.jpg" width="371" height="248" class="img-responsive">
-            <div class="voice-senpai-content-2-image">
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_21.jpg" width="178" height="119" class="img-responsive">
-                    <div><p>勉強熱心な社員と朝7:00から授業しています。</p></div>
-                </div>
-                <div class="voice-senpai-content-2-image-item">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_22.jpg" width="176" height="119" class="img-responsive">
-                    <div><p>休日はベトナムの歴史ある場所を探索しています。</p></div>
-                </div>
-            </div>            
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_20.jpg" width="371" height="371" class="img-responsive">
+                       
         </div>
         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
-            <h1>清水 浩太</h1>
-            <h2>Japanese Lecture</h2>
+            <h1>浜田勇太</h1>
+            <h2>システム開発部マネージャー</h2>
             <div class="voice-senpai-content-2-table">
                 <div class="voice-senpai-content-2-row">
                     <div class="voice-senpai-content-2-cell-1">
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身地
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        和歌山県
+                        山口県宇部市
                     </div>                    
                 </div>
-                <div class="voice-senpai-content-2-row">
-                    <div class="voice-senpai-content-2-cell-1">
-                        <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身校
-                    </div>
-                    <div class="voice-senpai-content-2-cell-2">
-                        愛知大学
-                    </div>                    
-                </div>
+               
                 <div class="voice-senpai-content-2-row">
                     <div class="voice-senpai-content-2-cell-1">
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>前職
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        不動産仲介の営業
+                        ユーザー企業システム部門の社内SE
                     </div>                    
                 </div>
                 <div class="voice-senpai-content-2-row">
@@ -650,7 +556,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>趣味
                     </div>
                     <div class="voice-senpai-content-2-cell-2">
-                        野球、スキー(ベトナムではできませんが)、読書
+                        スカッシュ、カフェ巡り、将棋
                     </div>                    
                 </div>  
                 <div class="voice-senpai-content-2-row">
@@ -658,7 +564,7 @@ get_header();
                         <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>休日の過ごし方
                     </div>
                     <div class="voice-senpai-content-2-cell-2 last">
-                        日本人学校の小中学生に野球を教えたり、<br/>ローカルのお店で友達と飲んだりすることが多いです。
+                        運動、友人とカフェ、ショッピング、ホーチミン散策
                     </div>                    
                 </div>                                                              
             </div>
@@ -667,35 +573,41 @@ get_header();
                 <span>あなたの仕事内容を教えてください。</span>
             </p>
             <p>
-                ベトナム人スタッフに日本語を教えています。主に日本語能力試験のN1、N2の対策を行っており、毎朝早くからみんなで勉強しています。日本語能力試験が終わるとビジネスマナーの教室も行っております。名刺の渡し方や商談や車での座る位置など。また難しい敬語表現の勉強をしています。今後はIT日本語教室や通訳の為の教室も行っていく予定です。
+               主に社内システムの企画・開発・運用を担当しています。
+また、新事業の企画・実行・資料作成、他部署の業務サポート等の様々な業務を行っています。
+常に新しい事にチャレンジできるのことので大変な事もありますが、やりがいもとてもあります。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>エボラブルアジアに入社しようと思ったきっかけを教えてください。</span>
             </p>
             <p>
-                もともとグループ会社のSOLTEC VIETNAMに所属しており、EVOLABLE立ち上げの頃に出張ベースで中上級者と初級の従業員に日本語を教えていました。それがきっかけでオフィスが移転してからも続けています。
+                ベトナム、IT系ベンチャーで働くことに強い関心を抱いていた時、エボラブルアジアに出会いました。
+その時に、お話を聞いて自分のスキルを活かして会社の発展に貢献でき、スキルアップにも繋がると感じたのがきっかけです。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>エボラブルアジアで働く楽しさを教えてください。</span>
             </p>
             <p>
-                お客様の業種業態が幅広い為、たくさんの業界のお話が聴けてとても刺激的で勉強になります。幼児向けの知育アプリの開発やられているお客様もいれば不動産関係のお客様もいらっしゃいます。そんなお客様と公私共にお付き合いさせて頂けるところが楽しいところです。
+                ベトナム人・日本人の社員の方々が、とってもフレンドリーなので普段から一緒に仕事をすることが楽しいです。
+文化の違いで戸惑うこともありますが、そこをお互いに理解し業務の質が向上した時はもっと楽しいです。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>ベトナムで働く楽しさを教えてください。</span>
             </p>
             <p>
-                教えていて思う事はベトナムの人はとても素直で純粋です。一生懸命勉強する姿勢をみて、その手助けができていることに生きがいを感じます。
+               発展途上国ならではのハングリー精神旺盛な同世代と共に成長して行くことができることです。
+服装が基本夏服なのは楽なので、私にとっては楽しく働けています。
             </p> 
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>未来に一緒に働く方達へ一言お願いします。</span>
             </p>
             <p>
-                ベトナム人スタッフはもちろん日本人スタッフもとてもフレンドリーです。色んな経歴の人や今とは全く異業種を経歴に持つ人たちばかりです。日々、たくさんのことが知れて勉強になります。
+                ベトナム、エボラブルアジアは、新しいチャレンジができる場所です!
+一緒にベトナム、エボラブルアジアをさらに盛り上げませんか？
             </p>                                               
         </div>        
     </div>                    

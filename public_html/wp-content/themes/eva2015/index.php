@@ -395,7 +395,7 @@ if ($available_new == 1) {
                             }
                         }
                         ?>
-                        <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
+                        <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time2; ?>s">
                             <a class="news-hover" href="<?php the_permalink() ?>">
                                 <img src="<?php echo get_field('image') ?>" alt="" style="width:100%; height:auto;">
                                 <div class="caption-eva" ></div>
@@ -430,7 +430,6 @@ if ($available_new == 1) {
 ?>
 <!--//News End-->
 <!--//Blog-->
-<!--
 <?php
 $available_blog = get_blog_div();
 if ($available_blog == 1) {
@@ -481,9 +480,7 @@ if ($available_blog == 1) {
     <?php
 }
 ?>
--->
 <!--//Blog End-->
-
 
 <div class="container-fluid block-center vff-bg">
     <div class="container">

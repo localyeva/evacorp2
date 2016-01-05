@@ -8,11 +8,7 @@ get_header();
 ?>
 <section id="greeting-profile">
     <div class="head-banner-wrap red">
-        <div class="container text-center">
-            <div class="col-md-12">
                 <h2>代表挨拶</h2>
-            </div>
-        </div>
     </div>     
     <div class="row-gap-medium"></div>
     <div class="container-fluid">

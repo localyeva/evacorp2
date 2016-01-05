@@ -42,11 +42,7 @@ get_header();
 
 <section>
     <div class="head-banner-wrap red">
-        <div class="container text-center">
-            <div class="col-md-12">
                 <h2>お問い合わせ</h2>
-            </div>
-        </div>
     </div>
 
     <div class="container contact">

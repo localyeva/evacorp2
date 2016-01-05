@@ -8,11 +8,7 @@ get_header();
 ?>
 <div id="company-profile">
     <div class="head-banner-wrap blue">
-        <div class="container text-center">
-            <div class="col-md-12">
                 <h2>会社概要</h2>
-            </div>
-        </div>
     </div>
     <div class="container-fluid">
         <div class="container">

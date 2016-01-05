@@ -8,11 +8,7 @@ get_header();
 ?>
 <div id="labo">
     <div class="head-banner-wrap pink">
-        <div class="container text-center">
-            <div class="col-md-12">
                 <h2>ラボ型オフショア開発</h2>
-            </div>
-        </div>
     </div>     
     <div class="row-gap-medium"></div>
     <div class="container-fluid">

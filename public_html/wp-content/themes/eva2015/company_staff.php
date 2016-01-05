@@ -9,11 +9,7 @@ get_header();
 
 <div id="company-staff">
     <div class="head-banner-wrap blue">
-        <div class="container text-center">
-            <div class="col-md-12">
                 <h2>スタッフ紹介</h2>
-            </div>
-        </div>
     </div>
     <div class="row-gap-medium"></div>
     <div class="container-fluid">

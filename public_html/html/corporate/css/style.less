@@ -89,7 +89,7 @@
                 }
             }
         }
-    }
+    }    
 }
 
 @media screen and (max-width : 460px) {
@@ -173,36 +173,36 @@
             }
         }
         .block-3 h3 {
-            font-size: @sp-sub-title-font-size !important;
+            font-size: @sp-sub-sub-title-font-size !important;
         }
         .block-4 h1, .block-7 h1 {
-            font-size: @sp-title-font-size !important;
+            font-size: @sp-sub-title-font-size !important;
         }
         .block-5 h2 {
-            font-size: @sp-title-font-size !important;
+            font-size: @sp-sub-title-font-size !important;
         }
         .block-6 {
             h3{
-                font-size: @sp-sub-title-font-size !important;
+                font-size: @sp-sub-sub-title-font-size !important;
             }
             h1{
-                font-size: @sp-title-font-size !important;
+                font-size: @sp-sub-title-font-size !important;
             }
         }
         .block-8{
             .headline{
                 h2{
-                    font-size: @sp-sub-title-font-size !important;
+                    font-size: @sp-sub-sub-title-font-size !important;
                 }
             }
         }
         .last-block {            
             h3{
-                font-size: @sp-sub-title-font-size !important;
+                font-size: @sp-sub-sub-title-font-size !important;
             }
         }
     }
-    
+
     #reason-profile{
         .reason-why-1{
             .text-2, .text-3 {
@@ -1858,12 +1858,10 @@ h1 {
     }
     .bpo-1{
         .text-1{
-            font-size: @sub-title-font-size;
             font-weight: bold;
             color: #1C1C1C;
         }
         .text-2{
-            font-size: @title-font-size;
             font-weight: bold;
             color: #1C1C1C;
         }
@@ -1895,19 +1893,16 @@ h1 {
 
     .bpo-3{
         .text-1{
-            font-size: 18px;
             font-weight: bold;
             font-style: italic;
             color: #B0B0B0;
         }
         .text-2{
-            font-size: 18px;
             font-weight: bold;
             color: #202020;
             padding-left: 15px;
         }
         .text-3{
-            font-size: 30px;
             font-weight: bold;
             color: #202020;
         }
@@ -1925,9 +1920,6 @@ h1 {
             border-width: 1px 1px 1px 5px;
             margin-top: 85px;
             padding: 1px;
-            .text-2{
-                font-size: @sub-title-font-size;
-            }
         }
         .img-1{
             padding-top: 30px;
@@ -2397,7 +2389,57 @@ nav.navigation {
         max-width: 100%;
     }
 }
-
+@media (min-width: 320px){
+    #bpo-profile{
+        .bpo-1{
+            .text-1{
+                font-size: @sp-sub-title-font-size;
+            }
+            .text-2{
+                font-size: @sp-title-font-size;
+            }
+        }  
+        .bpo-3{
+            .text-1{
+                font-size: 14px;
+            }
+          
+            .text-3{
+                font-size: 20px;
+            }
+            .bs-callout{        
+                .text-2{
+                   font-size: 18px; 
+                }
+            }    
+        }
+    }
+}
+@media (min-width: 768px){
+    #bpo-profile{
+        .bpo-1{
+            .text-1{
+                font-size: 16px;
+            }
+            .text-2{
+                font-size: 20px;
+            }
+        } 
+        .bpo-3{
+            .text-1{
+                font-size: 18px;
+            }
+            .bs-callout{        
+                .text-2{
+                    font-size: 25px;
+                }
+            }              
+            .text-3{
+                font-size: 30px;
+            }
+        }           
+    }    
+}
 @import "define-style.less";
 @import "service-page.less";
 @import "hau-style.less";

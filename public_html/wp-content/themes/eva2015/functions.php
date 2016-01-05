@@ -6,16 +6,14 @@
  * 
  */
 
-include_once (dirname(__FILE__) . '/MyFunctions.php');
-include_once (dirname(__FILE__) . '/MyTheme_Customize.php');
-include_once(dirname(__FILE__) . '/cpt_acf_definitions.php');
-include_once(dirname(__FILE__) . '/my-company-taxonomy-custom.php');
+include_once(dirname(__FILE__) . '/lib/includes/MyFunctions.php');
+include_once(dirname(__FILE__) . '/lib/includes/MyTheme_Customize.php');
+include_once(dirname(__FILE__) . '/lib/includes/cpt_acf_definitions.php');
+include_once(dirname(__FILE__) . '/lib/includes/my-company-taxonomy-custom.php');
 
 //@ini_set('upload_max_size', '64M');
 //@ini_set('post_max_size', '64M');
 //@ini_set('max_execution_time', '300');
-
-
 // アイキャッチ画像作成
 add_theme_support('post-thumbnails');
 
@@ -47,14 +45,15 @@ add_image_size('staff03', 224, 328, true);
 add_image_size('staff04', 101, 101, true);
 
 /* --------------------------------------------------------------------- */
+
 function get_taxonomy_info($post_id) {
     global $evacorp_settings;
-    
+
     $term = get_the_terms($post_id, 'company-tax');
     $t_id = $term[0]->term_id;
     $tax_info = array();
-            
-    foreach ($evacorp_settings as $field => $data){
+
+    foreach ($evacorp_settings as $field => $data) {
         $key = $data['id'];
         $tax_id = $key . '-' . $t_id;
         $tax_meta = 'evacorp_' . $tax_id;
@@ -62,9 +61,10 @@ function get_taxonomy_info($post_id) {
         $info = get_option($tax_meta);
         $tax_info[$key] = stripcslashes($info[$tax_id]);
     }
-    
-    return $tax_info['google-map']?$tax_info['google-map']:'';
+
+    return $tax_info['google-map'] ? $tax_info['google-map'] : '';
 }
+
 /* --------------------------------------------------------------------- */
 
 /* --------------------------------------------------------------------- Init */

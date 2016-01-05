@@ -285,7 +285,7 @@
                 }
                 .mess-text{
                     white-space: normal !important;
-                    font-size: 8px !important;
+                    font-size: 8px !important;                    
                 }
             }
         }
@@ -1177,6 +1177,12 @@ h1 {
                 border-width: 2px;
                 border-color: #E7167B;
                 padding: 10px 50px 10px 20px;
+                span{
+                    &::after{
+                        content: ">";
+                        padding-left: 5px;
+                    }
+                }
             }
         }
     }

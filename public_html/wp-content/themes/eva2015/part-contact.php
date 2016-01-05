@@ -20,7 +20,7 @@
                         </div>
                         <div class="col-xs-12 col-md-6 center-block mess">
                             <a href="<?php echo bloginfo('url') ?>/contact">
-                                <div class="mess-text"><img src="<?php echo get_template_directory_uri() ?>/img/43.png" alt="" class="img-responsive mess-img">Webからのご相談はこちら ></div>
+                                <div class="mess-text"><img src="<?php echo get_template_directory_uri() ?>/img/43.png" alt="" class="img-responsive mess-img"><span>Webからのご相談はこちら</span></div>
                             </a>
                         </div>
                     </div>

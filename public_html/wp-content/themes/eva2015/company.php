@@ -44,10 +44,10 @@ get_header();
                     $num_posts = count($loop->posts);
                     ?>
                     <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                        <div class="col-xs-12 col-md-4 no-padding-lr evol">
-                            <div class="round1">
+                        <div class="col-xs-12 col-md-4 evol">
+                            <div class="round1 center-block">
                                 <a href="<?php echo bloginfo('url') . '/' . get_field('link'); ?>">
-                                    <img src="<?php echo get_field('image') ?>" alt="">
+                                    <img class="img-responsive" src="<?php echo get_field('image') ?>" alt="<?php the_title()  ?>">
                                     <div class="footer-his">
                                         <span class="title-about"><?php the_title() ?></span></br></br>
                                         <span class="content-about"><?php echo get_field('description') ?></span>
@@ -55,7 +55,7 @@ get_header();
                                 </a>
                                 <div id="triangle"></div>
                             </div>
-                            <div class="row-gap-huge"></div>
+                            <div class="row-gap-medium"></div>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>

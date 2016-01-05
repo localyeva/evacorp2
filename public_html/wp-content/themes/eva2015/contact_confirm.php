@@ -66,9 +66,7 @@ if (isset($_POST['submit'])) {
         'content' => $_SESSION['contact']['content'],
     );
 
-    $plugins_url = dirname( __FILE__ );
-    $url = str_replace('themes/eva2015', 'plugins', $plugins_url);
-    require_once $url . '/jobs-management/lib/includes/Twig/Autoloader.php';
+    require_once 'lib/Twig/Autoloader.php';
     Twig_Autoloader::register();
 
     $loader = new Twig_Loader_String;

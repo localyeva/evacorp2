@@ -14,9 +14,10 @@
                     <did class="row">
                         <div class="col-xs-6 col-md-6 no-padding-lr left phone">
                             <div class="container">
+                                <span>お電話からのご相談はこちら</span>
                                 <img src="<?php echo get_template_directory_uri() ?>/img/42.png" alt="" class="img-responsive phone-img">
                                 <span class="phone-text">(+84)8-3911-1489</span>
-                                <span class="detail-text">お電話は日本人スタッフが対応します。</span>
+                                <span class="detail-text">※日本語にて対応可能です。</span>
                                 <span class="detail-line"></span>
                             </div>
                         </div>

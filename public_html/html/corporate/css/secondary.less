@@ -32,11 +32,9 @@
         .secondary-1-1{
             margin-top:30px;
             .text-1{
-                font-size: 33px;
                 color: #000;
             }
             .text-2{
-                font-size: 33px;
                 color: #47ac36;
             }
         }
@@ -97,7 +95,6 @@
                 text-align:center;
                 color: #000;
                 letter-spacing: 3px;
-                font-size:22px;
                 line-height:40px;
                 span{
                     border-bottom:solid 2px #47ac36;
@@ -123,7 +120,6 @@
                     margin-top:30px;
                     a{
                         color:#47ac36;
-                        font-size:14px;
                         padding: 15px 10px 15px 17px;
                         background:#fff;
                         border:solid 2px #47ac36;
@@ -217,7 +213,6 @@
                 margin-top:30px;
                 a{
                     color:#47ac36;
-                    font-size:14px;
                     padding:15px 40px 15px 60px;
                     background:#fff;
                     border:solid 2px #47ac36;
@@ -256,6 +251,9 @@
     .secondary-1{
         .secondary-1-1{
             text-align:center;
+            .text-1,.text-2{
+                font-size:@sp-sub-title-font-size;
+            }
         }
     }
     .secondary-3{
@@ -265,6 +263,21 @@
             }
         }
     }
+    .secondary-4{
+        .secondary-4-1{
+            p{
+                font-size:15px;
+            }
+            .secondary-4-1-1{
+                .secondary4-link{
+                    a{
+                        font-size:10px;
+                    }
+
+                }
+            }            
+        }
+    }    
     .secondary-5{
         p{
             font-size:17px;
@@ -286,11 +299,23 @@
             }
         }
     }
+    .secondary-8{
+        .secondary-8-1{
+            .secondary8-link{
+                a{
+                    font-size:10px;
+                }
+            }
+        }
+    }    
 }
 @media (min-width: 768px){
     .secondary-1{
         .secondary-1-1{
             text-align:left;
+            .text-1,.text-2{
+                font-size:@title-font-size;
+            }            
         }
     }
     .secondary-3{
@@ -300,6 +325,21 @@
             }
         }
     }
+    .secondary-4{
+        .secondary-4-1{
+            p{
+                font-size:20px;
+            }
+            .secondary-4-1-1{
+                .secondary4-link{
+                    a{
+                        font-size:14px;
+                    }
+
+                }
+            }             
+        }
+    }    
     .secondary-5{
         p{
             font-size:25px;
@@ -321,6 +361,15 @@
             }
         }
     }
+    .secondary-8{
+        .secondary-8-1{
+            .secondary8-link{
+                a{
+                    font-size:14px;
+                }
+            }
+        }
+    }      
 }
 
 @media (min-width: 1280px){

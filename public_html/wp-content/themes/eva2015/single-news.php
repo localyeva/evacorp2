@@ -25,11 +25,9 @@ if (!empty($next_post)) {
 ?>
 <div id="news">
     <div class="head-banner-wrap yellow">
-        <div class="container text-center">
-            <div class="col-md-12">
+
                 <h2><?php echo $post_type->label; ?></h2>
-            </div>
-        </div>
+
     </div>     
     <div class="row-gap-medium"></div>
     <?php custom_breadcrumbs('news'); ?>

@@ -9,11 +9,7 @@ get_header();
 ?>
 <section id="bpo-profile">
     <div class="head-banner-wrap yellow">
-        <div class="container text-center">
-            <div class="col-md-12">
                 <h2>BPO</h2>
-            </div>
-        </div>
     </div>
     <div class="row-gap-medium"></div>
     <div class="container-fluid">

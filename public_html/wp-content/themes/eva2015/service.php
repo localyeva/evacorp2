@@ -10,11 +10,7 @@ get_header();
 
 <div class="page-wrap">
     <div class="head-banner-wrap blue">
-        <div class="container text-center">
-            <div class="col-md-12">
                 <h2>サービス</h2>
-            </div>
-        </div>
     </div>
     <div class="container service-info">
 

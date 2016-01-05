@@ -96,7 +96,7 @@
                         <li><a href="<?php echo bloginfo('url') ?>/job"><span class="text-above-line">仕事内容</span><br/><span class="text-below-line">job description</span></a></li>
                         <li><a href="<?php echo bloginfo('url') ?>/requirements"><span class="text-above-line">募集要項</span><br/><span class="text-below-line">requiremants</span></a></li>
                         <li><a href="<?php echo bloginfo('url') ?>/faq"><span class="text-above-line">よくある質問</span><br/><span class="text-below-line">faq</span></a></li>                                                
-                        <li><a href="<?php echo bloginfo('url') ?>/contact"><span class="text-above-line">代表の想い</span><br/><span class="text-below-line">contact</span></a></li>                        
+                        <li><a href="<?php echo bloginfo('url') ?>/contact"><span class="text-above-line">応募フォーム</span><br/><span class="text-below-line">contact</span></a></li>                        
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </nav> 

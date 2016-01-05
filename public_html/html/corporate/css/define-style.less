@@ -57,10 +57,24 @@ input::-moz-focus-inner {
     h2{
         color: #fff;
         font-weight: bold;
-        text-align: center;
-        width: 100%;
-        display: block;
-        padding: 1.8em;
-        font-size:@title-font-size;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align:center;        
+    }
+}
+@media (min-width: 320px){
+    .head-banner-wrap{
+        h2{
+            font-size:@sp-sub-title-font-size;        
+        }
+    }
+}
+@media (min-width: 768px){
+    .head-banner-wrap{
+        h2{
+            font-size:@title-font-size;        
+        }
     }
 }

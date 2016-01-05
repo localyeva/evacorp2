@@ -9,12 +9,8 @@ $post_type = get_post_type_object('news');
 $default_img = get_template_directory_uri() . '/img/default-img.jpg';
 ?>
 <div id="news">
-    <div class="head-banner-wrap yellow">
-        <div class="container text-center">
-            <div class="col-md-12">
+    <div class="head-banner-wrap yellow">>
                 <h2><?php echo $post_type->label; ?></h2>
-            </div>
-        </div>
     </div> 
     <div class="row-gap-medium"></div>
     <?php custom_breadcrumbs('news'); ?>

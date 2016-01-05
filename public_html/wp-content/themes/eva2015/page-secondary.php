@@ -9,11 +9,7 @@ get_header();
 
 <div id="secondary">
     <div class="head-banner-wrap green">
-        <div class="container text-center">
-            <div class="col-md-12">
                 <h2>ゲームセカンダリープラン</h2>
-            </div>
-        </div>
     </div>   		
 	<div class="row-gap-medium"></div>
 	<div class="container-fluid">

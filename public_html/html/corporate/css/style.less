@@ -67,7 +67,7 @@
                 }
             }
         }
-    }    
+    }
 }
 
 @media screen and (max-width : 460px) {
@@ -285,7 +285,7 @@
                 }
                 .mess-text{
                     white-space: normal !important;
-                    font-size: 12px !important;                    
+                    font-size: 12px !important;
                 }
             }
         }
@@ -1131,7 +1131,7 @@ h1 {
             .phone-text{
                 display: inline-block;
                 font-size: 33px;
-                font-weight: 500;               
+                font-weight: 500;
                 color: #E11B73;
                 white-space: nowrap;
             }
@@ -1177,7 +1177,7 @@ h1 {
                 border-width: 2px;
                 border-color: #E7167B;
                 padding: 10px 20px;
-                margin: 25px auto;                    
+                margin: 25px auto;
                 span{
                     &::after{
                         content: ">";
@@ -2073,6 +2073,7 @@ h1 {
                 border-bottom: solid 1px #000000;
                 padding: 10px 0;
                 font-size: 1em;
+                min-height: 200px;
                 a {
                     display: block;
                     width: 100%;
@@ -2096,6 +2097,7 @@ h1 {
                 }
                 img {
                     width: 60%;
+                    display: initial;
                 }
             }
             .prev-post {
@@ -2103,7 +2105,13 @@ h1 {
                     text-align: right;
                 }
                 .prev {
+                    float: left;
                     margin-right: 10px;
+                    position: relative;
+                    top: 50%;
+                    -ms-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
                     &:before {
                         color: #b8b8b8;
                         content: "\e257";
@@ -2121,6 +2129,12 @@ h1 {
                     text-align: left;
                 }
                 .next {
+                    position: relative;
+                    top: 50%;
+                    -ms-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    float: right;
                     margin-left: 10px;
                     &:after {
                         color: #b8b8b8;
@@ -2342,20 +2356,20 @@ nav.navigation {
             .text-2{
                 font-size: @sp-title-font-size;
             }
-        }  
+        }
         .bpo-3{
             .text-1{
                 font-size: 14px;
             }
-          
+
             .text-3{
                 font-size: 20px;
             }
-            .bs-callout{        
+            .bs-callout{
                 .text-2{
-                   font-size: 18px; 
+                   font-size: 18px;
                 }
-            }    
+            }
         }
     }
     #vff{
@@ -2364,7 +2378,7 @@ nav.navigation {
         }
         .vff-sub{
             font-size: @sp-sub-sub-title-font-size;
-        }   
+        }
         .vff-content{
             h2{
                 font-size: @sp-sub-sub-title-font-size;
@@ -2384,28 +2398,28 @@ nav.navigation {
             .text-2{
                 font-size: 20px;
             }
-        } 
+        }
         .bpo-3{
             .text-1{
                 font-size: 18px;
             }
-            .bs-callout{        
+            .bs-callout{
                 .text-2{
                     font-size: 25px;
                 }
-            }              
+            }
             .text-3{
                 font-size: 30px;
             }
-        }           
-    }   
+        }
+    }
     #vff{
         .vff-title{
             font-size: @title-font-size;
         }
         .vff-sub{
             font-size: @sub-title-font-size;
-        }   
+        }
         .vff-content{
             h2{
                 font-size: @title-font-size;
@@ -2413,8 +2427,8 @@ nav.navigation {
             h3{
                 font-size:@sub-sub-title-font-size;
             }
-        }         
-    }     
+        }
+    }
 }
 @import "define-style.less";
 @import "service-page.less";

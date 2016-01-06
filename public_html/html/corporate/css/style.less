@@ -314,56 +314,6 @@
     }
 }
 
-/*@media screen and (max-width : 800px) {
-    .header-contact .header-circle-contact{
-        .contact-info{
-            font-size: 17px !important;
-            padding-top: 30px !important;
-        }
-        .footer-contact{
-            height: 110px !important;
-            .phone{
-                .phone-text{
-                    font-size: 25px !important;
-                    top: 23% !important;
-                    left: 48% !important;
-                }
-                .phone-img{
-                    left: 0% !important;
-                    padding-top: 5% !important;
-                }
-                .detail-text{
-                    top: 33% !important;
-                    left: 7% !important;
-                    font-size: 14px !important;
-                }
-                .detail-line{
-                    height: 68px !important;
-                }
-            }
-            .mess{
-                height: 110px !important;
-                .mess-img{
-                    top: 14% !important;
-                    left: 6% !important;
-                    width: 12% !important;
-                }
-                .mess-text{
-                    white-space: normal !important;
-                    top: 22% !important;
-                    left: 19% !important;
-                    font-size: 16px !important;
-                }
-                .mess-border{
-                    height: 37% !important;
-                    width: 98% !important;
-                    top: 12% !important;
-                    left:4% !important;
-                }
-            }
-        }
-    }
-}*/
 @media screen and (min-width : 460px) {
     .menu-footer-mobi{
         display: none;
@@ -2093,7 +2043,6 @@ h1 {
                     padding-top: 10px;
                     border-top: solid 1px @light-grey;
                     font-size: 1.2em;
-                    height: 55px;
                 }
                 img {
                     width: 60%;
@@ -2105,7 +2054,7 @@ h1 {
                     text-align: right;
                 }
                 .prev {
-                    float: left;
+                    /* float: left; */
                     margin-right: 10px;
                     position: relative;
                     top: 50%;
@@ -2122,6 +2071,9 @@ h1 {
                         position: relative;
                         top: 2px;
                     }
+                    &.ss {
+                        display: none;
+                    }
                 }
             }
             .next-post {
@@ -2134,7 +2086,7 @@ h1 {
                     -ms-transform: translateY(-50%);
                     -webkit-transform: translateY(-50%);
                     transform: translateY(-50%);
-                    float: right;
+                    /* float: right; */
                     margin-left: 10px;
                     &:after {
                         color: #b8b8b8;
@@ -2444,6 +2396,28 @@ div.box_txt{
         }
     }
 }
+
+@media screen and (max-width : 800px) {
+    .post-navigation {
+        .prev-post {
+            img {
+                width: 100% !important;
+            }
+            .prev {
+                display: none;
+                &.ss {
+                    display: inline !important;
+                }
+            }
+        }
+        .next-post {
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
 @import "define-style.less";
 @import "service-page.less";
 @import "hau-style.less";

@@ -314,56 +314,6 @@
     }
 }
 
-/*@media screen and (max-width : 800px) {
-    .header-contact .header-circle-contact{
-        .contact-info{
-            font-size: 17px !important;
-            padding-top: 30px !important;
-        }
-        .footer-contact{
-            height: 110px !important;
-            .phone{
-                .phone-text{
-                    font-size: 25px !important;
-                    top: 23% !important;
-                    left: 48% !important;
-                }
-                .phone-img{
-                    left: 0% !important;
-                    padding-top: 5% !important;
-                }
-                .detail-text{
-                    top: 33% !important;
-                    left: 7% !important;
-                    font-size: 14px !important;
-                }
-                .detail-line{
-                    height: 68px !important;
-                }
-            }
-            .mess{
-                height: 110px !important;
-                .mess-img{
-                    top: 14% !important;
-                    left: 6% !important;
-                    width: 12% !important;
-                }
-                .mess-text{
-                    white-space: normal !important;
-                    top: 22% !important;
-                    left: 19% !important;
-                    font-size: 16px !important;
-                }
-                .mess-border{
-                    height: 37% !important;
-                    width: 98% !important;
-                    top: 12% !important;
-                    left:4% !important;
-                }
-            }
-        }
-    }
-}*/
 @media screen and (min-width : 460px) {
     .menu-footer-mobi{
         display: none;
@@ -1983,7 +1933,6 @@ h1 {
     .content {
         .item {
             margin-bottom: 30px;
-            height: 200px;
             img {
                 width: 100%;
                 height: 100%;
@@ -1993,7 +1942,7 @@ h1 {
                 display: block;
                 .info {
                     padding: 15px 0;
-                    height: 45%;
+                    height: 65%;
                 }
             }
             .info {
@@ -2049,7 +1998,7 @@ h1 {
                     bottom: 15px;
                     &.title {
                         width: 100%;
-                        height: 45px;
+                        height: 50%;
                         margin-left: -15px;
                         padding: 0 30px;
                         overflow: hidden;
@@ -2093,7 +2042,6 @@ h1 {
                     padding-top: 10px;
                     border-top: solid 1px @light-grey;
                     font-size: 1.2em;
-                    height: 55px;
                 }
                 img {
                     width: 60%;
@@ -2105,7 +2053,7 @@ h1 {
                     text-align: right;
                 }
                 .prev {
-                    float: left;
+                    /* float: left; */
                     margin-right: 10px;
                     position: relative;
                     top: 50%;
@@ -2122,6 +2070,9 @@ h1 {
                         position: relative;
                         top: 2px;
                     }
+                    &.ss {
+                        display: none;
+                    }
                 }
             }
             .next-post {
@@ -2134,7 +2085,7 @@ h1 {
                     -ms-transform: translateY(-50%);
                     -webkit-transform: translateY(-50%);
                     transform: translateY(-50%);
-                    float: right;
+                    /* float: right; */
                     margin-left: 10px;
                     &:after {
                         color: #b8b8b8;
@@ -2444,6 +2395,144 @@ div.box_txt{
         }
     }
 }
+
+/* Masonry container */
+.masonry {
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-gap: 0;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+    /* Masonry bricks or child elements */
+    .item {
+        background: #fff;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .masonry {
+        -moz-column-gap: 0;
+        -webkit-column-gap: 0;
+        column-gap: 0;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .masonry {
+        column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .masonry {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+    }
+    #news {
+        .content {
+            .masonry {
+                .item {
+                    > a {
+                        > .info {
+                            height: 45%;
+                            * {
+                                font-size: 1.2em;
+                            }
+                            h3 {
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #news {
+        .content {
+            .masonry {
+                .item {
+                    > a {
+                        > .info {
+                            height: 55%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #news {
+        .content {
+            .masonry {
+                .item {
+                    > a {
+                        > .info {
+                            height: 65%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #news {
+        .content {
+            .masonry {
+                .item {
+                    > a {
+                        > .info {
+                            height: 70%;
+                            * {
+                                font-size: 0.9em;
+                            }
+                            h3 {
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .post-navigation {
+        .prev-post {
+            img {
+                width: 100% !important;
+            }
+            .prev {
+                display: none;
+                &.ss {
+                    display: inline !important;
+                }
+            }
+        }
+        .next-post {
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
 @import "define-style.less";
 @import "service-page.less";
 @import "hau-style.less";

@@ -75,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-            </div>		
+            </div>
 
             <div class="col-xs-12 col-md-6 hidden-xs">
                 <div class="row">
@@ -146,6 +146,7 @@
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery-ui.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery.heightLine.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/jquery.sidr.min.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/js/masonry.pkgd.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/wow.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/parallax/parallax.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>

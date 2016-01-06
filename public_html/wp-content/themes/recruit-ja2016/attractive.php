@@ -222,7 +222,8 @@ get_header();
         </div>  
         <div class="row-gap-medium"></div>
         <p>
-            弊社には稟議書という制度がありません。
+            自ら考え、自発的に動ける人材にチャンスを与えています。<br/>
+そのチャンスをつかめるかはあなた次第です！
         </p>     
     </div>  
     <div class="row-gap-medium"></div>

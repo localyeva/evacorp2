@@ -1503,6 +1503,13 @@ h1 {
         .img-reason-1{
             padding-left: 22%;
         }
+        .line-bottom{
+            border-bottom:10px solid #F1CFF0;
+            padding:0 30px;
+        }
+        .chart{
+            margin-top:20px;
+        }
     }
     .reason-why-2{
         background: url('../img/4-grid.png') repeat;
@@ -1576,13 +1583,6 @@ h1 {
             border: 2px solid #AE16A7;
             padding: 10px;
             position: relative;
-        }
-        .glyphicon-menu-right{
-            font-size: @sub-sub-title-font-size;//1.286em @sub-sub-title-font-size;
-            padding-top: 10px;
-            float: right;
-            color: #AB17A1;
-            position: absolute;
         }
         .gap-big{
             padding-bottom: 280px;
@@ -1672,12 +1672,6 @@ h1 {
             border: 2px solid #AE16A7;
             padding: 10px;
             position: relative;
-        }
-        .glyphicon-menu-right{
-            font-size: @sub-sub-title-font-size;
-            padding-top: 10px;
-            color: #AB17A1;
-            position: absolute;
         }
         .gap-big{
             padding-bottom: 280px;
@@ -2532,7 +2526,47 @@ div.box_txt{
         }
     }
 }
-
+@media screen and (min-width : 320px) {
+    #reason-profile{
+        .reason-why-3,.reason-why-5{
+            .why-3-link{
+                font-size:11px;
+                color:#AB17A1;
+                border: 2px solid #AE16A7;
+                padding:6px;
+                .glyphicon-menu-right{
+                    padding-right:6px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width : 768px) {
+    #reason-profile{
+        .reason-why-5{
+            .why-3-link{
+                color:#AB17A1;
+                border: 2px solid #AE16A7;
+                padding:10px;
+                font-size:14px;
+                    .glyphicon-menu-right{
+                    padding-right:10px;
+                }
+            }
+        }  
+        .reason-why-3{
+            .why-3-link{
+                color:#AB17A1;
+                border: 2px solid #AE16A7;
+                padding:10px;
+                font-size:18px;
+                    .glyphicon-menu-right{
+                    padding-right:10px;
+                }
+            }
+        }            
+    }
+}
 @import "define-style.less";
 @import "service-page.less";
 @import "hau-style.less";

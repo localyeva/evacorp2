@@ -10,7 +10,7 @@ get_header();
 <?php
 $args = array(
     'post_type' => 'home-slider',
-    'posts_per_page' => -1,
+    'posts_per_page' => 1,
     'orderby' => array('date' => 'DESC'),
 );
 $loop = new WP_Query($args);

@@ -49,9 +49,8 @@ get_header();
                                 <div class="col-xs-12 col-md-12 no-padding-lr left" style="text-align: center;"><span class="text-4">ベトナムでの2012年3月の設立から3年で500名まで拡大。<br /></span><span class="text-4">今では東南アジア地域で日系最大規模のラボ型開発企業に成長し、更に人員環境の整備を行っています。</span>
                                 </div>
                                 <div class="gap-medium"> </div>
-                                <div class="col-xs-12 col-md-12 no-padding-lr text-center"><span class="text-5">Evolable Asiaの要員数</span>
-                                    <div class="drop-line-bottom center-block"> </div>
-                                    <p><img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/47.jpg" alt="" />
+                                <div class="col-xs-12 col-md-12 no-padding-lr text-center"><span class="text-5 line-bottom">Evolable Asiaの要員数</span>
+                                    <p class="chart"><img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/47.jpg" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -155,15 +154,8 @@ get_header();
                             </div>
                             <div class="row-gap-big"> </div>
                             <div class="row">
-                                <div class="col-xs-12 col-md-12 no-padding-lr">
-                                    <div class="text-left">
-                                        <div class="col-xs-12 col-md-6 no-padding-lr border-reason-3">
-                                            <a href="<?php echo home_url('company/circle') ?>">
-                                                <div class="glyphicon glyphicon-menu-right text-left"> </div>
-                                                <div class="text-6 text-center font-1 m-l-20">社内の取り組みについて詳しくはこちら</div>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="col-xs-12 col-md-12 text-center">
+                                    <a class="why-3-link" href="<?php echo home_url('company/circle') ?>"><span class="glyphicon glyphicon-menu-right"></span>社内の取り組みについて詳しくはこちら</a>
                                 </div>
                             </div>
                         </div>
@@ -278,18 +270,14 @@ get_header();
                             <div class="row-gap-big"> </div>
                             <div class="row">
                                 <div class="col-xs-12 col-md-12 no-padding-lr">
-   <div class="row-gap-big"></div>
-                                    <div class="col-xs-12 col-md-3 no-padding-r"><img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/vff.jpg" alt="" />
-                                    </div>
-                                    <div class="col-xs-12 col-md-9 text-left"><span class="text-7">サッカーベトナム代表(VFF)公式サポーター<br /> </span>
-                                        <p class="text-5">Evolable Asiaは2015年8月5日サッカーベトナム代表(VFF)のスポンサー契約を結びました。</p>
-                                        <div class="col-xs-12 col-md-6 no-padding-lr border-reason-3">
-                                            <a href="<?php echo home_url('vff') ?>">
-                                                <div class="glyphicon glyphicon-menu-right text-left"> </div>
-                                                <div class="text-6 text-center">公式サポーターになった背景について</div>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="row-gap-big"></div>
+                                <div class="col-xs-12 col-md-3 no-padding-r"><img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/vff.jpg" alt="" />
+                                </div>
+                                <div class="col-xs-12 col-md-9 text-left"><span class="text-7">サッカーベトナム代表(VFF)公式サポーター<br /> </span>
+                                    <p class="text-5">Evolable Asiaは2015年8月5日サッカーベトナム代表(VFF)のスポンサー契約を結びました。</p>
+                                    <div class="row-gap-small"></div>
+                                    <a class="why-3-link" href="<?php echo home_url('vff') ?>"><span class="glyphicon glyphicon-menu-right"></span>公式サポーターになった背景について</a>
+
                                 </div>
                             </div>
                         </div>

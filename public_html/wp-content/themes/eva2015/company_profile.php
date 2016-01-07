@@ -150,7 +150,7 @@ get_header();
                     <div class="round2">
                         <p class="header-his"><span>Soltec Vietnam</span></p>
                         <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/38.png" alt="" class="img-responsive"></p>
-                        <p class="footer-his"><span>Soltec Vietnam Companyは2010年9月17日に、（株）ソルテック工業の100％出資子会社として誕生致しました。弊社は、親会社である（株）ソルテック工業の長年培った経験と技術を生かし、ベトナムにおいて日本の品質基準に準じた各種プラント設備製作・据付工事・配管工事を展開させて頂きます。また独自の教育管理ノウハウを生かして、日本品質をベトナムで実現しております。そこで培われたマネジメントノウハウの一部はEvolable Asia Co.,Ltdにも生かされています。</span></p>
+                        <p class="footer-his"><span>Soltec Vietnam Companyは2010年9月17日に、（株）ソルテック工業の100％出資子会社として誕生致しました。弊社は、親会社である（株）ソルテック工業の長年培った経験と技術を生かし、ベトナムにおいて日本の品質基準に準じた各種プラント設備製作・据付工事・配管工事を展開させて頂きます。また独自の教育管理ノウハウを生かして、日本品質をベトナムで実現しております。そこで培われたマネジメントノウハウの一部はEVOLABLE ASIA CO.,LTDにも生かされています。</span></p>
                     </div>
                 </div>
             </div>

@@ -118,20 +118,24 @@ get_header();
 ?>
 
 <section>
+    <div class="row-gap-medium"></div>
     <div class="head-banner-wrap red">
-                <h2>Contact</h2>
+                <h2>ご入力内容の確認</h2>
     </div>    
-    <div class="row-gap-big"></div>
+
     <div class="container contact">
+            <ul class="breadcrumb-cp hidden-sm hidden-xs">
+                <li>
+                    <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
+                </li>
+                <li class="active">お問い合わせ</li>
+            </ul>
         <div class="row" style="max-width:800px;margin:auto;">
             <p class="eva-info">
-                <b>EVOLABLE ASIA Co., Ltd</b><br/>
-                4 Floor, Saigon Finance Center<br/>
-                No 9, Dinh Tien Hoang Street, Dist.1, HCM City.<br/>
-                Tel : (84.8) 39111489<br/>
-                Fax : (84.8) 39118767<br/>
-                Email : info@evolable.asia
+                <b>以下の内容がメールで送信されます。</b><br/>
+                入力・選択された内容をご確認のうえ、「入力内容を送信」ボタンをクリックしてください。入力内容を訂正する場合は、「戻る」をクリックしてください。
             </p>
+            <div class="row-gap-medium"></div>
             <table class="table table-bordered">
                 <colgroup>
                     <col class="col-sm-2">
@@ -180,7 +184,7 @@ get_header();
 
             <form method="POST">
                 <div class="center">
-                    <button class="btn btn-success center-block inline-block btn-confirm" type="submit">同意して送信</button>
+                    <button class="btn btn-success center-block inline-block btn-confirm" type="submit">入力内容を送信</button>
                     <div class="row-gap-big"></div> 
                     <table class="table table-borderless">
                         <tr>

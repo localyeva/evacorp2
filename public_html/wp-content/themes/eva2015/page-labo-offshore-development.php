@@ -259,15 +259,6 @@ get_header();
                                         <li>日本語教師による講義</li>
                                         <li> 日本語能力試験および日本語IT能力試験推進</li>
                                     </ul>
-                                    <div class="row-gap-small"></div>
-                                    <span style="font-weight: bold">◆モチベーションアップのための各種制度/イベント</span><br/>
-                                    <ul>
-                                        <li>キックオフ(年4回)</li>
-                                        <li>社員旅行</li>
-                                        <li>社員旅行</li>
-                                        <li>季節のイベント(クリスマス・新年会・忘年会等)</li>
-                                    </ul>
-                                    <span>※その他、一体感のあるチーム構成を目的とした、様々な制度/イベントを用意しております。</span>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-md-6 item">
@@ -407,11 +398,11 @@ get_header();
         <div class="container">
             <div class="row-gap-big"></div>
             <div class="row text-center headline">
-                <h2>つまり、御社は、</h2>
-                <h2><span class="pink-text">「日本人プロジェクトマネージャー」(駐在or遠隔)</span>と</h2>
-                <h2><span class="pink-text">「必要なベトナム人スタッフ数」</span> 決めれば、</h2>
+                <h2>つまり、御社は、
+                <span class="pink-text">「日本人プロジェクトマネージャー」(駐在or遠隔)</span>と</h2>
+                <h2><span class="pink-text">「必要なベトナム人スタッフ数」</span> を決めれば、</h2>
                 <h2>すぐにでもベトナムでの開発を行うことが可能なのです!</h2><br/>
-                <h4>小規模から大規模までのラボが在籍</h4>
+                <h4>小規模から大規模までのラボが在籍し、</h4>
                 <h4>総勢500名以上のベトナム人スタッフが就業しています。</h4>            
             </div>        
             <div style="padding-bottom: 30px"></div>

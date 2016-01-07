@@ -156,6 +156,10 @@ get_header();
                             </div>
                             <div class="col-xs-12 col-md-12 text-center">
                                 <img src="<?php echo get_template_directory_uri() ?>/img/why-vietnam/vietnam-block3-image1.png" alt="" class="img-responsive">
+                                <div class="row-gap-small"></div>
+                                <p>Source: CIA World Factbook - This page was last updated on June 30, 2015<br/>
+※<a href="http://www.indexmundi.com/vietnam/age_structure.html">http://www.indexmundi.com/vietnam/age_structure.html</a>
+</p>
                             </div>
                             <div class="col-xs-12 col-md-12 text-center">
                                 <div class="row-gap-big"></div>

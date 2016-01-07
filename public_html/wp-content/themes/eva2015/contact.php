@@ -53,8 +53,8 @@ get_header();
                 <li class="active">お問い合わせ</li>
             </ul>
         <form id="contact-form" class="form-horizontal" method="POST" action="<?php bloginfo('url') ?>/contact/confirm" novalidate="novalidate">
-            <h2 class="title">下記に必要事項をご記入の上、お問い合わせください。</h2>
-
+            <h3 class="title">下記に必要事項をご記入の上、お問い合わせください。</h3>
+    <div class="row-gap-big"></div>
             <div class="form-group">
                 <label for="contact-company-name" class="col-sm-3 control-label">御社名<span class="red">※</span></label>
                 <div class="col-sm-9">
@@ -180,7 +180,7 @@ get_header();
 
             <div class="form-group send">
                 <div class="col-sm-12 hold-btn-send">
-                    <button class="btn btn-success center-block" type="submit">同意して送信</button>
+                    <button class="btn btn-success center-block" type="submit">同意して送信する</button>
                     <input type="hidden" name="submit" value="submit"/>
                 </div>
             </div>

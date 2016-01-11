@@ -28,7 +28,7 @@ if (!empty($next_post)) {
 
                 <h2><?php echo $post_type->label; ?></h2>
 
-    </div>     
+    </div>
     <div class="row-gap-medium"></div>
     <?php custom_breadcrumbs('news'); ?>
     <div class="row-gap-medium"></div>
@@ -51,6 +51,7 @@ if (!empty($next_post)) {
                         <a href="<?php echo get_permalink($prev_post->ID); ?>" title="<?php echo $prev_post->post_title; ?>">
                             <span class="prev">Prev</span>
                             <img class="img-responsive" src="<?php echo !empty($prev_post_image) ? $prev_post_image : $default_img; ?>" alt="<?php echo $prev_post->post_title; ?>" />
+                            <span class="prev ss">Prev</span>
                             <h3><?php echo mb_substr($prev_post->post_title, 0, 25) . '...'; ?></h3>
                         </a>
                     </div>

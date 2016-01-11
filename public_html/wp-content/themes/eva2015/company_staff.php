@@ -62,7 +62,8 @@ get_header();
                         <div class="col-xs-12 col-sm-6 col-md-6 invisible-vertical-gap"></div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <h3><?php the_title(); ?></h3>
-                            <h4><i style="color: #93D1FA;font-size: 30px">-</i>&nbsp;&nbsp;<?php the_field('staff_role'); ?></h4>
+                            <div class="row-gap-medium"></div>
+                            <h4><?php the_field('staff_role'); ?></h4>
                             <div class="row-gap-small"></div>
                             <p><?php the_content(); ?></p>
                         </div>

@@ -9,24 +9,24 @@ $post_type = get_post_type_object('news');
 $default_img = get_template_directory_uri() . '/img/default-img.jpg';
 ?>
 <div id="news">
-    <div class="head-banner-wrap yellow">>
+    <div class="head-banner-wrap yellow">
                 <h2><?php echo $post_type->label; ?></h2>
-    </div> 
+    </div>
     <div class="row-gap-medium"></div>
     <?php custom_breadcrumbs('news'); ?>
     <div class="row-gap-medium"></div>
     <div class="container center bpo-1">
         <?php // get_sidebar('news') ?>
         <div class="content col-md-12">
-            <div class="row">
+            <div class="row masonry">
                 <?php
                     $terms = get_terms('news-type', 'hide_empty=0');
                     foreach ($terms as $term) {
                         $all_terms[] = $term->name;
                     }
                     $bg_color = array('pink', 'yellow', 'sky-blue');
-                    $class_category = array_combine($all_terms, $bg_color);  
-                                  
+                    $class_category = array_combine($all_terms, $bg_color);
+
                     $wp_query = new WP_Query();
                     $param = array(
                         'post_type' => 'news',

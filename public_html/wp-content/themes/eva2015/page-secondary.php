@@ -94,7 +94,7 @@ get_header();
 	            <div class="col-xs-12 col-sm-12 col-md12 col-lg-12">        
 	                <p><span>大手モバイルゲーム会社</span>や<span>株式会社マイネット様との実績を</span></p>
 	                <p>持つEvolable Asiaでは、</p>
-	                <p>そこで生まれた<span>施策や問題点をノウハウ</span>として蓄積</p>
+	                <p>そこで生まれた<span>施策や問題点をノウハウ</span>として蓄積。</p>
 	                <p>ゲーム運用の<span>品質を落とすことなく引き継ぐこと</span>が可能。</p>
 	                <p class="text-note">※2015年11月時点で8タイトルの運営実績があります。</p>
 	            </div>

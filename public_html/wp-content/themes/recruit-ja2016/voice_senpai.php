@@ -204,6 +204,85 @@ get_header();
             </p>
         </div>
     </div>
+    <div class="row voice-senpai-content-2 center" id="anchor03">
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <img src="<?php echo get_template_directory_uri() ?>/img/voice/hirakawa.jpg" width="371" height="371" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 left">
+            <h1>平川　和真</h1>
+            <h2>CFO/財務経理部ディレクター</h2>
+            <div class="voice-senpai-content-2-table">
+                <div class="voice-senpai-content-2-row">
+                    <div class="voice-senpai-content-2-cell-1">
+                        <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>出身地
+                    </div>
+                    <div class="voice-senpai-content-2-cell-2">
+                        大阪市
+                    </div>
+                </div>
+                <div class="voice-senpai-content-2-row">
+                    <div class="voice-senpai-content-2-cell-1">
+                        <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>前職
+                    </div>
+                    <div class="voice-senpai-content-2-cell-2">
+                        監査法人に新卒入社後、マレーシアのコンサルティング会社に転職しました。
+                    </div>
+                </div>
+                <div class="voice-senpai-content-2-row">
+                    <div class="voice-senpai-content-2-cell-1">
+                        <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>趣味
+                    </div>
+                    <div class="voice-senpai-content-2-cell-2">
+                       Kindleにはまっています。
+                    </div>
+                </div>
+                <div class="voice-senpai-content-2-row">
+                    <div class="voice-senpai-content-2-cell-1 last">
+                        <span class="glyphicon glyphicon-triangle-right padding-r" aria-hidden="true"></span>休日の過ごし方
+                    </div>
+                    <div class="voice-senpai-content-2-cell-2 last">
+                        3歳児、0歳児の子供達と遊んでいます。
+                    </div>
+                </div>
+            </div>
+            <p class="voice-senpai-content-2-question">
+                <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
+                <span>あなたの仕事内容を教えてください。</span>
+            </p>
+            <p>
+                CFOとしてエボラブルアジアの財務経理部門を統括しています。財務経理業務のみならず、会社を組織的に運営する体制の構築や、効果的な運用ルールの導入なども重要なミッションです。また、親会社である株式会社エボラブルアジアと連携して、グループマネジメント体制の構築も担当しています。
+            </p>
+            <p class="voice-senpai-content-2-question">
+                <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
+                <span>エボラブルアジアに入社しようと思ったきっかけを教えてください。</span>
+            </p>
+            <p>
+                ソル社長とは入社前から友人関係にありました。ソル社長がベトナムでイキイキとビジネス展開をしている姿を見ていてとても刺激を受けたこと、ソル社長が語る事業理念や将来展開に共感したことが入社のきっかけです。
+            </p>
+            <p class="voice-senpai-content-2-question">
+                <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
+                <span>エボラブルアジアで働く楽しさを教えてください。</span>
+            </p>
+            <p>
+                エボラブルアジアはまだまだ未熟な組織です。今後成長を続けるためには、様々な壁を乗り越えなければなりません。それらをスピード感持ってやり遂げることこそがエボラブルアジアで働く楽しみであり、やりがいだと思っています。
+            </p>
+            <p class="voice-senpai-content-2-question">
+                <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
+                <span>ベトナムで働く楽しさを教えてください。</span>
+            </p>
+            <p>
+                ベトナムは経済が好調で街並みも毎年スピーディーに変化しています。人もとてもエネルギッシュです。周りの環境がこれだけポジティブだと自分も自然とポジティブになれます。
+            </p>
+            <p class="voice-senpai-content-2-question">
+                <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
+                <span>未来に一緒に働く方達へ一言お願いします。</span>
+            </p>
+            <p>
+                この環境は、今のベトナム、今のエボラブルアジアにしかありません！
+            </p>
+        </div>
+    </div>
+
     <div class="row voice-senpai-content-2 center" id="anchor04">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
             <img src="<?php echo get_template_directory_uri() ?>/img/voice/img_14.jpg" width="371" height="371" class="img-responsive">
@@ -250,35 +329,35 @@ get_header();
                 <span>あなたの仕事内容を教えてください。</span>
             </p>
             <p>
-                駐在されるお客様の生活のサポートと総務周りを担当しています。お客様と社員が仕事がしやすい環境を提供するのが私の仕事です。時にはイベントの企画や運営、お客様からの生活面でのご質問ご要望にお応えし、異国で働くという事にストレスを感じない環境作りを心がけています
+                お客様ラボでのプロジェクト立上げ時のサポートやオフショア開発で発生する課題や問題に対して技術的な支援を行っています。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>エボラブルアジアに入社しようと思ったきっかけを教えてください。</span>
             </p>
             <p>
-                ソル社長の社員を思う気持ちに共感出来たということと、これからスタートして行くエボラブルアジアに自分も関わって行きたいと思い入社を決めました。<br/>日々変わって行く会社を身近に感じる事が出来、仕事にもやりがいを感じています
+                以前の会社でベトナムに常駐してオフショア開発をした際にベトナム人のスキルの高さと人柄の良さで好きになり、深く、長くベトナムで働きたいと思ったのと、自身のキャリアアップとしても海外に身を置くことによって尖りが出せると思ったのがきっかけです。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>エボラブルアジアで働く楽しさを教えてください。</span>
             </p>
             <p>
-                私は顧客サービスを担当しているのでお客様と関わる事がとても多いのですが、色々な会社様のお手伝いを出来る事にとてもやりがいを感じています。また、ラボ型の特徴とも言えると思いますが、駐在のお客様とベトナム人スタッフの日常的なやり取りや、国も関係なく仲間となって働く姿に、毎日感動を頂いています。ずっとオンラインでやり取りしていたお客様に初めて会ったときのベトナム人スタッフの嬉しそうな顔は何度見てもこの仕事をしていてよかったと思える瞬間です。
+                ベトナムにある日系のオフショアＩＴ企業で一番勢いがあり、 また自身のスキルを生かし、スキルアップ出来る環境だと感じたことがきっかけです。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>ベトナムで働く楽しさを教えてください。</span>
             </p>
             <p>
-                ベトナムの平均年齢は27〜28歳ととても若く、街には活気があり日々変化して行く街を身近で見る事も楽しみの一つです。ベトナム人は親日で一緒に仕事をしていても仲間という意識をもって働いてくれているのがよく分かります。日系企業の進出も多く見られ、日本人もここ数年でかなり多く見かける様になりました。日本では会う機会のない方と友達になれる環境はなかなか無いのではと思います。毎日が勉強の日々ですがベトナムとそこで暮らす人々から刺激を受けて楽しく過ごしています。
+                ベトナムでは若い人が多く勢いがあり、またベトナム文化に触れることによって日本にはないような刺激のある毎日を送ることができます。
             </p>
             <p class="voice-senpai-content-2-question">
                 <img src="<?php echo get_template_directory_uri() ?>/img/voice/h3_bg_q.png" width="29" height="29">
                 <span>未来に一緒に働く方達へ一言お願いします。</span>
             </p>
             <p>
-                エボラブルアジアにはチャレンジ出来る事がまだ山の様にあり、新しい会社だからこそ私達は新しいアイディアや意見を必要としています。ベトナムの活気ある街で一緒に働く事を楽しみませんか。一緒に働ける事を楽しみにしています！
+                一緒にベトナムで働きましょう！
             </p>
         </div>
     </div>

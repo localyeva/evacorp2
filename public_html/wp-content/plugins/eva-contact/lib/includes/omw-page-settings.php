@@ -22,7 +22,7 @@ class omw_page_settings {
         $this->dir = dirname($this->file);
         $this->assets_dir = trailingslashit($this->dir) . 'assets';
         $this->assets_url = esc_url(trailingslashit(plugins_url('/assets/', $this->file)));
-        $this->settings_base = 'wpt_job_';
+        $this->settings_base = 'wpt_omw_';
         // Initialise settings
         add_action('admin_init', array($this, 'init'));
         // Register plugin settings
@@ -177,17 +177,17 @@ class omw_page_settings {
                     'placeholder' => __('', 'plugin_textdomain')
                 ),
                 array(
-                    'id' => 'text_subject_candidate',
-                    'label' => __('Mail Subject (To Candidate)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_subject_candidate )</h5>",
+                    'id' => 'text_subject_client',
+                    'label' => __('Mail Subject (To Client)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_subject_client )</h5>",
                     'description' => __('', 'plugin_textdomain'),
                     'type' => 'text',
                     'default' => '',
                     'placeholder' => __('', 'plugin_textdomain')
                 ),
                 array(
-                    'id' => 'text_block_candidate',
-                    'label' => __('Mail Template (To Candidate)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_block_candidate )</h5>",
-                    'description' => __('{{apply_date}} {{fullname}} {{email}} {{phone_number}} {{gender}} {{attach_file}} {{job_id}} {{job_title}} {{job_position}} {{job_level}} {{job_salary}} {{job_location}} {{job_expired}} {{job_slug}}', 'plugin_textdomain'),
+                    'id' => 'text_block_client',
+                    'label' => __('Mail Template (To Client)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_block_client )</h5>",
+                    'description' => __('{{company}} {{division}} {{name}} {{email}} {{tel}} {{inq}} {{inq_other}} {{inq_all}} {{itemSelect}} {{content}}', 'plugin_textdomain'),
                     'type' => 'wysiwyg',
                     'default' => '',
                     'placeholder' => __('', 'plugin_textdomain')
@@ -211,32 +211,9 @@ class omw_page_settings {
                 array(
                     'id' => 'text_block_admin',
                     'label' => __('Mail Template (To Admin)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_block_admin )</h5>",
-                    'description' => __('{{apply_date}} {{fullname}} {{email}} {{phone_number}} {{gender}} {{download_link}} {{attach_file}} {{job_id}} {{job_title}} {{job_position}} {{job_level}} {{job_salary}} {{job_location}} {{job_expired}} {{job_slug}} {{entry_time}} {{entry_host}} {{entry_ua}}', 'plugin_textdomain'),
+                    'description' => __('{{company}} {{division}} {{name}} {{email}} {{tel}} {{inq}} {{inq_other}} {{inq_all}} {{itemSelect}} {{content}}', 'plugin_textdomain'),
                     'type' => 'wysiwyg',
                     'default' => '',
-                    'placeholder' => __('', 'plugin_textdomain')
-                ),
-            )
-        );
-
-        $settings['top-define'] = array(
-            'title' => __('Top Definition', 'plugin_textdomain'),
-            'description' => __('', 'plugin_textdomain'),
-            'fields' => array(
-                array(
-                    'id' => 'text_item_per_page',
-                    'label' => __('Item Per Page (Top)', 'plugin_textdomain'),
-                    'description' => __('', 'plugin_textdomain'),
-                    'type' => 'text',
-                    'default' => '10',
-                    'placeholder' => __('', 'plugin_textdomain')
-                ),
-                array(
-                    'id' => 'text_item_per_page_job',
-                    'label' => __('Item Per Page (Job)', 'plugin_textdomain'),
-                    'description' => __('', 'plugin_textdomain'),
-                    'type' => 'text',
-                    'default' => '10',
                     'placeholder' => __('', 'plugin_textdomain')
                 ),
             )

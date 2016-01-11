@@ -5,7 +5,7 @@
  * @param type $option_name
  * @return type
  */
-function job_get_option($option_name) {
+function omw_get_option($option_name) {
     $data = get_option($option_name);
     if (isset($data[$option_name])) {
         //

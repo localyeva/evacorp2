@@ -107,47 +107,86 @@ function set_wp_title($title, $sep) {
     }
 
     // Add the site name.
-    $title .= get_bloginfo('name');
+//    $title .= get_bloginfo('name');
+    $title = 'ベトナムでのオフショア開発ならエボラブルアジア';
 
     if (is_front_page() || is_home()) {
-        $title = "TOP $sep $title";
+        $title = "$title";
     } else {
 
         if (is_archive()) {
             if (is_post_type_archive('news')) {
-                $title = "news $sep $title";
+                $title = "News $sep $title";
             }
 
-            if (is_post_type_archive('recommend')) {
-                $title = "recommend $sep $title";
+            if (is_post_type_archive('recomend')) {
+                $title = "参加企業の声 $sep $title";
             }
 
             if (is_post_type_archive('faq')) {
-                $title = "faq $sep $title";
+                $title = "FAQ $sep $title";
             }
         }
 
         if (is_page()) {
             if (is_page('company')) {
-                $title = "company $sep $title";
+                $title = "About EVOLABLE ASIA $sep $title";
             }
 
+            if (is_page('greeting')) {
+                $title = "代表挨拶 $sep $title";
+            }
+            
+            if (is_page('reason')) {
+                $title = "選ばれる理由 $sep $title";
+            }
+            
+            if (is_page('profile')) {
+                $title = "代表挨拶 $sep $title";
+            }
+            
+            if (is_page('staff')) {
+                $title = "スタッフ紹介 $sep $title";
+            }
+            
+            if (is_page('history')) {
+                $title = "沿革 $sep $title";
+            }
+            
+            if (is_page('circle')) {
+                $title = "取り組み紹介 $sep $title";
+            }
+            
+            if (is_page('recomend')) {
+                $title = "参加企業の声 $sep $title";
+            }
+            
             if (is_page('service')) {
-                $title = "service $sep $title";
+                $title = "サービス $sep $title";
             }
-
-
+            
+            if (is_page('about_labo')) {
+                $title = "ラボ型オフショア開発 $sep $title";
+            }
+            
+            if (is_page('about_bpo')) {
+                $title = "BPO $sep $title";
+            }
+            
+            if (is_page('game-secondary-plan')) {
+                $title = "ゲームセカンダリープラン $sep $title";
+            }
+            
+            if (is_page('bpo-real-estate')) {
+                $title = "不動産BPO $sep $title";
+            }
+            
             if (is_page('vietnam')) {
-                $title = "vietnam $sep $title";
-            }
-
-
-            if (is_page('recruit')) {
-                $title = "recruit $sep $title";
+                $title = "なぜベトナムか? $sep $title";
             }
 
             if (is_page('contact') || is_page('confirm') || is_page('thankyou')) {
-                $title = "contact $sep $title";
+                $title = "お問い合わせ $sep $title";
             }
         }
     }

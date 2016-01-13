@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="ベトナムでのオフショア開発、ラボ型オフショア開発、BPOのエボラブルアジアのお問い合わせページです。" />
+        <meta name="description" content="EVOLABLE ASIA(エボラブルアジア)は、開発コストや管理業務の
+              コスト高に悩んでいる企業の課題を解決いたします。400人以上のベトナム人スタッフと海外でのオフショア開発、BPOノウハウを基に、ハイクオリティながらも安価なコストを実現。" />
         <meta name="keywords" content="ベトナム, オフショア開発, ラボ型オフショア開発, BPO, アウトソーシング, ホーチミン, エボラブルアジア, Evolable Asia" />
 
         <title><?php echo wp_title('|', true, 'right') ?></title>
@@ -21,9 +22,77 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        <!-- FACE BOOK start -->
+        <meta property="og:title" content="オフショア ベトナム｜ベトナムでのBPO、オフショアならエボラブルアジア" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://evolable.asia/" />
+        <meta property="og:image" content="" />
+        <!-- //FACE BOOK end -->
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-47878088-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <script type="text/javascript">
+            var _trackingid = 'LFT-10308-1';
+            (function () {
+                var lft = document.createElement('script');
+                lft.type = 'text/javascript';
+                lft.async = true;
+                lft.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//track.list-finder.jp/js/ja/track.js';
+                var snode = document.getElementsByTagName('script')[0];
+                snode.parentNode.insertBefore(lft, snode);
+            })();
+        </script>
+
+        <script type="text/javascript">
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=142180302543361";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script type="text/javascript">
+            window._pt_lt = new Date().getTime();
+            window._pt_sp_2 = [];
+            _pt_sp_2.push('setAccount,3c6dc9b3');
+            var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            (function () {
+                var atag = document.createElement('script');
+                atag.type = 'text/javascript';
+                atag.async = true;
+                atag.src = _protocol + 'js.ptengine.jp/pta.js';
+                var stag = document.createElement('script');
+                stag.type = 'text/javascript';
+                stag.async = true;
+                stag.src = _protocol + 'js.ptengine.jp/pts.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(atag, s);
+                s.parentNode.insertBefore(stag, s);
+            })();
+        </script>
+
         <?php wp_head(); ?>
     </head>
     <body>
+        <div id="fb-root"></div>
         <div id="navigation">
             <nav class="navbar navbar-default">
                 <div class="container">

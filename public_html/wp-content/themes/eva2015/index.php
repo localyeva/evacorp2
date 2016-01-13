@@ -27,6 +27,9 @@ if ($loop->have_posts()) {
 ?>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+    <div class="overlay"></div>
+    
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <?php for ($i = 0; $i < count($home_slider); $i++): ?>
@@ -37,18 +40,18 @@ if ($loop->have_posts()) {
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <?php for ($i = 0; $i < count($home_slider); $i++): ?>
-            <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
-                <div class="bgintro parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
+            <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">                
+                <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
             </div>
         <?php endfor; ?>
     </div>
-
+    
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="z-index:999">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>

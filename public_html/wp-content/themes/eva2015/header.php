@@ -28,7 +28,7 @@
             <nav class="navbar navbar-default">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center navbar-collapse collapse visible-md">
+                        <div class="col-xs-12 col-md-12 text-center navbar-collapse collapse visible-md">
                             <div class="pull-right" style="position: relative;">
                                 <ul class="top-recruit-lst">
                                     <li>Recruit for</li>
@@ -42,7 +42,7 @@
                                 <li><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
                                 <li>
                                     <a href="<?php echo bloginfo('url') ?>">
-                                        <img class="img-responsives" src="<?php echo get_top_image() ?>">
+                                        <img class="img-responsive" src="<?php echo get_top_image() ?>">
                                     </a>
                                 </li>
                                 <li><a href="<?php echo bloginfo('url') ?>/service">サービス</a></li>

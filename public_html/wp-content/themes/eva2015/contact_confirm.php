@@ -5,12 +5,6 @@
  * 
  */
 
-function omw_my_mail_content_type($content_type) {
-    return 'text/html';
-}
-
-add_filter('wp_mail_content_type', 'omw_my_mail_content_type');
-
 if (isset($_POST['submit'])) {
 
     //お問い合わせフォーム内容
@@ -87,7 +81,7 @@ if (isset($_POST['submit'])) {
         $body_client = $twig->render($body_client, $data);
         $subject_client = $twig->render(omw_get_option('wpt_omw_text_subject_client'), $data);
         $headers = 'From: ' . $fromname . ' <' . $from . '>' . '\r\n';
-        //	
+        //
         wp_mail($data['email'], stripslashes($subject_client), stripslashes($body_client), $headers);
     }
 

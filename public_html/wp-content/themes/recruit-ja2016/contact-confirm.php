@@ -20,19 +20,8 @@ $reg_orther = @htmlspecialchars($_POST['orther']);
 if (isset($_POST['action']) && $_POST['action'] == 'confirm') {
     // confirm
 } elseif (isset($_POST['action']) && $_POST['action'] == 'send') {
-    // send
-    require_once 'lib/Twig/Autoloader.php';
-    Twig_Autoloader::register();
-
-    $loader = new Twig_Loader_Filesystem(__DIR__ . '/mail_temp');
-
-    $twig = new Twig_Environment($loader);
-
-    //お問い合わせメッセージ送信
-    $template_admin = $twig->loadTemplate('contact-admin.html');
-
-    $subject_admin = 'ホームページからお問い合わせがありました';
-    $body_admin = $template_admin->render(array(
+    
+    $data = array(
         'entry_time' => gmdate("Y/m/d H:i:s", time() + 9 * 3600),
         'entry_host' => gethostbyaddr(getenv("REMOTE_ADDR")),
         'entry_ua' => getenv("HTTP_USER_AGENT"),
@@ -46,64 +35,56 @@ if (isset($_POST['action']) && $_POST['action'] == 'confirm') {
         'rate' => $reg_rate,
         'career' => $reg_career,
         'intro' => $reg_intro,
-    ));
+    );
+    
+    // メール送信
+    
+    require_once WP_PLUGIN_DIR . '/eva-contact/lib/Twig/Autoloader.php';
+    Twig_Autoloader::register();
+
+    $loader = new Twig_Loader_String;
+    
+    $twig = new Twig_Environment($loader);
+    
+    $from = omw_get_option('wpt_omw_text_from_email');
+    $fromname = omw_get_option('wpt_omw_text_from_name');
 
     //お客様用メッセージ
-    $template_client = $twig->loadTemplate('contact-client.html');
-
-    $subject_client = 'お問い合わせありがとうございました';
-    $body_client = $template_client->render(array(
-        'item' => $reg_item,
-        'name' => $reg_name,
-        'email' => $reg_email,
-        'tel' => $reg_tel,
-        'add' => $reg_add,
-        'age' => $reg_age,
-        'rate' => $reg_rate,
-        'career' => $reg_career,
-        'intro' => $reg_intro,
-    ));
-
-
-    // メール送信
-    require_once 'lib/Mail.php';
-    mb_language("ja");
-    mb_internal_encoding("UTF-8");
-
-    $to = "recruitmentjp@evolable.asia";
-    $from = "recruitmentjp@evolable.asia";
-    $fromname = "Evolable Asia 求人お問い合わせ";
-
-    //メール送信
-    $email_info = new Mail();
-    $email_info->from = $from;
-    $email_info->fromName = $fromname;
-    $email_info->to = array(
-        'ayako@evolable.asia',
-        'fujikawa@evolable.asia',
-        'ito@evolable.asia',
-        'kashiwagi@evolable.asia',
-        'nagai@evolable.asia',
-        'nakagawa@evolable.asia',
-        'sul@evolable.asia',
-        'umezawa@evolable.asia',
-        'y_nakamura@evolable.asia',
-        'yoshizako@evolable.asia',
-    );
-    $email_info->title = $subject_admin;
-    $email_info->body = nl2br($body_admin);
-    $email_info->send();
-
-    //お客様受け取りメール送信
-    $email1 = new Mail();
-    $email1->from = $from;
-    $email1->fromName = $fromname;
-    $email1->to = $reg_email;
-    $email1->title = $subject_client;
-    $email1->body = nl2br($body_client);
-    $email1->send();
+    $body_client = omw_get_option('wpt_omw_text_block_client');
+    if (isset($body_client) && $body_client != '') {
+        $body_client = $twig->render($body_client, $data);
+        $subject_client = $twig->render(omw_get_option('wpt_omw_text_subject_client'), $data);
+        $headers = 'From: ' . $fromname . ' <' . $from . '>' . '\r\n';
+        //
+        wp_mail($data['email'], stripslashes($subject_client), stripslashes($body_client), $headers);
+    }
     
-    unset($email_info, $email1);
+    //お問い合わせメッセージ送信
+    $body_admin = omw_get_option('wpt_omw_text_block_admin');
+    if (isset($body_admin) && $body_admin != '') {
+        $body_admin = $twig->render($body_admin, $data);
+        $subject_admin = omw_get_option('wpt_omw_text_subject_admin');
+        //
+        $list_email = omw_get_option('wpt_omw_text_list_email');
+        if (isset($list_email) && $list_email != '') {
+            $list_email = preg_split('/\r\n|\n|\r/', $list_email);
+            //
+            $headers = 'From: ' . $fromname . ' <' . $from . '>' . '\r\n';
+            //
+            wp_mail($list_email, stripslashes($subject_admin), stripslashes($body_admin), $headers);
+        }
+    }
+
+//    ayako@evolable.asia
+//    fujikawa@evolable.asia
+//    ito@evolable.asia
+//    kashiwagi@evolable.asia
+//    nagai@evolable.asia
+//    nakagawa@evolable.asia
+//    sul@evolable.asia
+//    umezawa@evolable.asia
+//    y_nakamura@evolable.asia
+//    yoshizako@evolable.asia
     
     wp_redirect(home_url() . '/contact/thankyou');
     exit;

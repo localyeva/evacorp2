@@ -38,7 +38,7 @@ if ($loop->have_posts()) {
     <div class="carousel-inner" role="listbox">
         <?php for ($i = 0; $i < count($home_slider); $i++): ?>
             <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
-                <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
+                <div class="bgintro parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
             </div>
         <?php endfor; ?>
     </div>
@@ -54,7 +54,7 @@ if ($loop->have_posts()) {
     </a>
 
     <div class="carousel-caption">
-        <h2><?php echo get_slide_text() ?></h2>
+        <div><h2><?php echo get_slide_text() ?></h2></div>
     </div>
 </div>
 <!--//slide End-->

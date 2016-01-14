@@ -94,10 +94,11 @@
     <body>
         <div id="fb-root"></div>
         <div id="navigation">
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default nav-desktop">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-md-12 text-center navbar-collapse collapse visible-md">
+
                             <div class="pull-right" style="position: relative;">
                                 <ul class="top-recruit-lst">
                                     <li>Recruit for</li>
@@ -106,21 +107,30 @@
                                 </ul>
                             </div>
                             <ul class="nav navbar-nav">
-                                <li><a href="<?php echo bloginfo('url') ?>">Home</a></li>
-                                <li><a href="<?php echo bloginfo('url') ?>/company/">About EVOLABLE ASIA</a></li>
-                                <li><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
-                                <li>
+                                <li class="left-width-1"><a href="<?php echo bloginfo('url') ?>">Home</a></li>
+                                <li class="left-width-2"><a href="<?php echo bloginfo('url') ?>/company/">About EVOLABLE ASIA</a></li>
+                                <li class="left-width-3"><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
+                                <li class="center-width">
                                     <a href="<?php echo bloginfo('url') ?>">
-                                        <img class="img-responsive" src="<?php echo get_top_image() ?>">
+                                        <img class="img-responsive center-block" src="<?php echo get_top_image() ?>">
                                     </a>
                                 </li>
-                                <li><a href="<?php echo bloginfo('url') ?>/service">サービス</a></li>
-                                <li><a href="<?php echo bloginfo('url') ?>/news">ニュース</a></li>
-                                <li>
+                                <li class="right-width-1"><a href="<?php echo bloginfo('url') ?>/service">サービス</a></li>
+                                <li class="right-width-2"><a href="<?php echo bloginfo('url') ?>/news">ニュース</a></li>
+                                <li class="right-width-3">
                                     <a href="<?php echo bloginfo('url') ?>/contact/">お問い合わせ</a>
                                 </li>
                             </ul>
-                        </div>
+                                           
+                    </div>
+                </div>
+                </div>
+            </nav>
+            
+            <nav class="navbar navbar-default nav-sp">
+                <div class="container">
+                    <div class="row">
+                        
                         <div class="col-xs-12 visible-xs text-center no-padding-lr">
                             <div class="navbar-header mobie-brand">
                                 <a class="logo-mobie" href="<?php echo bloginfo('url') ?>">
@@ -150,4 +160,5 @@
                     </div>
                 </div>
             </nav>
-        </div>
+        </div>                
+        

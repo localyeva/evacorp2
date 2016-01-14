@@ -27,6 +27,9 @@ if ($loop->have_posts()) {
 ?>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+    <div class="overlay"></div>
+    
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <?php for ($i = 0; $i < count($home_slider); $i++): ?>
@@ -37,7 +40,7 @@ if ($loop->have_posts()) {
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <?php for ($i = 0; $i < count($home_slider); $i++): ?>
-            <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
+            <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">                
                 <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
             </div>
         <?php endfor; ?>
@@ -54,7 +57,7 @@ if ($loop->have_posts()) {
     </a>
 
     <div class="carousel-caption">
-        <h2><?php echo get_slide_text() ?></h2>
+        <div><h2><?php echo get_slide_text() ?></h2></div>
     </div>
 </div>
 <!--//slide End-->
@@ -66,20 +69,20 @@ if ($available_why == 1) {
     <div class="container-fluid header-why">
         <div class="row">
             <div class="container">
-                <div class="col-md-4 hidden-xs why-text-left text-left">
+                <div class="col-md-4 hidden-xs hidden-sm why-text-left text-left">
                     <div class="row-gap-big"></div>
-                    <h2>Why is<br> EVOLABLE ASIA<br> chosen<br> in Vietnam?</h2>
+                    <h2>Why is<br> EVOLABLE ASIA 12<br> chosen<br> in Vietnam?</h2>
                     <div class="text-small">
                         なぜエボラブルアジアが<br/>ベトナムのラボ型開発で<br/>選ばれるのか？
                     </div>
                 </div>
-                <div class="col-xs-12 visible-xs why-text-left text-center">
-                    <h2>Why is EVOLABLE ASIA<br> chosen in Vietnam?</h2>
+                <div class="col-xs-12 col-sm-12 visible-xs visible-sm why-text-left text-center">
+                    <h2>Why is EVOLABLE ASIA 34<br> chosen in Vietnam?</h2>
                     <div class="text">
                         なぜエボラブルアジアが<br/>ベトナムのラボ型開発で<br/>選ばれるのか？
                     </div>
                 </div>
-                <div class="col-md-8 hidden-xs why-text-right">
+                <div class="col-md-8 hidden-xs hidden-sm why-text-right">
                     <div class="row-gap-big"></div>
                     <h3>私たちは経験豊富なエンジニアの採用に自信があります。<br/>御社の開発チームを迅速に構築します。</h3>
                     <div class="row-gap-small"></div>
@@ -91,7 +94,7 @@ if ($available_why == 1) {
                         </a>
                     </div>
                 </div>
-                <div class="col-xs-12 visible-xs why-text-right text-center">
+                <div class="col-xs-12 col-sm-12 visible-xs visible-sm why-text-right text-center">
                     <div class="row-gap-big"></div>
                     <h2>私たちは経験豊富なエンジニアの採用に自信があります。<br/>御社の開発チームを迅速に構築します。</h2>
                     <div class="row-gap-small"></div>
@@ -136,18 +139,21 @@ if ($available_service == 1) {
                 $num_posts = count($loop->posts);
                 ?>
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
+
+
                     <div class="col-xs-12 col-md-6 no-padding-lr sv-main-block wow fadeInRight">
                         <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
-                            <div class="caption-eva"></div>
+                            <div class="caption-eva" ></div>
                             <div class="caption full-width center">
-                                <h2 class="sv-main-title">
-                                    <a class="alnk" href="<?php echo get_field('redirect_url') ?>"><?php the_title() ?></a>
+                                <h2 class="sv-title">
+                                    <?php the_title() ?>
                                     <div class="intro"><?php echo get_field('short_description') ?></div>
                                 </h2>
                             </div>
-                        </a>
-                    </div>
+                        </a>                                        
+                    </div> 
+
                 <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_postdata() ?>
@@ -168,8 +174,9 @@ if ($available_service == 1) {
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
                             <?php if ($i > 1 AND $i < 4) { ?>
-                                <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
-                                    <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInDown">
+                                
+                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInDown">
+                                    <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                                         <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                         <div class="caption-eva" ></div>
                                         <div class="caption full-width center">
@@ -178,8 +185,9 @@ if ($available_service == 1) {
                                                 <div class="intro"><?php echo get_field('short_description') ?></div>
                                             </h2>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>                                        
+                                </div>                                
+
                             <?php } ?>
 
                             <?php $i++; ?>
@@ -203,18 +211,21 @@ if ($available_service == 1) {
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
                             <?php if ($j >= 4 AND $j < 6) { ?>
-                                <a class="alnk" href="<?php echo get_field('redirect_url') ?>">
-                                    <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInUp">
+                                
+
+                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInUp">
+                                    <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                                         <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                         <div class="caption-eva" ></div>
                                         <div class="caption full-width center">
                                             <h2 class="sv-title">
-                                                <a class="alnk" href="<?php echo get_field('redirect_url') ?>"><?php the_title() ?></a>
+                                                <?php the_title() ?>
                                                 <div class="intro"><?php echo get_field('short_description') ?></div>
                                             </h2>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>                                        
+                                </div>   
+                                
                             <?php } ?>
                             <?php $j++; ?>
                         <?php endwhile; ?>

@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="col-xs-4 col-md-4">
-                        <label>About EvolableAsia</label>
+                        <label>About EVOLABLE ASIA</label>
                         <div class="row">
                             <div class="col-xs-12">
                                 <?php

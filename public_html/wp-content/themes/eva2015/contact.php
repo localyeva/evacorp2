@@ -56,37 +56,37 @@ get_header();
             <h3 class="title">下記に必要事項をご記入の上、お問い合わせください。</h3>
     <div class="row-gap-big"></div>
             <div class="form-group">
-                <label for="contact-company-name" class="col-sm-3 control-label">御社名<span class="red">※</span></label>
+                <label for="contact-company-name" class="col-sm-3 control-label control-label-left">御社名<span class="red">※</span></label>
                 <div class="col-sm-9">
                     <input type="text" id="contact-company-name" name="company" class="form-control" placeholder="" value="<?php echo $reg_company ?>" />
                 </div>
             </div>
             <div class="form-group">
-                <label for="contact-division-name" class="col-sm-3 control-label">部署名</label>
+                <label for="contact-division-name" class="col-sm-3 control-label control-label-left">部署名</label>
                 <div class="col-sm-9">
                     <input type="text" id="contact-division-name" name="division" class="form-control" placeholder="" value="<?php echo $reg_division ?>" />
                 </div>
             </div>
             <div class="form-group">
-                <label for="contact-name" class="col-sm-3 control-label">お名前<span class="red">※</span></label>
+                <label for="contact-name" class="col-sm-3 control-label control-label-left">お名前<span class="red">※</span></label>
                 <div class="col-sm-9">
                     <input type="text" id="contact-name" name="ur_name" class="form-control" placeholder="" value="<?php echo $reg_name ?>" />
                 </div>
             </div>
             <div class="form-group">
-                <label for="contact-email" class="col-sm-3 control-label">E-mail<span class="red">※</span></label>
+                <label for="contact-email" class="col-sm-3 control-label control-label-left">E-mail<span class="red">※</span></label>
                 <div class="col-sm-9">
                     <input type="email" id="contact-email" name="email" class="form-control" placeholder="" value="<?php echo $reg_email ?>" />
                 </div>
             </div>
             <div class="form-group">
-                <label for="contact-tel" class="col-sm-3 control-label">Tel<span class="red">※</span></label>
+                <label for="contact-tel" class="col-sm-3 control-label control-label-left">Tel<span class="red">※</span></label>
                 <div class="col-sm-9">
                     <input type="text" id="contact-tel" name="tel" class="form-control" placeholder="" value="<?php echo $reg_tel ?>" />
                 </div>
             </div>
             <div class="form-group">
-                <label for="contact-tel" class="col-sm-3 control-label">どこでエボラブルアジアを知りましたか?</label>
+                <label for="contact-tel" class="col-sm-3 control-label control-label-left">どこでエボラブルアジアを知りましたか?</label>
                 <div class="col-sm-9">
                     <div class="checkbox">
                         <label class="checkbox-inline">
@@ -123,7 +123,7 @@ get_header();
                 </div>
             </div>
             <div class="form-group">
-                <label for="contact-item" class="col-sm-3 control-label">お問い合わせ項目<span class="red">※</span></label>
+                <label for="contact-item" class="col-sm-3 control-label control-label-left">お問い合わせ項目<span class="red">※</span></label>
                 <div class="col-sm-9">
                     <?php
                     echo mwp_dropdownList($arr_itemSelect, array('id' => 'contact-item', 'name' => 'itemSelect', 'class' => 'form-control'), $reg_itemSelect, false, array(0));
@@ -131,7 +131,7 @@ get_header();
                 </div>
             </div>
             <div class="form-group">
-                <label for="contact-content" class="col-sm-3 control-label">お問い合わせ内容<span class="red">※</span></label>
+                <label for="contact-content" class="col-sm-3 control-label control-label-left">お問い合わせ内容<span class="red">※</span></label>
                 <div class="col-sm-9">
                     <textarea id="contact-content" name="content" class="form-control" rows="10"><?php echo $reg_content ?></textarea>
                 </div>

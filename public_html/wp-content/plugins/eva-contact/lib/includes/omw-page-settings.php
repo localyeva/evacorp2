@@ -5,7 +5,6 @@
  *
  * @author khangld
  */
-
 require_once 'my-functions.php';
 
 class omw_page_settings {
@@ -22,7 +21,7 @@ class omw_page_settings {
         $this->dir = dirname($this->file);
         $this->assets_dir = trailingslashit($this->dir) . 'assets';
         $this->assets_url = esc_url(trailingslashit(plugins_url('/assets/', $this->file)));
-        $this->settings_base = 'wpt_job_';
+        $this->settings_base = 'wpt_omw_';
         // Initialise settings
         add_action('admin_init', array($this, 'init'));
         // Register plugin settings
@@ -52,7 +51,7 @@ class omw_page_settings {
         parse_str($query_string, $get_uri);
 
         $tab = '';
-        if ($pagenow == 'options-general.php' &&                
+        if ($pagenow == 'options-general.php' &&
                 isset($get_uri['page']) && $get_uri['page'] == 'contact_settings') {
             if (isset($get_uri['tab']))
                 $tab = $get_uri['tab'];
@@ -123,9 +122,6 @@ class omw_page_settings {
                                 case 'mail-to':
                                     $setting[$option_name] = $_POST[$option_name];
                                     break;
-                                case 'top-define':
-                                    $setting[$option_name] = $_POST[$option_name];
-                                    break;
                             }
                             $updated = update_option($option_name, $setting);
                         }
@@ -158,7 +154,7 @@ class omw_page_settings {
 
         $settings['mail-to'] = array(
             'title' => __('Setting Email', 'plugin_textdomain'),
-            'description' => __('List "email-to" after candidates applied CV', 'plugin_textdomain'),
+            'description' => __('', 'plugin_textdomain'),
             'fields' => array(
                 array(
                     'id' => 'text_from_email',
@@ -177,17 +173,17 @@ class omw_page_settings {
                     'placeholder' => __('', 'plugin_textdomain')
                 ),
                 array(
-                    'id' => 'text_subject_candidate',
-                    'label' => __('Mail Subject (To Candidate)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_subject_candidate )</h5>",
+                    'id' => 'text_subject_client',
+                    'label' => __('Mail Subject (To Client)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_subject_client )</h5>",
                     'description' => __('', 'plugin_textdomain'),
                     'type' => 'text',
                     'default' => '',
                     'placeholder' => __('', 'plugin_textdomain')
                 ),
                 array(
-                    'id' => 'text_block_candidate',
-                    'label' => __('Mail Template (To Candidate)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_block_candidate )</h5>",
-                    'description' => __('{{apply_date}} {{fullname}} {{email}} {{phone_number}} {{gender}} {{attach_file}} {{job_id}} {{job_title}} {{job_position}} {{job_level}} {{job_salary}} {{job_location}} {{job_expired}} {{job_slug}}', 'plugin_textdomain'),
+                    'id' => 'text_block_client',
+                    'label' => __('Mail Template (To Client)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_block_client )</h5>",
+                    'description' => __('{{company}} {{division}} {{name}} {{email}} {{tel}} {{inq}} {{inq_other}} {{inq_all}} {{itemSelect}} {{content}}<br>{{item}} {{name}} {{email}} {{tel}} {{add}} {{age}} {{rate}} {{career}} {{intro}}<br>{{entry_time}} {{entry_host}} {{entry_ua}}', 'plugin_textdomain'),
                     'type' => 'wysiwyg',
                     'default' => '',
                     'placeholder' => __('', 'plugin_textdomain')
@@ -211,32 +207,9 @@ class omw_page_settings {
                 array(
                     'id' => 'text_block_admin',
                     'label' => __('Mail Template (To Admin)', 'plugin_textdomain') . "<br><h5>( {$this->settings_base}text_block_admin )</h5>",
-                    'description' => __('{{apply_date}} {{fullname}} {{email}} {{phone_number}} {{gender}} {{download_link}} {{attach_file}} {{job_id}} {{job_title}} {{job_position}} {{job_level}} {{job_salary}} {{job_location}} {{job_expired}} {{job_slug}} {{entry_time}} {{entry_host}} {{entry_ua}}', 'plugin_textdomain'),
+                    'description' => __('{{company}} {{division}} {{name}} {{email}} {{tel}} {{inq}} {{inq_other}} {{inq_all}} {{itemSelect}} {{content}}<br>{{item}} {{name}} {{email}} {{tel}} {{add}} {{age}} {{rate}} {{career}} {{intro}}<br>{{entry_time}} {{entry_host}} {{entry_ua}}', 'plugin_textdomain'),
                     'type' => 'wysiwyg',
                     'default' => '',
-                    'placeholder' => __('', 'plugin_textdomain')
-                ),
-            )
-        );
-
-        $settings['top-define'] = array(
-            'title' => __('Top Definition', 'plugin_textdomain'),
-            'description' => __('', 'plugin_textdomain'),
-            'fields' => array(
-                array(
-                    'id' => 'text_item_per_page',
-                    'label' => __('Item Per Page (Top)', 'plugin_textdomain'),
-                    'description' => __('', 'plugin_textdomain'),
-                    'type' => 'text',
-                    'default' => '10',
-                    'placeholder' => __('', 'plugin_textdomain')
-                ),
-                array(
-                    'id' => 'text_item_per_page_job',
-                    'label' => __('Item Per Page (Job)', 'plugin_textdomain'),
-                    'description' => __('', 'plugin_textdomain'),
-                    'type' => 'text',
-                    'default' => '10',
                     'placeholder' => __('', 'plugin_textdomain')
                 ),
             )
@@ -327,17 +300,7 @@ class omw_page_settings {
                 }
 
                 break;
-
-            case 'top-define':
-
-                switch ($field['type']) {
-                    case 'text':
-                        $_data = isset($data[$option_name]) ? $data[$option_name] : '';
-                        $html .= '<input id="' . esc_attr($field['id']) . '" type="text" name="' . esc_attr($option_name) . '" placeholder="' . esc_attr($field['placeholder']) . '" value="' . $_data . '"/>' . "\n";
-                        break;
-                }
-
-                break;
+            
         }
 
         echo $html;
@@ -379,19 +342,19 @@ class omw_page_settings {
         $html .= '</div>' . "\n";
         $html .= '<div class="clear"></div>' . "\n";
 
-        
-            $html .= '<form method="post" action="' . admin_url('options-general.php?page=contact_settings&tab=' . $tab) . '" enctype="multipart/form-data">' . "\n";
-            // Get settings fields
-            ob_start();
-            settings_fields('contact_settings');
-            do_settings_sections('contact_settings');
-            $html .= ob_get_clean();
-            $html .= '<p class="submit">' . "\n";
-            $html .= '<input name="Submit" type="submit" class="button-primary" value="' . esc_attr(__('Save Settings', 'plugin_textdomain')) . '" />' . "\n";
-            $html .= '<input type="hidden" name="job-settings-submit" value="Y" />' . "\n";
-            $html .= '</p>' . "\n";
-            $html .= '</form>' . "\n";
-        
+
+        $html .= '<form method="post" action="' . admin_url('options-general.php?page=contact_settings&tab=' . $tab) . '" enctype="multipart/form-data">' . "\n";
+        // Get settings fields
+        ob_start();
+        settings_fields('contact_settings');
+        do_settings_sections('contact_settings');
+        $html .= ob_get_clean();
+        $html .= '<p class="submit">' . "\n";
+        $html .= '<input name="Submit" type="submit" class="button-primary" value="' . esc_attr(__('Save Settings', 'plugin_textdomain')) . '" />' . "\n";
+        $html .= '<input type="hidden" name="job-settings-submit" value="Y" />' . "\n";
+        $html .= '</p>' . "\n";
+        $html .= '</form>' . "\n";
+
         $html .= '</div>' . "\n";
         echo $html;
     }

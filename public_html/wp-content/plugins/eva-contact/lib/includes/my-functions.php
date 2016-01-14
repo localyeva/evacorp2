@@ -5,7 +5,7 @@
  * @param type $option_name
  * @return type
  */
-function job_get_option($option_name) {
+function omw_get_option($option_name) {
     $data = get_option($option_name);
     if (isset($data[$option_name])) {
         //
@@ -48,6 +48,17 @@ function my_switch_tinymce_p_br($settings) {
     $settings['forced_root_block'] = false;
     return $settings;
 }
+
+/**
+ * 
+ * @param type $content_type
+ * @return string
+ */
+function omw_my_mail_content_type($content_type) {
+    return 'text/html';
+}
+
+add_filter('wp_mail_content_type', 'omw_my_mail_content_type');
 
 /**
  * Returns a inline CSS passage that resizes

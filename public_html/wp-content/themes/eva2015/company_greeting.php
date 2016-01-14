@@ -90,7 +90,7 @@ get_header();
                                 </div>
                                 <div class="row-gap-big"></div>
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6">
+                                    <div class="col-xs-12 col-md-6 col-xs-padding">
                                         <div class="bs-callout bs-callout-danger">
                                             <h2>Mission Statement</h2>
                                         </div>

@@ -73,20 +73,20 @@ if (isset($_POST['submit'])) {
 
     $twig = new Twig_Environment($loader);
 
-    $from = job_get_option('wpt_job_text_from_email');
-    $fromname = job_get_option('wpt_job_text_from_name');
-    // Mail to Candidate
-    $body_candidate = job_get_option('wpt_job_text_block_candidate');
-    if (isset($body_candidate) && $body_candidate != '') {
-        $body_candidate = $twig->render($body_candidate, $data);
-        $subject_candidate = $twig->render(job_get_option('wpt_job_text_subject_candidate'), $data);
+    $from = omw_get_option('wpt_omw_text_from_email');
+    $fromname = omw_get_option('wpt_omw_text_from_name');
+    // Mail to Client
+    $body_client = omw_get_option('wpt_omw_text_block_client');
+    if (isset($body_client) && $body_client != '') {
+        $body_client = $twig->render($body_client, $data);
+        $subject_client = $twig->render(omw_get_option('wpt_omw_text_subject_client'), $data);
         $headers = 'From: ' . $fromname . ' <' . $from . '>' . '\r\n';
-        //	
-        wp_mail($data['email'], stripslashes($subject_candidate), stripslashes($body_candidate), $headers);
+        //
+        wp_mail($data['email'], stripslashes($subject_client), stripslashes($body_client), $headers);
     }
 
     //Admin用メッセージ
-    $body_admin = job_get_option('wpt_job_text_block_admin');
+    $body_admin = omw_get_option('wpt_omw_text_block_admin');
     if (isset($body_admin) && $body_admin != '') {
         $body_admin = $twig->render($body_admin, array_merge(
                         $data, array(
@@ -95,9 +95,9 @@ if (isset($_POST['submit'])) {
             'entry_ua' => getenv("HTTP_USER_AGENT"),
         )));
         //
-        $subject_admin = job_get_option('wpt_job_text_subject_admin');
+        $subject_admin = omw_get_option('wpt_omw_text_subject_admin');
         //
-        $list_email = job_get_option('wpt_job_text_list_email');
+        $list_email = omw_get_option('wpt_omw_text_list_email');
         if (isset($list_email) && $list_email != '') {
             $list_email = preg_split('/\r\n|\n|\r/', $list_email);
             //
@@ -106,6 +106,8 @@ if (isset($_POST['submit'])) {
             wp_mail($list_email, stripslashes($subject_admin), stripslashes($body_admin), $headers);
         }
     }
+    
+    unset($_SESSION['contact']);
 
     wp_redirect(home_url() . '/contact/thankyou');
     exit();

@@ -8,7 +8,7 @@ get_header();
 ?>
 <section id="about-profile">
     <div class="head-banner-wrap red">
-                <h2>About Evolable Asia</h2>
+                <h2>About EVOLABLE ASIA</h2>
     </div>    
     <div class="row-gap-big"></div>
     <div class="container-fluid">
@@ -18,7 +18,7 @@ get_header();
                     <a href="<?php echo home_url('') ?>">HOME</a> <span class="divider">></span>
                 </li>
                 <li>
-                    <a href="<?php echo home_url('company') ?>">About EvolableAsia</a> <span class="divider">></span>
+                    <a href="<?php echo home_url('company') ?>">About EVOLABLE ASIA</a> <span class="divider">></span>
                 </li>
             </ul>
         </div>

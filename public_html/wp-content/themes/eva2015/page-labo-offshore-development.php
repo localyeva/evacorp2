@@ -348,7 +348,7 @@ get_header();
             <div class="row">
                 <div class="col-xs-12 col-md-12 text-center">
                     <h1>
-                        Evolable Asiaのサービス
+                        EVOLABLE ASIAのサービス
                     </h1>
                 </div>
             </div>

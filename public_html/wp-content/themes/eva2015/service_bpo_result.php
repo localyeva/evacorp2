@@ -30,7 +30,7 @@ get_header();
         <div class="container center">
             <div class="row">
                 <div class="col-xs-12 col-md-12 no-padding-lr text-center">
-                    <span class="text-1">Evolable Asiaは、従来とは違う</span><br>
+                    <span class="text-1">EVOLABLE ASIAは、従来とは違う</span><br>
                     <span class="text-2">全く新しい「オフショアBPO事業」を提唱します。</span>
                 </div>
             </div>

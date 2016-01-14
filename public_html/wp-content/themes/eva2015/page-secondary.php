@@ -82,7 +82,7 @@ get_header();
 	<div class="container center secondary-3">
 	    <div class="row secondary-3-1" style="max-width:800px;">
 	        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-	            <p>この3つを解決するEvolable Asiaの</p>
+	            <p>この3つを解決するEVOLABLE ASIAの</p>
 	            <p>海外オフショアでの<span>"ゲームセカンダリープラン"</span></p>
 	        </div>
 	    </div>
@@ -93,7 +93,7 @@ get_header();
 	        <div class="row" style="max-width:800px;margin:auto;">
 	            <div class="col-xs-12 col-sm-12 col-md12 col-lg-12">        
 	                <p><span>大手モバイルゲーム会社</span>や<span>株式会社マイネット様との実績を</span></p>
-	                <p>持つEvolable Asiaでは、</p>
+	                <p>持つEVOLABLE ASIAでは、</p>
 	                <p>そこで生まれた<span>施策や問題点をノウハウ</span>として蓄積。</p>
 	                <p>ゲーム運用の<span>品質を落とすことなく引き継ぐこと</span>が可能。</p>
 	                <p class="text-note">※2015年11月時点で8タイトルの運営実績があります。</p>
@@ -107,7 +107,7 @@ get_header();
 	            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 secondary-4-1-1">
 	                <span>1. モチベーションが高く優秀な人材をご用意</span>
 	                <div class="row-gap-small"></div>
-	                <p>ベトナムは東南アジア1位の豊富なITエンジニア数。Evolable Asiaは中途採用率99%の即戦力人材の採用に重きを置いているため、すぐに優秀な人材を配置することができます。<br/>
+	                <p>ベトナムは東南アジア1位の豊富なITエンジニア数。EVOLABLE ASIAは中途採用率99%の即戦力人材の採用に重きを置いているため、すぐに優秀な人材を配置することができます。<br/>
 	                    また、ベトナムではBtoC向けの大規模なゲームに限らずウェブサービス自体の開発事業がまだ少なく、そのような経験を積もうとするモチベーションの高いエンジニアが多いのも特長です。</p>
 	            </div>                         
 	        </div>
@@ -131,8 +131,8 @@ get_header();
 	            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 secondary-4-1-1">
 	                <span>3. オフショア未経験でも安心の実績</span>
 	                <div class="row-gap-small"></div>
-	                <p>Evolable Asiaはラボ型オフショア開発事業で多くの実績を持ちます。現在の弊社クライアントは95%以上オフショア経験がなく、
-	                    ゲームセカンダリープランで言えば、全てのPMがオフショア未経験の企業ですがベトナムの地で成功を収めています。Evolable Asia
+	                <p>EVOLABLE ASIAはラボ型オフショア開発事業で多くの実績を持ちます。現在の弊社クライアントは95%以上オフショア経験がなく、
+	                    ゲームセカンダリープランで言えば、全てのPMがオフショア未経験の企業ですがベトナムの地で成功を収めています。EVOLABLE ASIA
 	                    では優秀なBSEやコミュニケーターも採用可能となりますのでプロジェクトマネージャーの方も英語スキルは必要ない状態で業務をスタート可能です。</p>
 	                <p class="secondary4-link"><a href="<?php echo home_url('service/about_labo') ?>">「ラボ型オフショア開発」ついて詳しくはこちら</a></p>
 	            </div>                         

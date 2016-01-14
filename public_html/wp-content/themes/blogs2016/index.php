@@ -87,7 +87,7 @@
                             <div class="row index-left-2">
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -109,7 +109,7 @@
                                 </div>     
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -120,7 +120,7 @@
                                 </div> 
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -131,7 +131,7 @@
                                 </div> 
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -142,7 +142,7 @@
                                 </div> 
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -153,7 +153,7 @@
                                 </div> 
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -164,7 +164,7 @@
                                 </div> 
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -175,7 +175,7 @@
                                 </div> 
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -186,7 +186,7 @@
                                 </div> 
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -197,7 +197,7 @@
                                 </div> 
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -208,7 +208,7 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -219,7 +219,7 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -230,7 +230,7 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -241,7 +241,7 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -252,7 +252,7 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -263,7 +263,7 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>
@@ -274,7 +274,7 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
                                     <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
+                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x370-FairyLights.jpg">
                                         <span class="info">
                                             <span class="overlay"></span>
                                             <span class="post-date">2015.11.24</span>

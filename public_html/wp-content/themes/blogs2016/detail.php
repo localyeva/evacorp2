@@ -46,33 +46,33 @@
                         <h5>EVOLABLE ASIA ブログ　ベトナムでのオフショア開発の知りたい情報をお届けするエボラブルアジアの情報サイト</h5>
                     </div>                                        
                 </div>
-            </div>
-            <nav class="navbar navbar-default" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="<?php echo bloginfo('url') ?>/message">HOME</a></li>
-                        <li><a href="<?php echo bloginfo('url') ?>/message">ナレッジ</a></li>
-                        <li><a href="<?php echo bloginfo('url') ?>/message">お客様の声</a></li>
-                        <li><a href="<?php echo bloginfo('url') ?>/message">インタビュー</a></li>
-                        <li><a href="<?php echo bloginfo('url') ?>/message">ＪＬＩＣ</a></li>
-                        <li><a href="<?php echo bloginfo('url') ?>/message">ベトナム生活情報</a></li>
-                        <li><a href="<?php echo bloginfo('url') ?>/message">インターン</a></li>
-                        <li><a href="<?php echo bloginfo('url') ?>/message">エボラブルアジアのHPへ</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </nav>             
+            </div>           
         </div>    
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active-menu"><a href="<?php echo bloginfo('url') ?>/message">HOME</a></li>
+                    <li><a href="<?php echo bloginfo('url') ?>/message">ナレッジ</a></li>
+                    <li><a href="<?php echo bloginfo('url') ?>/message">お客様の声</a></li>
+                    <li><a href="<?php echo bloginfo('url') ?>/message">インタビュー</a></li>
+                    <li><a href="<?php echo bloginfo('url') ?>/message">ＪＬＩＣ</a></li>
+                    <li><a href="<?php echo bloginfo('url') ?>/message">ベトナム生活情報</a></li>
+                    <li><a href="<?php echo bloginfo('url') ?>/message">インターン</a></li>
+                    <li><a href="<?php echo bloginfo('url') ?>/message">エボラブルアジアのHPへ</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>          
         <div class="container">
             <div class="detail">
                 <div class="row center index-content">

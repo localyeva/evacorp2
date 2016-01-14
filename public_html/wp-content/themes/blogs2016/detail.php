@@ -1,3 +1,10 @@
+<?php
+/*
+ * Author: KhaCao
+ * Template Name: detail
+ * 
+ */
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="ja" xml:lang="ja" xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -67,223 +74,162 @@
             </nav>             
         </div>    
         <div class="container">
-            <div class="index">
+            <div class="detail">
                 <div class="row center index-content">
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 index-left">
-                        <div class="index-left-content">
-                            <div class="row index-left-1">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                
+                        <div class="index-left-content left clearfix">
+                            <h3>ベトナム・ハノイでの余暇の過ごし方</h3>
+                            <p>
+                                私は、休みを利用し久しぶりにハノイへ帰ってきて、「上を向いて歩こう」という懐かしい歌をカラオケで見つけ嬉しくなりました。<br/>
+                                ハノイにはカラオケ店が多くありますが、どの店も外国語の歌が出てくるという訳ではないので、自分が大好きな日本語の歌をカラオケで歌うことが出来るとなると、嬉しいものです。<br/>
+                                もちろん顧客の需要によって、それぞれ楽しめるカラオケの場所は違います。<br/>
+                                ハノイの日本人をはじめ、外国人向けのカラオケ店と言えば、有名なのはKimMa(キンマ)通りやLinhLang(リンラン)通りなど沢山あります。<br/>
+                                ただし、これらの店はよく男性の方が行かれる店と言われています。。。さあ、本当かどうか行ったことがないので私は分からないですが。。。<br/>
+                                私の場合には、最もよく利用するカラオケ店は65-67 Thai Thinh通りの「Ｍａｇｉｃ」という場所で、週に２回くらい行きます。<br/>
+                                はい、私はカラオケマニアです！                                
+                            </p>
+                            <div class="social">
+                                <div class="iineBtn-fb">
+                                    <g:plusone size="medium"></g:plusone>
+                                    <script type="text/javascript">
+                                        window.___gcfg = {lang: 'ja'};
+                                        (function () {
+                                            var po = document.createElement('script');
+                                            po.type = 'text/javascript';
+                                            po.async = true;
+                                            po.src = 'https://apis.google.com/js/plusone.js';
+                                            var s = document.getElementsByTagName('script')[0];
+                                            s.parentNode.insertBefore(po, s);
+                                        })();
+                                    </script>
                                 </div>
+                                <div class="iineBtn-fb">
+                                    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">Tweet</a>
+                                    <script>!function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (!d.getElementById(id)) {
+                                                js = d.createElement(s);
+                                                js.id = id;
+                                                js.src = "//platform.twitter.com/widgets.js";
+                                                fjs.parentNode.insertBefore(js, fjs);
+                                            }
+                                        }(document, "script", "twitter-wjs");
+                                    </script>
+                                </div>
+                                <div class="iineBtn-fb">
+                                    <div class="fb-like" data-href="<?php echo bloginfo('url') ?>"  data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                                </div>                                 
+                            </div>                           
+                            <div class="call-to-action">
+                                <p>ベトナムでのオフショア開発、BPOに興味を持った方、もっと詳しい内容を知りたい方はEVOLABLE ASIAのホームページをご覧ください。</p>
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/banner342534-2.jpg" alt="EVOLABLE ASIA" class="img-responsive" width="100%"/>
                             </div>
-                            <div class="row index-left-2">
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title </h3>
-                                        </span>
-                                    </a>                                  
+                            <div class="row-gap-medium"></div>
+                            <ul id = "myTab" class = "nav nav-tabs">
+                                <li class = "active">
+                                    <a href = "#home" data-toggle = "tab">この記事を書いた人</a>
+                                </li>
+                                <li>
+                                    <a href = "#ios" data-toggle = "tab">最近の記事</a>
+                                </li>
+                            </ul>
+
+                            <div id = "myTabContent" class = "tab-content">
+                                <div class = "tab-pane fade in active" id = "home">
+                                    <div class="row abh-content">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 center">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo924.png" alt="EVOLABLE ASIA" width="80px"/>                                            
+                                        </div>
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 left">
+                                            <h5>EVAブログ編集部</h5>
+                                            <span>blog Editor at <a href="#">EVOLABLE ASIA</a></span>
+                                            <p>エボラブルアジアのニュース/ビジネス/ベトナム生活情報などのお役立ち記事を配信しています。</p>
+                                        </div>                                        
+                                    </div>
+                               </div>
+                               
+                               <div class = "tab-pane fade" id = "ios">
+                                    <div class="row abh-content">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 center">
+                                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo924.png" alt="EVOLABLE ASIA" width="80px"/>                                            
+                                        </div>
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 left">
+                                            <h5>Latest posts by EVAブログ編集部 <span>(<a href="#">see all</a>)</span></h5>
+                                            <span><a href="#">ベトナム駐在者の方からよく耳にするオフショア開発における２つの悩み事</a> - November 23, 2015</span><br/>
+                                            <span><a href="#">JLIC（エボラブルアジア日本語ITカレッジ ）学生へインタビュー </a> - November 16, 2015</span><br/>
+                                            <span><a href="#">2015年社員旅行リポート</a> - November 9, 2015</span>
+                                        </div>                                        
+                                    </div>
+                               </div>
+                            </div>    
+                            <div class="row-gap-medium"></div>
+                            <div class="related-post">
+                                <h4>関連記事</h4>
+                                <div class="related-post-content">
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>                                            
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>
+                                    </div>
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>                                            
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>
+                                    </div>
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>                                           
+                                    </div>  
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>                                           
+                                    </div>  
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>                                           
+                                    </div>  
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>                                           
+                                    </div> 
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>                                            
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>
+                                    </div>
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>                                            
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>
+                                    </div>
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>                                           
+                                    </div>  
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>                                           
+                                    </div>  
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>                                           
+                                    </div>  
+                                    <div class="related-post-item">
+                                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/bcr1-1-150x150.jpg" alt="EVOLABLE ASIA" width="100px"/>
+                                        <p><a href="#">一日で遊べるサイゴンの場所をお勧め!!</a></p>                                           
+                                    </div>                                                                                                                                                                                                                       
                                 </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div>     
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div> 
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div> 
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div> 
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div> 
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div> 
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div> 
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div> 
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div> 
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div>
-                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
-                                    <a href="<?php echo get_site_url(1) ?>" class="link">
-                                        <img class="img-responsive" src="http://dummy-images.com/abstract/dummy-656x270-FairyLights.jpg">
-                                        <span class="info">
-                                            <span class="overlay"></span>
-                                            <span class="post-date">2015.11.24</span>
-                                            <span class="category pink">category</span>
-                                            <h3 class="title">title title title title title title title title title title</h3>
-                                        </span>
-                                    </a>                                  
-                                </div>                                                                                                                                                                                                                                                                                                                                                 
-                            </div>                        
+                            </div>  
+                            <div style="clear:both;"></div> 
+                            <div class="face" style="width:100%; height: 150px; background: none;'">
+                                <div id="fb-root"></div>
+                                <script>(function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id))
+                                            return;
+                                        js = d.createElement(s);
+                                        js.id = id;
+                                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=124639054226284";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                <div class="fb-page" data-href="https://www.facebook.com/evolable.asia.eva" data-width="444" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/evolable.asia.eva"><a href="https://www.facebook.com/evolable.asia.eva">EVOLABLE Asia</a></blockquote></div></div>
+                            </div>                                                 
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs index-right">
@@ -572,6 +518,6 @@
         <script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.sidr.min.js"></script>
         <script src="<?php echo get_template_directory_uri() ?>/assets/js/wow.js"></script>
         <script src="<?php echo get_template_directory_uri() ?>/assets/js/common.js"></script>                     
-		<?php wp_footer(); ?>
-	</body>
-</html>        
+        <?php wp_footer(); ?>
+    </body>
+</html>              

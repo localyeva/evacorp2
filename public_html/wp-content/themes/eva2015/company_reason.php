@@ -49,7 +49,7 @@ get_header();
                                 <div class="col-xs-12 col-md-12 no-padding-lr left" style="text-align: center;"><span class="text-4">ベトナムでの2012年3月の設立から3年で500名まで拡大。<br /></span><span class="text-4">今では東南アジア地域で日系最大規模のラボ型開発企業に成長し、更に人員環境の整備を行っています。</span>
                                 </div>
                                 <div class="gap-medium"> </div>
-                                <div class="col-xs-12 col-md-12 no-padding-lr text-center"><span class="text-5 line-bottom">Evolable Asiaの要員数</span>
+                                <div class="col-xs-12 col-md-12 no-padding-lr text-center"><span class="text-5 line-bottom">EVOLABLE ASIAの要員数</span>
                                     <p class="chart"><img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/47.jpg" alt="" />
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ get_header();
                                     </div>
                                 </div>
                                 <div class="gap-big"> </div>
-                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span class="text-4">従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社似合った人材を選定できるのも質が高く、幅広い人材を確保できるEvolable Asiaならではの強みだと考えています。</span>
+                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span class="text-4">従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社に合った人材を選定できるのも質が高く、幅広い人材を確保できるEVOLABLE ASIAならではの強みだと考えています。</span>
                                 </div>
                             </div>
                             <div class="row-gap-big"> </div>
@@ -102,7 +102,7 @@ get_header();
                                         <div class="glyphicon glyphicon-arrow-right center-block"> </div>
                                         <p> </p>
                                     </div>
-                                    <div class="col-xs-12 col-md-4 no-padding-lr text-center"><span class="text-6"><strong>Evolable Asia</strong> </span><img class="img-responsive img-reason-2 center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/50.jpg" alt="" />
+                                    <div class="col-xs-12 col-md-4 no-padding-lr text-center"><span class="text-6"><strong>EVOLABLE ASIA</strong> </span><img class="img-responsive img-reason-2 center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/50.jpg" alt="" />
                                     </div>
                                     <div class="col-xs-12 col-md-2 no-padding-lr"> </div>
                                     <div class="col-xs-12 col-md-2 no-padding-lr"> </div>
@@ -138,7 +138,7 @@ get_header();
                         <div class="container custom-containter">
                             <div class="row">
                                 <div class="col-xs-12 col-md-12 no-padding-lr">
-                                    <p class="text-5">ベトナム人スタッフを雇用する多くの企業が、離職率の高さやモチベーションの低下を悩みとしています。Evolable Asiaはスタッフに常に楽しんで、また意識を高く仕事をしてもらうための取り組みを数多く行っています。そのため高い人材定着率を誇り、安定したサービスを提供できます。</p>
+                                    <p class="text-5">ベトナム人スタッフを雇用する多くの企業が、離職率の高さやモチベーションの低下を悩みとしています。EVOLABLE ASIAはスタッフに常に楽しんで、また意識を高く仕事をしてもらうための取り組みを数多く行っています。そのため高い人材定着率を誇り、安定したサービスを提供できます。</p>
                                 </div>
                                 <div class="gap-medium"> </div>
                                 <div class="col-xs-12 col-md-12 no-padding-lr"><img class="img-responsive img-reason-2 center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/52.jpg" alt="" />
@@ -240,7 +240,7 @@ get_header();
                                     <div class="col-xs-12 col-md-3 no-padding-r"><img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/56.jpg" alt="" />
                                     </div>
                                     <div class="col-xs-12 col-md-9 text-left"><span class="text-7">JLIT(日本語IT能力試験</span><span class="text-7">)<br /> </span>
-                                        <p class="text-5">JLITは日本語を母国語としない人のIT能力および日本語能力を測定し認定する試験として、Evolable AsiaとVietnam Worksが協力し実施するものです。
+                                        <p class="text-5">JLITは日本語を母国語としない人のIT能力および日本語能力を測定し認定する試験として、EVOLABLE ASIAとVietnam Worksが協力し実施するものです。
                                             <br />特に、専門知識をもつIT従事者がどのようにして実際の現場で日本語を使い仕事をしていくか、という点に重点をおいています。
                                             <br />将来この試験が世界各国で行われるようになり、日本語を使い、IT業務に従事する人たちの指針になることを目指しています。
                                             <br /> <a class="link-1" href="http://jlit.evolable.asia/">http://jlit.evolable.asia/</a>
@@ -257,7 +257,7 @@ get_header();
                                         </div>
                                         <div class="col-xs-12 col-md-9 text-left"><span class="text-7">JLIC(Japanese and literacy of IT Collge</span><span class="text-7">)<br /></span>
                                             <p class="text-5">日本人の日本語教師が４人常駐し、業務時間外で日本語教室を運営しています。ラボチームのスタッフは無料で日本語の授業を受講することができます。初心者、初級者用のクラスだけでなく、必要に応じ、上級者用のクラスも随時設けられ、スタッフの更なる日本語レベルアップに段階に応じ対応しています。
-                                                <br />「JLIC」とはJapanese and Literacy of IT Collegeの略です。 JLICの主な業務内容は、 エンジニアに対する日本語教育と日本語ができるコミュニケーター向けのIT教育です。 この2目標を達成すべく、日本語教師たちは日々奮闘しています。</p>
+                                                <br />「JLIC」とはJapanese and Literacy of IT Collegeの略です。 JLICの主な業務内容は、 エンジニアに対する日本語教育と日本語ができるコミュニケーター向けのIT教育です。 この2つの目標を達成すべく、日本語教師たちは日々奮闘しています。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -274,7 +274,7 @@ get_header();
                                 <div class="col-xs-12 col-md-3 no-padding-r"><img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/vff.jpg" alt="" />
                                 </div>
                                 <div class="col-xs-12 col-md-9 text-left"><span class="text-7">サッカーベトナム代表(VFF)公式サポーター<br /> </span>
-                                    <p class="text-5">Evolable Asiaは2015年8月5日サッカーベトナム代表(VFF)のスポンサー契約を結びました。</p>
+                                    <p class="text-5">EVOLABLE ASIAは2015年8月5日サッカーベトナム代表(VFF)のスポンサー契約を結びました。</p>
                                     <div class="row-gap-small"></div>
                                     <a class="why-3-link" href="<?php echo home_url('vff') ?>"><span class="glyphicon glyphicon-menu-right"></span>公式サポーターになった背景について</a>
 

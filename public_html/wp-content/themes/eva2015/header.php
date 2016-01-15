@@ -133,8 +133,8 @@
                         
                         <div class="col-xs-12 visible-xs text-center no-padding-lr">
                             <div class="navbar-header mobie-brand">
-                                <a class="logo-mobie" href="<?php echo bloginfo('url') ?>">
-                                    <img alt="Brand" src="<?php echo get_template_directory_uri() ?>/img/29.png">
+                                <a href="<?php echo bloginfo('url') ?>">
+                                    <img class="img-responsive center-block" alt="Brand" src="<?php echo get_template_directory_uri() ?>/img/29.png">
                                 </a>
                                 <a id="responsive-menu-button" class="btn btn-toggle navbar-btn pull-right" href="#">
                                     <span class="sr-only">Toggle navigation</span>

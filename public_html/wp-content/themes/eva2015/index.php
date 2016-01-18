@@ -71,13 +71,13 @@ if ($available_why == 1) {
             <div class="container">
                 <div class="col-md-4 hidden-xs hidden-sm why-text-left text-left">
                     <div class="row-gap-big"></div>
-                    <h2>Why is<br> EVOLABLE ASIA 12<br> chosen<br> in Vietnam?</h2>
+                    <h2>Why is<br> EVOLABLE ASIA<br> chosen<br> in Vietnam?</h2>
                     <div class="text-small">
                         なぜエボラブルアジアが<br/>ベトナムのラボ型開発で<br/>選ばれるのか？
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 visible-xs visible-sm why-text-left text-center">
-                    <h2>Why is EVOLABLE ASIA 34<br> chosen in Vietnam?</h2>
+                    <h2>Why is EVOLABLE ASIA<br> chosen in Vietnam?</h2>
                     <div class="text">
                         なぜエボラブルアジアが<br/>ベトナムのラボ型開発で<br/>選ばれるのか？
                     </div>

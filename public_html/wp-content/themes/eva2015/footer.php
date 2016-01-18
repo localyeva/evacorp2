@@ -149,6 +149,7 @@
 <script src="<?php echo get_template_directory_uri() ?>/js/masonry.pkgd.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/wow.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/parallax/parallax.js"></script>
+<script src="<?php echo get_template_directory_uri() ?>/assets/jquery.nicescroll.340/jquery.nicescroll.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/js/common.js"></script>
 <?php wp_footer(); ?>
 </body>

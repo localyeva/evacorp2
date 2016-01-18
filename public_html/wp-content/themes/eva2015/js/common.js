@@ -133,4 +133,6 @@ $(function () {
         }
         lastScrollTop = scroll;
     });
+    
+    $("html").niceScroll({mousescrollstep:10, cursorwidth:10});
 });

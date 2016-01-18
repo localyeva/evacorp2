@@ -98,8 +98,8 @@ get_header();
                                     <div class="col-xs-12 col-md-1 no-padding-lr"> </div>
                                     <div class="col-xs-12 col-md-4 no-padding-lr text-center"><span class="text-6"><strong>従来のラボ型開発</strong> </span><img class="img-responsive img-reason-2 center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/49.jpg" alt="" />
                                     </div>
-                                    <div class="col-xs-12 col-md-1 no-padding-lr">
-                                        <div class="glyphicon glyphicon-arrow-right center-block"> </div>
+                                    <div class="col-xs-12 col-md-1 no-padding-lr text-center">
+                                        <div class="glyphicon glyphicon-arrow-right"> </div>
                                         <p> </p>
                                     </div>
                                     <div class="col-xs-12 col-md-4 no-padding-lr text-center"><span class="text-6"><strong>EVOLABLE ASIA</strong> </span><img class="img-responsive img-reason-2 center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/50.jpg" alt="" />

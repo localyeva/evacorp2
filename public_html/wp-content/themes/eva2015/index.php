@@ -28,7 +28,7 @@ if ($loop->have_posts()) {
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
-    <div class="overlay"></div>
+    <div class="carousel-overlay"></div>
     
     <!-- Indicators -->
     <ol class="carousel-indicators">

@@ -53,16 +53,32 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">               
                 <ul class="nav navbar-nav">
-                    <li class="active-menu"><a href="<?php echo bloginfo('url') ?>/message">HOME</a></li>
-                    <li><a href="<?php echo bloginfo('url') ?>/message">ナレッジ</a></li>
-                    <li><a href="<?php echo bloginfo('url') ?>/message">お客様の声</a></li>
-                    <li><a href="<?php echo bloginfo('url') ?>/message">インタビュー</a></li>
-                    <li><a href="<?php echo bloginfo('url') ?>/message">ＪＬＩＣ</a></li>
-                    <li><a href="<?php echo bloginfo('url') ?>/message">ベトナム生活情報</a></li>
-                    <li><a href="<?php echo bloginfo('url') ?>/message">インターン</a></li>
-                    <li><a href="<?php echo bloginfo('url') ?>/message">エボラブルアジアのHPへ</a></li>
+                    <?php
+                        $category_name = blog_active_category();
+                        $str_all = "";
+                        if($category_name == "All"){
+                            $str_all = "class='active-menu'";
+                        }
+                    ?>
+                    <li <?php echo $str_all;?>><a href="<?php echo bloginfo('url') ?>">ALL</a></li>
+                    <?php 
+                    $args = array(
+                        'taxonomy' => 'category',
+                        'hide_empty' => 0,
+                        'orderby' => 'id',
+                        'exclude' => 1,
+                    ); 
+                    $categories = get_categories( $args );
+                    foreach ($categories as $categorie) { 
+                        $str_active = "";
+                        if($categorie->name == $category_name) 
+                            $str_active = "class='active-menu'";
+                        $str_li="<li ".$str_active."><a href='". get_category_link($categorie->term_id)."'>".$categorie->name."</a></li>";            
+                        echo $str_li;
+                    }
+                    ?>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>

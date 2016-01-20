@@ -4,7 +4,10 @@
 	margin:auto;
 	.index-left-content{
 		img:hover{
-			opacity:0.5;
+			-webkit-transition: opacity 0.5s;
+                        -moz-transition: opacity 0.5s;
+                        transition: opacity 0.5s;
+                        opacity: 0.5;
 		}	
 		h3{
 			margin-top:0;
@@ -83,7 +86,18 @@
 				}		
 			}
 		}
-	}	
+                &.left{
+                    p{
+                        img{
+                            display: block;
+                            max-width: 100%;
+                            height: auto;      
+                            margin:auto;
+                        }
+                    }
+                }
+	}
+        
 }
 
 @media (max-width: 767px) {

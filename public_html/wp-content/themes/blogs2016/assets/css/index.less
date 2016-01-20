@@ -39,16 +39,7 @@
                 .category {
                     z-index: 11;
                     position: absolute;
-                    padding:2px 4px;
-                    &.pink {
-                        background-color: pink;
-                    }
-                    &.yellow {
-                        background-color: yellow;
-                    }
-                    &.sky-blue {
-                        background-color: sky-blue;
-                    }                    
+                    padding:2px 4px;                                                     
                 }
                 h3 {
                     z-index: 11;
@@ -57,7 +48,10 @@
             }
         }	
         .link:hover img{
-            opacity:0.5;
+                -webkit-transition: opacity 0.5s;
+                -moz-transition: opacity 0.5s;
+                transition: opacity 0.5s;
+                opacity: 0.5;
         }        		
 	}
 }

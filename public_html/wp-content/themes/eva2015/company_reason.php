@@ -70,7 +70,7 @@ get_header();
                                 <div class="col-xs-12 col-md-12 no-padding-lr text-center">
                                     <span class="text-1">REASON:2</span>
                                     <br>
-                                    <span class="text-2">質の高い技術者</span><span class="text-3"> の採用</span>
+                                    <span class="text-2">質の高い技術者</span><span class="text-3">の採用</span>
                                     <div class="drop-line-top center-block"></div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ get_header();
                                     </div>
                                 </div>
                                 <div class="gap-big"> </div>
-                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span class="text-4">従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社に合った人材を選定できるのも質が高く、幅広い人材を確保できるEVOLABLE ASIAならではの強みだと考えています。</span>
+                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span class="text-4">従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中からプロジェクトに最適な人材を選定できるのも、質が高く、幅広い人材を確保できるEVOLABLE ASIAならではの強みだと考えています。</span>
                                 </div>
                             </div>
                             <div class="row-gap-big"> </div>
@@ -127,7 +127,7 @@ get_header();
                                 <div class="col-xs-12 col-md-12 no-padding-lr text-center">
                                     <span class="text-1">REASON:3</span>
                                     <br>
-                                    <span class="text-2">10%</span><span class="text-3">未満の従業員</span><span class="text-2">離職率</span>
+                                    <span class="text-2">低い</span><span class="text-3">従業員の</span><span class="text-2">離職率</span>
                                     <div class="drop-line-top center-block"></div>
                                 </div>
                             </div>

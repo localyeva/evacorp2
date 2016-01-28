@@ -1,4 +1,4 @@
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-xs index-right">
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 hidden-xs index-right">
     <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/banner2.png" alt="EVOLABLE ASIA" class="img-responsive" width="100%"/></a>
     <h5>よく読まれている記事 TOP3</h5>
     <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/aaa1a.png" alt="EVOLABLE ASIA" class="img-responsive" width="100%"/></a>

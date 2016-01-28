@@ -10,12 +10,27 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
     <div class="detail">
         <div class="row center index-content">
 
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 index-left">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 index-left">
                 <div class="index-left-content left clearfix">
+                    <?php
+                        $obj_category = get_the_category($post->ID);
+                        $id_category_obj = $obj_category[0]->term_id;
+
+                    ?>
+                    <div class="bread-cum"><a href="<?php echo bloginfo('url') ?>">ホーム</a><span>></span><a href="<?php echo get_category_link($id_category_obj);?>">ナレッジ</a><span>></span></div>
                     <h3><?php the_title() ?></h3>
-                    <p>
-                        <?php echo $post->post_content ?>                              
-                    </p>
+                    <div class="post_info">
+                        <span class="glyphicon glyphicon-calendar"></span><span>2015/05/28</span><span class="glyphicon glyphicon-refresh"></span><span>2015/05/28</span>
+                        <p>
+                            <span class="glyphicon glyphicon glyphicon-tags"></span><span>-</span><a href="#">お客様の声</a>
+                        </p>
+                    </div>
+                    <div class="content-post">
+                        <p>
+                            <?php echo $post->post_content ?>  
+                        </p>                        
+                    </div>                                     
+                           
                     <div class="social">
                         <div class="iineBtn-fb">
                             <g:plusone size="medium"></g:plusone>

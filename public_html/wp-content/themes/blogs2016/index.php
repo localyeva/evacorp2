@@ -12,7 +12,7 @@ get_header();
 <div class="container">
     <div class="index">
         <div class="row center index-content">
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 index-left">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 index-left">
                 <div class="index-left-content">
                     <div class="row">
                         <?php get_template_part('part-load-blogs') ?>

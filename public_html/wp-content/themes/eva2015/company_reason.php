@@ -70,7 +70,7 @@ get_header();
                                 <div class="col-xs-12 col-md-12 no-padding-lr text-center">
                                     <span class="text-1">REASON:2</span>
                                     <br>
-                                    <span class="text-2">質の高い技術者</span><span class="text-3"> の採用</span>
+                                    <span class="text-2">質の高い技術者</span><span class="text-3">の採用</span>
                                     <div class="drop-line-top center-block"></div>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ get_header();
                                     </div>
                                 </div>
                                 <div class="gap-big"> </div>
-                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span class="text-4">従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中から御社に合った人材を選定できるのも質が高く、幅広い人材を確保できるEVOLABLE ASIAならではの強みだと考えています。</span>
+                                <div class="col-xs-12 col-md-12 no-padding-lr text-left"><span class="text-4">従来のただ従業員を斡旋するラボ型とは違い、豊富な人材の中からプロジェクトに最適な人材を選定できるのも、質が高く、幅広い人材を確保できるEVOLABLE ASIAならではの強みだと考えています。</span>
                                 </div>
                             </div>
                             <div class="row-gap-big"> </div>
@@ -98,8 +98,8 @@ get_header();
                                     <div class="col-xs-12 col-md-1 no-padding-lr"> </div>
                                     <div class="col-xs-12 col-md-4 no-padding-lr text-center"><span class="text-6"><strong>従来のラボ型開発</strong> </span><img class="img-responsive img-reason-2 center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/49.jpg" alt="" />
                                     </div>
-                                    <div class="col-xs-12 col-md-1 no-padding-lr">
-                                        <div class="glyphicon glyphicon-arrow-right center-block"> </div>
+                                    <div class="col-xs-12 col-md-1 no-padding-lr text-center">
+                                        <div class="glyphicon glyphicon-arrow-right"> </div>
                                         <p> </p>
                                     </div>
                                     <div class="col-xs-12 col-md-4 no-padding-lr text-center"><span class="text-6"><strong>EVOLABLE ASIA</strong> </span><img class="img-responsive img-reason-2 center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/50.jpg" alt="" />
@@ -127,7 +127,7 @@ get_header();
                                 <div class="col-xs-12 col-md-12 no-padding-lr text-center">
                                     <span class="text-1">REASON:3</span>
                                     <br>
-                                    <span class="text-2">10%</span><span class="text-3">未満の従業員</span><span class="text-2">離職率</span>
+                                    <span class="text-2">低い</span><span class="text-3">従業員の</span><span class="text-2">離職率</span>
                                     <div class="drop-line-top center-block"></div>
                                 </div>
                             </div>
@@ -146,10 +146,10 @@ get_header();
                             </div>
                             <div class="row-gap-big"> </div>
                             <div class="row">
-                                <div class="col-xs-12 col-md-12 no-padding-lr">
-                                    <div class="col-xs-12 col-md-4"><img class="alignleft size-medium wp-image-2201 img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/kickoff.jpg" alt="_MG_9869" width="300" height="200" />KICK OFF</div>
-                                    <div class="col-xs-12 col-md-4"><img class="size-medium wp-image-2210 alignnone img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/japanese-class.jpg" alt="_MG_1009 (Copy)" width="300" height="226" />日本語教室</div>
-                                    <div class="col-xs-12 col-md-4"><img class="alignleft size-medium wp-image-2175 img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/travel.jpg" alt="38" width="300" height="197" />社員旅行</div>
+                                <div class="col-xs-12 col-md-12 no-padding-lr xs-text-center">
+                                    <div class="col-xs-12 col-md-4"><img class="alignleft size-medium wp-image-2201 img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/kickoff.jpg" alt="_MG_9869" width="300" height="200" />KICK OFF</div>
+                                    <div class="col-xs-12 col-md-4"><img class="size-medium wp-image-2210 alignnone img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/japanese-class.jpg" alt="_MG_1009 (Copy)" width="300" height="226" />日本語教室</div>
+                                    <div class="col-xs-12 col-md-4"><img class="alignleft size-medium wp-image-2175 img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/travel.jpg" alt="38" width="300" height="197" />社員旅行</div>
                                 </div>
                             </div>
                             <div class="row-gap-big"> </div>
@@ -237,7 +237,7 @@ get_header();
                             <div class="row-gap-medium"> </div>
                             <div class="row">
                                 <div class="col-xs-12 col-md-12 no-padding-lr">
-                                    <div class="col-xs-12 col-md-3 no-padding-r"><img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/56.jpg" alt="" />
+                                    <div class="col-xs-12 col-md-3 no-padding-r"><img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/56.jpg" alt="" />
                                     </div>
                                     <div class="col-xs-12 col-md-9 text-left"><span class="text-7">JLIT(日本語IT能力試験</span><span class="text-7">)<br /> </span>
                                         <p class="text-5">JLITは日本語を母国語としない人のIT能力および日本語能力を測定し認定する試験として、EVOLABLE ASIAとVietnam Worksが協力し実施するものです。
@@ -253,7 +253,7 @@ get_header();
                                 <div class="row">
                                     <div class="col-xs-12 col-md-12 no-padding-lr">
                                         <div class="col-xs-12 col-md-3 no-padding-r">
-                                            <a href="http://evacorp.test/wp-content/uploads/MG_1009-Copy2.jpg"><img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/57.jpg" alt="_MG_1009 (Copy)" width="244" height="184" /> </a>
+                                            <a href="http://evacorp.test/wp-content/uploads/MG_1009-Copy2.jpg"><img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/57.jpg" alt="_MG_1009 (Copy)" width="244" height="184" /> </a>
                                         </div>
                                         <div class="col-xs-12 col-md-9 text-left"><span class="text-7">JLIC(Japanese and literacy of IT Collge</span><span class="text-7">)<br /></span>
                                             <p class="text-5">日本人の日本語教師が４人常駐し、業務時間外で日本語教室を運営しています。ラボチームのスタッフは無料で日本語の授業を受講することができます。初心者、初級者用のクラスだけでなく、必要に応じ、上級者用のクラスも随時設けられ、スタッフの更なる日本語レベルアップに段階に応じ対応しています。
@@ -271,12 +271,12 @@ get_header();
                             <div class="row">
                                 <div class="col-xs-12 col-md-12 no-padding-lr">
                                 <div class="row-gap-big"></div>
-                                <div class="col-xs-12 col-md-3 no-padding-r"><img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/img/reason/vff.jpg" alt="" />
+                                <div class="col-xs-12 col-md-3 no-padding-r"><img class="img-responsive center-block" src="<?php echo get_template_directory_uri() ?>/img/reason/vff.jpg" alt="" />
                                 </div>
                                 <div class="col-xs-12 col-md-9 text-left"><span class="text-7">サッカーベトナム代表(VFF)公式サポーター<br /> </span>
                                     <p class="text-5">EVOLABLE ASIAは2015年8月5日サッカーベトナム代表(VFF)のスポンサー契約を結びました。</p>
                                     <div class="row-gap-small"></div>
-                                    <a class="why-3-link" href="<?php echo home_url('vff') ?>"><span class="glyphicon glyphicon-menu-right"></span>公式サポーターになった背景について</a>
+                                    <p class="xs-text-center"><a class="why-3-link" href="<?php echo home_url('vff') ?>"><span class="glyphicon glyphicon-menu-right"></span>公式サポーターになった背景について</a></p>
 
                                 </div>
                             </div>

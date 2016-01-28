@@ -116,6 +116,7 @@ $(function () {
         if (scroll > nav.height()) {
             if (!nav.hasClass('navbar-fixed-top')) {
                 nav.addClass('navbar-fixed-top');
+                $('#myCarousel').css('marginTop', nav.height());
             }
             if (scroll > lastScrollTop) {
                 nav.addClass('invisible').removeClass('visible');
@@ -128,9 +129,12 @@ $(function () {
                     nav.removeClass('navbar-fixed-top')
                         .removeClass('invisible')
                         .addClass('visible');
+                    $('#myCarousel').css('marginTop', 0);
                 }
             }
         }
         lastScrollTop = scroll;
     });
+
+    $("html").niceScroll({mousescrollstep:10, cursorwidth:10});
 });

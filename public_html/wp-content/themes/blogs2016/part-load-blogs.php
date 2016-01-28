@@ -13,32 +13,31 @@ foreach ($categories as $category) {
 $bg_color = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange');
 $class_category = array_combine($category_names, $bg_color);
 
-$args = array(
-    'category' => $cat,
-    'orderby' => 'date',
-    'order' => 'DESC',
-    'include' => '',
-    'exclude' => '',
-    'meta_key' => '',
-    'meta_value' => '',
-    'post_type' => 'post',
-    'post_mime_type' => '',
-    'post_parent' => '',
-    'author' => '',
-    'post_status' => 'publish',
-    'paged' => $paged,
-    'suppress_filters' => true
-);
-$wp_query = new WP_Query();
-$wp_query->query($args);
-
 $count = 1;
 
 if ($cat != '') {
 
+    $args = array(
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'category',
+                'field' => 'id',
+                'terms' => $cat,
+            ),
+        ),
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'paged' => $paged,
+    );
+    $wp_query = new WP_Query();
+    $wp_query->query($args);
+
     $cat_name = get_cat_name($cat);
 
     if ($wp_query->have_posts()) :
+
         while ($wp_query->have_posts()):
             $wp_query->the_post();
             $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
@@ -78,7 +77,18 @@ if ($cat != '') {
             $count++;
         endwhile;
     endif;
+    // get all posts
 } else {
+
+    $args = array(
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'paged' => $paged,
+    );
+    $wp_query = new WP_Query();
+    $wp_query->query($args);
 
     if ($wp_query->have_posts()) :
         while ($wp_query->have_posts()):

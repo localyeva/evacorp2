@@ -186,7 +186,7 @@ get_header();
 
             <form method="POST">
                 <div class="center">
-                    <button class="btn btn-success center-block inline-block btn-confirm" type="submit">入力内容を送信</button>
+                    <button class="btn btn-success center-block btn-confirm" type="submit">入力内容を送信</button>
                     <div class="row-gap-big"></div> 
                     <table class="table table-borderless">
                         <tr>

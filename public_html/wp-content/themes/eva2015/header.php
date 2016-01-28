@@ -26,8 +26,8 @@
         <!-- FACE BOOK start -->
         <meta property="og:title" content="オフショア ベトナム｜ベトナムでのBPO、オフショアならエボラブルアジア" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://evolable.asia/" />
-        <meta property="og:image" content="" />
+        <meta property="og:url" content="http://evolable.asia/" />        
+        <meta property="og:image"  content="http://evolable.asia/wp-content/uploads/facebook_ogp1-1.png" />
         <!-- //FACE BOOK end -->
 
         <script type="text/javascript">

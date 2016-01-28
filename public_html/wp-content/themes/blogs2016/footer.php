@@ -1,3 +1,7 @@
+<?php
+global $switched;
+switch_to_blog(1);
+?>
 <div class="container-fluid header-footer">
     <div class="container">
         <div class="row">

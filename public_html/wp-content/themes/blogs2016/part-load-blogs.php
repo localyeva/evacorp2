@@ -59,7 +59,7 @@ if ($cat != '') {
                 </div>
             <?php else: ?>
                 <div class="index-left-2">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item padding-lr">
                         <a href="<?php the_permalink() ?>" class="link">
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
@@ -113,7 +113,7 @@ if ($cat != '') {
                 </div>
             <?php else: ?>
                 <div class="index-left-2">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 item padding-lr">
                         <a href="<?php the_permalink() ?>" class="link">
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
@@ -133,8 +133,3 @@ if ($cat != '') {
     endif;
 }
 ?>
-
-<div style="clear:both;"></div>
-<div style="text-align:center;margin: 20px auto;">
-    <?php wpbeginner_numeric_posts_nav(); ?>  
-</div>

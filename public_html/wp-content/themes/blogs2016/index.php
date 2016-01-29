@@ -12,12 +12,16 @@ get_header();
 <div class="container">
     <div class="index">
         <div class="row center index-content">
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 index-left">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 index-left padding-lr">
                 <div class="index-left-content">
                     <div class="row">
                         <?php get_template_part('part-load-blogs') ?>
                     </div>                    
                 </div>
+                <div style="clear:both;"></div>
+                <div style="text-align:center;margin: 20px auto;">
+                    <?php wpbeginner_numeric_posts_nav(); ?>  
+                </div>                
             </div>
             <?php get_sidebar() ?>
         </div>

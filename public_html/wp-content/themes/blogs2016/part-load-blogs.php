@@ -7,11 +7,21 @@ $args = array(
     'exclude' => 1,
 );
 $categories = get_categories($args);
-foreach ($categories as $category) {
-    $category_names[] = $category->name;
+$class_category = array();
+if (count($categories) > 0) {
+    foreach ($categories as $category) {
+        $category_names[] = $category->name;
+    }
+    //
+    $c_bg_colors = array();
+    $bg_colors = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange');
+    //
+    for ($i = 0; $i < count($category_names); $i++) {
+        $c_bg_colors[] = $bg_colors[$i];
+    }
+    //
+    $class_category = @array_combine($category_names, $c_bg_colors);
 }
-$bg_color = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange');
-$class_category = array_combine($category_names, $bg_color);
 
 $count = 1;
 
@@ -50,7 +60,7 @@ if ($cat != '') {
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
                                 <span class="overlay"></span>
-                                <span class="post-date"><?php the_time('Y.m.d'); ?></span>
+                                <span class="post-date"><?php the_time('Y/m/d'); ?></span>
                                 <span class="category <?php echo $class_category[$cat_name]; ?>"><?php echo $cat_name; ?></span>
                                 <h3 class="title"><?php the_title(); ?></h3>
                             </span>
@@ -64,8 +74,8 @@ if ($cat != '') {
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
                                 <span class="overlay"></span>
-                                <span class="post-date"><?php the_time('Y.m.d'); ?></span>
-                                <span class="category <?php echo $class_category[$cat_name]; ?>"><?php echo $cat_name; ?></span>
+                                <span class="post-date"><?php the_time('Y/m/d'); ?></span>
+                                <span class="category <?php echo isset($class_category[$cat_name]) ? $class_category[$cat_name] : ""; ?>"><?php echo $cat_name; ?></span>
                                 <h3 class="title"><?php the_title(); ?></h3>
                             </span>
                         </a>                                  
@@ -104,8 +114,8 @@ if ($cat != '') {
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
                                 <span class="overlay"></span>
-                                <span class="post-date"><?php the_time('Y.m.d'); ?></span>
-                                <span class="category <?php echo $class_category[$cats[0]->cat_name]; ?>"><?php echo $cats[0]->cat_name; ?></span>
+                                <span class="post-date"><?php the_time('Y/m/d'); ?></span>
+                                <span class="category <?php echo isset($class_category[$cats[0]->cat_name]) ? $class_category[$cats[0]->cat_name] : ""; ?>"><?php echo $cats[0]->cat_name; ?></span>
                                 <h3 class="title"><?php the_title(); ?></h3>
                             </span>
                         </a>                                
@@ -118,8 +128,8 @@ if ($cat != '') {
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
                                 <span class="overlay"></span>
-                                <span class="post-date"><?php the_time('Y.m.d'); ?></span>
-                                <span class="category <?php echo $class_category[$cats[0]->cat_name]; ?>"><?php echo $cats[0]->cat_name; ?></span>
+                                <span class="post-date"><?php the_time('Y/m/d'); ?></span>
+                                <span class="category <?php echo isset($class_category[$cats[0]->cat_name]) ? $class_category[$cats[0]->cat_name] : ""; ?>"><?php echo ($cats[0]->cat_name != 'Uncategorized') ? $cats[0]->cat_name : '' ?></span>
                                 <h3 class="title"><?php the_title(); ?></h3>
                             </span>
                         </a>                                  

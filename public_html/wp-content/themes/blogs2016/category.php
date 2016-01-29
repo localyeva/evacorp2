@@ -4,9 +4,21 @@
  *
  */
 get_header();
+$cat_name = "All";
+if ($cat != '') {
+    $cat_name = get_cat_name($cat);
+}
 ?>           
 <div class="container">
     <div class="index">
+        <div class="row index-content">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 index-left padding-lr">
+                <h4 class="head-title">
+                    <div><span><?php echo $cat_name?></span></div>
+                </h4>
+            </div>
+            
+        </div>
         <div class="row center index-content">
             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 index-left padding-lr">
                 <div class="index-left-content">

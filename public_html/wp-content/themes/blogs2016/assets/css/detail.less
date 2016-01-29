@@ -1,21 +1,33 @@
 
 .detail{
+        background-color: #fff;
+        padding: 0px 25px 18px 25px;
 	max-width:@max-width;
 	margin:auto;
+        
+        .bread-cum{
+                //margin:-10px 0 20px 0;
+                a{
+                        font-size:@font-size-12;
+                        color:#666;
+                        text-decoration:none;
+                }
+                span{
+                        color:@color-body;
+                        padding:0 3px;
+                        font-size:@font-size-body;
+                }
+                padding-top: 20px;
+                padding-bottom: 20px;
+                //background: #f3f3f3;
+        }
+        
 	.index-left-content{
-		.bread-cum{
-			margin:-10px 0 20px 0;
-			a{
-				font-size:@font-size-12;
-				color:#666;
-				text-decoration:none;
-			}
-			span{
-				color:@color-body;
-				padding:0 3px;
-				font-size:@font-size-body;
-			}
-		}
+                border: solid 1px #ccc;
+                padding: 20px 20px 0 20px;
+                border-radius: 4px;
+                box-shadow: 0 0 1px 1px #ccc;    
+		
 		.post_info{
 			border-top:1px solid #505050;
 			border-bottom:1px dotted #505050;
@@ -153,6 +165,9 @@
 @media (max-width: 767px) {
 	.detail{
 	    .index-left-content{
+                border: none;
+                box-shadow: none;
+                
 	        padding:0px;
 	        background:none;
 	        border-radius:0px;
@@ -168,17 +183,8 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {	
-	.detail{
-        .index-content{
-            padding-left:10px;
-            padding-right:10px;
-            .col-sm-8,.col-sm-4{
-                padding-left:5px;
-                padding-right:5px;
-            }         
-        }	
+	.detail{	
 	    .index-left-content{
-	        padding:15px 15px 15px 0;
 	        background:@color-white;
 	        border-radius:5px;
 	        h3{
@@ -193,16 +199,7 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {	
 	.detail{
-        .index-content{
-            padding-left:10px;
-            padding-right:10px;
-            .col-sm-8,.col-sm-4{
-                padding-left:5px;
-                padding-right:5px;
-            }         
-        }	
 	    .index-left-content{
-	        padding:15px 15px 15px 0;
 	        background:@color-white;
 	        border-radius:5px;
 	        h3{
@@ -217,16 +214,7 @@
 
 @media (min-width: 1200px) {
 	.detail{
-        .index-content{
-            padding-left:10px;
-            padding-right:10px;
-            .col-sm-8,.col-sm-4{
-                padding-left:5px;
-                padding-right:5px;
-            }         
-        }	
 	    .index-left-content{
-	        padding:15px 15px 15px 0;
 	        h3{
 	        	font-size:@font-size-24;
 	        }	 

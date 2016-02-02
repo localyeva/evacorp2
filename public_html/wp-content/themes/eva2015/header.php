@@ -57,6 +57,10 @@
             })();
         </script>
 
+        <!-- B-Dash Tag -->
+        <script type="text/javascript" src="//analytics.fs-bdash.com/F0HSNO/bd-F0HSNO-1.js"></script>
+        <!-- End B-Dash Tag -->
+
         <script type="text/javascript">
             (function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -121,16 +125,16 @@
                                     <a href="<?php echo bloginfo('url') ?>/contact/">お問い合わせ</a>
                                 </li>
                             </ul>
-                                           
+
+                        </div>
                     </div>
                 </div>
-                </div>
             </nav>
-            
+
             <nav class="navbar navbar-default nav-sp">
                 <div class="container">
                     <div class="row">
-                        
+
                         <div class="col-xs-12 visible-xs text-center no-padding-lr">
                             <div class="navbar-header mobie-brand">
                                 <a href="<?php echo bloginfo('url') ?>">
@@ -161,4 +165,3 @@
                 </div>
             </nav>
         </div>                
-        

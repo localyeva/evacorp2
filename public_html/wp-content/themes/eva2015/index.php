@@ -465,7 +465,6 @@ if ($available_new == 1) {
                     $category_names[] = $category->name;
                 }
                 //
-                var_dump($category_names);
                 $c_bg_colors = array();
                 $bg_colors = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange');
                 //
@@ -499,7 +498,9 @@ if ($available_new == 1) {
                             <div class="caption left">
                                 <div class="news-main-title">
                                     <span class="date-text"><?php the_date('Y.m.d'); ?></span>
-                                    <span class="categories-text <?php echo isset($class_category[$cats[0]->cat_name]) ? $class_category[$cats[0]->cat_name] : ""; ?>"><?php echo ($cats[0]->cat_name != 'Uncategorized') ? $cats[0]->cat_name : '' ?></span>
+                                    <?php if ($cats[0]->cat_name != 'Uncategorized'): ?>
+                                        <span class="categories-text <?php echo isset($class_category[$cats[0]->cat_name]) ? $class_category[$cats[0]->cat_name] : ""; ?>"><?php echo ($cats[0]->cat_name != 'Uncategorized') ? $cats[0]->cat_name : '' ?></span>
+                                    <?php endif; ?>
                                 </div>
                                 <h2 class="intro more"><?php the_title(); ?></h2>
                             </div>

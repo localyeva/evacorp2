@@ -4,6 +4,19 @@
  * Template Name: contact-confirm
  * 
  */
+
+add_filter('wp_mail_from', 'my_mail_from');
+
+function my_mail_from($email) {
+    return "change-this-to-your-email-address";
+}
+
+add_filter('wp_mail_from_name', 'my_mail_from_name');
+
+function my_mail_from_name($name) {
+    return "ホームページからお問い合わせがありました";
+}
+
 //お問い合わせフォーム内容
 $reg_item = @htmlspecialchars($_POST['item']);
 $reg_name = @htmlspecialchars($_POST['cname']);
@@ -20,7 +33,7 @@ $reg_orther = @htmlspecialchars($_POST['orther']);
 if (isset($_POST['action']) && $_POST['action'] == 'confirm') {
     // confirm
 } elseif (isset($_POST['action']) && $_POST['action'] == 'send') {
-    
+
     $data = array(
         'entry_time' => gmdate("Y/m/d H:i:s", time() + 9 * 3600),
         'entry_host' => gethostbyaddr(getenv("REMOTE_ADDR")),
@@ -36,16 +49,16 @@ if (isset($_POST['action']) && $_POST['action'] == 'confirm') {
         'career' => $reg_career,
         'intro' => $reg_intro,
     );
-    
+
     // メール送信
-    
+
     require_once WP_PLUGIN_DIR . '/eva-contact/lib/Twig/Autoloader.php';
     Twig_Autoloader::register();
 
     $loader = new Twig_Loader_String;
-    
+
     $twig = new Twig_Environment($loader);
-    
+
     $from = omw_get_option('wpt_omw_text_from_email');
     $fromname = omw_get_option('wpt_omw_text_from_name');
 
@@ -58,7 +71,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'confirm') {
         //
         wp_mail($data['email'], stripslashes($subject_client), stripslashes($body_client), $headers);
     }
-    
+
     //お問い合わせメッセージ送信
     $body_admin = omw_get_option('wpt_omw_text_block_admin');
     if (isset($body_admin) && $body_admin != '') {
@@ -85,7 +98,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'confirm') {
 //    umezawa@evolable.asia
 //    y_nakamura@evolable.asia
 //    yoshizako@evolable.asia
-    
+
     wp_redirect(home_url() . '/contact/thankyou');
     exit;
 } else {

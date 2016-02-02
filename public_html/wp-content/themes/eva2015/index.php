@@ -27,9 +27,9 @@ if ($loop->have_posts()) {
 ?>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    
+
     <div class="carousel-overlay"></div>
-    
+
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <?php for ($i = 0; $i < count($home_slider); $i++): ?>
@@ -174,7 +174,7 @@ if ($available_service == 1) {
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
                             <?php if ($i > 1 AND $i < 4) { ?>
-                                
+
                                 <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInDown">
                                     <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                                         <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
@@ -211,7 +211,7 @@ if ($available_service == 1) {
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
                             <?php if ($j >= 4 AND $j < 6) { ?>
-                                
+
 
                                 <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInUp">
                                     <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
@@ -225,7 +225,7 @@ if ($available_service == 1) {
                                         </div>
                                     </a>                                        
                                 </div>   
-                                
+
                             <?php } ?>
                             <?php $j++; ?>
                         <?php endwhile; ?>
@@ -440,56 +440,89 @@ if ($available_new == 1) {
 }
 ?>
 <!--//News End-->
+
 <!--//Blog-->
-<?php
-$available_blog = get_blog_div();
-if ($available_blog == 1) {
-    ?>
-    <div class="container-fluid block-center header-news home-blog-bg" style="display:none">
-            <h1 class="text-center"><?php echo get_blog_text(); ?></h1>
-            <div class="container">
-                <div class="row">
-    <?php
-    $time3 = 0;
-    $args = array(
-        'post_type' => 'blog',
-        'posts_per_page' => 3,
-        'orderby' => array('date' => 'DESC'),
-    );
-    $loop = new WP_Query($args);
-    ?>
-    <?php
-    if ($loop->have_posts()):
-        $num_posts = count($loop->posts);
-        ?>
-        <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                                    <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
-                                        <a class="news-hover" href="<?php echo get_field('link') ?>">
-                                            <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
-                                            <div class="caption-eva" ></div>
-                                            <span class="overlay"></span>
-                                            <div class="caption full-width left">
-                                                <div class="news-main-title">
-                                                    <span class="date-text"><?php the_date('Y.m.d'); ?></span><span class="categories-text">demo</span>
-                                                </div>
-                                                <h2 class="intro more"><?php the_title(); ?></h2>
-                                            </div>
-                                        </a>
-                                    </div>
-            <?php $time3+= 0.5; ?>
-        <?php endwhile; ?>
-    <?php endif; ?>
-    <?php wp_reset_postdata() ?>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-12 text-center">
-                        <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+<div class="container-fluid block-center header-news home-blog-bg">
+    <h1 class="text-center"><?php echo get_blog_text(); ?></h1>
+    <div class="container">
+        <div class="row">
+            <?php
+            //
+            global $switched;
+            switch_to_blog(3);
+            //
+            $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
+            $args = array(
+                'taxonomy' => 'category',
+                'hide_empty' => 0,
+                'orderby' => 'id',
+                'exclude' => 1,
+            );
+            $categories = get_categories($args);
+            $class_category = array();
+            if (count($categories) > 0) {
+                foreach ($categories as $category) {
+                    $category_names[] = $category->name;
+                }
+                //
+                var_dump($category_names);
+                $c_bg_colors = array();
+                $bg_colors = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange');
+                //
+                for ($i = 0; $i < count($category_names); $i++) {
+                    $c_bg_colors[] = $bg_colors[$i];
+                }
+                //
+                $class_category = @array_combine($category_names, $c_bg_colors);
+            }
+            //
+            $time3 = 0;
+            $args = array(
+                'orderby' => 'date',
+                'order' => 'DESC',
+                'post_type' => 'post',
+                'posts_per_page' => 3,
+            );
+            $loop = new WP_Query($args);
+            //
+            if ($loop->have_posts()) :
+                while ($loop->have_posts()):
+                    $loop->the_post();
+                    $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+                    $cats = get_the_category($post->ID);
+                    ?>
+                    <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
+                        <a class="news-hover" href="<?php the_permalink() ?>">
+                            <img src="<?php echo $url ?>" alt="<?php the_title() ?>" class="img-responsive full-width">
+                            <div class="caption-eva" ></div>
+                            <span class="overlay"></span>
+                            <div class="caption left">
+                                <div class="news-main-title">
+                                    <span class="date-text"><?php the_date('Y.m.d'); ?></span>
+                                    <span class="categories-text <?php echo isset($class_category[$cats[0]->cat_name]) ? $class_category[$cats[0]->cat_name] : ""; ?>"><?php echo ($cats[0]->cat_name != 'Uncategorized') ? $cats[0]->cat_name : '' ?></span>
+                                </div>
+                                <h2 class="intro more"><?php the_title(); ?></h2>
+                            </div>
+                        </a>
                     </div>
-                </div>
+                    <?php
+                    $time3+= 0.5;
+                endwhile;
+            endif;
+            wp_reset_postdata()
+            ?>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12 text-center">
+                <a href="<?php bloginfo('url') ?>">
+                    <button class="btn btn-slim "><span class="glyphicon glyphicon-plus"></span>View All</button>
+                </a>
             </div>
         </div>
-    <?php
-}
+    </div>
+</div>
+<?php
+switch_to_blog(1);
 ?>
 <!--//Blog End-->
 

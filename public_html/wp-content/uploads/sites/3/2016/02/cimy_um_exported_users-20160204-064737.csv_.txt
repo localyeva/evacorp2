@@ -1,0 +1,40 @@
+"% USERID %","% USERNAME %","% ROLE %","% FIRSTNAME %","% LASTNAME %","% NICKNAME %","% DISPLAYNAME %","% NICENAME %","% EMAIL %","% WEBSITE %","% AIM %","% YAHOO %","% JABBER %","% DESCRIPTION %","% REGISTERED %"
+101010,backup,administrator,,,,,,,,,,,,"2012-09-28 00:00:00"
+1,admin,administrator,,,admin,admin,admin,dohoannam@gmail.com,,,,,thanks!,"2014-09-03 04:37:06"
+3,"ono koya",author,小野,亨也,"ono koya","小野 亨也",ono-koya,ito@evolable.asia,,,,,"初めまして。インターン生の小野亨也(こうや)です。
+2014/9/8～9/16の間インターンをしていました。
+インターンで体感した「ベトナムで働くこと」についてお伝えします！","2014-09-23 01:01:35"
+4,osaki,administrator,大崎,沙世,Osaki,"大崎 沙世",osaki,osaki@evolable.asia,,,,,"2014年9月から約半年間、エボラブルアジアでインターン中。
+関西から来た大学４年生です。","2014-09-24 06:36:57"
+5,eva-editor,editor,EVAブログ編集部,,eva-editor,EVAブログ編集部,eva-editor,itou@evolable.asia,,,,,エボラブルアジアのニュース/ビジネス/ベトナム生活情報などのお役立ち記事を配信しています。,"2014-09-24 10:07:57"
+6,yoshizako,author,吉迫,寿,yoshizako,"吉迫 寿",yoshizako,yoshizako@evolable.asia,,,,,中国でのオフショア開発会社、事業会社立ち上げ経験を経て現在ベトナム、ハノイ支社でのラボマネージャとして活躍中！！,"2014-09-26 10:54:28"
+7,"Fujiwara Ayaka",author,藤原,文佳,Fujiwara,"藤原 文佳",fujiwara-ayaka,sy12.clr@gmail.com,,,,,2014年9月に１週間、初めての海外インターンでエボラブルアジアに来ました。,"2014-09-29 04:32:06"
+8,kashiwagi,editor,柏木,武志,"柏木 武志","柏木 武志",kashiwagi,kashiwagi@evolable.asia,,,,,営業だけでなく、技術畑にも15年間いました。オフショア開発で知りたい情報を発信していきます。ベトナム、ホーチミンでお待ちしています。,"2014-09-30 04:03:45"
+9,Takada,author,高田,直子,Takada,"高田 直子",takada,takada@evolable.asia,,,,,ただ今、ベトナムの生活･仕事を満喫中！,"2014-10-02 08:38:19"
+10,Nakagawa,author,中川,希美,Nakagawa,"中川 希美",nakagawa,nakagawa@evolable.asia,,,,,"2014年6月よりベトナム生活＆IT業界デビュー。
+ニョクマムは好きになれませんが、ベトナムは大好きになりました！","2014-10-02 09:15:36"
+11,Ushijima,author,牛島,由香里,Ushijima,"牛島 由香里",ushijima,ushijima@evolable.asia,,,,,"人民元、ドルに続いてベトナムドン
+カラフルなホーチミン様とのお付き合いは長くなりそうな予感。","2014-10-02 09:17:11"
+12,Fujikawa,author,藤川,源太,Fujikawa,"藤川 源太",fujikawa,fujikawa@evolable.asia,,,,,ベトナム人に間違われやすい日本人、、、って。,"2014-10-02 09:18:01"
+13,Yamamoto,administrator,山元,恵,Yamamoto,"山元 恵",yamamoto,yamagen08@gmail.com,,,,,2014年10月から1ヶ月間、初のベトナムでのインターンシップに参加します！,"2014-10-06 04:29:11"
+14,Shimizu,author,清水,浩太,Shimizu,"清水 浩太",shimizu,shimizu@evolable.asia,,,,,日本食よりベトナムのローカル飯の方が落ち着く今日この頃。,"2014-10-07 05:33:49"
+15,Sol,author,薛,悠司,Sol,"薛 悠司",sol,y_sol@soltecvn.com,,,,,"エボラブルアジアの成長に情熱を注ぎます！
+最近デスクではバランスボールを愛用中。","2014-10-17 09:59:40"
+16,Sen,author,"DTH. Sen",,Sen,"DTH. Sen",sen,sendth@evolableasia.vn,,,,,GAとして業務を任せられています。日本の会社で働くのことで、日本語が練習できたり、新しい経験を身に付けられたりしています。もっと頑張っていきたいと思っています。,"2014-11-13 07:53:04"
+17,Trang,author,"TTT. Trang",,Trang,"TTT. Trang",trang,trangttt@evolableasia.vn,,,,,ＩＴコミュニケーターの経験を活かし、日系ITオフショア産業にもっと貢献したく日々精進中,"2014-11-13 07:59:11"
+18,Anh,author,"NN. Anh",,Anh,"NN. Anh",anh,anhnn@evolableasia.vn,,,,,はじめまして！！！インターン生グェン　ニャット　アインです。大阪でコンピューターを勉強しました。目標は大学院まで勉強したいと思います。将来は大学院で勉強した技術を生かして社会に役に立つことです。よろしくお願いします！！！,"2014-11-13 08:02:37"
+19,Dung,author,LT.Dung,,Dung,LT.Dung,dung,dunglt1@evolableasia.vn,,,,,言語の壁や異文化の問題があり、外国人と一緒に働くのは面倒な面もありますが、楽しみもあります。一番大事なのはお互い理解し、助け合うことです。一緒に頑張って、一緒に汗を流そうじゃありませんか。,"2014-11-13 08:07:39"
+20,Iwabuchi,author,岩淵,由香里,Iwabuchi,"岩淵 由香里",iwabuchi,iwabuchi@evolable.asia,,,,,ベトナム在住歴4年。困った事は何でもご相談ください！,"2014-12-02 04:27:07"
+21,Nishida,administrator,西田,莉紗,"Lisa Nishida","西田 莉紗",nishida,nishida@evolable.asia,,,,,"ベトナムでインターン中の女子大生。
+チョコとコーヒーが大好きな２１歳です。","2014-12-03 07:33:32"
+22,"atsushi ito",author,atsushi,ito,"atsushi ito","atsushi ito",atsushi-ito,test@evolable.asia,http://evolable.asia/,,,,ベトナムでの生活、仕事を楽しんでます！,"2014-12-08 07:04:06"
+23,Wakushima,administrator,Wakushima,Yuta,Wakushima,"Wakushima Yuta",wakushima,y_wakushima@evolable.asia,,,,,,"2014-12-29 03:40:15"
+24,Umezawa,administrator,梅澤,美帆,Umezawa,"梅澤 美帆",umezawa,umezawa@evolable.asia,,,,,新婚の旦那さんのために、ベトナムで日本食料理に奮闘中♡,"2014-12-31 01:32:18"
+25,Uechi,administrator,上地,亜矢子,Uechi,"上地 亜矢子",uechi,uechi@evolable.asia,,,,,2015年1月からハノイでの生活をスタート。日々奮闘中！,"2015-02-10 04:39:26"
+26,"Hirakawa Kazuma",editor,平川,和真,"Hirakawa Kazuma","平川 和真",hirakawa-kazuma,hirakawa@evolable.asia,,,,,,"2015-03-26 04:11:03"
+27,"ozawa hiromi",administrator,宏美,小沢,"ozawa hiromi","小沢 宏美",ozawa-hiromi,o_hiromi@evolable.asia,,,,,祖父に「外国人の顔になってきた」と言われました,"2015-03-26 07:01:48"
+28,"Yuka Nakamura",administrator,中村,夕夏,"Yuka Nakamura","中村 夕夏",yuka-nakamura,y_nakamura@evolable.asia,,,,,,"2015-04-02 08:56:43"
+29,Hanh,author,DB.Hanh,,Hanh,DBHanh,hanh,hanhdb@evolableasia.vn,,,,,"旅行が大好きです。同じく旅行の好きな方がいれば、
+ベトナムで素晴らしい景色がある所を一緒に体験しに行きましょう。仕事も遊びも楽しみたいと思っています。","2015-05-14 03:50:14"
+101012,kaku,administrator,角　,典子,kaku,kaku,kaku,kaku@evolable.asia,,,,,,"2015-07-03 03:49:19"
+101013,Karenc,administrator,Karen,Choi,Karenc,"Karen Choi",karenc,karen@evolable.asia,,,,,,"2015-07-06 08:37:36"

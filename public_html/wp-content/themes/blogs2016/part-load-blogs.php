@@ -14,7 +14,7 @@ if (count($categories) > 0) {
     }
     //
     $c_bg_colors = array();
-    $bg_colors = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange');
+    $bg_colors = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange', 'green', 'gray', 'orange');
     //
     for ($i = 0; $i < count($category_names); $i++) {
         $c_bg_colors[] = $bg_colors[$i];

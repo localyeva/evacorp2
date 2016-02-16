@@ -26,6 +26,11 @@ if ($cat != '') {
                      	<?php get_template_part('part-load-blogs') ?>
                     </div>                    
                 </div>
+                <div style="clear:both;"></div>
+                <div style="text-align:center;margin: 20px auto;">
+                    <?php // wpbeginner_numeric_posts_nav(); ?>  
+                    <?php wp_pagenavi(); ?>  
+                </div>                  
             </div>
             <?php get_sidebar() ?>
         </div>

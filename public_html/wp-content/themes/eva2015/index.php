@@ -466,7 +466,7 @@ if ($available_new == 1) {
                 }
                 //
                 $c_bg_colors = array();
-                $bg_colors = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange');
+                $bg_colors = array('categories-pink', 'categories-yellow', 'categories-blue', 'categories-red', 'categories-green', 'categories-gray', 'categories-orange', 'categories-black', 'categories-cyan', 'categories-brown');
                 //
                 for ($i = 0; $i < count($category_names); $i++) {
                     $c_bg_colors[] = $bg_colors[$i];
@@ -480,9 +480,9 @@ if ($available_new == 1) {
                 'orderby' => 'date',
                 'order' => 'DESC',
                 'post_type' => 'post',
-                'posts_per_page' => 3,
-            );
+            );           
             $loop = new WP_Query($args);
+            $count_blog = 0;
             //
             if ($loop->have_posts()) :
                 while ($loop->have_posts()):
@@ -508,6 +508,10 @@ if ($available_new == 1) {
                     </div>
                     <?php
                     $time3+= 0.5;
+                    $count_blog++;
+                    if($count_blog==3):
+                        break;
+                    endif;
                 endwhile;
             endif;
             wp_reset_postdata()
@@ -523,6 +527,7 @@ if ($available_new == 1) {
     </div>
 </div>
 <?php
+//restore_current_blog();
 switch_to_blog(1);
 ?>
 <!--//Blog End-->

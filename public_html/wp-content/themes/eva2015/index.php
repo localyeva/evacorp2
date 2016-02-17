@@ -490,7 +490,7 @@ if ($available_new == 1) {
                     $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
                     $cats = get_the_category($post->ID);
                     ?>
-                    <div class="col-xs-12 col-md-4 no-padding-lr news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
+                    <div class="col-xs-12 col-md-4 news-main-block wow fadeInUp" data-wow-delay="<?php echo $time3; ?>s">
                         <a class="news-hover" href="<?php the_permalink() ?>">
                             <img src="<?php echo $url ?>" alt="<?php the_title() ?>" class="img-responsive full-width">
                             <div class="caption-eva" ></div>

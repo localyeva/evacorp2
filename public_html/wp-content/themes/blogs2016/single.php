@@ -55,9 +55,11 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                         <?php endif?>
                     </div>
                     <div class="content-post">
-                        <p>
-                            <?php echo $post->post_content ?>  
-                        </p>                        
+                        <?php if (have_posts()) : ?>
+                            <?php while (have_posts()) : the_post(); ?>
+                                <?php the_content(); ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>                       
                     </div>                                     
 
                     <!--

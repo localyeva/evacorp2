@@ -15,9 +15,9 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                 $id_category_obj = $obj_category[0]->term_id;
                 $categories = get_the_category($post->ID);
                 $cat_name = "";
-                if ($categories[0]->name == 'Uncategorized'){
+                if ($categories[0]->name == 'Uncategorized') {
                     $cat_name = "";
-                }else{
+                } else {
                     $cat_name = $categories[0]->name;
                 }
                 ?>
@@ -25,7 +25,7 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                     <?php if ($cat_name == ""): ?>  
                         <span>></span>
                         <a><?php the_title() ?></a>
-                    <?php else:?>
+                    <?php else: ?>
                         <span>></span>
                         <a href="<?php echo get_category_link($id_category_obj); ?>"><?php echo $cat_name ?></a>
                         <span>></span>
@@ -43,21 +43,23 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                     <div class="post_info">
                         <span class="glyphicon glyphicon-calendar"></span>
                         <span>
-                            <?php 
-                            $date=date_create($post->post_date);
-                            echo date_format($date,"Y/m/d");
+                            <?php
+                            $date = date_create($post->post_date);
+                            echo date_format($date, "Y/m/d");
                             ?>
                         </span>
-                        <?php if($cat_name != ""):?>
-                        <p>
-                            <span class="glyphicon glyphicon glyphicon-tags"></span><span><?php echo $cat_name?></span>
-                        </p>
-                        <?php endif?>
+                        <?php if ($cat_name != ""): ?>
+                            <p>
+                                <span class="glyphicon glyphicon glyphicon-tags"></span><span><?php echo $cat_name ?></span>
+                            </p>
+                        <?php endif ?>
                     </div>
                     <div class="content-post">
-                        <p>
-                            <?php echo $post->post_content ?>  
-                        </p>                        
+                        <?php if (have_posts()) : ?>
+                            <?php while (have_posts()) : the_post(); ?>
+                                <?php the_content(); ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                     </div>                                     
 
                     <!--
@@ -103,7 +105,8 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                         <ul class="snsb clearfix">
 
                             <li>
-                                <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>"onClick="window.open(encodeURI(decodeURI(this.href)), 'sharewindow', 'width=0, height=0, personalbar=0, toolbar=0, scrollbars=1, resizable=!'); return false;">
+                                <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>"onClick="window.open(encodeURI(decodeURI(this.href)), 'sharewindow', 'width=0, height=0, personalbar=0, toolbar=0, scrollbars=1, resizable=!');
+                                        return false;">
                                     <img src="http://eva-blog.evolable.asia/wp-content/uploads/2014/11/share.jpg" alt="share" >
                                 </a>
                             </li>
@@ -116,7 +119,7 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                             </li>
 
                             <li><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-                                <g:plusone size="tall" href="<?php the_permalink(); ?>"></g:plusone>
+                            <g:plusone size="tall" href="<?php the_permalink(); ?>"></g:plusone>
                             </li>
                             <li>
                                 <a href="http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>" class="hatena-bookmark-button" data-hatena-bookmark-title="<?php the_title(); ?>｜<?php bloginfo('name'); ?>" data-hatena-bookmark-layout="vertical" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script> 

@@ -1,7 +1,3 @@
-<?php
-global $switched;
-switch_to_blog(1);
-?>
 <div class="container-fluid header-footer">
     <div class="container">
         <div class="row">
@@ -15,7 +11,7 @@ switch_to_blog(1);
                     <div class="col-xs-12 col-md-4">
                         <div class="row">
                             <div class="col-xs-12">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/30.png" alt="" class="img-responsive center-block">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo_footer.png" alt="" class="img-responsive center-block">
                             </div>
                         </div>
                         <div class="row-gap-small"></div>
@@ -32,6 +28,10 @@ switch_to_blog(1);
                         </div>
                         <div class="row-gap-small .visible-xs-*"></div>
                     </div>
+                    <?php
+                    global $switched;
+                    switch_to_blog(1);
+                    ?>
                     <div class="col-xs-12 no-padding-lr menu-footer-mobi">
                         <ul class="nav navbar-nav">
                             <li><a href="<?php echo bloginfo('url') ?>">Home <span class="glyphicon glyphicon-menu-right right-icon" aria-hidden="true"></span></a></li>
@@ -146,6 +146,7 @@ switch_to_blog(1);
     </div>
 </div>
 
+<?php restore_current_blog() ?>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/bootstrap.min.js"></script>
 <script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery-ui.js"></script>

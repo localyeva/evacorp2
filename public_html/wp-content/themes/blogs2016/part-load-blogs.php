@@ -2,7 +2,7 @@
 $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
 $args = array(
     'taxonomy' => 'category',
-    'hide_empty' => 0,
+    'hide_empty' => 1,
     'orderby' => 'id',
     'exclude' => 1,
 );
@@ -14,7 +14,7 @@ if (count($categories) > 0) {
     }
     //
     $c_bg_colors = array();
-    $bg_colors = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange', 'green', 'gray', 'orange');
+    $bg_colors = array('pink', 'yellow', 'blue', 'red', 'green', 'gray', 'orange', 'black', 'cyan', 'brown');
     //
     for ($i = 0; $i < count($category_names); $i++) {
         $c_bg_colors[] = $bg_colors[$i];
@@ -62,7 +62,7 @@ if ($cat != '') {
                                 <span class="overlay"></span>
                                 <span class="post-date"><?php the_time('Y/m/d'); ?></span>
                                 <span class="category <?php echo $class_category[$cat_name]; ?>"><?php echo $cat_name; ?></span>
-                                <h3 class="title"><?php the_title(); ?></h3>
+                                <h3 class="title more"><?php the_title(); ?></h3>
                             </span>
                         </a>                                
                     </div>
@@ -76,7 +76,7 @@ if ($cat != '') {
                                 <span class="overlay"></span>
                                 <span class="post-date"><?php the_time('Y/m/d'); ?></span>
                                 <span class="category <?php echo isset($class_category[$cat_name]) ? $class_category[$cat_name] : ""; ?>"><?php echo $cat_name; ?></span>
-                                <h3 class="title"><?php the_title(); ?></h3>
+                                <h3 class="title more"><?php the_title(); ?></h3>
                             </span>
                         </a>                                  
                     </div>
@@ -95,11 +95,10 @@ if ($cat != '') {
         'order' => 'DESC',
         'post_type' => 'post',
         'post_status' => 'publish',
-        'paged' => $paged,
+        'paged' => ($paged==0)?1:$paged,
     );
     $wp_query = new WP_Query();
     $wp_query->query($args);
-
     if ($wp_query->have_posts()) :
         while ($wp_query->have_posts()):
             $wp_query->the_post();

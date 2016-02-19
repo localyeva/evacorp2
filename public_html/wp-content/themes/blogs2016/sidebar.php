@@ -1,9 +1,28 @@
 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 hidden-xs index-right padding-lr">
-    <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/banner2.png" alt="EVOLABLE ASIA" class="img-responsive" width="100%"/></a>
-    <h5>よく読まれている記事 TOP3</h5>
-    <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/aaa1a.png" alt="EVOLABLE ASIA" class="img-responsive" width="100%"/></a>
-    <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/aaaa2a.png" alt="EVOLABLE ASIA" class="img-responsive" width="100%"/></a>
-    <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/3adddda.png" alt="EVOLABLE ASIA" class="img-responsive" width="100%"/></a>
+
+    <?php
+    $args = array(
+        'post_type' => 'banner',
+        'posts_per_page' => 1,
+        'orderby' => array('date' => 'DESC'),
+    );
+    $loop = new WP_Query($args);
+    if ($loop->have_posts()):
+        while ($loop->have_posts()):
+            $loop->the_post();
+            while (have_rows('images')):
+                the_row();
+                $size = 'large';
+                $image = get_sub_field('image');
+                $alt = $image['alt'];
+                $title = $image['title'];
+                ?>
+                <a href="<?php echo get_sub_field('url') ?>"><img src="<?php echo $image['sizes'][$size] ?>" alt="<?php echo $alt ?>" title="<?php echo $title ?>" class="img-responsive" /></a>
+                    <?php
+                endwhile;
+            endwhile;
+        endif;
+        ?>
 
     <!--
     <h5>週間人気の記事ランキング</h5>

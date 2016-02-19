@@ -173,9 +173,21 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
 
                     <div class="row-gap-medium clearfix"></div>
 
-                    <div class="face">
-                        <iframe src="//www.facebook.com/plugins/likebox.php?  href=https%3A%2F%2Fwww.facebook.com%2Fevolable.asia.eva%3Ffref%3Dts&amp;width=500px&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=445550542212549" scrolling="no" frameborder="0" style="border:none; overflow:hidden !important; width:100%; height:290px;" allowTransparency="true"></iframe>  <//ソーシャルボックス読み込み ?>
-                    </div>                                                 
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:inline-table;margin-bottom:20px;" >
+                        <div class="face" style="width:100%px; height: 150px; background: none;'">
+                            <div id="fb-root"></div>
+                                <script>(function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id))
+                                        return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=124639054226284";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-page" data-href="https://www.facebook.com/evolable.asia.eva" data-width="444" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/evolable.asia.eva"><a href="https://www.facebook.com/evolable.asia.eva">EVOLABLE Asia</a></blockquote></div></div>
+                        </div>
+                    </div>                                                
                 </div>
             </div>
             <?php get_sidebar() ?>

@@ -115,7 +115,7 @@ if ($cat != '') {
                                 <span class="overlay"></span>
                                 <span class="post-date"><?php the_time('Y/m/d'); ?></span>
                                 <span class="category <?php echo isset($class_category[$cats[0]->cat_name]) ? $class_category[$cats[0]->cat_name] : ""; ?>"><?php echo $cats[0]->cat_name; ?></span>
-                                <h3 class="title"><?php the_title(); ?></h3>
+                                <h3 class="title more"><?php the_title(); ?></h3>
                             </span>
                         </a>                                
                     </div>
@@ -129,7 +129,7 @@ if ($cat != '') {
                                 <span class="overlay"></span>
                                 <span class="post-date"><?php the_time('Y/m/d'); ?></span>
                                 <span class="category <?php echo isset($class_category[$cats[0]->cat_name]) ? $class_category[$cats[0]->cat_name] : ""; ?>"><?php echo ($cats[0]->cat_name != 'Uncategorized') ? $cats[0]->cat_name : '' ?></span>
-                                <h3 class="title"><?php the_title(); ?></h3>
+                                <h3 class="title more"><?php the_title(); ?></h3>
                             </span>
                         </a>                                  
                     </div>

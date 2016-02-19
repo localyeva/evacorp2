@@ -66,7 +66,7 @@
                     <?php 
                     $args = array(
                         'taxonomy' => 'category',
-                        'hide_empty' => 0,
+                        'hide_empty' => 1,
                         'orderby' => 'id',
                         'exclude' => 1,
                     ); 

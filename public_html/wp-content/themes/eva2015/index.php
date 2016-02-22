@@ -59,11 +59,7 @@ if ($loop->have_posts()) {
       </a>
 
       <div class="carousel-caption">
-        <div class="row">
-          <div class="col-md-3" id="heart"></div>
-          <div class="col-md-6"><h2><?php echo get_slide_text() ?></h2></div>
-          <div class="col-md-3" id="heart"></div>
-        </div>
+          <div><h2><?php echo get_slide_text() ?></h2></div>
       </div>
   </div>
 

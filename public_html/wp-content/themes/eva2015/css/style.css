@@ -11,85 +11,6 @@
 .nav-desktop {
   display: block;
 }
-/*Nguyễn Bảo Thi 18/02/2016*/
-#triangle-topleft {
-  width: 0;
-  height: 0;
-  border-top: 200px solid #FFD700;
-  border-right: 200px solid transparent;
-  margin: -82px 0 0 0;
-  position: absolute;
-  z-index: 1;
-}
-#triangle-topright {
-  width: 0;
-  height: 0;
-  border-top: 100px solid #FFFFFF;
-  border-left: 100px solid transparent;
-  margin: -10px 0 0 60px;
-  position: absolute;
-  z-index: 2;
-}
-#triangle-bottomright {
-  /*width: 0;
-  height: 0;
-  border-bottom: 240px solid red;
-  border-left: 240px solid transparent;*/
-  margin: -224px 0px 0px 1681px;
-  position: absolute;
-  z-index: 1;
-}
-#triangle-bottomright1 {
-  width: 0;
-  height: 0;
-  border-bottom: 133px solid  transparent;
-  border-left: 240px solid #EFFF00;
-  border-top: 173px solid  transparent;
-  margin: -225px 0px 0px 1615px;
-  position: absolute;
-  z-index: 2;
-}
-#heart {
-  position: relative;
-  width: 100px;
-  height: 90px;
-}
-#heart:before,
-#heart:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: red;
-  -moz-border-radius: 50px 50px 0 0;
-  border-radius: 50px 50px 0 0;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transform-origin: 0 100%;
-  -moz-transform-origin: 0 100%;
-  -ms-transform-origin: 0 100%;
-  -o-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-}
-#heart:after {
-  left: 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  -o-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-}
-/*Nguyễn Bảo Thi*/
 .nav-desktop li > a {
   padding-left: 0px;
   padding-right: 0px;
@@ -155,32 +76,6 @@
   .nav-sp .navbar-btn {
     margin-top: -48px !important;
   }
-  /*Nguyễn Bảo Thi 18/02/2016*/
-  #triangle-bottomright {
-    width: 109px;
-    margin: -138px 0px 0px 558px;
-    position: absolute;
-    z-index: 1;
-  }
-  #triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 124px solid #FFD700;
-    border-right: 100px solid transparent;
-    margin: -92px 0 0 0;
-    position: absolute;
-    z-index: 1;
-  }
-  #triangle-topright {
-    width: 0;
-    height: 0;
-    border-top: 66px solid #FFFFFF;
-    border-left: 50px solid transparent;
-    margin: -10px 0 0 5px;
-    position: absolute;
-    z-index: 2;
-  }
-  /*Nguyễn Bảo Thi 18/02/2016*/
 }
 @media (min-width: 768px) and (max-width: 991px) {
   ul.nav {
@@ -407,32 +302,6 @@
     font-size: 18px !important;
     top: 45% !important;
   }
-  /*Nguyễn Bảo Thi 18/02/2016*/
-  #triangle-bottomright {
-    width: 109px;
-    margin: -139px 0px 0px 268px;
-    position: absolute;
-    z-index: 1;
-  }
-  #triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #FFD700;
-    border-right: 70px solid transparent;
-    margin: -82px 0 0 0;
-    position: absolute;
-    z-index: 1;
-  }
-  #triangle-topright {
-    width: 0;
-    height: 0;
-    border-top: 50px solid #FFFFFF;
-    border-left: 50px solid transparent;
-    margin: -11px 0 0 7px;
-    position: absolute;
-    z-index: 2;
-  }
-  /*Nguyễn Bảo Thi 18/02/2016*/
 }
 @media screen and (min-width: 460px) {
   .menu-footer-mobi {
@@ -474,34 +343,6 @@
     font-size: 15px;
     /*padding-top: 10px;*/
   }
-}
-@media screen and (max-width: 320px) {
-  /*Nguyễn Bảo Thi 18/02/2016*/
-  #triangle-bottomright {
-    width: 98px;
-    margin: -125px 0px 0px 222px;
-    position: absolute;
-    z-index: 1;
-  }
-  /*#triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #FFD700;
-    border-right: 100px solid transparent;
-    margin: -82px 0 0 0;
-    position: absolute;
-    z-index: 1;
-  }
-  #triangle-topright {
-    width: 0;
-    height: 0;
-    border-top: 50px solid #FFFFFF;
-    border-left: 50px solid transparent;
-    margin:-15px 0 0 8px;
-    position: absolute;
-    z-index: 2;
-  }*/
-  /*Nguyễn Bảo Thi 18/02/2016*/
 }
 a.alnk {
   color: #ffffff;
@@ -567,13 +408,34 @@ a .categories-text {
   padding: 3px 5px 2px 5px;
 }
 a .categories-pink {
-  background-color: #e51783;
+  background-color: pink;
 }
 a .categories-yellow {
-  background-color: #ffd00e;
+  background-color: yellow;
 }
 a .categories-blue {
-  background-color: #42a8d9;
+  background-color: blue;
+}
+a .categories-red {
+  background-color: red;
+}
+a .categories-green {
+  background-color: green;
+}
+a .categories-gray {
+  background-color: gray;
+}
+a .categories-orange {
+  background-color: orange;
+}
+a .categories-black {
+  background-color: black;
+}
+a .categories-cyan {
+  background-color: cyan;
+}
+a .categories-brown {
+  background-color: brown;
 }
 .text-center {
   text-align: center;
@@ -1266,7 +1128,7 @@ h1:after {
   top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-49.99999999%, -50%);
+  transform: translate(-50%, -50%);
 }
 #about-profile .breadcrumb-cp {
   padding: 8px 15px;
@@ -1802,7 +1664,7 @@ h1:after {
   top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-49.99999999%, -50%);
 }
 #bpo-profile .breadcrumb-cp {
   padding: 8px 15px;
@@ -2762,7 +2624,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/*
+/* 
     Created on : Nov 19, 2015, 2:59:37 PM
     Author     : haudv
 */
@@ -2863,7 +2725,7 @@ and open the template in the editor.
   align-items: center;
   /* Align the flex-items vertically */
   justify-content: center;
-  /* Optional, to align inner flex-items
+  /* Optional, to align inner flex-items 
                                     horizontally within the column  */
 }
 #vff .reason2 h4 {
@@ -3883,5 +3745,105 @@ and open the template in the editor.
   }
   .secondary-8 .secondary-8-1 .secondary8-link a {
     font-size: 14px;
+  }
+}
+/*Nguyễn Bảo Thi 18/02/2016*/
+#triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 200px solid #FFD700;
+  border-right: 200px solid transparent;
+  margin: -82px 0 0 0;
+  position: absolute;
+  z-index: 1;
+}
+#triangle-topright {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #FFFFFF;
+  border-left: 100px solid transparent;
+  margin: -10px 0 0 60px;
+  position: absolute;
+  z-index: 2;
+}
+#triangle-bottomright {
+  margin: -224px 0px 0px 1681px;
+  position: absolute;
+  z-index: 1;
+}
+#triangle-bottomright1 {
+  width: 0;
+  height: 0;
+  border-bottom: 133px solid  transparent;
+  border-left: 240px solid #EFFF00;
+  border-top: 173px solid  transparent;
+  margin: -225px 0px 0px 1615px;
+  position: absolute;
+  z-index: 2;
+}
+/*Nguyễn Bảo Thi*/
+@media screen and (max-width: 768px) {
+  /*Nguyễn Bảo Thi 18/02/2016*/
+  #triangle-bottomright {
+    width: 109px;
+    margin: -138px 0px 0px 558px;
+    position: absolute;
+    z-index: 1;
+  }
+  #triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 124px solid #FFD700;
+    border-right: 100px solid transparent;
+    margin: -92px 0 0 0;
+    position: absolute;
+    z-index: 1;
+  }
+  #triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 66px solid #FFFFFF;
+    border-left: 50px solid transparent;
+    margin: -10px 0 0 5px;
+    position: absolute;
+    z-index: 2;
+  }
+  /*Nguyễn Bảo Thi 18/02/2016*/
+}
+@media screen and (max-width: 460px) {
+  /*Nguyễn Bảo Thi 18/02/2016*/
+  #triangle-bottomright {
+    width: 109px;
+    margin: -139px 0px 0px 268px;
+    position: absolute;
+    z-index: 1;
+  }
+  #triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 100px solid #FFD700;
+    border-right: 70px solid transparent;
+    margin: -82px 0 0 0;
+    position: absolute;
+    z-index: 1;
+  }
+  #triangle-topright {
+    width: 0;
+    height: 0;
+    border-top: 50px solid #FFFFFF;
+    border-left: 50px solid transparent;
+    margin: -11px 0 0 7px;
+    position: absolute;
+    z-index: 2;
+  }
+  /*Nguyễn Bảo Thi 18/02/2016*/
+}
+@media screen and (max-width: 320px) {
+  /*Nguyễn Bảo Thi 18/02/2016*/
+  #triangle-bottomright {
+    width: 98px;
+    margin: -125px 0px 0px 222px;
+    position: absolute;
+    z-index: 1;
   }
 }

@@ -26,7 +26,7 @@
         <!-- FACE BOOK start -->
         <meta property="og:title" content="オフショア ベトナム｜ベトナムでのBPO、オフショアならエボラブルアジア" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://evolable.asia/" />        
+        <meta property="og:url" content="http://evolable.asia/" />
         <meta property="og:image"  content="http://evolable.asia/wp-content/uploads/facebook_ogp1-1.png" />
         <!-- //FACE BOOK end -->
 
@@ -97,71 +97,74 @@
     </head>
     <body>
         <div id="fb-root"></div>
-        <div id="navigation">
-            <nav class="navbar navbar-default nav-desktop">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-12 text-center navbar-collapse collapse visible-md">
 
-                            <div class="pull-right" style="position: relative;">
-                                <ul class="top-recruit-lst">
-                                    <li>Recruit for</li>
-                                    <li><a href="<?php echo get_site_url(2) ?>">Japanese</a></li>
-                                    <li><a href="http://jobs.evolable.asia">Vietnamese</a></li>
-                                </ul>
-                            </div>
-                            <ul class="nav navbar-nav">
-                                <li class="left-width-1"><a href="<?php echo bloginfo('url') ?>">Home</a></li>
-                                <li class="left-width-2"><a href="<?php echo bloginfo('url') ?>/company/">About EVOLABLE ASIA</a></li>
-                                <li class="left-width-3"><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
-                                <li class="center-width">
-                                    <a href="<?php echo bloginfo('url') ?>">
-                                        <img class="img-responsive center-block" src="<?php echo get_top_image() ?>">
-                                    </a>
-                                </li>
-                                <li class="right-width-1"><a href="<?php echo bloginfo('url') ?>/service">サービス</a></li>
-                                <li class="right-width-2"><a href="<?php echo bloginfo('url') ?>/news">ニュース</a></li>
-                                <li class="right-width-3">
-                                    <a href="<?php echo bloginfo('url') ?>/contact/">お問い合わせ</a>
-                                </li>
-                            </ul>
 
-                        </div>
-                    </div>
-                </div>
-            </nav>
+          <div id="navigation">
+              <nav class="navbar navbar-default nav-desktop">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-xs-12 col-md-12 text-center navbar-collapse collapse visible-md">
 
-            <nav class="navbar navbar-default nav-sp">
-                <div class="container">
-                    <div class="row">
+                              <div class="pull-right" style="position: relative;">
+                                  <ul class="top-recruit-lst">
+                                      <li>Recruit for</li>
+                                      <li><a href="<?php echo get_site_url(2) ?>">Japanese</a></li>
+                                      <li><a href="http://jobs.evolable.asia">Vietnamese</a></li>
+                                  </ul>
+                              </div>
+                              <ul class="nav navbar-nav">
+                                  <li class="left-width-1"><a href="<?php echo bloginfo('url') ?>">Home</a></li>
+                                  <li class="left-width-2"><a href="<?php echo bloginfo('url') ?>/company/">About EVOLABLE ASIA</a></li>
+                                  <li class="left-width-3"><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
+                                  <li class="center-width">
+                                      <a href="<?php echo bloginfo('url') ?>">
+                                          <img class="img-responsive center-block" src="<?php echo get_top_image() ?>">
+                                      </a>
+                                  </li>
+                                  <li class="right-width-1"><a href="<?php echo bloginfo('url') ?>/service">サービス</a></li>
+                                  <li class="right-width-2"><a href="<?php echo bloginfo('url') ?>/news">ニュース</a></li>
+                                  <li class="right-width-3">
+                                      <a href="<?php echo bloginfo('url') ?>/contact/">お問い合わせ</a>
+                                  </li>
+                              </ul>
 
-                        <div class="col-xs-12 visible-xs text-center no-padding-lr">
-                            <div class="navbar-header mobie-brand">
-                                <a href="<?php echo bloginfo('url') ?>">
-                                    <img class="img-responsive center-block" alt="Brand" src="<?php echo get_template_directory_uri() ?>/img/29.png">
-                                </a>
-                                <a id="responsive-menu-button" class="btn btn-toggle navbar-btn pull-right" href="#">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="fa fa-bars fa-lg"></span>
-                                </a>
-                            </div>
-                            <div class="row mobile-menu" id="sidr">
-                                <div class="col-xs-12">
-                                    <ul class="nav navbar-nav">
-                                        <li><a href="<?php echo bloginfo('url') ?>">Home</a></li>
-                                        <li><a href="<?php echo bloginfo('url') ?>/company/">About EvolableAsia</a></li>
-                                        <li><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
-                                        <li><a href="<?php echo bloginfo('url') ?>/service">サービス</a></li>
-                                        <li><a href="<?php echo bloginfo('url') ?>/news">ニュース</a></li>
-                                        <li>Recruit for</li>
-                                        <li><a href="<?php echo get_site_url(2) ?>">Japanese</a></li>
-                                        <li><a href="http://jobs.evolable.asia">Vietnamese</a></li>
-                                        <li><a href="<?php echo bloginfo('url') ?>/contact/">お問い合わせ</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>                
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+
+              <nav class="navbar navbar-default nav-sp">
+                  <div class="container">
+                      <div class="row">
+
+                          <div class="col-xs-12 visible-xs text-center no-padding-lr">
+                              <div class="navbar-header mobie-brand">
+                                  <a href="<?php echo bloginfo('url') ?>">
+                                      <img class="img-responsive center-block" alt="Brand" src="<?php echo get_template_directory_uri() ?>/img/29.png">
+                                  </a>
+                                  <a id="responsive-menu-button" class="btn btn-toggle navbar-btn pull-right" href="#">
+                                      <span class="sr-only">Toggle navigation</span>
+                                      <span class="fa fa-bars fa-lg"></span>
+                                  </a>
+                              </div>
+                              <div class="row mobile-menu" id="sidr">
+                                  <div class="col-xs-12">
+                                      <ul class="nav navbar-nav">
+                                          <li><a href="<?php echo bloginfo('url') ?>">Home</a></li>
+                                          <li><a href="<?php echo bloginfo('url') ?>/company/">About EvolableAsia</a></li>
+                                          <li><a href="<?php echo bloginfo('url') ?>/company/reason">選ばれる理由</a></li>
+                                          <li><a href="<?php echo bloginfo('url') ?>/service">サービス</a></li>
+                                          <li><a href="<?php echo bloginfo('url') ?>/news">ニュース</a></li>
+                                          <li>Recruit for</li>
+                                          <li><a href="<?php echo get_site_url(2) ?>">Japanese</a></li>
+                                          <li><a href="http://jobs.evolable.asia">Vietnamese</a></li>
+                                          <li><a href="<?php echo bloginfo('url') ?>/contact/">お問い合わせ</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+

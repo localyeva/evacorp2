@@ -18,7 +18,7 @@ define('FS_METHOD', 'direct');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'eva_corp2');
+define('DB_NAME', 'evacorp2');
 
 /** MySQL database username */
 define('DB_USER', 'root');

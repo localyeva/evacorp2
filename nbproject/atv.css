@@ -1266,7 +1266,7 @@ h1:after {
   top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-49.99999999%, -50%);
+  transform: translate(-50%, -50%);
 }
 #about-profile .breadcrumb-cp {
   padding: 8px 15px;

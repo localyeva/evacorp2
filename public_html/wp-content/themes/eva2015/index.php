@@ -59,7 +59,11 @@ if ($loop->have_posts()) {
       </a>
 
       <div class="carousel-caption">
-          <div><h2><?php echo get_slide_text() ?></h2></div>
+        <div class="row">
+          <div class="col-md-3" id="heart"></div>
+          <div class="col-md-6"><h2><?php echo get_slide_text() ?></h2></div>
+          <div class="col-md-3" id="heart"></div>
+        </div>
       </div>
   </div>
 
@@ -489,7 +493,7 @@ if ($available_new == 1) {
                 'orderby' => 'date',
                 'order' => 'DESC',
                 'post_type' => 'post',
-            );           
+            );
             $loop = new WP_Query($args);
             $count_blog = 0;
             //

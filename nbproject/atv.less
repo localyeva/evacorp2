@@ -11,6 +11,7 @@
 .nav-desktop {
   display: block;
 }
+
 /*Nguyễn Bảo Thi 18/02/2016*/
 #triangle-topleft {
   width: 0;
@@ -30,12 +31,13 @@
   position: absolute;
   z-index: 2;
 }
+
 #triangle-bottomright {
   /*width: 0;
   height: 0;
   border-bottom: 240px solid red;
   border-left: 240px solid transparent;*/
-  margin: -224px 0px 0px 1681px;
+  margin:-224px 0px 0px 1681px;
   position: absolute;
   z-index: 1;
 }
@@ -45,51 +47,55 @@
   border-bottom: 133px solid  transparent;
   border-left: 240px solid #EFFF00;
   border-top: 173px solid  transparent;
-  margin: -225px 0px 0px 1615px;
+  margin:-225px 0px 0px 1615px;
   position: absolute;
   z-index: 2;
 }
+
+
 #heart {
-  position: relative;
-  width: 100px;
-  height: 90px;
+    position: relative;
+    width: 100px;
+    height: 90px;
 }
 #heart:before,
 #heart:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: red;
-  -moz-border-radius: 50px 50px 0 0;
-  border-radius: 50px 50px 0 0;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transform-origin: 0 100%;
-  -moz-transform-origin: 0 100%;
-  -ms-transform-origin: 0 100%;
-  -o-transform-origin: 0 100%;
-  transform-origin: 0 100%;
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
 }
 #heart:after {
-  left: 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  -o-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
 }
+
 /*Nguyễn Bảo Thi*/
+
 .nav-desktop li > a {
   padding-left: 0px;
   padding-right: 0px;
@@ -155,13 +161,14 @@
   .nav-sp .navbar-btn {
     margin-top: -48px !important;
   }
-  /*Nguyễn Bảo Thi 18/02/2016*/
+/*Nguyễn Bảo Thi 18/02/2016*/
   #triangle-bottomright {
     width: 109px;
-    margin: -138px 0px 0px 558px;
+    margin:-138px 0px 0px 558px;
     position: absolute;
     z-index: 1;
   }
+
   #triangle-topleft {
     width: 0;
     height: 0;
@@ -407,13 +414,14 @@
     font-size: 18px !important;
     top: 45% !important;
   }
-  /*Nguyễn Bảo Thi 18/02/2016*/
+/*Nguyễn Bảo Thi 18/02/2016*/
   #triangle-bottomright {
     width: 109px;
-    margin: -139px 0px 0px 268px;
+    margin:-139px 0px 0px 268px;
     position: absolute;
     z-index: 1;
   }
+
   #triangle-topleft {
     width: 0;
     height: 0;
@@ -475,14 +483,16 @@
     /*padding-top: 10px;*/
   }
 }
+
 @media screen and (max-width: 320px) {
   /*Nguyễn Bảo Thi 18/02/2016*/
   #triangle-bottomright {
     width: 98px;
-    margin: -125px 0px 0px 222px;
+    margin:-125px 0px 0px 222px;
     position: absolute;
     z-index: 1;
   }
+
   /*#triangle-topleft {
     width: 0;
     height: 0;
@@ -503,6 +513,7 @@
   }*/
   /*Nguyễn Bảo Thi 18/02/2016*/
 }
+
 a.alnk {
   color: #ffffff;
   text-decoration: none;
@@ -1266,7 +1277,7 @@ h1:after {
   top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-49.99999999%, -50%);
+  transform: translate(-50%, -50%);
 }
 #about-profile .breadcrumb-cp {
   padding: 8px 15px;

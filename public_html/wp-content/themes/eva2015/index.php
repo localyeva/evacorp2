@@ -182,7 +182,7 @@ if ($available_service == 1) {
                         $num_posts = count($loop->posts);
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                            <?php if ($i == 3) { ?>
+                            <?php if ($i == 2) { ?>
 
                                 <div class="col-xs-12 col-md-12 no-padding-lr wow fadeInDown">
                                     <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
@@ -219,7 +219,7 @@ if ($available_service == 1) {
                         $num_posts = count($loop->posts);
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                            <?php if ($j == 5) { ?>
+                            <?php if ($j == 3) { ?>
 
 
                                 <div class="col-xs-12 col-md-12 no-padding-lr wow fadeInUp">

@@ -128,7 +128,16 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                     <div class="row-gap-big"></div>
                     <div class="call-to-action">
                         <p>ベトナムでのオフショア開発、BPOに興味を持った方、もっと詳しい内容を知りたい方はEVOLABLE ASIAのホームページをご覧ください。</p>
+                        <a href="http://evolable.asia/" onclick="_gaq.push([
+  '_trackEvent',
+  'singlepost_linkclick',
+  'http://evolable.asia/',
+  'content',
+  10,
+  true
+]);">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/banner342534-2.jpg" alt="EVOLABLE ASIA" class="img-responsive" width="100%"/>
+                        </a>
                     </div>                    
 
                     <div class="row-gap-medium"></div>

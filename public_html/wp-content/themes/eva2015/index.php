@@ -25,43 +25,43 @@ if ($loop->have_posts()) {
     }
 }
 ?>
-  <div id="triangle-topleft"></div>
-  <div id = "triangle-topright"></div>
+<div id="triangle-topleft"></div>
+<div id = "triangle-topright"></div>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-      <div class="carousel-overlay"></div>
+    <div class="carousel-overlay"></div>
 
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-          <?php for ($i = 0; $i < count($home_slider); $i++): ?>
-              <li data-target="#myCarousel" data-slide-to="<?php echo $i ?>" class="<?php echo ($i == 0) ? 'active' : '' ?>"></li>
-          <?php endfor; ?>
-      </ol>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <?php for ($i = 0; $i < count($home_slider); $i++): ?>
+            <li data-target="#myCarousel" data-slide-to="<?php echo $i ?>" class="<?php echo ($i == 0) ? 'active' : '' ?>"></li>
+        <?php endfor; ?>
+    </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-          <?php for ($i = 0; $i < count($home_slider); $i++): ?>
-              <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
-                  <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
-              </div>
-          <?php endfor; ?>
-      </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <?php for ($i = 0; $i < count($home_slider); $i++): ?>
+            <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
+            </div>
+        <?php endfor; ?>
+    </div>
 
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-      </a>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 
-      <div class="carousel-caption">
-          <div><h2><?php echo get_slide_text() ?></h2></div>
-      </div>
-  </div>
+    <div class="carousel-caption">
+        <div><h2><?php echo get_slide_text() ?></h2></div>
+    </div>
+</div>
 
 <!--//slide End-->
 <!--//Why-->
@@ -72,7 +72,7 @@ if ($available_why == 1) {
     <!-- <div id = "triangle-bottomright"></div>
     <div id = "triangle-bottomright1"></div>-->
     <div id = "triangle-bottomright">
-      <img src="<?php echo get_template_directory_uri() ?>/img/3.png" alt="" class="img-responsive">
+        <img src="<?php echo get_template_directory_uri() ?>/img/3.png" alt="" class="img-responsive">
     </div>
 
     <div class="container-fluid header-why">
@@ -518,7 +518,7 @@ if ($available_new == 1) {
                     <?php
                     $time3+= 0.5;
                     $count_blog++;
-                    if($count_blog==3):
+                    if ($count_blog == 3):
                         break;
                     endif;
                 endwhile;

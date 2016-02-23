@@ -141,7 +141,7 @@ if ($available_service == 1) {
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
 
 
-                    <div class="col-xs-12 col-md-6 no-padding-lr sv-main-block wow fadeInRight">
+                    <div class="col-xs-12 col-md-9 no-padding-lr sv-main-block wow fadeInRight">
                         <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                             <div class="caption-eva" ></div>
@@ -157,7 +157,7 @@ if ($available_service == 1) {
                 <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_postdata() ?>
-            <div class="col-xs-12 col-md-6 list">
+            <div class="col-xs-12 col-md-3 list">
                 <div class="row">
                     <?php
                     $args = array(
@@ -173,9 +173,9 @@ if ($available_service == 1) {
                         $num_posts = count($loop->posts);
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                            <?php if ($i > 1 AND $i < 4) { ?>
+                            <?php if ($i == 3) { ?>
 
-                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInDown">
+                                <div class="col-xs-12 col-md-12 no-padding-lr wow fadeInDown">
                                     <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                                         <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                         <div class="caption-eva" ></div>
@@ -210,10 +210,10 @@ if ($available_service == 1) {
                         $num_posts = count($loop->posts);
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                            <?php if ($j >= 4 AND $j < 6) { ?>
+                            <?php if ($j == 5) { ?>
 
 
-                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInUp">
+                                <div class="col-xs-12 col-md-12 no-padding-lr wow fadeInUp">
                                     <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                                         <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                         <div class="caption-eva" ></div>

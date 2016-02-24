@@ -29,7 +29,7 @@
             <div class="header-logo">
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 header-logo-1">
-                        <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/logo_footer.png" alt="EVOLABLE ASIA" height="31" /></a>
+                        <a href="<?php echo get_site_url(3) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/logo_footer.png" alt="EVOLABLE ASIA" height="31" /></a>
                     </div>
                     <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 hidden-xs"></div>                    
                     <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 header-logo-2 hidden-xs">

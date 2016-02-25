@@ -59,10 +59,9 @@ if ($cat != '') {
                         <a href="<?php the_permalink() ?>" class="link">
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
-                                <span class="overlay"></span>
                                 <span class="post-date"><?php the_time('Y/m/d'); ?></span>
                                 <span class="category <?php echo $class_category[$cat_name]; ?>"><?php echo $cat_name; ?></span>
-                                <h3 class="title more"><?php the_title(); ?></h3>
+                                <h3 class="title"><?php the_title(); ?></h3>
                             </span>
                         </a>                                
                     </div>
@@ -73,10 +72,9 @@ if ($cat != '') {
                         <a href="<?php the_permalink() ?>" class="link">
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
-                                <span class="overlay"></span>
                                 <span class="post-date"><?php the_time('Y/m/d'); ?></span>
                                 <span class="category <?php echo isset($class_category[$cat_name]) ? $class_category[$cat_name] : ""; ?>"><?php echo $cat_name; ?></span>
-                                <h3 class="title more"><?php the_title(); ?></h3>
+                                <h3 class="title"><?php the_title(); ?></h3>
                             </span>
                         </a>                                  
                     </div>
@@ -112,7 +110,6 @@ if ($cat != '') {
                         <a href="<?php the_permalink() ?>" class="link">
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
-                                <span class="overlay"></span>
                                 <span class="post-date"><?php the_time('Y/m/d'); ?></span>
                                 <span class="category <?php echo isset($class_category[$cats[0]->cat_name]) ? $class_category[$cats[0]->cat_name] : ""; ?>"><?php echo $cats[0]->cat_name; ?></span>
                                 <h3 class="title"><?php the_title(); ?></h3>
@@ -126,7 +123,6 @@ if ($cat != '') {
                         <a href="<?php the_permalink() ?>" class="link">
                             <img class="img-responsive" src="<?php echo!empty($url) ? $url : $default_img; ?>">
                             <span class="info">
-                                <span class="overlay"></span>
                                 <span class="post-date"><?php the_time('Y/m/d'); ?></span>
                                 <span class="category <?php echo isset($class_category[$cats[0]->cat_name]) ? $class_category[$cats[0]->cat_name] : ""; ?>"><?php echo ($cats[0]->cat_name != 'Uncategorized') ? $cats[0]->cat_name : '' ?></span>
                                 <h3 class="title"><?php the_title(); ?></h3>

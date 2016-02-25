@@ -104,7 +104,7 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                     <div class="sns">
                         <ul class="snsb clearfix">
 
-                            <li>
+                            <li class="hidden-xs hidden-sm">
                                 <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&amp;t=<?php the_title(); ?>"onClick="window.open(encodeURI(decodeURI(this.href)), 'sharewindow', 'width=0, height=0, personalbar=0, toolbar=0, scrollbars=1, resizable=!'); return false;">
                                     <img src="http://eva-blog.evolable.asia/wp-content/uploads/2014/11/share.jpg" alt="share" >
                                 </a>
@@ -120,7 +120,7 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                             <li><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
                                 <g:plusone size="tall" href="<?php the_permalink(); ?>"></g:plusone>
                             </li>
-                            <li>
+                            <li class="hidden-xs hidden-sm">
                                 <a href="http://b.hatena.ne.jp/entry/<?php the_permalink(); ?>" class="hatena-bookmark-button" data-hatena-bookmark-title="<?php the_title(); ?>｜<?php bloginfo('name'); ?>" data-hatena-bookmark-layout="vertical" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script> 
                             </li>
                         </ul>
@@ -128,7 +128,16 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
                     <div class="row-gap-big"></div>
                     <div class="call-to-action">
                         <p>ベトナムでのオフショア開発、BPOに興味を持った方、もっと詳しい内容を知りたい方はEVOLABLE ASIAのホームページをご覧ください。</p>
+                        <a href="http://evolable.asia/" onclick="_gaq.push([
+  '_trackEvent',
+  'singlepost_linkclick',
+  'http://evolable.asia/',
+  'content',
+  10,
+  true
+]);">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/img/banner342534-2.jpg" alt="EVOLABLE ASIA" class="img-responsive" width="100%"/>
+                        </a>
                     </div>                    
 
                     <div class="row-gap-medium"></div>
@@ -173,9 +182,21 @@ $default_img = get_template_directory_uri() . '/assets/img/default-img.png';
 
                     <div class="row-gap-medium clearfix"></div>
 
-                    <div class="face">
-                        <iframe src="//www.facebook.com/plugins/likebox.php?  href=https%3A%2F%2Fwww.facebook.com%2Fevolable.asia.eva%3Ffref%3Dts&amp;width=500px&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=445550542212549" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:290px;" allowTransparency="true"></iframe>  <//ソーシャルボックス読み込み ?>
-                    </div>                                                 
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:inline-table;margin-bottom:20px;" >
+                        <div class="face" style="width:100%px; height: 150px; background: none;'">
+                            <div id="fb-root"></div>
+                                <script>(function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id))
+                                        return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=124639054226284";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-page" data-href="https://www.facebook.com/evolable.asia.eva" data-width="444" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/evolable.asia.eva"><a href="https://www.facebook.com/evolable.asia.eva">EVOLABLE Asia</a></blockquote></div></div>
+                        </div>
+                    </div>                                                
                 </div>
             </div>
             <?php get_sidebar() ?>

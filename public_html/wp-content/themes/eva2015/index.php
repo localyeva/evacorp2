@@ -25,8 +25,11 @@ if ($loop->have_posts()) {
     }
 }
 ?>
-<div id="triangle-topleft"></div>
-<div id = "triangle-topright"></div>
+<div>
+    <div id="triangle-topleft" ></div>
+    <div id = "triangle-topright" ></div>
+    <div id = "triangle-top" ></div>
+</div>
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 

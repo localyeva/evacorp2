@@ -7,6 +7,7 @@
   margin: -82px 0 0 0;
   position: absolute;
   z-index: 1;
+  animation:turn 5s infinite;
 }
 #triangle-topright {
   width: 0;
@@ -16,11 +17,13 @@
   margin: -10px 0 0 60px;
   position: absolute;
   z-index: 2;
+  animation:turn 5s infinite;
 }
 #triangle-bottomright {
   margin: -224px 0px 0px 1681px;
   position: absolute;
   z-index: 1;
+  animation:turn 5s infinite;
 }
 #triangle-bottomright1 {
   width: 0;
@@ -31,72 +34,433 @@
   margin: -225px 0px 0px 1615px;
   position: absolute;
   z-index: 2;
+  animation:turn 5s infinite;
+}
+
+@keyframes turn {
+  0% {
+     transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+     transform: rotateX(-20deg) rotateY(-50deg);
+  }
+  100% {
+     transform: rotateX(0deg) rotateY(0deg);
+  }
+}
+
+#triangle-top {
+  width: 0;
+  height: 0;
+  border-top: 30px solid red;
+  border-right: 30px solid transparent;
+  margin: 63px 0 0 169px;
+  position: absolute;
+  z-index: 1;
+  animation:turn 5s infinite;
 }
 /*Nguyễn Bảo Thi*/
-@media screen and (max-width: 768px) {
 
-  /*Nguyễn Bảo Thi 18/02/2016*/
-  #triangle-bottomright {
-    width: 109px;
-    margin: -138px 0px 0px 558px;
-    position: absolute;
-    z-index: 1;
-  }
-  #triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 124px solid #FFD700;
-    border-right: 100px solid transparent;
-    margin: -92px 0 0 0;
-    position: absolute;
-    z-index: 1;
-  }
-  #triangle-topright {
-    width: 0;
-    height: 0;
-    border-top: 66px solid #FFFFFF;
-    border-left: 50px solid transparent;
-    margin: -10px 0 0 5px;
-    position: absolute;
-    z-index: 2;
-  }
-  /*Nguyễn Bảo Thi 18/02/2016*/
-}
-@media screen and (max-width: 460px) {
-/*Nguyễn Bảo Thi 18/02/2016*/
-  #triangle-bottomright {
-    width: 109px;
-    margin: -139px 0px 0px 268px;
-    position: absolute;
-    z-index: 1;
-  }
-  #triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 100px solid #FFD700;
-    border-right: 70px solid transparent;
-    margin: -82px 0 0 0;
-    position: absolute;
-    z-index: 1;
-  }
-  #triangle-topright {
-    width: 0;
-    height: 0;
-    border-top: 50px solid #FFFFFF;
-    border-left: 50px solid transparent;
-    margin: -11px 0 0 7px;
-    position: absolute;
-    z-index: 2;
-  }
-  /*Nguyễn Bảo Thi 18/02/2016*/
-}
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
 
-@media screen and (max-width: 320px) {
-  /*Nguyễn Bảo Thi 18/02/2016*/
-  #triangle-bottomright {
-    width: 98px;
-    margin: -125px 0px 0px 222px;
-    position: absolute;
-    z-index: 1;
-  }
-}
+
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 109px;
+        margin: -138px 0px 0px 558px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 124px solid #FFD700;
+        border-right: 100px solid transparent;
+        margin: -92px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topright {
+        width: 0;
+        height: 0;
+        border-top: 66px solid #FFFFFF;
+        border-left: 50px solid transparent;
+        margin: -10px 0 0 5px;
+        position: absolute;
+        z-index: 2;
+        animation:turn 5s infinite;
+      }
+      /*Nguyễn Bảo Thi 18/02/2016*/
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 109px;
+        margin: -138px 0px 0px 558px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 124px solid #FFD700;
+        border-right: 100px solid transparent;
+        margin: -92px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topright {
+        width: 0;
+        height: 0;
+        border-top: 66px solid #FFFFFF;
+        border-left: 50px solid transparent;
+        margin: -10px 0 0 5px;
+        position: absolute;
+        z-index: 2;
+        animation:turn 5s infinite;
+      }
+      /*Nguyễn Bảo Thi 18/02/2016*/
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 109px;
+        margin: -138px 0px 0px 558px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 124px solid #FFD700;
+        border-right: 100px solid transparent;
+        margin: -92px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topright {
+        width: 0;
+        height: 0;
+        border-top: 66px solid #FFFFFF;
+        border-left: 50px solid transparent;
+        margin: -10px 0 0 5px;
+        position: absolute;
+        z-index: 2;
+        animation:turn 5s infinite;
+      }
+      /*Nguyễn Bảo Thi 18/02/2016*/
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 109px;
+        margin: -138px 0px 0px 558px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 124px solid #FFD700;
+        border-right: 100px solid transparent;
+        margin: -92px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topright {
+        width: 0;
+        height: 0;
+        border-top: 66px solid #FFFFFF;
+        border-left: 50px solid transparent;
+        margin: -10px 0 0 5px;
+        position: absolute;
+        z-index: 2;
+        animation:turn 5s infinite;
+      }
+      /*Nguyễn Bảo Thi 18/02/2016*/
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 190px;
+        margin: -210px 0px 0px 1677px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 170px solid #FFD700;
+        border-right: 150px solid transparent;
+        margin: -82px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topright {
+        width: 0;
+        height: 0;
+        border-top: 76px solid #FFFFFF;
+        border-left: 65px solid transparent;
+        margin: 9px 0 0 52px;
+        position: absolute;
+        z-index: 2;
+        animation:turn 5s infinite;
+      }
+
+      #triangle-top {
+        width: 0;
+        height: 0;
+        border-top: 30px solid #FFFFFF;
+        border-right: 30px solid transparent;
+        margin: 63px 0 0 169px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      /*Nguyễn Bảo Thi 18/02/2016*/
+    }
+
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 170px;
+        margin: -214px 0px 0px 1000px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 124px solid #FFD700;
+        border-right: 100px solid transparent;
+        margin: -92px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topright {
+        width: 0;
+        height: 0;
+        border-top: 66px solid #FFFFFF;
+        border-left: 50px solid transparent;
+        margin: -10px 0 0 5px;
+        position: absolute;
+        z-index: 2;
+        animation:turn 5s infinite;
+      }
+
+      #triangle-top {
+        width: 0;
+        height: 0;
+        border-top: 30px solid #FFFFFF;
+        border-right: 30px solid transparent;
+        margin: 28px 0 0 89px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      /*Nguyễn Bảo Thi 18/02/2016*/
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 128px;
+        margin: -154px 0px 0px 855px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 124px solid #FFD700;
+        border-right: 100px solid transparent;
+        margin: -92px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topright {
+        width: 0;
+        height: 0;
+        border-top: 66px solid #FFFFFF;
+        border-left: 50px solid transparent;
+        margin: -10px 0 0 5px;
+        position: absolute;
+        z-index: 2;
+        animation:turn 5s infinite;
+      }
+      #triangle-top {
+        width: 0;
+        height: 0;
+        border-top: 30px solid #FFFFFF;
+        border-right: 30px solid transparent;
+        margin: 63px 0 0 169px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      /*Nguyễn Bảo Thi 18/02/2016*/
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 109px;
+        margin: -138px 0px 0px 556px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 124px solid #FFD700;
+        border-right: 100px solid transparent;
+        margin: -92px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topright {
+        width: 0;
+        height: 0;
+        border-top: 66px solid #FFFFFF;
+        border-left: 50px solid transparent;
+        margin: 3px 0 0 5px;
+        position: absolute;
+        z-index: 2;
+        animation:turn 5s infinite;
+      }
+      #triangle-top {
+        width: 0;
+        height: 0;
+        border-top: 30px solid #FFFFFF;
+        border-right: 30px solid transparent;
+        margin: 36px 0 0 96px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      /*Nguyễn Bảo Thi 18/02/2016*/
+    }
+     @media only screen and (max-width : 600px) {
+        /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 109px;
+        margin: -138px 0px 0px 457px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+     }
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 109px;
+        margin: -139px 0px 0px 368px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topleft {
+        width: 0;
+        height: 0;
+        border-top: 100px solid #FFD700;
+        border-right: 70px solid transparent;
+        margin: -82px 0 0 0;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-topright {
+        width: 0;
+        height: 0;
+        border-top: 50px solid #FFFFFF;
+        border-left: 50px solid transparent;
+        margin: 1px 0 0 2px;
+        position: absolute;
+        z-index: 2;
+        animation:turn 5s infinite;
+      }
+      #triangle-top {
+        width: 0;
+        height: 0;
+        border-top: 30px solid #FFFFFF;
+        border-right: 30px solid transparent;
+        margin: 9px 0 0 71px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      /*Nguyễn Bảo Thi 18/02/2016*/
+    }
+
+    /* Custom, iPhone Retina */
+     @media only screen and (max-width : 400px) {
+         #triangle-bottomright {
+            width: 109px;
+            margin: -139px 0px 0px 264px;
+            position: absolute;
+            z-index: 1;
+            animation:turn 5s infinite;
+        }
+     }
+    @media only screen and (max-width : 320px) {
+      /*Nguyễn Bảo Thi 18/02/2016*/
+      #triangle-bottomright {
+        width: 98px;
+        margin: -125px 0px 0px 222px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+      #triangle-top {
+        width: 0;
+        height: 0;
+        border-top: 30px solid #FFFFFF;
+        border-right: 30px solid transparent;
+        margin: 14px 0 0 69px;
+        position: absolute;
+        z-index: 1;
+        animation:turn 5s infinite;
+      }
+    }

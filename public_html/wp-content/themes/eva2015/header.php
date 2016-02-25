@@ -97,8 +97,6 @@
     </head>
     <body>
         <div id="fb-root"></div>
-
-
           <div id="navigation">
               <nav class="navbar navbar-default nav-desktop">
                   <div class="container">

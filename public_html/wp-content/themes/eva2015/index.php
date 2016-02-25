@@ -25,47 +25,46 @@ if ($loop->have_posts()) {
     }
 }
 ?>
-  <div >
-     <div id="triangle-topleft" ></div>
+<div>
+    <div id="triangle-topleft" ></div>
     <div id = "triangle-topright" ></div>
     <div id = "triangle-top" ></div>
-  </div>
+</div>
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-      <div class="carousel-overlay"></div>
+    <div class="carousel-overlay"></div>
 
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-          <?php for ($i = 0; $i < count($home_slider); $i++): ?>
-              <li data-target="#myCarousel" data-slide-to="<?php echo $i ?>" class="<?php echo ($i == 0) ? 'active' : '' ?>"></li>
-          <?php endfor; ?>
-      </ol>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <?php for ($i = 0; $i < count($home_slider); $i++): ?>
+            <li data-target="#myCarousel" data-slide-to="<?php echo $i ?>" class="<?php echo ($i == 0) ? 'active' : '' ?>"></li>
+        <?php endfor; ?>
+    </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-          <?php for ($i = 0; $i < count($home_slider); $i++): ?>
-              <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
-                  <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
-              </div>
-          <?php endfor; ?>
-      </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <?php for ($i = 0; $i < count($home_slider); $i++): ?>
+            <div class="item <?php echo ($i == 0) ? 'active' : '' ?>">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $home_slider[$i]['image'] ?>"></div>
+            </div>
+        <?php endfor; ?>
+    </div>
 
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-      </a>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 
-      <div class="carousel-caption">
-          <div><h2><?php echo get_slide_text() ?></h2></div>
-        </div>
-      </div>
-  </div>
+    <div class="carousel-caption">
+        <div><h2><?php echo get_slide_text() ?></h2></div>
+    </div>
+</div>
 
 <!--//slide End-->
 <!--//Why-->
@@ -73,9 +72,10 @@ if ($loop->have_posts()) {
 $available_why = get_why_div();
 if ($available_why == 1) {
     ?>
-
-    <div id = "triangle-bottomright" >
-      <img src="<?php echo get_template_directory_uri() ?>/img/3.png" alt="" class="img-responsive">
+    <!-- <div id = "triangle-bottomright"></div>
+    <div id = "triangle-bottomright1"></div>-->
+    <div id = "triangle-bottomright">
+        <img src="<?php echo get_template_directory_uri() ?>/img/3.png" alt="" class="img-responsive">
     </div>
 
     <div class="container-fluid header-why">
@@ -153,7 +153,7 @@ if ($available_service == 1) {
                 <?php while ($loop->have_posts()): $loop->the_post(); ?>
 
 
-                    <div class="col-xs-12 col-md-6 no-padding-lr sv-main-block wow fadeInRight">
+                    <div class="col-xs-12 col-md-9 no-padding-lr sv-main-block wow fadeInRight">
                         <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                             <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                             <div class="caption-eva" ></div>
@@ -169,7 +169,7 @@ if ($available_service == 1) {
                 <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_postdata() ?>
-            <div class="col-xs-12 col-md-6 list">
+            <div class="col-xs-12 col-md-3 list">
                 <div class="row">
                     <?php
                     $args = array(
@@ -185,9 +185,9 @@ if ($available_service == 1) {
                         $num_posts = count($loop->posts);
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                            <?php if ($i > 1 AND $i < 4) { ?>
+                            <?php if ($i == 2) { ?>
 
-                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInDown">
+                                <div class="col-xs-12 col-md-12 no-padding-lr wow fadeInDown">
                                     <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                                         <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                         <div class="caption-eva" ></div>
@@ -222,10 +222,10 @@ if ($available_service == 1) {
                         $num_posts = count($loop->posts);
                         ?>
                         <?php while ($loop->have_posts()): $loop->the_post(); ?>
-                            <?php if ($j >= 4 AND $j < 6) { ?>
+                            <?php if ($j == 3) { ?>
 
 
-                                <div class="col-xs-12 col-md-6 no-padding-lr wow fadeInUp">
+                                <div class="col-xs-12 col-md-12 no-padding-lr wow fadeInUp">
                                     <a class="alnk" href="<?php echo home_url(get_field('redirect_url')) ?>">
                                         <img src="<?php echo get_field('image') ?>" alt="" class="img-responsive full-width">
                                         <div class="caption-eva" ></div>
@@ -521,7 +521,7 @@ if ($available_new == 1) {
                     <?php
                     $time3+= 0.5;
                     $count_blog++;
-                    if($count_blog==3):
+                    if ($count_blog == 3):
                         break;
                     endif;
                 endwhile;

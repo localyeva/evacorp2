@@ -11,7 +11,7 @@
                     <div class="col-xs-12 col-md-4">
                         <div class="row">
                             <div class="col-xs-12">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo_footer.png" alt="" class="img-responsive center-block">
+                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/30.png" alt="" class="img-responsive center-block">
                             </div>
                         </div>
                         <div class="row-gap-small"></div>

@@ -65,6 +65,7 @@ $(document).ready(function () {
 
 $(function () {
     $('.service-info article.module').heightLine();
+    $('.service-info article.module img').heightLine();
 
     $('p.footer-his').heightLine();
 });

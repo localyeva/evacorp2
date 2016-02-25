@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
         <meta name="description" content="ベトナムでオフショア開発、ラボ型オフショア開発、BPOを行なうEVOLABLE ASIA(エボラブルアジア)の求人特設サイトです。「海外で働きたい！」と思っているあなた、EVAではグローバルな視点をもつ仲間を求めています。" />
         <meta name="keywords" content="ベトナム,オフショア開発,ラボ型オフショア開発,BPO,アウトソーシング,ホーチミン,エボラブルアジア,EVOLABLE ASIA,海外,求人,海外で働く,転職,インターン " />
@@ -29,7 +29,7 @@
             <div class="header-logo">
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 header-logo-1">
-                        <a href="<?php echo get_site_url(1) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/logo_footer.png" alt="EVOLABLE ASIA" height="31" /></a>
+                        <a href="<?php echo get_site_url(3) ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/logo_footer.png" alt="EVOLABLE ASIA" height="31" /></a>
                     </div>
                     <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 hidden-xs"></div>                    
                     <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 header-logo-2 hidden-xs">

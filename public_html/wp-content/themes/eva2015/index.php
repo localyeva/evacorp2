@@ -25,8 +25,11 @@ if ($loop->have_posts()) {
     }
 }
 ?>
-  <div id="triangle-topleft"></div>
-  <div id = "triangle-topright"></div>
+  <div >
+     <div id="triangle-topleft" ></div>
+    <div id = "triangle-topright" ></div>
+    <div id = "triangle-top" ></div>
+  </div>
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
@@ -60,6 +63,7 @@ if ($loop->have_posts()) {
 
       <div class="carousel-caption">
           <div><h2><?php echo get_slide_text() ?></h2></div>
+        </div>
       </div>
   </div>
 
@@ -69,9 +73,8 @@ if ($loop->have_posts()) {
 $available_why = get_why_div();
 if ($available_why == 1) {
     ?>
-    <!-- <div id = "triangle-bottomright"></div>
-    <div id = "triangle-bottomright1"></div>-->
-    <div id = "triangle-bottomright">
+
+    <div id = "triangle-bottomright" >
       <img src="<?php echo get_template_directory_uri() ?>/img/3.png" alt="" class="img-responsive">
     </div>
 

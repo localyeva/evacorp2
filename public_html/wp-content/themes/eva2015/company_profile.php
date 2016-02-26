@@ -126,9 +126,28 @@ get_header();
             </div>
         </div>
     </div>
-
+    <div class="container-fluid text-center" id="detail-contact">
+        <div class="container detail">
+            <h1>会社概要</h1>
+            <div class="row" style="max-width:50%;margin:auto;">
+                <div class="col-xs-12 evol module-eva">
+                                    <div class="round1">
+                                        <p class="header-his"><span>株式会社エボラブルアジア</span></p>
+                                        <p class="img-his"><a href="<?php echo bloginfo('url') ?>"><img src="<?php echo get_template_directory_uri() ?>/img/37.png" alt="" class="img-responsive"></a></p>
+                <!--------------------------------------------------------------------------------------------------------
+                                        <p class="footer-his"><span>当社は2007年5月11日に設立しました。「One Asia」をビジョンに掲げ、アジアの様々なチャンスやリソースを繋ぐ架け橋となることを目指しています。 
+                「オンライン旅行事業―日本で一番多く、人々の想いと空の旅を繋ぐ 」,
+                「オフショア開発事業―アジアの優秀な人材と企業を繋ぐ」、
+                「訪日インバウンド事業―アジアの人々の心に日本での感動を届ける」 
+                この3つの事業を柱に独自性が高いビジネスモデルとベンチャー企業ならではのスピード感を強みに、高成長を続けています。</span></p>
+                ------------------------------------------------------------------------------------------------------------>
+                                    </div>
+                                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid text-center" id="profile">
-        <div class="container">
+        <div class="container">           
             <div class="row">
                 <div class="col-xs-12">
                     <h1>関連会社</h1>
@@ -137,8 +156,8 @@ get_header();
             <div class="row">
                 <div class="col-xs-12 col-md-6 no-padding-lr evol module-eva">
                     <div class="round1">
-                        <p class="header-his"><span>株式会社エボラブルアジア</span></p>
-                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/37.png" alt="" class="img-responsive"></p>
+                        <p class="header-his" style="height:80px;"><span>Soltec Investments Pte. Ltd.</span></p>
+                        <p class="img-his"><a href="http://soltecvn.com/"><img src="<?php echo get_template_directory_uri() ?>/img/38.png" alt="" class="img-responsive"></a></p>
 <!--------------------------------------------------------------------------------------------------------
                         <p class="footer-his"><span>当社は2007年5月11日に設立しました。「One Asia」をビジョンに掲げ、アジアの様々なチャンスやリソースを繋ぐ架け橋となることを目指しています。 
 「オンライン旅行事業―日本で一番多く、人々の想いと空の旅を繋ぐ 」,
@@ -151,27 +170,14 @@ get_header();
                 </div>
                 <div class="col-xs-12 col-md-6 no-padding-lr soltec module-eva">
                     <div class="round2">
-                        <p class="header-his"><span>Soltec Investments Pte. Ltd.</span></p>
-                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/38.png" alt="" class="img-responsive"></p>
+                        <p class="header-his" style="height:80px;"><span>EVOLABLE ASIA SOLUTION & BUSINESS CONSULTANCY COMPANY LIMITED</span></p>
+                        <p class="img-his"><a href="http://sbc.evolable.asia/"><img src="<?php echo get_template_directory_uri() ?>/img/SBC-Logo1.png" alt="" class="img-responsive"></a></p>
 <!--------------------------------------------------------------------------------------------------------
                         <p class="footer-his"><span>Soltec Vietnam Companyは2010年9月17日に、（株）ソルテック工業の100％出資子会社として誕生致しました。弊社は、親会社である（株）ソルテック工業の長年培った経験と技術を生かし、ベトナムにおいて日本の品質基準に準じた各種プラント設備製作・据付工事・配管工事を展開させて頂きます。また独自の教育管理ノウハウを生かして、日本品質をベトナムで実現しております。そこで培われたマネジメントノウハウの一部はEVOLABLE ASIA CO.,LTD.にも生かされています。</span></p>
 ------------------------------------------------------------------------------------------------------------>
                     </div>
                 </div>
             </div>
-                <div class="col-xs-12 col-md-6 no-padding-lr evol module-eva">
-                    <div class="round1">
-                        <p class="header-his"><span>EVOLABLE ASIA SOLUTION & BUSINESS CONSULTANCY COMPANY LIMITED</span></p>
-                        <p class="img-his"><img src="<?php echo get_template_directory_uri() ?>/img/SBC-Logo1.png" alt="" class="img-responsive"></p>
-<!--------------------------------------------------------------------------------------------------------
-                        <p class="footer-his"><span>当社は2007年5月11日に設立しました。「One Asia」をビジョンに掲げ、アジアの様々なチャンスやリソースを繋ぐ架け橋となることを目指しています。 
-「オンライン旅行事業―日本で一番多く、人々の想いと空の旅を繋ぐ 」,
-「オフショア開発事業―アジアの優秀な人材と企業を繋ぐ」、
-「訪日インバウンド事業―アジアの人々の心に日本での感動を届ける」 
-この3つの事業を柱に独自性が高いビジネスモデルとベンチャー企業ならではのスピード感を強みに、高成長を続けています。</span></p>
------------------------------------------------------------------------------------------------------------->
-                    </div>
-                </div>
 
         </div>
     </div>

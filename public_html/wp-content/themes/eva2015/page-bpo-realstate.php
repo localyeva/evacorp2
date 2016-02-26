@@ -4,6 +4,10 @@
  * Template Name: BPO Real State
  * 
  */
+
+header('location:' . home_url());
+exit();
+
 get_header();
 ?>
 

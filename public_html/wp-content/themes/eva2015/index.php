@@ -25,9 +25,11 @@ if ($loop->have_posts()) {
     }
 }
 ?>
-     <div id="triangle-topleft" ></div>
-    <div id = "triangle-topright" ></div>
-    <div id = "triangle-top" ></div>
+
+<div id="triangle-topleft" ></div>
+<div id = "triangle-topright" ></div>
+<div id = "triangle-top" ></div>
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
     <div class="carousel-overlay"></div>
@@ -69,14 +71,15 @@ if ($loop->have_posts()) {
 $available_why = get_why_div();
 if ($available_why == 1) {
     ?>
+
     <div id = "triangle-bottomright" >
-      <img src="<?php echo get_template_directory_uri() ?>/img/h3.png" alt="" class="img-responsive">
+        <img src="<?php echo get_template_directory_uri() ?>/img/h3.png" alt="" class="img-responsive">
     </div>
     <div id = "triangle-right" >
-      <img src="<?php echo get_template_directory_uri() ?>/img/h1.png" alt="" class="img-responsive">
+        <img src="<?php echo get_template_directory_uri() ?>/img/h1.png" alt="" class="img-responsive">
     </div>
     <div id = "triangle-rightwhite" >
-      <img src="<?php echo get_template_directory_uri() ?>/img/h4.png" alt="" class="img-responsive">
+        <img src="<?php echo get_template_directory_uri() ?>/img/h4.png" alt="" class="img-responsive">
     </div>
 
     <div class="container-fluid header-why">

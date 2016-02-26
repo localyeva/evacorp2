@@ -5,6 +5,9 @@
  * 
  */
 
+header('location:' . home_url());
+exit();
+
 get_header();
 ?>
 <section id="bpo-profile">
